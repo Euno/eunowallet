@@ -1,0 +1,133 @@
+src/libsecp256k1_la-secp256k1.lo: src/secp256k1.c include/secp256k1.h \
+ src/util.h src/libsecp256k1-config.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/stdlib.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/crtdefs.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/_mingw.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/_mingw_mac.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/_mingw_secapi.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/vadefs.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/sdks/_mingw_directx.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/sdks/_mingw_ddk.h \
+ /home/ag/euno/mxe/usr/lib/gcc/i686-w64-mingw32.static/5.5.0/include-fixed/limits.h \
+ /home/ag/euno/mxe/usr/lib/gcc/i686-w64-mingw32.static/5.5.0/include-fixed/syslimits.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/limits.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/sec_api/stdlib_s.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/malloc.h \
+ /home/ag/euno/mxe/usr/lib/gcc/i686-w64-mingw32.static/5.5.0/include/stdint.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/stdint.h \
+ /home/ag/euno/mxe/usr/lib/gcc/i686-w64-mingw32.static/5.5.0/include/stddef.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/stddef.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/stdio.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/_mingw_print_push.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/_mingw_off_t.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/swprintf.inl \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/sec_api/stdio_s.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/_mingw_print_pop.h \
+ src/num_impl.h src/num.h src/field_impl.h src/field_10x26_impl.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/string.h \
+ /home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/sec_api/string_s.h \
+ src/field.h src/field_10x26.h src/scalar_impl.h src/group.h src/scalar.h \
+ src/scalar_8x32.h src/scalar_8x32_impl.h src/group_impl.h \
+ src/ecmult_impl.h src/ecmult.h src/ecmult_gen_impl.h src/ecmult_gen.h \
+ src/hash_impl.h src/hash.h src/ecdsa_impl.h src/ecdsa.h src/eckey_impl.h \
+ src/eckey.h
+
+include/secp256k1.h:
+
+src/util.h:
+
+src/libsecp256k1-config.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/stdlib.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/crtdefs.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/_mingw.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/_mingw_mac.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/_mingw_secapi.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/vadefs.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/sdks/_mingw_directx.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/sdks/_mingw_ddk.h:
+
+/home/ag/euno/mxe/usr/lib/gcc/i686-w64-mingw32.static/5.5.0/include-fixed/limits.h:
+
+/home/ag/euno/mxe/usr/lib/gcc/i686-w64-mingw32.static/5.5.0/include-fixed/syslimits.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/limits.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/sec_api/stdlib_s.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/malloc.h:
+
+/home/ag/euno/mxe/usr/lib/gcc/i686-w64-mingw32.static/5.5.0/include/stdint.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/stdint.h:
+
+/home/ag/euno/mxe/usr/lib/gcc/i686-w64-mingw32.static/5.5.0/include/stddef.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/stddef.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/stdio.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/_mingw_print_push.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/_mingw_off_t.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/swprintf.inl:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/sec_api/stdio_s.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/_mingw_print_pop.h:
+
+src/num_impl.h:
+
+src/num.h:
+
+src/field_impl.h:
+
+src/field_10x26_impl.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/string.h:
+
+/home/ag/euno/mxe/usr/i686-w64-mingw32.static/include/sec_api/string_s.h:
+
+src/field.h:
+
+src/field_10x26.h:
+
+src/scalar_impl.h:
+
+src/group.h:
+
+src/scalar.h:
+
+src/scalar_8x32.h:
+
+src/scalar_8x32_impl.h:
+
+src/group_impl.h:
+
+src/ecmult_impl.h:
+
+src/ecmult.h:
+
+src/ecmult_gen_impl.h:
+
+src/ecmult_gen.h:
+
+src/hash_impl.h:
+
+src/hash.h:
+
+src/ecdsa_impl.h:
+
+src/ecdsa.h:
+
+src/eckey_impl.h:
+
+src/eckey.h:

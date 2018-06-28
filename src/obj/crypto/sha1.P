@@ -1,0 +1,4 @@
+obj/crypto/sha1.o: crypto/sha1.cpp /home/ag/eunowallet/src/crypto/sha1.h \
+ /home/ag/eunowallet/src/crypto/common.h
+crypto/sha1.cpp /home/ag/eunowallet/src/crypto/sha1.h :
+ /home/ag/eunowallet/src/crypto/common.h :

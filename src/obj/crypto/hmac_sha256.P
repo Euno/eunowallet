@@ -1,0 +1,6 @@
+obj/crypto/hmac_sha256.o: crypto/hmac_sha256.cpp \
+ /home/ag/eunowallet/src/crypto/hmac_sha256.h \
+ /home/ag/eunowallet/src/crypto/sha256.h
+crypto/hmac_sha256.cpp :
+ /home/ag/eunowallet/src/crypto/hmac_sha256.h :
+ /home/ag/eunowallet/src/crypto/sha256.h :
