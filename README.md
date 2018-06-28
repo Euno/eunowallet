@@ -28,7 +28,7 @@
 
 <br><br>
 ### Windows wallet 
-Windows wallet version is under the release Github "tab"
+Windows wallet version is under the releases Github "tab"
 
 <br><br>
 ### Build Linux CLI wallet
@@ -97,4 +97,4 @@ Compile the EUNO-QT GUI wallet:
     After successfully compilation binary can be found ~/eunowallet/euno-qt
 
 <br><br>
-.
+
