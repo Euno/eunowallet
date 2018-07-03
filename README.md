@@ -12,7 +12,7 @@
  **Discord:** https://discord.gg/VNC6V2Z<br>
  **Twitter:** https://twitter.com/EunoCoin<br>
  **Reddit:** https://www.reddit.com/r/EunoCoinOfficial<br>
- **BitCoinTalk:** <br>
+ **BitCoinTalk:** https://bitcointalk.org/index.php?topic=4563505.0<br>
 
 ### Technical details
 
