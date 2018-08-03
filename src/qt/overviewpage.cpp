@@ -125,7 +125,7 @@ OverviewPage::OverviewPage(QWidget *parent) :
     ui->listTransactions->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
     ui->listTransactions->setMinimumHeight(NUM_ITEMS * (DECORATION_SIZE + 2));
     ui->listTransactions->setAttribute(Qt::WA_MacShowFocusRect, false);
-    ui->listTransactions->setMinimumWidth(350);
+    ui->listTransactions->setMinimumWidth(450);
 
     connect(ui->listTransactions, SIGNAL(clicked(QModelIndex)), this, SLOT(handleTransactionClicked(QModelIndex)));
     ui->listTransactions->update();

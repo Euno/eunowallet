@@ -107,7 +107,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     QFontDatabase::addApplicationFont(":/fonts/Ubuntu-L.ttf");
     qApp->setFont(QFont("Ubuntu", 11, QFont::Normal, false));
 
-
     // Accept D&D of URIs
     setAcceptDrops(true);
 
@@ -430,11 +429,12 @@ void BitcoinGUI::createToolBars()
     toolbar->setStyleSheet("#tabs { background-color: #f9f9f9; } ");
 
     QLabel* header = new QLabel();
-    header->setMinimumSize(128, 128);
+    header->setMinimumSize(94, 128);
     header->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-    header->setPixmap(QPixmap(":/icons/bitcoin"));
+    header->setPixmap(QPixmap(":/images/main"));
+    header->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
     header->setMaximumSize(180,180);
-    header->setScaledContents(true);
+    header->setScaledContents(false);
     toolbar->addWidget(header);
 
     //QMenu *toolbarMenu = new QMenu();
