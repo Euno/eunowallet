@@ -22,7 +22,7 @@ void CActiveMasternode::ManageStatus()
     bool fIsInitialDownload = IsInitialBlockDownload();
     if(fIsInitialDownload) {
         status = MASTERNODE_SYNC_IN_PROCESS;
-        LogPrintf("CActiveMasternode::ManageStatus() - Sync in progress. Must wait until sync is complete to start masternode.\n");
+        LogPrintf("CActiveMasternode::ManageStatus() - Sync in progress. Please wait until sync is complete to start masternode.\n");
         return;
     }
 

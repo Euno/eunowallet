@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = euno-qt
-VERSION = 1.0.2.1
+VERSION = 1.0.3.1
 INCLUDEPATH += src src/json src/qt src/qt/plugins/mrichtexteditor
 DEFINES += ENABLE_WALLET
 DEFINES += BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
@@ -37,12 +37,25 @@ linux {
      CONFIG+= static
      DEFINES+= STATIC
      #QMAKE_LFLAGS += -static
-     SECP256K1_LIB_PATH = $(HOME)/eunowallet/src/secp256k1/.libs
-     SECP256K1_INCLUDE_PATH = $(HOME)/eunowallet/src/secp256k1/include
+     SECP256K1_LIB_PATH = $$PWD/src/secp256k1/.libs
+     SECP256K1_INCLUDE_PATH = $$PWD/src/secp256k1/include
 }
 
 macx {
-  QMAKE_LFLAGS *= -static
+#  QMAKE_LFLAGS *= -static
+  BOOST_INCLUDE_PATH = /usr/local/opt/boost@1.59/include
+  BOOST_LIB_PATH = /usr/local/opt/boost@1.59/lib
+  QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.11
+  OPENSSL_INCLUDE_PATH = /usr/local/Cellar/openssl/1.0.2o_2/include
+  OPENSSL_LIB_PATH = /usr/local/Cellar/openssl/1.0.2o_2/lib
+  BDB_LIB_PATH = /usr/local/Cellar/berkeley-db@4/4.8.30/lib
+  BDB_INCLUDE_PATH = /usr/local/Cellar/berkeley-db@4/4.8.30/include
+  QRENCODE_INCLUDE_PATH = /usr/local/Cellar/qrencode/4.0.2/include
+  QRENCODE_LIB_PATH = /usr/local/Cellar/qrencode/4.0.2/lib
+  MINIUPNPC_INCLUDE_PATH = /usr/local/Cellar/miniupnpc/2.1/include
+  MINIUPNPC_LIB_PATH = /usr/local/Cellar/miniupnpc/2.1/lib
+  SECP256K1_LIB_PATH = $$PWD/src/secp256k1/.libs
+  SECP256K1_INCLUDE_PATH = $$PWD/src/secp256k1/include
 }
 
 # Dependency library locations can be customized with:
@@ -54,12 +67,12 @@ UI_DIR = build
 
 # use: qmake "RELEASE=1"
 contains(RELEASE, 1) {
-    # MaC compile for maximum compatibility (10.7, 32-bit)
-    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
-    macx:QMAKE_CFLAGS += -mmacosx-version-min=10.7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
-    macx:QMAKE_LFLAGS += -mmacosx-version-min=10.7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
-    macx:QMAKE_OBJECTIVE_CFLAGS += -mmacosx-version-min=10.7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
-
+    # MaC compile for maximum compatibility (10.11, 32-bit)
+    macx:QMAKE_CXXFLAGS += -stdlib=libc++ -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_CFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_LFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_OBJECTIVE_CFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.11
     !windows:!macx {
         #Linux: static link
         LIBS += -Wl,-Bstatic
@@ -67,6 +80,31 @@ contains(RELEASE, 1) {
     }
 }
 
+contains(RELEASE_AMD64, 1) {
+    # Mac: optimised 64-bit x86
+    macx:QMAKE_CFLAGS += -DMOVQ_FIX -arch x86_64 -fomit-frame-pointer -mdynamic-no-pic -I/usr/local/amd64/include
+    macx:QMAKE_CXXFLAGS += -arch x86_64 -fomit-frame-pointer -mdynamic-no-pic -I/usr/local/amd64/include -stdlib=libc++
+    macx:QMAKE_LFLAGS += -arch x86_64 -L/usr/local/amd64/lib
+    # Mac: 10.11+ compatibility
+    macx:QMAKE_CFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.11
+}
+
+# use: qmake RELEASE_I386=1
+contains(RELEASE_I386, 1) {
+    # Mac: optimised 32-bit x86
+    macx:QMAKE_CFLAGS += -arch i386 -fomit-frame-pointer -msse2 -mdynamic-no-pic -I/usr/local/i386/include
+    macx:QMAKE_CXXFLAGS += -arch i386 -stdlib=libc++ -fomit-frame-pointer -msse2 -mdynamic-no-pic -I/usr/local/i386/include
+    macx:QMAKE_LFLAGS += -arch i386 -L/usr/local/i386/lib
+    # Mac: 10.5+ compatibility; Qt with Cocoa is broken on 10.4
+    macx:QMAKE_CFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.11
+    # Windows: optimised 32-bit x86
+    win32:QMAKE_CFLAGS += -march=i686 -fomit-frame-pointer
+    win32:QMAKE_CXXFLAGS += -march=i686 -fomit-frame-pointer
+}
 
 !win32 {
 # for extra security against potential buffer overflows: enable GCCs Stack Smashing Protection
@@ -484,7 +522,35 @@ QMAKE_EXTRA_COMPILERS += TSQM
 OTHER_FILES += \
     doc/*.rst doc/*.txt doc/README README.md res/bitcoin-qt.rc
 
+# platform specific defaults, if not overridden on command line
+isEmpty(BOOST_LIB_SUFFIX) {
+    macx:BOOST_LIB_SUFFIX = -mt
+    windows:BOOST_LIB_SUFFIX = -mgw44-mt-s-1_49
+}
 
+isEmpty(BOOST_THREAD_LIB_SUFFIX) {
+    BOOST_THREAD_LIB_SUFFIX = $$BOOST_LIB_SUFFIX
+}
+
+isEmpty(BDB_LIB_PATH) {
+    macx:BDB_LIB_PATH = /opt/local/lib/db48
+}
+
+isEmpty(BDB_LIB_SUFFIX) {
+    macx:BDB_LIB_SUFFIX = -4.8
+}
+
+isEmpty(BDB_INCLUDE_PATH) {
+    macx:BDB_INCLUDE_PATH = /opt/local/include/db48
+}
+
+isEmpty(BOOST_LIB_PATH) {
+    macx:BOOST_LIB_PATH = /opt/local/lib
+}
+
+isEmpty(BOOST_INCLUDE_PATH) {
+    macx:BOOST_INCLUDE_PATH = /opt/local/include
+}
 
 windows:DEFINES += WIN32
 windows:RC_FILE = src/qt/res/bitcoin-qt.rc
@@ -503,7 +569,7 @@ macx:HEADERS += src/qt/macdockiconhandler.h src/qt/macnotificationhandler.h
 macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm src/qt/macnotificationhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit -framework CoreServices
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
-macx:ICON = src/qt/res/icons/phantomx.icns
+macx:ICON = src/qt/res/icons/euno.icns
 macx:QMAKE_CFLAGS_THREAD += -pthread
 macx:QMAKE_LFLAGS_THREAD += -pthread
 macx:QMAKE_CXXFLAGS_THREAD += -pthread

@@ -346,7 +346,7 @@ Value masternode(const Array& params, bool fHelp)
         if(activeMasternode.status == MASTERNODE_STOPPED) return "masternode is stopped";
         if(activeMasternode.status == MASTERNODE_IS_CAPABLE) return "successfully started masternode";
         if(activeMasternode.status == MASTERNODE_NOT_CAPABLE) return "not capable masternode: " + activeMasternode.notCapableReason;
-        if(activeMasternode.status == MASTERNODE_SYNC_IN_PROCESS) return "sync in process. Must wait until client is synced to start.";
+        if(activeMasternode.status == MASTERNODE_SYNC_IN_PROCESS) return "Sync in progress. Please wait until client is completely synced to start.";
 
         return "unknown";
     }
@@ -468,7 +468,7 @@ Value masternode(const Array& params, bool fHelp)
         if(activeMasternode.status == MASTERNODE_IS_CAPABLE) return "successfully started masternode";
         if(activeMasternode.status == MASTERNODE_STOPPED) return "masternode is stopped";
         if(activeMasternode.status == MASTERNODE_NOT_CAPABLE) return "not capable masternode: " + activeMasternode.notCapableReason;
-        if(activeMasternode.status == MASTERNODE_SYNC_IN_PROCESS) return "sync in process. Must wait until client is synced to start.";
+        if(activeMasternode.status == MASTERNODE_SYNC_IN_PROCESS) return "Sync in progress. Please wait until client is completely synced to start.";
 
         CTxIn vin = CTxIn();
         CPubKey pubkey = CScript();

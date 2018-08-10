@@ -409,8 +409,8 @@ void MasternodeManager::on_updateMNListButton_clicked()
     bool fIsInitialDownload = IsInitialBlockDownload();
     if(fIsInitialDownload) {
       QMessageBox msg;
-      ui->countLabel->setText("Sync in progress. Wait it finish...");
-      msg.setText(QString::fromStdString("Sync in progress. Wait it finish..."));
+      ui->countLabel->setText("Sync in progress. Please wait.");
+      msg.setText(QString::fromStdString("Sync in progress. Please wait."));
       msg.exec();
       return;
     }

@@ -13,6 +13,7 @@
  **Twitter:** https://twitter.com/EunoCoin<br>
  **Reddit:** https://www.reddit.com/r/EunoCoinOfficial<br>
  **BitCoinTalk:** https://bitcointalk.org/index.php?topic=4563505.0<br>
+ **CoinMarketCap:** https://coinmarketcap.com/currencies/euno/<br>
 
 ### Technical details
 
@@ -68,6 +69,7 @@ Compile the EUNO cli wallet:
 ### Build Linux GUI wallet
 
 Build preparation:
+    
     sudo apt-get install qt5-default qttools5-dev-tools 
 
 Compile the EUNO-QT GUI wallet:
