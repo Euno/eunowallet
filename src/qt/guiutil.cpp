@@ -482,7 +482,7 @@ void SetBlackThemeQSS(QApplication& app)
                       "QTabBar::tab:selected  { background: rgb(41,44,48); }"
                       "QTabBar::tab:!selected { background: rgb(24,26,30); margin-top: 2px; }"
                       "QTabWidget::pane { border: 1px solid rgb(78,79,83); }"
-                      "QToolButton    { background: rgb(30,32,36); color: rgb(116,122,134); border: none; border-left-color: rgb(30,32,36); border-left-style: solid; border-left-width: 6px; margin-top: 8px; margin-bottom: 8px; }"
+                      "QToolButton    { background: rgb(41,44,48); color: rgb(116,122,134); border: none; border-left-color: rgb(41,44,48); border-left-style: solid; border-left-width: 6px; margin-top: 8px; margin-bottom: 8px; }"
                       "QToolButton:checked { color: rgb(255,255,255); border: none; border-left-color: rgb(224,55,63); border-left-style: solid; border-left-width: 6px; }"
                       "QProgressBar   { color: rgb(149,148,148); border-color: rgb(255,255,255); border-width: 3px; border-style: solid; }"
                       "QProgressBar::chunk { background: rgb(255,255,255); }"
@@ -490,7 +490,7 @@ void SetBlackThemeQSS(QApplication& app)
                       "QTreeView::item:selected { background-color: rgb(48,140,198); }"
                       "QTableView     { background: rgb(66,71,78); color: rgb(212,213,213); gridline-color: rgb(157,160,165); }"
                       "QHeaderView::section { background: rgb(29,34,39); color: rgb(255,255,255); }"
-                      "QToolBar       { background: rgb(30,32,36); border: none; }");
+                      "QToolBar       { background: rgb(41,44,48); border: none; }");
 }
 
 } // namespace GUIUtil

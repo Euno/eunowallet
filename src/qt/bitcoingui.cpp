@@ -426,7 +426,8 @@ void BitcoinGUI::createToolBars()
     toolbar->setContextMenuPolicy(Qt::PreventContextMenu);
     toolbar->setObjectName("tabs");
     // toolbar->setStyleSheet("QToolButton { color: #101010; } QToolButton:hover { background-color: ##e0373f } QToolButton:checked { background-color: #c51f26 } QToolButton:pressed { background-color: none } #tabs { color: #101010; background-color: #f9f9f9);  }");
-    toolbar->setStyleSheet("#tabs { background-color: #f9f9f9; } ");
+   //  toolbar->setStyleSheet("#tabs { background-color: #f9f9f9; } ");
+    toolbar->setStyleSheet("QToolButton { color: #5677d8; } QToolButton:pressed { background-color: none } #tabs { color: #af0e0e; background-color: #f9f9f9);  }");
 
     QLabel* header = new QLabel();
     header->setMinimumSize(94, 128);
