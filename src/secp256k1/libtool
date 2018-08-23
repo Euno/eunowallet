@@ -91,7 +91,7 @@ EGREP="/bin/grep -E"
 FGREP="/bin/grep -F"
 
 # A BSD- or MS-compatible name lister.
-NM="/home/ag/euno/mxe/usr/bin/i686-w64-mingw32.static-nm -B"
+NM="nm"
 
 # Whether we need soft or hard links.
 LN_S="ln -s"
@@ -121,7 +121,7 @@ to_host_file_cmd=func_convert_file_nix_to_w32
 to_tool_file_cmd=func_convert_file_noop
 
 # An object symbol dumper.
-OBJDUMP="i686-w64-mingw32.static-objdump"
+OBJDUMP="objdump"
 
 # Method to check whether dependent libraries are shared objects.
 deplibs_check_method="file_magic ^x86 archive import|^x86 DLL"
@@ -136,13 +136,13 @@ file_magic_glob=""
 want_nocaseglob="no"
 
 # DLL creation program.
-DLLTOOL="i686-w64-mingw32.static-dlltool"
+DLLTOOL="false"
 
 # Command to associate shared and link libraries.
-sharedlib_from_linklib_cmd="func_cygming_dll_for_implib"
+sharedlib_from_linklib_cmd="func_cygming_dll_for_implib_fallback"
 
 # The archiver.
-AR="/home/ag/euno/mxe/usr/bin/i686-w64-mingw32.static-ar"
+AR="/usr/bin/ar"
 
 # Flags to create an archive.
 AR_FLAGS="cru"
@@ -151,10 +151,10 @@ AR_FLAGS="cru"
 archiver_list_spec="@"
 
 # A symbol stripping program.
-STRIP="/home/ag/euno/mxe/usr/bin/i686-w64-mingw32.static-strip"
+STRIP="/usr/bin/strip"
 
 # Commands used to install an old-style archive.
-RANLIB="/home/ag/euno/mxe/usr/bin/i686-w64-mingw32.static-ranlib"
+RANLIB="/usr/bin/ranlib"
 old_postinstall_cmds="chmod 644 \$oldlib~\$RANLIB \$tool_oldlib"
 old_postuninstall_cmds=""
 
@@ -162,13 +162,13 @@ old_postuninstall_cmds=""
 lock_old_archive_extraction=no
 
 # A C compiler.
-LTCC="i686-w64-mingw32.static-gcc"
+LTCC="gcc"
 
 # LTCC compiler flags.
 LTCFLAGS="-g -O2 -W -std=c89 -pedantic -Wall -Wextra -Wcast-align -Wnested-externs -Wshadow -Wstrict-prototypes -Wno-unused-function -Wno-long-long -Wno-overlength-strings"
 
 # Take the output of nm and produce a listing of raw symbols and C names.
-global_symbol_pipe="sed -n -e 's/^.*[	 ]\\([ABCDGIRSTW][ABCDGIRSTW]*\\)[	 ][	 ]*_\\([_A-Za-z][_A-Za-z0-9]*\\)\$/\\1 _\\2 \\2/p' | sed '/ __gnu_lto/d'"
+global_symbol_pipe="sed -n -e 's/^.*[	 ]\\([ABCDGIRSTW][ABCDGIRSTW]*\\)[	 ][	 ]*\\([_A-Za-z][_A-Za-z0-9]*\\)\$/\\1 \\2 \\2/p' | sed '/ __gnu_lto/d'"
 
 # Transform the output of nm in a proper C declaration.
 global_symbol_to_cdecl="sed -n -e 's/^T .* \\(.*\\)\$/extern int \\1();/p' -e 's/^[ABCDGIRSTW][ABCDGIRSTW]* .* \\(.*\\)\$/extern char \\1;/p'"
@@ -292,7 +292,7 @@ finish_eval=""
 hardcode_into_libs=no
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/home/ag/euno/mxe/usr/i686-w64-mingw32.static/lib "
+sys_lib_search_path_spec="/usr/lib/x86_64-linux-gnu /usr/lib /lib/x86_64-linux-gnu /lib "
 
 # Detected run-time system search path for libraries.
 sys_lib_dlsearch_path_spec="/lib /usr/lib"
@@ -310,12 +310,12 @@ dlopen_self=unknown
 dlopen_self_static=unknown
 
 # Commands to strip libraries.
-old_striplib="i686-w64-mingw32.static-strip --strip-debug"
-striplib="i686-w64-mingw32.static-strip --strip-unneeded"
+old_striplib="strip --strip-debug"
+striplib="strip --strip-unneeded"
 
 
 # The linker used to build libraries.
-LD="/home/ag/euno/mxe/usr/bin/i686-w64-mingw32.static-ld"
+LD="/usr/bin/ld"
 
 # How to create reloadable object files.
 reload_flag=" -r"
@@ -325,7 +325,7 @@ reload_cmds="\$LD\$reload_flag -o \$output\$reload_objs"
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$tool_oldlib"
 
 # A language specific compiler.
-CC="i686-w64-mingw32.static-gcc"
+CC="gcc"
 
 # Is the compiler the GNU compiler?
 with_gcc=yes
@@ -346,7 +346,7 @@ link_static_flag="-static"
 compiler_c_o="yes"
 
 # Whether or not to add -lc for building shared libraries.
-build_libtool_need_lc=yes
+build_libtool_need_lc=no
 
 # Whether or not to disallow shared libs when runtime libs are static.
 allow_libtool_libs_with_static_runtimes=yes
