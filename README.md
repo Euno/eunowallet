@@ -28,8 +28,8 @@
  **P2P Port:** 31333<br>
 
 <br><br>
-### Windows wallet 
-Windows wallet version is under the releases Github "tab"
+### Windows, MacOS and Linux QT wallets are available at:
+https://github.com/Euno/eunowallet/releases
 
 <br><br>
 ### Build Linux CLI wallet
