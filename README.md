@@ -31,6 +31,9 @@
 ### Windows, MacOS and Linux QT wallets are available at:
 https://github.com/Euno/eunowallet/releases
 
+### To compile Raspberry PI wallet use:
+https://github.com/Euno/install-wallet
+
 <br><br>
 ### Build Linux CLI wallet
 
