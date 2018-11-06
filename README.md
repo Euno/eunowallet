@@ -8,12 +8,16 @@
 <br><br>
 
  **Website:** https://www.euno.co<br>
+ **WhitePaper** https://www.euno.co/eunowhitepaper/<br>
+ **LightPaper** https://www.euno.co/euno-lite-paper/<br>
+ **Governance** https://www.euno.co/governance-decentralization-and-structure/<br>
  **Telegram:** https://t.me/EUNOofficial<br>
  **Discord:** https://discord.gg/VNC6V2Z<br>
  **Twitter:** https://twitter.com/EunoCoin<br>
  **Reddit:** https://www.reddit.com/r/EunoCoinOfficial<br>
  **BitCoinTalk:** https://bitcointalk.org/index.php?topic=4563505.0<br>
  **CoinMarketCap:** https://coinmarketcap.com/currencies/euno/<br>
+ **MasterNodesPro:** https://masternodes.pro/stats/euno/statistics<br>
 
 ### Technical details
 
