@@ -30,17 +30,21 @@ static const int DATABASE_VERSION = 71500;
 // network protocol versioning
 //
 
-static const int PROTOCOL_VERSION = 69110;
+static const int PROTOCOL_VERSION = 69200;
 
 // intial proto version, to be increased after version/verack negotiation
 static const int INIT_PROTO_VERSION = 209;
 
 // disconnect from peers older than this proto version
-static const int MIN_PEER_PROTO_VERSION = 69100;
+static const int MIN_PEER_PROTO_VERSION = 69110;
+static const int MIN_PEER_PROTO_VERSION_FORK1 = 69200;
 
-static const int MIN_INSTANTX_PROTO_VERSION = 69100;
+static const int MIN_INSTANTX_PROTO_VERSION = 69110;
 
-static const int MIN_MN_PROTO_VERSION = 69100;
+static const int MIN_MN_PROTO_VERSION = 69110;
+
+// from this block number wallet will refuse old protocol versions
+static const int LAST_BBF = 205000;
 
 // nTime field added to CAddress, starting with this version;
 // if possible, avoid requesting addresses nodes older than this

@@ -1142,25 +1142,17 @@ int64_t GetProofOfWorkReward(int64_t nFees, int nHeight)
     {
         nSubsidy = 12000000 * COIN;   // 12M Premine
     }
-        else if(pindexBest->nHeight < 250000)
+        else if(pindexBest->nHeight < 205000)
     {
-        nSubsidy = 30 * COIN;  // ~15m
+        nSubsidy = 30 * COIN;
     }
-        else if(pindexBest->nHeight < 750000)
+        else if(pindexBest->nHeight < 500000)
     {
-        nSubsidy = 15 * COIN;  // ~27m
+        nSubsidy = 9 * COIN;
     }
-        else if(pindexBest->nHeight < 1250000)
+        else if(pindexBest->nHeight < 800000)
     {
-        nSubsidy = 7 * COIN;  // ~33m
-    }
-        else if(pindexBest->nHeight < 2000000)
-    {
-        nSubsidy = 4 * COIN;  // ~37,5m
-    }
-		else if(pindexBest->nHeight < 4000000)
-    {
-        nSubsidy = 2 * COIN;  // 43,5m
+        nSubsidy = 4 * COIN;
     }
         else
     {
@@ -3347,7 +3339,8 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         CAddress addrFrom;
         uint64_t nNonce = 1;
         vRecv >> pfrom->nVersion >> pfrom->nServices >> nTime >> addrMe;
-        if (pfrom->nVersion < MIN_PEER_PROTO_VERSION)
+
+        if ((pfrom->nVersion < MIN_PEER_PROTO_VERSION) || (nBestHeight >= LAST_BBF && pfrom->nVersion < MIN_PEER_PROTO_VERSION_FORK1))
         {
             // disconnect from peers older than this proto version
             LogPrintf("partner %s using obsolete version %i; disconnecting\n", pfrom->addr.ToString(), pfrom->nVersion);
