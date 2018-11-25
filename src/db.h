@@ -117,7 +117,7 @@ protected:
 
         // Key
         CDataStream ssKey(SER_DISK, CLIENT_VERSION);
-        ssKey.reserve(1000);
+        ssKey.reserve(get_serialization_reserve_count());
         ssKey << key;
         Dbt datKey(&ssKey[0], ssKey.size());
 
@@ -154,13 +154,13 @@ protected:
 
         // Key
         CDataStream ssKey(SER_DISK, CLIENT_VERSION);
-        ssKey.reserve(1000);
+        ssKey.reserve(get_serialization_reserve_count());
         ssKey << key;
         Dbt datKey(&ssKey[0], ssKey.size());
 
         // Value
         CDataStream ssValue(SER_DISK, CLIENT_VERSION);
-        ssValue.reserve(10000);
+        ssValue.reserve(get_serialization_reserve_count() * 10);
         ssValue << value;
         Dbt datValue(&ssValue[0], ssValue.size());
 
@@ -183,7 +183,7 @@ protected:
 
         // Key
         CDataStream ssKey(SER_DISK, CLIENT_VERSION);
-        ssKey.reserve(1000);
+        ssKey.reserve(get_serialization_reserve_count());
         ssKey << key;
         Dbt datKey(&ssKey[0], ssKey.size());
 
@@ -203,7 +203,7 @@ protected:
 
         // Key
         CDataStream ssKey(SER_DISK, CLIENT_VERSION);
-        ssKey.reserve(1000);
+        ssKey.reserve(get_serialization_reserve_count());
         ssKey << key;
         Dbt datKey(&ssKey[0], ssKey.size());
 

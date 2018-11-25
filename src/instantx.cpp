@@ -260,7 +260,7 @@ void DoConsensusVote(CTransaction& tx, int64_t nBlockHeight)
 {
     if(!fMasterNode) return;
 
-    int n = GetMasternodeRank(activeMasternode.vin, nBlockHeight, MIN_INSTANTX_PROTO_VERSION);
+    int n = GetMasternodeRank(activeMasternode.vin, nBlockHeight);
 
     if(n == -1)
     {
@@ -308,7 +308,7 @@ void DoConsensusVote(CTransaction& tx, int64_t nBlockHeight)
 //received a consensus vote
 bool ProcessConsensusVote(CConsensusVote& ctx)
 {
-    int n = GetMasternodeRank(ctx.vinMasternode, ctx.nBlockHeight, MIN_INSTANTX_PROTO_VERSION);
+    int n = GetMasternodeRank(ctx.vinMasternode, ctx.nBlockHeight);
 
     int x = GetMasternodeByVin(ctx.vinMasternode);
     if(x != -1){
@@ -550,7 +550,7 @@ bool CTransactionLock::SignaturesValid()
 
     BOOST_FOREACH(CConsensusVote vote, vecConsensusVotes)
     {
-        int n = GetMasternodeRank(vote.vinMasternode, vote.nBlockHeight, MIN_INSTANTX_PROTO_VERSION);
+        int n = GetMasternodeRank(vote.vinMasternode, vote.nBlockHeight);
 
         if(n == -1)
         {
