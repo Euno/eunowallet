@@ -684,7 +684,7 @@ uint256 CMasterNode::CalculateScore(int64_t nBlockHeight)
         return 0;
 
     uint256 hash2 = Hash(BEGIN(hash), END(hash));
-    uint256 hash3 = Hash(BEGIN(hash), END(aux));
+    uint256 hash3 = Hash(BEGIN(hash), END(hash), BEGIN(aux), END(aux));
     uint256 r = (hash3 > hash2 ? hash3 - hash2 : hash2 - hash3);
 
     return r;
