@@ -8,7 +8,7 @@
 <br><br>
 
  **Website:** https://www.euno.co<br>
- **WhitePaper** https://www.euno.co/eunowhitepaper/<br>
+ **WhitePaper** [https://www.euno.co/eunowhitepaper/](https://www.euno.co/wp-content/uploads/2019/01/EUNO-Coin-White-Paper.pdf)<br>
  **LightPaper** https://www.euno.co/euno-lite-paper/<br>
  **Governance** https://www.euno.co/governance-decentralization-and-structure/<br>
  **Telegram:** https://t.me/EUNOofficial<br>
