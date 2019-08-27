@@ -1173,11 +1173,38 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, int nHeight)
     {
         nSubsidy = 5 * COIN;
     }
-        else
+        else if(pindexBest->nHeight < 550000)
     {
         nSubsidy = 50 * COIN;
     }
-
+        else if(pindexBest->nHeight < 915000)
+    {
+        nSubsidy = 33.5 * COIN;
+    }
+        else if(pindexBest->nHeight < 1295000)
+    {
+        nSubsidy = 22.4 * COIN;
+    }
+        else if(pindexBest->nHeight < 1675000)
+    {
+        nSubsidy = 15 * COIN;
+    }
+        else if(pindexBest->nHeight < 2055000)
+    {
+        nSubsidy = 10 * COIN;
+    }
+        else if(pindexBest->nHeight < 2435000)
+    {
+        nSubsidy = 6.7 * COIN;
+    }
+        else if(pindexBest->nHeight < 2815000)
+    {
+        nSubsidy = 4.5 * COIN;
+    }
+        else
+    {
+        nSubsidy = 3 * COIN;
+    }
 
     LogPrint("creation", "GetProofOfStakeReward(): create=%s nCoinAge=%d nHeight=%d\n", FormatMoney(nSubsidy), nCoinAge, nHeight);
 
@@ -4230,7 +4257,16 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 {
-    int64_t ret = blockValue * 0.6; //60% for masternodes
+    int64_t ret = 0 ; 
 
+    if(pindexBest->nHeight < 550000)
+    {
+        ret = blockValue * 0.6; //60% for masternodes
+    }
+        else
+    {
+	ret = blockValue * 0.8; //80% for masternodes
+    }
+    
     return ret;
 }
