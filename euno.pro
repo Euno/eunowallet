@@ -3,7 +3,7 @@ TARGET = euno-qt
 VERSION = 1.0.4.2
 INCLUDEPATH += src src/json src/qt src/qt/plugins/mrichtexteditor
 DEFINES += ENABLE_WALLET
-DEFINES += BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE BOOST_ASIO_ENABLE_OLD_SERVICES
+DEFINES += BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
 CONFIG += no_include_pwd
 CONFIG += thread
 CONFIG += static
@@ -15,6 +15,9 @@ greaterThan(QT_MAJOR_VERSION, 4) {
     DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0
 }
 
+isEmpty(BDB_LIB_SUFFIX) {
+    macx:BDB_LIB_SUFFIX = -4.8
+}
 isEmpty(MINIUPNPC_LIB_SUFFIX) {
     windows:MINIUPNPC_LIB_SUFFIX=-miniupnpc
 }
@@ -26,8 +29,6 @@ windows {
 	win32:QMAKE_LFLAGS *= -Wl,--large-address-aware -static
 	win32:QMAKE_LFLAGS += -static-libgcc -static-libstdc++
 	lessThan(QT_MAJOR_VERSION, 5): win32:QMAKE_LFLAGS *= -static
-        SECP256K1_LIB_PATH = $$PWD/src/secp256k1/.libs
-        SECP256K1_INCLUDE_PATH = $$PWD/src/secp256k1/include
 }
 
 
@@ -40,6 +41,22 @@ linux {
      SECP256K1_INCLUDE_PATH = $$PWD/src/secp256k1/include
 }
 
+macx {
+#  QMAKE_LFLAGS *= -static
+  BOOST_INCLUDE_PATH = /usr/local/opt/boost@1.59/include
+  BOOST_LIB_PATH = /usr/local/opt/boost@1.59/lib
+  QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.11
+  OPENSSL_INCLUDE_PATH = /usr/local/Cellar/openssl/1.0.2o_2/include
+  OPENSSL_LIB_PATH = /usr/local/Cellar/openssl/1.0.2o_2/lib
+  BDB_LIB_PATH = /usr/local/Cellar/berkeley-db@4/4.8.30/lib
+  BDB_INCLUDE_PATH = /usr/local/Cellar/berkeley-db@4/4.8.30/include
+  QRENCODE_INCLUDE_PATH = /usr/local/Cellar/qrencode/4.0.2/include
+  QRENCODE_LIB_PATH = /usr/local/Cellar/qrencode/4.0.2/lib
+  MINIUPNPC_INCLUDE_PATH = /usr/local/Cellar/miniupnpc/2.1/include
+  MINIUPNPC_LIB_PATH = /usr/local/Cellar/miniupnpc/2.1/lib
+  SECP256K1_LIB_PATH = $$PWD/src/secp256k1/.libs
+  SECP256K1_INCLUDE_PATH = $$PWD/src/secp256k1/include
+}
 
 # Dependency library locations can be customized with:
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
@@ -48,22 +65,45 @@ OBJECTS_DIR = build
 MOC_DIR = build
 UI_DIR = build
 
-# Mac: compile for maximum compatibility (10.11)
-exists(/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk) {
-    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk
-    macx:QMAKE_CFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk
-    macx:QMAKE_LFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk
-    macx:QMAKE_OBJECTIVE_CFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk
-} else {
-    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.11 -isysroot $${QMAKE_MAC_SDK.macosx.Path}
-    macx:QMAKE_CFLAGS += -mmacosx-version-min=10.11 -isysroot $${QMAKE_MAC_SDK.macosx.Path}
-    macx:QMAKE_LFLAGS += -mmacosx-version-min=10.11 -isysroot $${QMAKE_MAC_SDK.macosx.Path}
-    macx:QMAKE_OBJECTIVE_CFLAGS += -mmacosx-version-min=10.11 -isysroot $${QMAKE_MAC_SDK.macosx.Path}
+# use: qmake "RELEASE=1"
+contains(RELEASE, 1) {
+    # MaC compile for maximum compatibility (10.11, 32-bit)
+    macx:QMAKE_CXXFLAGS += -stdlib=libc++ -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_CFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_LFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_OBJECTIVE_CFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.11
+    !windows:!macx {
+        #Linux: static link
+        LIBS += -Wl,-Bstatic
+        linux:QMAKE_LFLAGS *= -static
+    }
 }
 
-contains(RELEASE, 1):!windows:!macx {
-    # Linux: static link
-    # LIBS += -Wl,-Bstatic
+contains(RELEASE_AMD64, 1) {
+    # Mac: optimised 64-bit x86
+    macx:QMAKE_CFLAGS += -DMOVQ_FIX -arch x86_64 -fomit-frame-pointer -mdynamic-no-pic -I/usr/local/amd64/include
+    macx:QMAKE_CXXFLAGS += -arch x86_64 -fomit-frame-pointer -mdynamic-no-pic -I/usr/local/amd64/include -stdlib=libc++
+    macx:QMAKE_LFLAGS += -arch x86_64 -L/usr/local/amd64/lib
+    # Mac: 10.11+ compatibility
+    macx:QMAKE_CFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.11
+}
+
+# use: qmake RELEASE_I386=1
+contains(RELEASE_I386, 1) {
+    # Mac: optimised 32-bit x86
+    macx:QMAKE_CFLAGS += -arch i386 -fomit-frame-pointer -msse2 -mdynamic-no-pic -I/usr/local/i386/include
+    macx:QMAKE_CXXFLAGS += -arch i386 -stdlib=libc++ -fomit-frame-pointer -msse2 -mdynamic-no-pic -I/usr/local/i386/include
+    macx:QMAKE_LFLAGS += -arch i386 -L/usr/local/i386/lib
+    # Mac: 10.5+ compatibility; Qt with Cocoa is broken on 10.4
+    macx:QMAKE_CFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+    macx:QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.11
+    # Windows: optimised 32-bit x86
+    win32:QMAKE_CFLAGS += -march=i686 -fomit-frame-pointer
+    win32:QMAKE_CXXFLAGS += -march=i686 -fomit-frame-pointer
 }
 
 !win32 {
@@ -116,10 +156,10 @@ contains(BITCOIN_NEED_QT_PLUGINS, 1) {
 }
 
 # LIBSEC256K1 SUPPORT
-#QMAKE_CXXFLAGS *= -DUSE_SECP256K1
+QMAKE_CXXFLAGS *= -DUSE_SECP256K1
 
 INCLUDEPATH += src/leveldb/include src/leveldb/helpers
-LIBS += $$PWD/src/leveldb/out-static/libleveldb.a $$PWD/src/leveldb/out-static/libmemenv.a
+LIBS += $$PWD/src/leveldb/libleveldb.a $$PWD/src/leveldb/libmemenv.a
 SOURCES += src/txdb-leveldb.cpp \
 	src/bloom.cpp \
     src/hash.cpp \
@@ -139,22 +179,18 @@ SOURCES += src/txdb-leveldb.cpp \
 !win32 {
     # we use QMAKE_CXXFLAGS_RELEASE even without RELEASE=1 because we use RELEASE to indicate linking preferences not -O preferences
     # genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a
-    genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX AR=$$first(QMAKE_AR) $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" out-static/libleveldb.a out-static/libmemenv.a
 } else {
     # make an educated guess about what the ranlib command is called
     isEmpty(QMAKE_RANLIB) {
         QMAKE_RANLIB = $$replace(QMAKE_STRIP, strip, ranlib)
     }
     LIBS += -lshlwapi
-    #genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" out-static/libleveldb.a out-static/libmemenv.a && $$QMAKE_RANLIB $$PWD/src/leveldb/out-static/libleveldb.a && $$QMAKE_RANLIB $$PWD/src/leveldb/out-static/libmemenv.a
+    #genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libleveldb.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libmemenv.a
 }
-genleveldb.target = $$PWD/src/leveldb/out-static/libleveldb.a
+genleveldb.target = $$PWD/src/leveldb/libleveldb.a
 genleveldb.depends = FORCE
-PRE_TARGETDEPS += $$PWD/src/leveldb/out-static/libleveldb.a
+PRE_TARGETDEPS += $$PWD/src/leveldb/libleveldb.a
 QMAKE_EXTRA_TARGETS += genleveldb
-
-# Gross ugly hack that depends on qmake internals, unfortunately there is no other way to do it.
-QMAKE_CLEAN += $$PWD/src/leveldb/out-static/libleveldb.a; cd $$PWD/src/leveldb ; $(MAKE) clean
 
 # regenerate src/build.h
 !windows|contains(USE_BUILD_INFO, 1) {
@@ -185,6 +221,8 @@ QMAKE_CXXFLAGS_WARN_ON = -fdiagnostics-show-option -Wall -Wextra -Wno-ignored-qu
 QMAKE_CXXFLAGS_WARN_ON += -Wno-unused-variable -fpermissive
 
 windows:QMAKE_CXXFLAGS_WARN_ON += -Wno-cpp -Wno-maybe-uninitialized
+!macx:QMAKE_CXXFLAGS_WARN_ON += -Wno-unused-local-typedefs
+macx:QMAKE_CXXFLAGS_WARN_ON += -Wno-deprecated-declarations
 
 # Input
 DEPENDPATH += src src/json src/qt
@@ -536,7 +574,6 @@ macx:QMAKE_CFLAGS_THREAD += -pthread
 macx:QMAKE_LFLAGS_THREAD += -pthread
 macx:QMAKE_CXXFLAGS_THREAD += -pthread
 macx:QMAKE_INFO_PLIST = share/qt/Info.plist
-macx:TARGET = "Euno-Qt"
 
 
 # Set libraries and includes at end, to use platform-defined defaults if not overridden
@@ -545,8 +582,7 @@ LIBS += $$join(SECP256K1_LIB_PATH,,-L,) $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_L
 LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
 # -lgdi32 has to happen after -lcrypto (see  #681)
 windows:LIBS += -lws2_32 -lshlwapi -lmswsock -lole32 -loleaut32 -luuid -lgdi32
-windows:LIBS += -lsecp256k1
-#LIBS += -lsecp256k1
+LIBS += -lsecp256k1
 LIBS += -lboost_system$$BOOST_LIB_SUFFIX -lboost_filesystem$$BOOST_LIB_SUFFIX -lboost_program_options$$BOOST_LIB_SUFFIX -lboost_thread$$BOOST_THREAD_LIB_SUFFIX
 windows:LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX
 
