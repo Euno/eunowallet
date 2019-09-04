@@ -53,18 +53,6 @@ Compile the EUNO cli wallet:
     cd ~
     git clone https://github.com/euno/eunowallet.git
 
-    -->> Level DB
-    cd ~/eunowallet/src/leveldb
-    chmod +x build_detect_platform
-    make libleveldb.a libmemenv.a
-
-    -->> SECP 256
-    cd ~/eunowallet/src/secp256k1
-    chmod +x autogen.sh
-    ./autogen.sh
-    ./configure
-    make
-
     -->> WALLET
     cd ~/eunowallet/src
     make -f makefile.unix
@@ -76,7 +64,11 @@ Compile the EUNO cli wallet:
 ### Build Linux GUI wallet
 
 Build preparation:
-    
+
+    sudo apt-get -y update
+    sudo apt-get install git
+    sudo apt-get install dnsutils unzip
+    sudo apt-get install build-essential libssl-dev libboost-all-dev git libdb5.3++-dev libminiupnpc-dev screen autoconf    
     sudo apt-get install qt5-default qttools5-dev-tools 
 
 Compile the EUNO-QT GUI wallet:
@@ -84,19 +76,6 @@ Compile the EUNO-QT GUI wallet:
 
     cd ~
     git clone https://github.com/euno/eunowallet.git
-
-    -->> Level DB
-    cd ~/eunowallet/src/leveldb
-    chmod +x build_detect_platform
-    make libleveldb.a libmemenv.a
-
-    -->> SECP 256
-    cd ~/eunowallet/src/secp256k1
-    chmod +x autogen.sh
-    ./autogen.sh
-    ./configure --prefix=/usr
-    make
-    sudo make install
 
     -->> WALLET
     cd ~/eunowallet/
