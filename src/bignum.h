@@ -6,6 +6,7 @@
 #ifndef BITCOIN_BIGNUM_H
 #define BITCOIN_BIGNUM_H
 
+#include "arith_uint256.h"
 #include "serialize.h"
 #include "uint256.h"
 #include "version.h"
@@ -98,17 +99,18 @@ public:
     }
 
     //CBigNum(char n) is not portable.  Use 'signed char' or 'unsigned char'.
-    CBigNum(signed char n)        { init(); if (n >= 0) setulong(n); else setint64(n); }
-        CBigNum(short n)              { init(); if (n >= 0) setulong(n); else setint64(n); }
-        CBigNum(int n)                { init(); if (n >= 0) setulong(n); else setint64(n); }
-        CBigNum(long n)               { init(); if (n >= 0) setulong(n); else setint64(n); }
-        CBigNum(long long n)          { init(); setint64(n); }
-        CBigNum(unsigned char n)      { init(); setulong(n); }
-        CBigNum(unsigned short n)     { init(); setulong(n); }
-        CBigNum(unsigned int n)       { init(); setulong(n); }
-        CBigNum(unsigned long n)      { init(); setulong(n); }
-        CBigNum(unsigned long long n) { init(); setuint64(n); }
-        explicit CBigNum(uint256 n)   { init(); setuint256(n); }
+    CBigNum(signed char n)      { init(); if (n >= 0) setulong(n); else setint64(n); }
+    CBigNum(short n)            { init(); if (n >= 0) setulong(n); else setint64(n); }
+    CBigNum(int n)              { init(); if (n >= 0) setulong(n); else setint64(n); }
+//    CBigNum(long n)             { init(); if (n >= 0) setulong(n); else setint64(n); }
+    CBigNum(int64_t n)            { init(); setint64(n); }
+    CBigNum(unsigned char n)    { init(); setulong(n); }
+    CBigNum(unsigned short n)   { init(); setulong(n); }
+    CBigNum(unsigned int n)     { init(); setulong(n); }
+//    CBigNum(unsigned long n)    { init(); setulong(n); }
+    CBigNum(uint64_t n)           { init(); setuint64(n); }
+    explicit CBigNum(arith_uint256 n) { init(); setuint256(n); }
+    explicit CBigNum(uint256 n) { arith_uint256 m = UintToArith256(n); init(); setuint256(m); }
 
     explicit CBigNum(const std::vector<unsigned char>& vch)
     {
@@ -260,7 +262,7 @@ public:
         BN_mpi2bn(pch, p - pch, bn);
     }
 
-    void setuint256(uint256 n)
+    void setuint256(arith_uint256 n)
     {
         unsigned char pch[sizeof(n) + 6];
         unsigned char* p = pch + 4;
