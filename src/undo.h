@@ -16,7 +16,7 @@
  *
  *  Contains the prevout's CTxOut being spent, and if this was the
  *  last output of the affected transaction, its metadata as well
- *  (coinbase or not, height, transaction version)
+ *  (coinbase/coinstake or not, height, transaction version)
  */
 class CTxInUndo
 {
@@ -82,9 +82,6 @@ public:
     {
         READWRITE(vtxundo);
     }
-
-    bool WriteToDisk(CDiskBlockPos& pos, const uint256& hashBlock);
-    bool ReadFromDisk(const CDiskBlockPos& pos, const uint256& hashBlock);
 };
 
 #endif // BITCOIN_UNDO_H
