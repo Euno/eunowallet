@@ -140,3 +140,13 @@ ui_*
 build*
 pivxd.*
 pivxd-new-gui.*
+/src/bench/
+/src/bench/bench_euno
+/src/qt/
+/src/qt/test/
+/src/qt/euno-qt
+/src/test/
+/src/test/test_euno
+/src/euno-cli
+/src/euno-tx
+/src/eunod
