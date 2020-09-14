@@ -135,7 +135,7 @@ UniValue getaddressinfo(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 1)
         throw std::runtime_error(
                 "getaddressinfo ( \"address\" )\n"
-                "\nReturn information about the given PIVX address.\n"
+                "\nReturn information about the given EUNO address.\n"
                 "Some of the information will only be present if the address is in the active wallet.\n"
                 "{Result:\n"
                 "  \"address\" : \"address\",              (string) The bitcoin address validated.\n"
@@ -160,7 +160,7 @@ UniValue getaddressinfo(const JSONRPCRequest& request)
                 "                                                         hdseedid) and relation to the wallet (ismine, iswatchonly).\n"
                 "  \"iscompressed\" : true|false,        (boolean, optional) If the pubkey is compressed.\n"
                 "  \"label\" :  \"label\"                  (string) The label associated with the address, \"\" is the default label.\n"
-                "  \"account\" : \"account\"                 (string) DEPRECATED. This field will be removed in v5.0. To see this deprecated field, start pivxd with -deprecatedrpc=accounts. The account associated with the address, \"\" is the default account\n"
+                "  \"account\" : \"account\"                 (string) DEPRECATED. This field will be removed in v5.0. To see this deprecated field, start eunod with -deprecatedrpc=accounts. The account associated with the address, \"\" is the default account\n"
                 "  \"timestamp\" : timestamp,            (number, optional) The creation time of the key, if available, expressed in the UNIX epoch time.\n"
                 "  \"hdkeypath\" : \"keypath\"             (string, optional) The HD keypath, if the key is HD and available.\n"
                 "  \"hdseedid\" : \"<hash160>\"            (string, optional) The Hash160 of the HD seed.\n"
@@ -458,7 +458,7 @@ UniValue getnewaddress(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 1)
         throw std::runtime_error(
             "getnewaddress ( \"label\" )\n"
-            "\nReturns a new PIVX address for receiving payments.\n"
+            "\nReturns a new EUNO address for receiving payments.\n"
             "If 'label' is specified, it is added to the address book \n"
             "so payments received with the address will be associated with 'label'.\n"
 
@@ -466,7 +466,7 @@ UniValue getnewaddress(const JSONRPCRequest& request)
             "1. \"label\"        (string, optional) The label name for the address to be linked to. if not provided, the default label \"\" is used. It can also be set to the empty string \"\" to represent the default label. The label does not need to exist, it will be created if there is no label by the given name.\n"
 
             "\nResult:\n"
-            "\"pivxaddress\"    (string) The new pivx address\n"
+            "\"eunoaddress\"    (string) The new euno address\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getnewaddress", "") + HelpExampleRpc("getnewaddress", ""));
@@ -480,14 +480,14 @@ UniValue getnewstakingaddress(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 1)
         throw std::runtime_error(
             "getnewstakingaddress ( \"label\" )\n"
-            "\nReturns a new PIVX cold staking address for receiving delegated cold stakes.\n"
+            "\nReturns a new EUNO cold staking address for receiving delegated cold stakes.\n"
 
             "\nArguments:\n"
             "1. \"label\"        (string, optional) The label name for the address to be linked to. if not provided, the default label \"\" is used. It can also be set to the empty string \"\" to represent the default label. The label does not need to exist, it will be created if there is no label by the given name.\n"
 
 
             "\nResult:\n"
-            "\"pivxaddress\"    (string) The new pivx address\n"
+            "\"eunoaddress\"    (string) The new euno address\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getnewstakingaddress", "") + HelpExampleRpc("getnewstakingaddress", ""));
@@ -519,13 +519,13 @@ UniValue delegatoradd(const JSONRPCRequest& request)
     bool isStakingAddress = false;
     CTxDestination dest = DecodeDestination(request.params[0].get_str(), isStakingAddress);
     if (!IsValidDestination(dest) || isStakingAddress)
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid PIVX address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EUNO address");
 
     const std::string strLabel = (request.params.size() > 1 ? request.params[1].get_str() : "");
 
     CKeyID keyID = boost::get<CKeyID>(DecodeDestination(request.params[0].get_str()));
     if (!keyID)
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Unable to get KeyID from PIVX address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Unable to get KeyID from EUNO address");
 
     return pwalletMain->SetAddressBook(keyID, strLabel, AddressBook::AddressBookPurpose::DELEGATOR);
 }
@@ -551,14 +551,14 @@ UniValue delegatorremove(const JSONRPCRequest& request)
     bool isStakingAddress = false;
     CTxDestination dest = DecodeDestination(request.params[0].get_str(), isStakingAddress);
     if (!IsValidDestination(dest) || isStakingAddress)
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid PIVX address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EUNO address");
 
     CKeyID keyID = *boost::get<CKeyID>(&dest);
     if (!keyID)
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Unable to get KeyID from PIVX address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Unable to get KeyID from EUNO address");
 
     if (!pwalletMain->HasAddressBook(keyID))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Unable to get PIVX address from addressBook");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Unable to get EUNO address from addressBook");
 
     std::string label = "";
     {
@@ -608,7 +608,7 @@ UniValue listdelegators(const JSONRPCRequest& request)
             "[\n"
             "   {\n"
             "   \"label\": \"yyy\",    (string) Address label\n"
-            "   \"address\": \"xxx\",  (string) PIVX address string\n"
+            "   \"address\": \"xxx\",  (string) EUNO address string\n"
             "   }\n"
             "  ...\n"
             "]\n"
@@ -634,7 +634,7 @@ UniValue liststakingaddresses(const JSONRPCRequest& request)
             "[\n"
             "   {\n"
             "   \"label\": \"yyy\",  (string) Address label\n"
-            "   \"address\": \"xxx\",  (string) PIVX address string\n"
+            "   \"address\": \"xxx\",  (string) EUNO address string\n"
             "   }\n"
             "  ...\n"
             "]\n"
@@ -660,9 +660,9 @@ UniValue getaccountaddress(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts")) {
         if (request.fHelp) {
-            throw std::runtime_error("getaccountaddress (Deprecated, will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("getaccountaddress (Deprecated, will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getaccountaddress is deprecated and will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getaccountaddress is deprecated and will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
@@ -674,7 +674,7 @@ UniValue getaccountaddress(const JSONRPCRequest& request)
             "1. \"account\"       (string, required) The account for the address. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created and a new address created  if there is no account by the given name.\n"
 
             "\nResult:\n"
-            "\"pivxaddress\"   (string) The account pivx address.\n"
+            "\"eunoaddress\"   (string) The account euno address.\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getaccountaddress", "") + HelpExampleCli("getaccountaddress", "\"\"") +
@@ -697,7 +697,7 @@ UniValue getrawchangeaddress(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 1)
         throw std::runtime_error(
             "getrawchangeaddress\n"
-            "\nReturns a new PIVX address, for receiving change.\n"
+            "\nReturns a new EUNO address, for receiving change.\n"
             "This is for use with raw transactions, NOT normal use.\n"
 
             "\nResult:\n"
@@ -728,18 +728,18 @@ UniValue setlabel(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts") && request.strMethod == "setaccount") {
         if (request.fHelp) {
-            throw std::runtime_error("setaccount (Deprecated, will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("setaccount (Deprecated, will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "setaccount is deprecated and will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "setaccount is deprecated and will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() != 2)
         throw std::runtime_error(
-            "setlabel \"pivxaddress\" \"label\"\n"
+            "setlabel \"eunoaddress\" \"label\"\n"
             "\nSets the label associated with the given address.\n"
 
             "\nArguments:\n"
-            "1. \"pivxaddress\"   (string, required) The pivx address to be associated with a label.\n"
+            "1. \"eunoaddress\"   (string, required) The euno address to be associated with a label.\n"
             "2. \"label\"         (string, required) The label to assign to the address.\n"
 
             "\nExamples:\n" +
@@ -749,7 +749,7 @@ UniValue setlabel(const JSONRPCRequest& request)
 
     CTxDestination dest = DecodeDestination(request.params[0].get_str());
     if (!IsValidDestination(dest))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid PIVX address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EUNO address");
 
     std::string old_label = pwalletMain->mapAddressBook[dest].name;
     std::string label = LabelFromValue(request.params[1]);
@@ -785,18 +785,18 @@ UniValue getaccount(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts")) {
         if (request.fHelp) {
-            throw std::runtime_error("getaccount (Deprecated, will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("getaccount (Deprecated, will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getaccount is deprecated and will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getaccount is deprecated and will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() != 1)
         throw std::runtime_error(
-            "getaccount \"pivxaddress\"\n"
+            "getaccount \"eunoaddress\"\n"
             "\nDEPRECATED. Returns the account associated with the given address.\n"
 
             "\nArguments:\n"
-            "1. \"pivxaddress\"  (string, required) The pivx address for account lookup.\n"
+            "1. \"eunoaddress\"  (string, required) The euno address for account lookup.\n"
 
             "\nResult:\n"
             "\"accountname\"        (string) the account address\n"
@@ -808,7 +808,7 @@ UniValue getaccount(const JSONRPCRequest& request)
 
     CTxDestination address = DecodeDestination(request.params[0].get_str());
     if (!IsValidDestination(address))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid PIVX address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EUNO address");
 
     std::string strAccount;
     std::map<CTxDestination, AddressBook::CAddressBookData>::iterator mi = pwalletMain->mapAddressBook.find(address);
@@ -822,9 +822,9 @@ UniValue getaddressesbyaccount(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts")) {
         if (request.fHelp) {
-            throw std::runtime_error("getaddressesbyaccount (Deprecated, will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("getaddressesbyaccount (Deprecated, will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getaddressesbyaccount is deprecated and will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getaddressesbyaccount is deprecated and will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() != 1)
@@ -837,7 +837,7 @@ UniValue getaddressesbyaccount(const JSONRPCRequest& request)
 
             "\nResult:\n"
             "[                     (json array of string)\n"
-            "  \"pivxaddress\"  (string) a pivx address associated with the given account\n"
+            "  \"eunoaddress\"  (string) a euno address associated with the given account\n"
             "  ,...\n"
             "]\n"
 
@@ -896,13 +896,13 @@ UniValue sendtoaddress(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() < 2 || request.params.size() > 4)
         throw std::runtime_error(
-            "sendtoaddress \"pivxaddress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddress \"eunoaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"pivxaddress\"  (string, required) The pivx address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in PIV to send. eg 0.1\n"
+            "1. \"eunoaddress\"  (string, required) The euno address to send to.\n"
+            "2. \"amount\"      (numeric, required) The amount in EUNO to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -922,7 +922,7 @@ UniValue sendtoaddress(const JSONRPCRequest& request)
     bool isStaking = false;
     CTxDestination address = DecodeDestination(request.params[0].get_str(), isStaking);
     if (!IsValidDestination(address) || isStaking)
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid PIVX address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EUNO address");
 
     // Amount
     CAmount nAmount = AmountFromValue(request.params[1]);
@@ -961,7 +961,7 @@ UniValue CreateColdStakeDelegation(const UniValue& params, CWalletTx& wtxNew, CR
     bool isStaking = false;
     CTxDestination stakeAddr = DecodeDestination(params[0].get_str(), isStaking);
     if (!IsValidDestination(stakeAddr) || !isStaking)
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid PIVX staking address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EUNO staking address");
 
     CKeyID* stakeKey = boost::get<CKeyID>(&stakeAddr);
     if (!stakeKey)
@@ -994,7 +994,7 @@ UniValue CreateColdStakeDelegation(const UniValue& params, CWalletTx& wtxNew, CR
         bool isStaking = false;
         CTxDestination dest = DecodeDestination(params[2].get_str(), isStaking);
         if (!IsValidDestination(dest) || isStaking)
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid PIVX spending address");
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EUNO spending address");
         ownerKey = *boost::get<CKeyID>(&dest);
         if (!ownerKey)
             throw JSONRPCError(RPC_WALLET_ERROR, "Unable to get spend pubkey hash from owneraddress");
@@ -1044,9 +1044,9 @@ UniValue delegatestake(const JSONRPCRequest& request)
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"stakingaddress\"      (string, required) The pivx staking address to delegate.\n"
-            "2. \"amount\"              (numeric, required) The amount in PIV to delegate for staking. eg 100\n"
-            "3. \"owneraddress\"        (string, optional) The pivx address corresponding to the key that will be able to spend the stake. \n"
+            "1. \"stakingaddress\"      (string, required) The euno staking address to delegate.\n"
+            "2. \"amount\"              (numeric, required) The amount in EUNO to delegate for staking. eg 100\n"
+            "3. \"owneraddress\"        (string, optional) The euno address corresponding to the key that will be able to spend the stake. \n"
             "                               If not provided, or empty string, a new wallet address is generated.\n"
             "4. \"fExternalOwner\"      (boolean, optional, default = false) use the provided 'owneraddress' anyway, even if not present in this wallet.\n"
             "                               WARNING: The owner of the keys to 'owneraddress' will be the only one allowed to spend these coins.\n"
@@ -1089,9 +1089,9 @@ UniValue rawdelegatestake(const JSONRPCRequest& request)
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"stakingaddress\"      (string, required) The pivx staking address to delegate.\n"
-            "2. \"amount\"              (numeric, required) The amount in PIV to delegate for staking. eg 100\n"
-            "3. \"owneraddress\"        (string, optional) The pivx address corresponding to the key that will be able to spend the stake. \n"
+            "1. \"stakingaddress\"      (string, required) The euno staking address to delegate.\n"
+            "2. \"amount\"              (numeric, required) The amount in EUNO to delegate for staking. eg 100\n"
+            "3. \"owneraddress\"        (string, optional) The euno address corresponding to the key that will be able to spend the stake. \n"
             "                               If not provided, or empty string, a new wallet address is generated.\n"
             "4. \"fExternalOwner\"      (boolean, optional, default = false) use the provided 'owneraddress' anyway, even if not present in this wallet.\n"
             "                               WARNING: The owner of the keys to 'owneraddress' will be the only one allowed to spend these coins.\n"
@@ -1117,7 +1117,7 @@ UniValue rawdelegatestake(const JSONRPCRequest& request)
             "  ],\n"
             "  \"vout\" : [              (array of json objects)\n"
             "     {\n"
-            "       \"value\" : x.xxx,            (numeric) The value in PIV\n"
+            "       \"value\" : x.xxx,            (numeric) The value in EUNO\n"
             "       \"n\" : n,                    (numeric) index\n"
             "       \"scriptPubKey\" : {          (json object)\n"
             "         \"asm\" : \"asm\",          (string) the asm\n"
@@ -1125,7 +1125,7 @@ UniValue rawdelegatestake(const JSONRPCRequest& request)
             "         \"reqSigs\" : n,            (numeric) The required sigs\n"
             "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
             "         \"addresses\" : [           (json array of string)\n"
-            "           \"pivxaddress\"        (string) pivx address\n"
+            "           \"eunoaddress\"        (string) euno address\n"
             "           ,...\n"
             "         ]\n"
             "       }\n"
@@ -1156,13 +1156,13 @@ UniValue sendtoaddressix(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() < 2 || request.params.size() > 4)
         throw std::runtime_error(
-            "sendtoaddressix \"pivxaddress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddressix \"eunoaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"pivxaddress\"  (string, required) The pivx address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in PIV to send. eg 0.1\n"
+            "1. \"eunoaddress\"  (string, required) The euno address to send to.\n"
+            "2. \"amount\"      (numeric, required) The amount in EUNO to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -1182,7 +1182,7 @@ UniValue sendtoaddressix(const JSONRPCRequest& request)
     bool isStaking = false;
     CTxDestination address = DecodeDestination(request.params[0].get_str(), isStaking);
     if (!IsValidDestination(address) || isStaking)
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid PIVX address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EUNO address");
 
     // Amount
     CAmount nAmount = AmountFromValue(request.params[1]);
@@ -1214,8 +1214,8 @@ UniValue listaddressgroupings(const JSONRPCRequest& request)
             "[\n"
             "  [\n"
             "    [\n"
-            "      \"pivxaddress\",     (string) The pivx address\n"
-            "      amount,                 (numeric) The amount in PIV\n"
+            "      \"eunoaddress\",     (string) The euno address\n"
+            "      amount,                 (numeric) The amount in EUNO\n"
             "      \"label\"             (string, optional) The label\n"
             "    ]\n"
             "    ,...\n"
@@ -1251,12 +1251,12 @@ UniValue signmessage(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() != 2)
         throw std::runtime_error(
-            "signmessage \"pivxaddress\" \"message\"\n"
+            "signmessage \"eunoaddress\" \"message\"\n"
             "\nSign a message with the private key of an address" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"pivxaddress\"  (string, required) The pivx address to use for the private key.\n"
+            "1. \"eunoaddress\"  (string, required) The euno address to use for the private key.\n"
             "2. \"message\"         (string, required) The message to create a signature of.\n"
 
             "\nResult:\n"
@@ -1306,15 +1306,15 @@ UniValue getreceivedbyaddress(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
         throw std::runtime_error(
-            "getreceivedbyaddress \"pivxaddress\" ( minconf )\n"
-            "\nReturns the total amount received by the given pivxaddress in transactions with at least minconf confirmations.\n"
+            "getreceivedbyaddress \"eunoaddress\" ( minconf )\n"
+            "\nReturns the total amount received by the given eunoaddress in transactions with at least minconf confirmations.\n"
 
             "\nArguments:\n"
-            "1. \"pivxaddress\"  (string, required) The pivx address for transactions.\n"
+            "1. \"eunoaddress\"  (string, required) The euno address for transactions.\n"
             "2. minconf             (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
-            "amount   (numeric) The total amount in PIV received at this address.\n"
+            "amount   (numeric) The total amount in EUNO received at this address.\n"
 
             "\nExamples:\n"
             "\nThe amount from transactions with at least 1 confirmation\n" +
@@ -1331,7 +1331,7 @@ UniValue getreceivedbyaddress(const JSONRPCRequest& request)
     // pivx address
     CTxDestination address = DecodeDestination(request.params[0].get_str());
     if (!IsValidDestination(address))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid PIVX address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EUNO address");
     CScript scriptPubKey = GetScriptForDestination(address);
     if (!IsMine(*pwalletMain, scriptPubKey))
         throw JSONRPCError(RPC_WALLET_ERROR, "Address not found in wallet");
@@ -1362,9 +1362,9 @@ UniValue getreceivedbylabel(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts") && request.strMethod == "getreceivedbyaccount") {
         if (request.fHelp) {
-            throw std::runtime_error("getreceivedbyaccount (Deprecated, will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("getreceivedbyaccount (Deprecated, will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getreceivedbyaccount is deprecated and will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "getreceivedbyaccount is deprecated and will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
@@ -1377,7 +1377,7 @@ UniValue getreceivedbylabel(const JSONRPCRequest& request)
             "2. minconf          (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in PIV received for this label.\n"
+            "amount              (numeric) The total amount in EUNO received for this label.\n"
 
             "\nExamples:\n"
             "\nAmount received by the default label with at least 1 confirmation\n" +
@@ -1430,16 +1430,16 @@ UniValue getbalance(const JSONRPCRequest& request)
 
             "\nArguments:\n"
             "1. \"account\"      (string, optional) DEPRECATED. This argument will be removed in v5.0.\n"
-            "                    To use this deprecated argument, start pivxd with -deprecatedrpc=accounts."
+            "                    To use this deprecated argument, start eunod with -deprecatedrpc=accounts."
             "2. minconf          (numeric, optional, default=1) DEPRECATED. This argument will be removed in v5.0.\n"
-            "                    To use this deprecated argument, start pivxd with -deprecatedrpc=accounts. Only include transactions confirmed at least this many times.\n"
+            "                    To use this deprecated argument, start eunod with -deprecatedrpc=accounts. Only include transactions confirmed at least this many times.\n"
             "3. includeWatchonly (bool, optional, default=false) DEPRECATED. This argument will be removed in v5.0.\n"
-            "                    To use this deprecated argument, start pivxd with -deprecatedrpc=accounts. Also include balance in watchonly addresses (see 'importaddress')\n"
+            "                    To use this deprecated argument, start eunod with -deprecatedrpc=accounts. Also include balance in watchonly addresses (see 'importaddress')\n"
             "4. includeDelegated (bool, optional, default=true) Only available when specifying an account.\n"
-            "                    To use this argument, start pivxd with -deprecatedrpc=accounts. Also include balance delegated to cold stakers\n"
+            "                    To use this argument, start eunod with -deprecatedrpc=accounts. Also include balance delegated to cold stakers\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in PIV received for this account.\n"
+            "amount              (numeric) The total amount in EUNO received for this account.\n"
 
             "\nExamples:\n"
             "\nThe total amount in the wallet\n" +
@@ -1486,11 +1486,11 @@ UniValue getcoldstakingbalance(const JSONRPCRequest& request)
 
             "\nArguments:\n"
             "1. \"account\"      (string, optional) DEPRECATED. This argument will be removed in v5.0.\n"
-            "                        To use this deprecated argument, start pivxd with -deprecatedrpc=accounts.\n"
+            "                        To use this deprecated argument, start eunod with -deprecatedrpc=accounts.\n"
             "                        The selected account, or \"*\" for entire wallet. It may be the default account using \"\".\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in PIV received for this account in P2CS contracts.\n"
+            "amount              (numeric) The total amount in EUNO received for this account in P2CS contracts.\n"
 
             "\nExamples:\n"
             "\nThe total amount in the wallet\n" +
@@ -1524,11 +1524,11 @@ UniValue getdelegatedbalance(const JSONRPCRequest& request)
 
             "\nArguments:\n"
             "1. \"account\"      (string, optional) DEPRECATED. This argument will be removed in v5.0.\n"
-            "                        To use this deprecated argument, start pivxd with -deprecatedrpc=accounts.\n"
+            "                        To use this deprecated argument, start eunod with -deprecatedrpc=accounts.\n"
             "                        The selected account, or \"*\" for entire wallet. It may be the default account using \"\".\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in PIV received for this account in P2CS contracts.\n"
+            "amount              (numeric) The total amount in EUNO received for this account in P2CS contracts.\n"
 
             "\nExamples:\n"
             "\nThe total amount in the wallet\n" +
@@ -1566,9 +1566,9 @@ UniValue movecmd(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts")) {
         if (request.fHelp) {
-            throw std::runtime_error("move (Deprecated, will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("move (Deprecated, will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "move is deprecated and will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "move is deprecated and will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() < 3 || request.params.size() > 5)
@@ -1579,7 +1579,7 @@ UniValue movecmd(const JSONRPCRequest& request)
             "\nArguments:\n"
             "1. \"fromaccount\"   (string, required) The name of the account to move funds from. May be the default account using \"\".\n"
             "2. \"toaccount\"     (string, required) The name of the account to move funds to. May be the default account using \"\".\n"
-            "3. amount            (numeric, required) Quantity of PIV to move between accounts.\n"
+            "3. amount            (numeric, required) Quantity of EUNO to move between accounts.\n"
             "4. minconf           (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"       (string, optional) An optional comment, stored in the wallet only.\n"
 
@@ -1587,9 +1587,9 @@ UniValue movecmd(const JSONRPCRequest& request)
             "true|false           (boolean) true if successful.\n"
 
             "\nExamples:\n"
-            "\nMove 0.01 PIV from the default account to the account named tabby\n" +
+            "\nMove 0.01 EUNO from the default account to the account named tabby\n" +
             HelpExampleCli("move", "\"\" \"tabby\" 0.01") +
-            "\nMove 0.01 PIV from timotei to akiko with a comment\n" +
+            "\nMove 0.01 EUNO from timotei to akiko with a comment\n" +
             HelpExampleCli("move", "\"timotei\" \"akiko\" 0.01 1 \"happy birthday!\"") +
             "\nAs a json rpc call\n" +
             HelpExampleRpc("move", "\"timotei\", \"akiko\", 0.01, 1, \"happy birthday!\""));
@@ -1643,22 +1643,22 @@ UniValue sendfrom(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts")) {
         if (request.fHelp) {
-            throw std::runtime_error("sendfrom (Deprecated, will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("sendfrom (Deprecated, will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "sendfrom is deprecated and will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "sendfrom is deprecated and will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() < 3 || request.params.size() > 7)
         throw std::runtime_error(
-            "sendfrom \"fromaccount\" \"topivxaddress\" amount ( minconf \"comment\" \"comment-to\" includeDelegated)\n"
-            "\nDEPRECATED (use sendtoaddress). Send an amount from an account to a pivx address.\n"
+            "sendfrom \"fromaccount\" \"toeunoaddress\" amount ( minconf \"comment\" \"comment-to\" includeDelegated)\n"
+            "\nDEPRECATED (use sendtoaddress). Send an amount from an account to a euno address.\n"
             "The amount is a real and is rounded to the nearest 0.00000001." +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. \"fromaccount\"       (string, required) The name of the account to send funds from. May be the default account using \"\".\n"
-            "2. \"topivxaddress\"  (string, required) The pivx address to send funds to.\n"
-            "3. amount                (numeric, required) The amount in PIV. (transaction fee is added on top).\n"
+            "2. \"toeunoaddress\"  (string, required) The euno address to send funds to.\n"
+            "3. amount                (numeric, required) The amount in EUNO. (transaction fee is added on top).\n"
             "4. minconf               (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"           (string, optional) A comment used to store what the transaction is for. \n"
             "                                     This is not part of the transaction, just kept in your wallet.\n"
@@ -1671,7 +1671,7 @@ UniValue sendfrom(const JSONRPCRequest& request)
             "\"transactionid\"        (string) The transaction id.\n"
 
             "\nExamples:\n"
-            "\nSend 0.01 PIV from the default account to the address, must have at least 1 confirmation\n" +
+            "\nSend 0.01 EUNO from the default account to the address, must have at least 1 confirmation\n" +
             HelpExampleCli("sendfrom", "\"\" \"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\" 0.01") +
             "\nSend 0.01 from the tabby account to the given address, funds must have at least 6 confirmations\n" +
             HelpExampleCli("sendfrom", "\"tabby\" \"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\" 0.01 6 \"donation\" \"seans outpost\"") +
@@ -1684,7 +1684,7 @@ UniValue sendfrom(const JSONRPCRequest& request)
     bool isStaking = false;
     CTxDestination address = DecodeDestination(request.params[1].get_str(), isStaking);
     if (!IsValidDestination(address) || isStaking)
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid PIVX address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EUNO address");
     CAmount nAmount = AmountFromValue(request.params[2]);
     int nMinDepth = 1;
     if (request.params.size() > 3)
@@ -1721,14 +1721,14 @@ UniValue sendmany(const JSONRPCRequest& request)
         help_text = "sendmany \"\" {\"address\":amount,...} ( minconf \"comment\" includeDelegated )\n"
             "\nSend multiple times. Amounts are double-precision floating point numbers.\n"
             "Note that the \"fromaccount\" argument has been removed in v4.2. To use this RPC with a \"fromaccount\" argument, restart\n"
-            "pivxd with -deprecatedrpc=accounts\n" +
+            "eunod with -deprecatedrpc=accounts\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. \"dummy\"               (string, required) Must be set to \"\" for backwards compatibility.\n"
             "2. \"amounts\"             (string, required) A json object with addresses and amounts\n"
             "    {\n"
-            "      \"address\":amount   (numeric) The pivx address is the key, the numeric amount in PIV is the value\n"
+            "      \"address\":amount   (numeric) The euno address is the key, the numeric amount in EUNO is the value\n"
             "      ,...\n"
             "    }\n"
             "3. minconf                 (numeric, optional, default=1) Only use the balance confirmed at least this many times.\n"
@@ -1756,7 +1756,7 @@ UniValue sendmany(const JSONRPCRequest& request)
             "1. \"fromaccount\"         (string, required) DEPRECATED. The account to send the funds from. Should be \"\" for the default account\n"
             "2. \"amounts\"             (string, required) A json object with addresses and amounts\n"
             "    {\n"
-            "      \"address\":amount   (numeric) The pivx address is the key, the numeric amount in PIV is the value\n"
+            "      \"address\":amount   (numeric) The euno address is the key, the numeric amount in EUNO is the value\n"
             "      ,...\n"
             "    }\n"
             "3. minconf                 (numeric, optional, default=1) Only use the balance confirmed at least this many times.\n"
@@ -1803,7 +1803,7 @@ UniValue sendmany(const JSONRPCRequest& request)
         bool isStaking = false;
         CTxDestination dest = DecodeDestination(name_,isStaking);
         if (!IsValidDestination(dest) || isStaking)
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid PIVX address: ")+name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid EUNO address: ")+name_);
 
         if (setAddress.count(dest))
             throw JSONRPCError(RPC_INVALID_PARAMETER, std::string("Invalid parameter, duplicated address: ")+name_);
@@ -1853,20 +1853,20 @@ UniValue addmultisigaddress(const JSONRPCRequest& request)
         throw std::runtime_error(
             "addmultisigaddress nrequired [\"key\",...] ( \"label\" )\n"
             "\nAdd a nrequired-to-sign multisignature address to the wallet.\n"
-            "Each key is a PIVX address or hex-encoded public key.\n"
+            "Each key is a EUNO address or hex-encoded public key.\n"
             "If 'label' is specified, assign address to that label.\n"
 
             "\nArguments:\n"
             "1. nrequired        (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-            "2. \"keysobject\"   (string, required) A json array of pivx addresses or hex-encoded public keys\n"
+            "2. \"keysobject\"   (string, required) A json array of euno addresses or hex-encoded public keys\n"
             "     [\n"
-            "       \"address\"  (string) pivx address or hex-encoded public key\n"
+            "       \"address\"  (string) euno address or hex-encoded public key\n"
             "       ...,\n"
             "     ]\n"
             "3. \"label\"      (string, optional) A label to assign the addresses to.\n"
 
             "\nResult:\n"
-            "\"pivxaddress\"  (string) A pivx address associated with the keys.\n"
+            "\"eunoaddress\"  (string) A euno address associated with the keys.\n"
 
             "\nExamples:\n"
             "\nAdd a multisig address from 2 addresses\n" +
@@ -2069,7 +2069,7 @@ UniValue listreceivedbyaddress(const JSONRPCRequest& request)
             "    \"involvesWatchonly\" : \"true\",    (bool) Only returned if imported addresses were involved in transaction\n"
             "    \"address\" : \"receivingaddress\",  (string) The receiving address\n"
             "    \"account\" : \"accountname\",       (string) DEPRECATED. Backwards compatible alias for label.\n"
-            "    \"amount\" : x.xxx,                  (numeric) The total amount in PIV received by the address\n"
+            "    \"amount\" : x.xxx,                  (numeric) The total amount in EUNO received by the address\n"
             "    \"confirmations\" : n                (numeric) The number of confirmations of the most recent transaction included\n"
             "    \"bcconfirmations\" : n              (numeric) The number of blockchain confirmations of the most recent transaction included\n"
             "    \"label\" : \"label\",               (string) The label of the receiving address. The default label is \"\".\n"
@@ -2092,9 +2092,9 @@ UniValue listreceivedbylabel(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts") && request.strMethod == "listreceivedbyaccount") {
         if (request.fHelp) {
-            throw std::runtime_error("listreceivedbyaccount (Deprecated, will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("listreceivedbyaccount (Deprecated, will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "listreceivedbyaccount is deprecated and will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "listreceivedbyaccount is deprecated and will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() > 3)
@@ -2310,17 +2310,17 @@ UniValue listtransactions(const JSONRPCRequest& request)
             "\nResult:\n"
             "[\n"
             "  {\n"
-            "    \"address\":\"pivxaddress\",    (string) The pivx address of the transaction. Not present for \n"
+            "    \"address\":\"eunoaddress\",    (string) The euno address of the transaction. Not present for \n"
             "                                                move transactions (category = move).\n"
             "    \"category\":\"send|receive|move\", (string) The transaction category. 'move' is a local (off blockchain)\n"
             "                                                transaction between accounts, and not associated with an address,\n"
             "                                                transaction id or block. 'send' and 'receive' transactions are \n"
             "                                                associated with an address, transaction id and block details\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in PIV. This is negative for the 'send' category, and for the\n"
+            "    \"amount\": x.xxx,          (numeric) The amount in EUNO. This is negative for the 'send' category, and for the\n"
             "                                         'move' category for moves outbound. It is positive for the 'receive' category,\n"
             "                                         and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in PIV. This is negative and only available for the \n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in EUNO. This is negative and only available for the \n"
             "                                         'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and \n"
             "                                         'receive' category of transactions.\n"
@@ -2365,17 +2365,17 @@ UniValue listtransactions(const JSONRPCRequest& request)
             "  {\n"
             "    \"account\":\"accountname\",       (string) DEPRECATED. The account name associated with the transaction. \n"
             "                                                It will be \"\" for the default account.\n"
-            "    \"address\":\"pivxaddress\",    (string) The pivx address of the transaction. Not present for \n"
+            "    \"address\":\"eunoaddress\",    (string) The euno address of the transaction. Not present for \n"
             "                                                move transactions (category = move).\n"
             "    \"category\":\"send|receive|move\", (string) The transaction category. 'move' is a local (off blockchain)\n"
             "                                                transaction between accounts, and not associated with an address,\n"
             "                                                transaction id or block. 'send' and 'receive' transactions are \n"
             "                                                associated with an address, transaction id and block details\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in PIV. This is negative for the 'send' category, and for the\n"
+            "    \"amount\": x.xxx,          (numeric) The amount in EUNO. This is negative for the 'send' category, and for the\n"
             "                                         'move' category for moves outbound. It is positive for the 'receive' category,\n"
             "                                         and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in PIV. This is negative and only available for the \n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in EUNO. This is negative and only available for the \n"
             "                                         'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and \n"
             "                                         'receive' category of transactions.\n"
@@ -2484,9 +2484,9 @@ UniValue listaccounts(const JSONRPCRequest& request)
 {
     if (!IsDeprecatedRPCEnabled("accounts")) {
         if (request.fHelp) {
-            throw std::runtime_error("listaccounts (Deprecated, will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts)");
+            throw std::runtime_error("listaccounts (Deprecated, will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts)");
         }
-        throw JSONRPCError(RPC_METHOD_DEPRECATED, "listaccounts is deprecated and will be removed in v5.0. To use this command, start pivxd with -deprecatedrpc=accounts.");
+        throw JSONRPCError(RPC_METHOD_DEPRECATED, "listaccounts is deprecated and will be removed in v5.0. To use this command, start eunod with -deprecatedrpc=accounts.");
     }
 
     if (request.fHelp || request.params.size() > 2)
@@ -2579,13 +2579,13 @@ UniValue listsinceblock(const JSONRPCRequest& request)
             "\nResult:\n"
             "{\n"
             "  \"transactions\": [\n"
-            "    \"account\":\"accountname\",       (string) DEPRECATED. This field will be removed in v5.0. To see this deprecated field, start pivxd with -deprecatedrpc=accounts. The account name associated with the transaction. Will be \"\" for the default account.\n"
-            "    \"address\":\"pivxaddress\",    (string) The pivx address of the transaction. Not present for move transactions (category = move).\n"
+            "    \"account\":\"accountname\",       (string) DEPRECATED. This field will be removed in v5.0. To see this deprecated field, start eunod with -deprecatedrpc=accounts. The account name associated with the transaction. Will be \"\" for the default account.\n"
+            "    \"address\":\"eunoaddress\",    (string) The euno address of the transaction. Not present for move transactions (category = move).\n"
             "    \"category\":\"send|receive\",     (string) The transaction category. 'send' has negative amounts, 'receive' has positive amounts.\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in PIV. This is negative for the 'send' category, and for the 'move' category for moves \n"
+            "    \"amount\": x.xxx,          (numeric) The amount in EUNO. This is negative for the 'send' category, and for the 'move' category for moves \n"
             "                                          outbound. It is positive for the 'receive' category, and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in PIV. This is negative and only available for the 'send' category of transactions.\n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in EUNO. This is negative and only available for the 'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"bcconfirmations\" : n,    (numeric) The number of blockchain confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"blockhash\": \"hashvalue\",     (string) The block hash containing the transaction. Available for 'send' and 'receive' category of transactions.\n"
@@ -2665,7 +2665,7 @@ UniValue gettransaction(const JSONRPCRequest& request)
 
             "\nResult:\n"
             "{\n"
-            "  \"amount\" : x.xxx,        (numeric) The transaction amount in PIV\n"
+            "  \"amount\" : x.xxx,        (numeric) The transaction amount in EUNO\n"
             "  \"confirmations\" : n,     (numeric) The number of confirmations\n"
             "  \"bcconfirmations\" : n,   (numeric) The number of blockchain confirmations\n"
             "  \"blockhash\" : \"hash\",  (string) The block hash\n"
@@ -2676,10 +2676,10 @@ UniValue gettransaction(const JSONRPCRequest& request)
             "  \"timereceived\" : ttt,    (numeric) The time received in seconds since epoch (1 Jan 1970 GMT)\n"
             "  \"details\" : [\n"
             "    {\n"
-            "      \"account\" : \"accountname\",  (string) DEPRECATED.This field will be removed in v5.0. To see this deprecated field, start pivxd with -deprecatedrpc=accounts. The account name involved in the transaction, can be \"\" for the default account.\n"
-            "      \"address\" : \"pivxaddress\",   (string) The pivx address involved in the transaction\n"
+            "      \"account\" : \"accountname\",  (string) DEPRECATED.This field will be removed in v5.0. To see this deprecated field, start eunod with -deprecatedrpc=accounts. The account name involved in the transaction, can be \"\" for the default account.\n"
+            "      \"address\" : \"eunoaddress\",   (string) The euno address involved in the transaction\n"
             "      \"category\" : \"send|receive\",    (string) The category, either 'send' or 'receive'\n"
-            "      \"amount\" : x.xxx                  (numeric) The amount in PIV\n"
+            "      \"amount\" : x.xxx                  (numeric) The amount in EUNO\n"
             "      \"vout\" : n,                       (numeric) the vout value\n"
             "    }\n"
             "    ,...\n"
@@ -2833,7 +2833,7 @@ UniValue walletpassphrase(const JSONRPCRequest& request)
         throw std::runtime_error(
             "walletpassphrase \"passphrase\" timeout ( stakingonly )\n"
             "\nStores the wallet decryption key in memory for 'timeout' seconds.\n"
-            "This is needed prior to performing transactions related to private keys such as sending PIVs\n"
+            "This is needed prior to performing transactions related to private keys such as sending EUNOs\n"
 
             "\nArguments:\n"
             "1. \"passphrase\"     (string, required) The wallet passphrase\n"
@@ -2998,10 +2998,10 @@ UniValue encryptwallet(const JSONRPCRequest& request)
             "\nExamples:\n"
             "\nEncrypt you wallet\n" +
             HelpExampleCli("encryptwallet", "\"my pass phrase\"") +
-            "\nNow set the passphrase to use the wallet, such as for signing or sending PIVs\n" +
+            "\nNow set the passphrase to use the wallet, such as for signing or sending EUNOs\n" +
             HelpExampleCli("walletpassphrase", "\"my pass phrase\"") +
             "\nNow we can so something like sign\n" +
-            HelpExampleCli("signmessage", "\"pivxaddress\" \"test message\"") +
+            HelpExampleCli("signmessage", "\"eunoaddress\" \"test message\"") +
             "\nNow lock the wallet again by removing the passphrase\n" +
             HelpExampleCli("walletlock", "") +
             "\nAs a json rpc call\n" +
@@ -3032,7 +3032,7 @@ UniValue encryptwallet(const JSONRPCRequest& request)
     // slack space in .dat files; that is bad if the old data is
     // unencrypted private keys. So:
     StartShutdown();
-    return "wallet encrypted; pivx server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
+    return "wallet encrypted; euno server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
 }
 
 UniValue listunspent(const JSONRPCRequest& request)
@@ -3049,9 +3049,9 @@ UniValue listunspent(const JSONRPCRequest& request)
                 "\nArguments:\n"
                 "1. minconf          (numeric, optional, default=1) The minimum confirmations to filter\n"
                 "2. maxconf          (numeric, optional, default=9999999) The maximum confirmations to filter\n"
-                "3. \"addresses\"    (string) A json array of pivx addresses to filter\n"
+                "3. \"addresses\"    (string) A json array of euno addresses to filter\n"
                 "    [\n"
-                "      \"address\"   (string) pivx address\n"
+                "      \"address\"   (string) euno address\n"
                 "      ,...\n"
                 "    ]\n"
                 "4. watchonlyconfig  (numeric, optional, default=1) 1 = list regular unspent transactions, 2 = list only watchonly transactions,  3 = list all unspent transactions (including watchonly)\n"
@@ -3061,12 +3061,12 @@ UniValue listunspent(const JSONRPCRequest& request)
                 "  {\n"
                 "    \"txid\" : \"txid\",        (string) the transaction id\n"
                 "    \"vout\" : n,               (numeric) the vout value\n"
-                "    \"address\" : \"address\",  (string) the pivx address\n"
+                "    \"address\" : \"address\",  (string) the euno address\n"
                 "    \"label\" : \"label\",      (string) The associated label, or \"\" for the default label\n"
-                "    \"account\" : \"account\",  (string) DEPRECATED.This field will be removed in v5.0. To see this deprecated field, start pivxd with -deprecatedrpc=accounts. Backwards compatible alias for label.\n"
+                "    \"account\" : \"account\",  (string) DEPRECATED.This field will be removed in v5.0. To see this deprecated field, start eunod with -deprecatedrpc=accounts. Backwards compatible alias for label.\n"
                 "    \"scriptPubKey\" : \"key\", (string) the script key\n"
                 "    \"redeemScript\" : \"key\", (string) the redeemscript key\n"
-                "    \"amount\" : x.xxx,         (numeric) the transaction amount in PIV\n"
+                "    \"amount\" : x.xxx,         (numeric) the transaction amount in EUNO\n"
                 "    \"confirmations\" : n,      (numeric) The number of confirmations\n"
                 "    \"spendable\" : true|false  (boolean) Whether we have the private keys to spend this output\n"
                 "  }\n"
@@ -3093,7 +3093,7 @@ UniValue listunspent(const JSONRPCRequest& request)
             const UniValue& input = inputs[inx];
             CTxDestination dest = DecodeDestination(input.get_str());
             if (!IsValidDestination(dest))
-                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid PIVX address: ") + input.get_str());
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid EUNO address: ") + input.get_str());
             if (destinations.count(dest))
                 throw JSONRPCError(RPC_INVALID_PARAMETER, std::string("Invalid parameter, duplicated address: ") + input.get_str());
             destinations.insert(dest);
@@ -3174,7 +3174,7 @@ UniValue lockunspent(const JSONRPCRequest& request)
             "lockunspent unlock [{\"txid\":\"txid\",\"vout\":n},...]\n"
             "\nUpdates list of temporarily unspendable outputs.\n"
             "Temporarily lock (unlock=false) or unlock (unlock=true) specified transaction outputs.\n"
-            "A locked transaction output will not be chosen by automatic coin selection, when spending PIVs.\n"
+            "A locked transaction output will not be chosen by automatic coin selection, when spending EUNOs.\n"
             "Locks are stored in memory only. Nodes start with zero locked outputs, and the locked output list\n"
             "is always cleared (by virtue of process exit) when a node stops or fails.\n"
             "Also see the listunspent call\n"
@@ -3338,7 +3338,7 @@ UniValue settxfee(const JSONRPCRequest& request)
             "\nSet the transaction fee per kB.\n"
 
             "\nArguments:\n"
-            "1. amount         (numeric, required) The transaction fee in PIV/kB rounded to the nearest 0.00000001\n"
+            "1. amount         (numeric, required) The transaction fee in EUNO/kB rounded to the nearest 0.00000001\n"
 
             "\nResult\n"
             "true|false        (boolean) Returns true if successful\n"
@@ -3366,20 +3366,20 @@ UniValue getwalletinfo(const JSONRPCRequest& request)
             "\nResult:\n"
             "{\n"
             "  \"walletversion\": xxxxx,                  (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,                      (numeric) the total PIV balance of the wallet (cold balance excluded)\n"
-            "  \"delegated_balance\": xxxxx,              (numeric) the PIV balance held in P2CS (cold staking) contracts\n"
-            "  \"cold_staking_balance\": xx,              (numeric) the PIV balance held in cold staking addresses\n"
-            "  \"unconfirmed_balance\": xxx,              (numeric) the total unconfirmed balance of the wallet in PIV\n"
-            "  \"immature_delegated_balance\": xxxxxx,    (numeric) the delegated immature balance of the wallet in PIV\n"
-            "  \"immature_cold_staking_balance\": xxxxxx, (numeric) the cold-staking immature balance of the wallet in PIV\n"
-            "  \"immature_balance\": xxxxxx,              (numeric) the total immature balance of the wallet in PIV\n"
+            "  \"balance\": xxxxxxx,                      (numeric) the total EUNO balance of the wallet (cold balance excluded)\n"
+            "  \"delegated_balance\": xxxxx,              (numeric) the EUNO balance held in P2CS (cold staking) contracts\n"
+            "  \"cold_staking_balance\": xx,              (numeric) the EUNO balance held in cold staking addresses\n"
+            "  \"unconfirmed_balance\": xxx,              (numeric) the total unconfirmed balance of the wallet in EUNO\n"
+            "  \"immature_delegated_balance\": xxxxxx,    (numeric) the delegated immature balance of the wallet in EUNO\n"
+            "  \"immature_cold_staking_balance\": xxxxxx, (numeric) the cold-staking immature balance of the wallet in EUNO\n"
+            "  \"immature_balance\": xxxxxx,              (numeric) the total immature balance of the wallet in EUNO\n"
             "  \"txcount\": xxxxxxx,                      (numeric) the total number of transactions in the wallet\n"
             "  \"keypoololdest\": xxxxxx,                 (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,               (numeric) how many new keys are pre-generated (only counts external keys)\n"
             "  \"keypoolsize_hd_internal\": xxxx,   (numeric) how many new keys are pre-generated for internal use (used for change outputs, only appears if the wallet is using this feature, otherwise external keys are used)\n"
             "  \"keypoolsize_hd_staking\": xxxx,    (numeric) how many new keys are pre-generated for staking use (used for staking contracts, only appears if the wallet is using this feature)\n"
             "  \"unlocked_until\": ttt,                   (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked\n"
-            "  \"paytxfee\": x.xxxx                       (numeric) the transaction fee configuration, set in PIV/kB\n"
+            "  \"paytxfee\": x.xxxx                       (numeric) the transaction fee configuration, set in EUNO/kB\n"
             "  \"hdseedid\": \"<hash160>\"            (string, optional) the Hash160 of the HD seed (only present when HD is enabled)\n"
             "}\n"
 
@@ -3430,11 +3430,11 @@ UniValue setstakesplitthreshold(const JSONRPCRequest& request)
             "Whenever a successful stake is found, the stake amount is split across as many outputs (each with a value\n"
             "higher than the threshold) as possible.\n"
             "E.g. If the coinstake input + the block reward is 2000, and the split threshold is 499, the corresponding\n"
-            "coinstake transaction will have 4 outputs (of 500 PIV each)."
+            "coinstake transaction will have 4 outputs (of 500 EUNO each)."
             + HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. value                   (numeric, required) Threshold value (in PIV).\n"
+            "1. value                   (numeric, required) Threshold value (in EUNO).\n"
             "                                     Set to 0 to disable stake-splitting\n"
             "                                     If > 0, it must be >= " + FormatMoney(CWallet::minStakeSplitThreshold) + "\n"
 
@@ -3497,7 +3497,7 @@ UniValue autocombinerewards(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() < 1 || (fEnable && request.params.size() != 2) || request.params.size() > 2)
         throw std::runtime_error(
             "autocombinerewards enable ( threshold )\n"
-            "\nWallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same PIVX address\n"
+            "\nWallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same EUNO address\n"
             "When autocombinerewards runs it will create a transaction, and therefore will be subject to transaction fees.\n"
 
             "\nArguments:\n"
@@ -3748,11 +3748,11 @@ UniValue getzerocoinbalance(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() != 0)
         throw std::runtime_error(
             "getzerocoinbalance\n"
-            "\nReturn the wallet's total zPIV balance.\n" +
+            "\nReturn the wallet's total zEUNO balance.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
-            "amount         (numeric) Total zPIV balance.\n"
+            "amount         (numeric) Total zEUNO balance.\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getzerocoinbalance", "") + HelpExampleRpc("getzerocoinbalance", ""));
@@ -3776,7 +3776,7 @@ UniValue listmintedzerocoins(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 2)
         throw std::runtime_error(
             "listmintedzerocoins (fVerbose) (fMatureOnly)\n"
-            "\nList all zPIV mints in the wallet.\n" +
+            "\nList all zEUNO mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -3795,7 +3795,7 @@ UniValue listmintedzerocoins(const JSONRPCRequest& request)
             "  {\n"
             "    \"serial hash\": \"xxx\",   (string) Mint serial hash in hex format.\n"
             "    \"version\": n,   (numeric) Zerocoin version number.\n"
-            "    \"zPIV ID\": \"xxx\",   (string) Pubcoin in hex format.\n"
+            "    \"zEUNO ID\": \"xxx\",   (string) Pubcoin in hex format.\n"
             "    \"denomination\": n,   (numeric) Coin denomination.\n"
             "    \"mint height\": n     (numeric) Height of the block containing this mint.\n"
             "    \"confirmations\": n   (numeric) Number of confirmations.\n"
@@ -3828,7 +3828,7 @@ UniValue listmintedzerocoins(const JSONRPCRequest& request)
             UniValue objMint(UniValue::VOBJ);
             objMint.push_back(Pair("serial hash", m.hashSerial.GetHex()));  // Serial hash
             objMint.push_back(Pair("version", m.nVersion));                 // Zerocoin version
-            objMint.push_back(Pair("zPIV ID", m.hashPubcoin.GetHex()));     // PubCoin
+            objMint.push_back(Pair("zEUNO ID", m.hashPubcoin.GetHex()));     // PubCoin
             int denom = libzerocoin::ZerocoinDenominationToInt(m.denom);
             objMint.push_back(Pair("denomination", denom));                 // Denomination
             objMint.push_back(Pair("mint height", m.nHeight));              // Mint Height
@@ -3905,7 +3905,7 @@ UniValue listspentzerocoins(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() != 0)
         throw std::runtime_error(
             "listspentzerocoins\n"
-            "\nList all the spent zPIV mints in the wallet.\n" +
+            "\nList all the spent zEUNO mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -3937,11 +3937,11 @@ UniValue mintzerocoin(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
         throw std::runtime_error(
             "mintzerocoin amount ( utxos )\n"
-            "\nMint the specified zPIV amount\n" +
+            "\nMint the specified zEUNO amount\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. amount      (numeric, required) Enter an amount of Piv to convert to zPIV\n"
+            "1. amount      (numeric, required) Enter an amount of Piv to convert to zEUNO\n"
             "2. utxos       (string, optional) A json array of objects.\n"
             "                   Each object needs the txid (string) and vout (numeric)\n"
             "  [\n"
@@ -3978,7 +3978,7 @@ UniValue mintzerocoin(const JSONRPCRequest& request)
 
 
     if (!Params().IsRegTestNet())
-        throw JSONRPCError(RPC_WALLET_ERROR, "zPIV minting is DISABLED");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zEUNO minting is DISABLED");
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
@@ -3992,7 +3992,7 @@ UniValue mintzerocoin(const JSONRPCRequest& request)
 
     int64_t nTime = GetTimeMillis();
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zPIV is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zEUNO is currently disabled due to maintenance.");
 
     EnsureWalletIsUnlocked(true);
 
@@ -4057,7 +4057,7 @@ UniValue spendzerocoin(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 2 || request.params.size() < 1)
         throw std::runtime_error(
             "spendzerocoin amount ( \"address\" )\n"
-            "\nSpend zPIV to a PIV address.\n" +
+            "\nSpend zEUNO to a EUNO address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -4081,8 +4081,8 @@ UniValue spendzerocoin(const JSONRPCRequest& request)
             "  ],\n"
             "  \"outputs\": [                 (array) JSON array of output objects.\n"
             "    {\n"
-            "      \"value\": amount,         (numeric) Value in PIV.\n"
-            "      \"address\": \"xxx\"         (string) PIV address or \"zerocoinmint\" for reminted change.\n"
+            "      \"value\": amount,         (numeric) Value in EUNO.\n"
+            "      \"address\": \"xxx\"         (string) EUNO address or \"zerocoinmint\" for reminted change.\n"
             "    }\n"
             "    ,...\n"
             "  ]\n"
@@ -4095,7 +4095,7 @@ UniValue spendzerocoin(const JSONRPCRequest& request)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zPIV is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zEUNO is currently disabled due to maintenance.");
 
     CAmount nAmount = AmountFromValue(request.params[0]);        // Spending amount
     const std::string address_str = (request.params.size() > 1 ? request.params[1].get_str() : "");
@@ -4110,7 +4110,7 @@ UniValue spendzerocoinmints(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
         throw std::runtime_error(
             "spendzerocoinmints mints_list ( \"address\" ) \n"
-            "\nSpend zPIV mints to a PIV address.\n" +
+            "\nSpend zEUNO mints to a EUNO address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -4133,8 +4133,8 @@ UniValue spendzerocoinmints(const JSONRPCRequest& request)
             "  ],\n"
             "  \"outputs\": [                 (array) JSON array of output objects.\n"
             "    {\n"
-            "      \"value\": amount,         (numeric) Value in PIV.\n"
-            "      \"address\": \"xxx\"         (string) PIV address or \"zerocoinmint\" for reminted change.\n"
+            "      \"value\": amount,         (numeric) Value in EUNO.\n"
+            "      \"address\": \"xxx\"         (string) EUNO address or \"zerocoinmint\" for reminted change.\n"
             "    }\n"
             "    ,...\n"
             "  ]\n"
@@ -4147,7 +4147,7 @@ UniValue spendzerocoinmints(const JSONRPCRequest& request)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zPIV is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zEUNO is currently disabled due to maintenance.");
 
     UniValue arrMints = request.params[0].get_array();
     const std::string address_str = (request.params.size() > 1 ? request.params[1].get_str() : "");
@@ -4194,7 +4194,7 @@ extern UniValue DoZpivSpend(const CAmount nAmount, std::vector<CZerocoinMint>& v
         bool isStaking = false;
         address = DecodeDestination(address_str, isStaking);
         if(!IsValidDestination(address) || isStaking)
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid PIVX address");
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid EUNO address");
         outputs.push_back(std::pair<CTxDestination, CAmount>(address, nAmount));
     }
 
@@ -4435,12 +4435,12 @@ UniValue exportzerocoins(const JSONRPCRequest& request)
 
             "\nArguments:\n"
             "1. \"include_spent\"        (bool, required) Include mints that have already been spent\n"
-            "2. \"denomination\"         (integer, optional) Export a specific denomination of zPIV\n"
+            "2. \"denomination\"         (integer, optional) Export a specific denomination of zEUNO\n"
 
             "\nResult:\n"
             "[                   (array of json object)\n"
             "  {\n"
-            "    \"id\": \"serial hash\",  (string) the mint's zPIV serial hash \n"
+            "    \"id\": \"serial hash\",  (string) the mint's zEUNO serial hash \n"
             "    \"d\": n,         (numeric) the mint's zerocoin denomination \n"
             "    \"p\": \"pubcoin\", (string) The public coin\n"
             "    \"s\": \"serial\",  (string) The secret serial number\n"
@@ -4448,8 +4448,8 @@ UniValue exportzerocoins(const JSONRPCRequest& request)
             "    \"t\": \"txid\",    (string) The txid that the coin was minted in\n"
             "    \"h\": n,         (numeric) The height the tx was added to the blockchain\n"
             "    \"u\": used,      (boolean) Whether the mint has been spent\n"
-            "    \"v\": version,   (numeric) The version of the zPIV\n"
-            "    \"k\": \"privkey\"  (string) The zPIV private key (V2+ zPIV only)\n"
+            "    \"v\": version,   (numeric) The version of the zEUNO\n"
+            "    \"k\": \"privkey\"  (string) The zEUNO private key (V2+ zEUNO only)\n"
             "  }\n"
             "  ,...\n"
             "]\n"
@@ -4518,7 +4518,7 @@ UniValue importzerocoins(const JSONRPCRequest& request)
             "\nResult:\n"
             "{\n"
             "  \"added\": n,        (numeric) The quantity of zerocoin mints that were added\n"
-            "  \"value\": amount    (numeric) The total zPIV value of zerocoin mints that were added\n"
+            "  \"value\": amount    (numeric) The total zEUNO value of zerocoin mints that were added\n"
             "}\n"
 
             "\nExamples\n" +
@@ -4596,7 +4596,7 @@ UniValue reconsiderzerocoins(const JSONRPCRequest& request)
     if(request.fHelp || !request.params.empty())
         throw std::runtime_error(
             "reconsiderzerocoins\n"
-            "\nCheck archived zPIV list to see if any mints were added to the blockchain.\n" +
+            "\nCheck archived zEUNO list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -4681,11 +4681,11 @@ UniValue getzpivseed(const JSONRPCRequest& request)
     if(request.fHelp || !request.params.empty())
         throw std::runtime_error(
             "getzpivseed\n"
-            "\nCheck archived zPIV list to see if any mints were added to the blockchain.\n" +
+            "\nCheck archived zEUNO list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult\n"
-            "\"seed\" : s,  (string) The deterministic zPIV seed.\n"
+            "\"seed\" : s,  (string) The deterministic zEUNO seed.\n"
 
             "\nExamples\n" +
             HelpExampleCli("getzpivseed", "") + HelpExampleRpc("getzpivseed", ""));
@@ -4706,12 +4706,12 @@ UniValue generatemintlist(const JSONRPCRequest& request)
     if(request.fHelp || request.params.size() != 2)
         throw std::runtime_error(
             "generatemintlist\n"
-            "\nShow mints that are derived from the deterministic zPIV seed.\n" +
+            "\nShow mints that are derived from the deterministic zEUNO seed.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"  : n,  (numeric) Which sequential zPIV to start with.\n"
-            "2. \"range\"  : n,  (numeric) How many zPIV to generate.\n"
+            "1. \"count\"  : n,  (numeric) Which sequential zEUNO to start with.\n"
+            "2. \"range\"  : n,  (numeric) How many zEUNO to generate.\n"
 
             "\nResult:\n"
             "[\n"
@@ -4754,7 +4754,7 @@ UniValue dzpivstate(const JSONRPCRequest& request) {
     if (request.fHelp || request.params.size() != 0)
         throw std::runtime_error(
                 "dzpivstate\n"
-                        "\nThe current state of the mintpool of the deterministic zPIV wallet.\n" +
+                        "\nThe current state of the mintpool of the deterministic zEUNO wallet.\n" +
                 HelpRequiringPassphrase() + "\n"
 
                         "\nExamples\n" +
@@ -4806,12 +4806,12 @@ UniValue searchdzpiv(const JSONRPCRequest& request)
     if(request.fHelp || request.params.size() != 3)
         throw std::runtime_error(
             "searchdzpiv\n"
-            "\nMake an extended search for deterministically generated zPIV that have not yet been recognized by the wallet.\n" +
+            "\nMake an extended search for deterministically generated zEUNO that have not yet been recognized by the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"       (numeric) Which sequential zPIV to start with.\n"
-            "2. \"range\"       (numeric) How many zPIV to generate.\n"
+            "1. \"count\"       (numeric) Which sequential zEUNO to start with.\n"
+            "2. \"range\"       (numeric) How many zEUNO to generate.\n"
             "3. \"threads\"     (numeric) How many threads should this operation consume.\n"
 
             "\nExamples\n" +
@@ -4863,7 +4863,7 @@ UniValue spendrawzerocoin(const JSONRPCRequest& request)
             "2. \"randomnessHex\"    (string, required) A zerocoin randomness value (hex)\n"
             "3. denom                (numeric, required) A zerocoin denomination (decimal)\n"
             "4. \"priv key\"         (string, required) The private key associated with this coin (hex)\n"
-            "5. \"address\"          (string, optional) PIVX address to spend to. If not specified, "
+            "5. \"address\"          (string, optional) EUNO address to spend to. If not specified, "
             "                        or empty string, spend to change address.\n"
             "6. \"mintTxId\"         (string, optional) txid of the transaction containing the mint. If not"
             "                        specified, or empty string, the blockchain will be scanned (could take a while)"
@@ -4878,7 +4878,7 @@ UniValue spendrawzerocoin(const JSONRPCRequest& request)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-            throw JSONRPCError(RPC_WALLET_ERROR, "zPIV is currently disabled due to maintenance.");
+            throw JSONRPCError(RPC_WALLET_ERROR, "zEUNO is currently disabled due to maintenance.");
 
     const Consensus::Params& consensus = Params().GetConsensus();
 

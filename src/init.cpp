@@ -201,7 +201,7 @@ void PrepareShutdown()
     /// for example if the data directory was found to be locked.
     /// Be sure that anything that writes files or flushes caches only does this if the respective
     /// module was initialized.
-    util::ThreadRename("pivx-shutoff");
+    util::ThreadRename("euno-shutoff");
     mempool.AddTransactionsUpdated(1);
     StopHTTPRPC();
     StopREST();
@@ -377,7 +377,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-blocknotify=<cmd>", _("Execute command when the best block changes (%s in cmd is replaced by block hash)"));
     strUsage += HelpMessageOpt("-blocksizenotify=<cmd>", _("Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)"));
     strUsage += HelpMessageOpt("-checkblocks=<n>", strprintf(_("How many blocks to check at startup (default: %u, 0 = all)"), 500));
-    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "pivx.conf"));
+    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "euno.conf"));
     if (mode == HMM_BITCOIND) {
 #if !defined(WIN32)
         strUsage += HelpMessageOpt("-daemon", _("Run in the background as a daemon and accept commands"));
@@ -393,7 +393,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-mempoolexpiry=<n>", strprintf(_("Do not keep transactions in the mempool longer than <n> hours (default: %u)"), DEFAULT_MEMPOOL_EXPIRY));
     strUsage += HelpMessageOpt("-par=<n>", strprintf(_("Set the number of script verification threads (%u to %d, 0 = auto, <0 = leave that many cores free, default: %d)"), -GetNumCores(), MAX_SCRIPTCHECK_THREADS, DEFAULT_SCRIPTCHECK_THREADS));
 #ifndef WIN32
-    strUsage += HelpMessageOpt("-pid=<file>", strprintf(_("Specify pid file (default: %s)"), "pivxd.pid"));
+    strUsage += HelpMessageOpt("-pid=<file>", strprintf(_("Specify pid file (default: %s)"), "eunod.pid"));
 #endif
     strUsage += HelpMessageOpt("-reindex", _("Rebuild block chain index from current blk000??.dat files") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-reindexmoneysupply", strprintf(_("Reindex the %s and z%s money supply statistics"), CURRENCY_UNIT, CURRENCY_UNIT) + " " + _("on startup"));
@@ -534,13 +534,13 @@ std::string HelpMessage(HelpMessageMode mode)
     }
     strUsage += HelpMessageOpt("-shrinkdebugfile", _("Shrink debug.log file on client startup (default: 1 when no -debug)"));
     strUsage += HelpMessageOpt("-testnet", _("Use the test network"));
-    strUsage += HelpMessageOpt("-litemode=<n>", strprintf(_("Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)"), 0));
+    strUsage += HelpMessageOpt("-litemode=<n>", strprintf(_("Disable all EUNO specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)"), 0));
 
 #ifdef ENABLE_WALLET
     strUsage += HelpMessageGroup(_("Staking options:"));
     strUsage += HelpMessageOpt("-staking=<n>", strprintf(_("Enable staking functionality (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-coldstaking=<n>", strprintf(_("Enable cold staking functionality (0-1, default: %u). Disabled if staking=0"), 1));
-    strUsage += HelpMessageOpt("-minstakesplit=<amt>", strprintf(_("Minimum positive amount (in PIV) allowed by GUI and RPC for the stake split threshold (default: %s)"),
+    strUsage += HelpMessageOpt("-minstakesplit=<amt>", strprintf(_("Minimum positive amount (in EUNO) allowed by GUI and RPC for the stake split threshold (default: %s)"),
                     FormatMoney(DEFAULT_MIN_STAKE_SPLIT_THRESHOLD)));
     if (GetBoolArg("-help-debug", false)) {
         strUsage += HelpMessageOpt("-printstakemodifier", _("Display the stake modifier calculations in the debug.log file."));
@@ -603,7 +603,7 @@ std::string LicenseInfo()
            "\n" +
            FormatParagraph(strprintf(_("Copyright (C) 2014-%i The Dash Core Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
-           FormatParagraph(strprintf(_("Copyright (C) 2015-%i The PIVX Core Developers"), COPYRIGHT_YEAR)) + "\n" +
+           FormatParagraph(strprintf(_("Copyright (C) 2015-%i The EUNO Core Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
            FormatParagraph(_("This is experimental software.")) + "\n" +
            "\n" +
@@ -673,7 +673,7 @@ struct CImportingNow {
 
 void ThreadImport(std::vector<fs::path> vImportFiles)
 {
-    util::ThreadRename("pivx-loadblk");
+    util::ThreadRename("euno-loadblk");
 
     // -reindex
     if (fReindex) {
@@ -967,7 +967,7 @@ void InitLogging()
 #else
     version_string += " (release build)";
 #endif
-    LogPrintf("PIVX version %s (%s)\n", version_string, CLIENT_DATE);
+    LogPrintf("EUNO version %s (%s)\n", version_string, CLIENT_DATE);
 }
 
 /** Initialize pivx.
@@ -1120,7 +1120,7 @@ bool AppInit2()
 
     // Sanity check
     if (!InitSanityCheck())
-        return UIError(_("Initialization sanity check failed. PIVX Core is shutting down."));
+        return UIError(_("Initialization sanity check failed. EUNO Core is shutting down."));
 
     std::string strDataDir = GetDataDir().string();
 #ifdef ENABLE_WALLET
@@ -1136,7 +1136,7 @@ bool AppInit2()
 
     // Wait maximum 10 seconds if an old wallet is still running. Avoids lockup during restart
     if (!lock.timed_lock(boost::get_system_time() + boost::posix_time::seconds(10)))
-        return UIError(strprintf(_("Cannot obtain a lock on data directory %s. PIVX Core is probably already running."), strDataDir));
+        return UIError(strprintf(_("Cannot obtain a lock on data directory %s. EUNO Core is probably already running."), strDataDir));
 
 #ifndef WIN32
     CreatePidFile(GetPidFile(), getpid());
@@ -1743,9 +1743,9 @@ bool AppInit2()
                              " or address book entries might be missing or incorrect."));
                 UIWarning(msg);
             } else if (nLoadWalletRet == DB_TOO_NEW)
-                strErrors << _("Error loading wallet.dat: Wallet requires newer version of PIVX Core") << "\n";
+                strErrors << _("Error loading wallet.dat: Wallet requires newer version of EUNO Core") << "\n";
             else if (nLoadWalletRet == DB_NEED_REWRITE) {
-                strErrors << _("Wallet needed to be rewritten: restart PIVX Core to complete") << "\n";
+                strErrors << _("Wallet needed to be rewritten: restart EUNO Core to complete") << "\n";
                 LogPrintf("%s", strErrors.str());
                 return UIError(strErrors.str());
             } else
@@ -1876,7 +1876,7 @@ bool AppInit2()
 
         if (!zwalletMain->GetMasterSeed().IsNull()) {
             //Inititalize zPIVWallet
-            uiInterface.InitMessage(_("Syncing zPIV wallet..."));
+            uiInterface.InitMessage(_("Syncing zEUNO wallet..."));
 
             //Load zerocoin mint hashes to memory
             pwalletMain->zpivTracker->Init();

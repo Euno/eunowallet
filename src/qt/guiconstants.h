@@ -51,9 +51,9 @@ static const int MAX_URI_LENGTH = 255;
 #define EXPORT_IMAGE_SIZE 256
 
 
-#define QAPP_ORG_NAME "PIVX"
-#define QAPP_ORG_DOMAIN "pivx.org"
-#define QAPP_APP_NAME_DEFAULT "PIVX-Qt"
-#define QAPP_APP_NAME_TESTNET "PIVX-Qt-testnet"
+#define QAPP_ORG_NAME "EUNO"
+#define QAPP_ORG_DOMAIN "euno.org"
+#define QAPP_APP_NAME_DEFAULT "EUNO-Qt"
+#define QAPP_APP_NAME_TESTNET "EUNO-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

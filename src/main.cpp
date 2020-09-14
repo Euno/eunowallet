@@ -58,7 +58,7 @@
 
 
 #if defined(NDEBUG)
-#error "PIVX cannot be compiled without assertions."
+#error "EUNO cannot be compiled without assertions."
 #endif
 
 /**
@@ -936,7 +936,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
 
             // Reject legacy zPIV mints
             if (!Params().IsRegTestNet() && tx.HasZerocoinMintOutputs())
-                return state.Invalid(error("%s : tried to include zPIV mint output in tx %s",
+                return state.Invalid(error("%s : tried to include zEUNO mint output in tx %s",
                         __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-zc-spend-mint");
 
             // are the actual inputs available?
@@ -2066,7 +2066,7 @@ DisconnectResult DisconnectBlock(CBlock& block, CBlockIndex* pindex, CCoinsViewC
 
     //Track zPIV money supply
     if (!UpdateZPIVSupplyDisconnect(block, pindex)) {
-        error("%s: Failed to calculate new zPIV supply", __func__);
+        error("%s: Failed to calculate new zEUNO supply", __func__);
         return DISCONNECT_FAILED;
     }
 
@@ -2167,7 +2167,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    util::ThreadRename("pivx-scriptch");
+    util::ThreadRename("euno-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -2452,7 +2452,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     // Update zPIV money supply map
     if (!UpdateZPIVSupplyConnect(block, pindex, fJustCheck)) {
-        return state.DoS(100, error("%s: Failed to calculate new zPIV supply for block=%s height=%d", __func__,
+        return state.DoS(100, error("%s: Failed to calculate new zEUNO supply for block=%s height=%d", __func__,
                                     block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
     }
 
@@ -3532,7 +3532,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                         spend = TxInToZerocoinSpend(txIn);
                     }
                     if (std::count(vBlockSerials.begin(), vBlockSerials.end(), spend.getCoinSerialNumber()))
-                        return state.DoS(100, error("%s : Double spending of zPIV serial %s in block\n Block: %s",
+                        return state.DoS(100, error("%s : Double spending of zEUNO serial %s in block\n Block: %s",
                                                     __func__, spend.getCoinSerialNumber().GetHex(), block.ToString()));
                     vBlockSerials.emplace_back(spend.getCoinSerialNumber());
                 }

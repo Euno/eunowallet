@@ -352,7 +352,7 @@ bool CWallet::Unlock(const CKeyingMaterial& vMasterKeyIn)
             if (CWalletDB(strWalletFile).ReadCurrentSeedHash(hashSeed)) {
                 uint256 nSeed;
                 if (!GetDeterministicSeed(hashSeed, nSeed)) {
-                    return error("Failed to read zPIV seed from DB. Wallet is probably corrupt.");
+                    return error("Failed to read zEUNO seed from DB. Wallet is probably corrupt.");
                 }
                 zwalletMain->SetMasterSeed(nSeed, false);
             }
@@ -2039,7 +2039,7 @@ bool CWallet::GetMasternodeVinAndKeys(CTxIn& txinRet, CPubKey& pubKeyRet, CKey& 
 
     // Masternode collateral value
     if (txOut.nValue != 10000 * COIN) {
-        strError = "Invalid collateral tx value, must be 10,000 PIV";
+        strError = "Invalid collateral tx value, must be 10,000 EUNO";
         return error("%s: tx %s, index %d not a masternode collateral", __func__, strTxHash, nOutputIndex);
     }
 

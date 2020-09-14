@@ -264,7 +264,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "pivx";
+    const char* pszModule = "euno";
 #endif
     if (pex)
         return strprintf(
@@ -290,7 +290,7 @@ fs::path GetDefaultDataDir()
 // Unix: ~/.pivx
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "PIVX";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "EUNO";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -302,10 +302,10 @@ fs::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "PIVX";
+    return pathRet / "EUNO";
 #else
     // Unix
-    return pathRet / ".pivx";
+    return pathRet / ".euno";
 #endif
 #endif
 }
@@ -350,7 +350,7 @@ void ClearDatadirCache()
 
 fs::path GetConfigFile()
 {
-    fs::path pathConfigFile(GetArg("-conf", "pivx.conf"));
+    fs::path pathConfigFile(GetArg("-conf", "euno.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -403,7 +403,7 @@ fs::path AbsPathForConfigVal(const fs::path& path, bool net_specific)
 #ifndef WIN32
 fs::path GetPidFile()
 {
-    fs::path pathPidFile(GetArg("-pid", "pivxd.pid"));
+    fs::path pathPidFile(GetArg("-pid", "eunod.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }
