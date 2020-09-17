@@ -1,40 +1,127 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="72.667" height="72.667" viewBox="0 0 72.667 72.667">
-    <defs>
-        <style>
-            .cls-1{opacity:.999}.cls-2{fill:#fff}
-        </style>
-    </defs>
-    <g id="img_Qr" class="cls-1">
-        <path id="Path_279" d="M169.205 194.253V187.3c-1.135 0-2.171 0-3.207.049-.1 0-.345.345-.345.542-.049.937 0 1.873 0 2.859h-3.4v-6.85h10.36v6.9h3.552v-6.9h3.4v10.353h-3.453v7h3.4v13.8h3.5V211.7h3.4v6.853h-10.3v3.895c0 .739-.049 1.528 0 2.268.049.592-.2.789-.789.739-.888-.049-1.727 0-2.763 0v3.55h-3.4v3.4c-.987 0-1.924.049-2.812 0-.543 0-.691.148-.691.69.049.937 0 1.824 0 2.81h3.552v3.451H162.3v-10.3h3.4v-3.451h3.453v-6.9H165.7v6.8h-3.4v-10.251h3.355V211.7H162.2v-6.8h3.4c0 .887.049 1.775 0 2.662-.049.641.148.838.789.789.937-.049 1.825 0 2.763 0v6.8h3.4V208.3c.987 0 1.973-.049 2.96 0 .444 0 .592-.148.592-.592V205.3c0-.444-.148-.592-.592-.592h-2.911v-10.357a19.926 19.926 0 0 0-3.4-.1z" class="cls-2" data-name="Path 279" transform="translate(-134.524 -183.9)"/>
-        <path id="Path_280" d="M130.372 183.9c0 .3-.049.592-.049.937v22.382c0 .74-.2.887-.888.887-7.449-.049-14.948 0-22.4 0-.3 0-.592.049-.937.049V183.9zm-3.552 3.451c-.247 0-.444-.049-.641-.049h-15.984c-.592 0-.691.2-.691.74v15.973c0 .2.049.394.049.592h17.267z" class="cls-2" data-name="Path 280" transform="translate(-106.1 -183.9)"/>
-        <path id="Path_281" d="M228.472 208.155c-.3 0-.592-.049-.937-.049h-22.4c-.74 0-.888-.2-.888-.887.049-7.444 0-14.938 0-22.382 0-.3-.049-.592-.049-.937h24.272zm-3.453-3.55c0-.3.049-.542.049-.789V188.09c0-.69-.247-.789-.839-.789h-16.477v17.3z" class="cls-2" data-name="Path 281" transform="translate(-155.805 -183.9)"/>
-        <path id="Path_282" d="M106.1 282c.3 0 .592.049.937.049h22.446c.74 0 .888.2.888.887-.049 7.493 0 14.938 0 22.431 0 .3.049.592.049.937h-24.271c-.049-8.134-.049-16.219-.049-24.304zm20.72 3.55c-.2 0-.3-.049-.444-.049h-16.23c-.592 0-.641.3-.641.739v15.825c0 .641.2.838.839.838q7.844-.074 15.688 0c.691 0 .888-.148.888-.838-.049-5.226 0-10.451 0-15.677-.051-.296-.051-.543-.1-.838z" class="cls-2" data-name="Path 282" transform="translate(-106.1 -233.638)"/>
-        <path id="Path_283" d="M106.1 240h3.355v17.3H106.1z" class="cls-2" data-name="Path 283" transform="translate(-106.1 -212.343)"/>
-        <path id="Path_284" d="M246.357 243.4H239.5V240h6.857z" class="cls-2" data-name="Path 284" transform="translate(-173.69 -212.343)"/>
-        <path id="Path_285" d="M200.7 317.049V324h-3.4c0-2.317.049-4.634.049-7h-.049c1.135.049 2.269.049 3.4.049z" class="cls-2" data-name="Path 285" transform="translate(-152.309 -251.383)"/>
-        <path id="Path_286" d="M162.2 327.7v-3.4h6.956v3.4z" class="cls-2" data-name="Path 286" transform="translate(-134.524 -255.084)"/>
-        <path id="Path_287" d="M249.9 320.649h-3.4V317.1h3.4z" class="cls-2" data-name="Path 287" transform="translate(-177.237 -251.434)"/>
-        <path id="Path_288" d="M249.955 257.5H246.6v-3.4h3.355z" class="cls-2" data-name="Path 288" transform="translate(-177.288 -219.492)"/>
-        <path id="Path_289" d="M249.9 299.5h-3.4v-3.4h3.4z" class="cls-2" data-name="Path 289" transform="translate(-177.237 -240.787)"/>
-        <path id="Path_290" d="M218.3 327.7v-3.4h3.4v3.4z" class="cls-2" data-name="Path 290" transform="translate(-162.949 -255.084)"/>
-        <path id="Path_291" d="M204.164 302.853h-3.4V299.3h-3.6c.049-1.528.049-3.057.1-4.585V292.4H190.4V289h10.31v-7h3.355v3.5h3.453c0 .345.049.641.049.887v5.374c0 .542.148.69.691.69h9.669v3.4h-13.812c.049 2.418.049 4.735.049 7.002z" class="cls-2" data-name="Path 291" transform="translate(-148.813 -233.638)"/>
-        <path id="Path_292" d="M218.213 257.405v-3.451h-6.907v3.451h-3.453v-3.5H204.4c0-1.085 0-2.12.049-3.106 0-.1.395-.3.641-.3h9.718V240.2h3.4v6.853h3.4v10.4c-1.126-.048-2.26-.048-3.395-.048z" class="cls-2" data-name="Path 292" transform="translate(-155.906 -212.445)"/>
-        <path id="Path_293" d="M169.257 309.952V306.4H162.4v-6.853h6.857V296h3.4v3.5c.937 0 1.825.049 2.713 0 .592-.049.789.148.789.74-.049.887 0 1.725 0 2.662h-3.453v7c-1.229.05-2.314.05-3.449.05z" class="cls-2" data-name="Path 293" transform="translate(-134.626 -240.736)"/>
-        <path id="Path_294" d="M183.1 275.177h3.5v3.4h3.453v3.4h-6.907c0-2.317 0-4.585-.049-6.8z" class="cls-2" data-name="Path 294" transform="translate(-145.114 -230.168)"/>
-        <path id="Path_295" d="M228.9 282.051h-3.4V275.1h3.4z" class="cls-2" data-name="Path 295" transform="translate(-166.597 -230.139)"/>
-        <path id="Path_296" d="M239.456 292.6H232.5v-3.4h6.956z" class="cls-2" data-name="Path 296" transform="translate(-170.144 -237.288)"/>
-        <path id="Path_297" d="M207.853 275.1v3.4H204.4v-3.4z" class="cls-2" data-name="Path 297" transform="translate(-155.906 -230.139)"/>
-        <path id="Path_298" d="M193.755 271.6H190.4v-3.3h3.355z" class="cls-2" data-name="Path 298" transform="translate(-148.813 -226.692)"/>
-        <path id="Path_299" d="M193.9 313.7h-3.4v-3.3h3.4a37.055 37.055 0 0 0 0 3.3z" class="cls-2" data-name="Path 299" transform="translate(-148.863 -248.037)"/>
-        <path id="Path_300" d="M133.914 257.4c0 .986.049 1.972.049 2.958 0 .444.148.641.592.592.937-.049 1.825 0 2.812 0v3.35H120.2v-3.352h3.355V254h6.956v3.352a26.4 26.4 0 0 0 3.4.049z" class="cls-2" data-name="Path 300" transform="translate(-113.244 -219.441)"/>
-        <path id="Path_301" d="M123.655 247H120.3v-6.9h6.759v3.3h-3.4a44.059 44.059 0 0 0 0 3.6z" class="cls-2" data-name="Path 301" transform="translate(-113.295 -212.394)"/>
-        <path id="Path_302" d="M151.611 239.9v3.4H141.3v-3.4c3.453.049 6.857.049 10.311 0z" class="cls-2" data-name="Path 302" transform="translate(-123.935 -212.293)"/>
-        <path id="Path_303" d="M169.207 204.8v3.4H162.3v-3.4c2.319.049 4.637.049 6.907 0z" class="cls-2" data-name="Path 303" transform="translate(-134.575 -194.497)"/>
-        <path id="Path_304" d="M176.3 229.45v-3.55h3.355v3.55H176.3z" class="cls-2" data-name="Path 304" transform="translate(-141.669 -205.194)"/>
-        <path id="Path_305" d="M148 257.552V254.2h3.453v3.3c-1.135 0-2.319 0-3.453.049z" class="cls-2" data-name="Path 305" transform="translate(-127.33 -219.543)"/>
-        <path id="Path_306" d="M235.805 320.652H232.5V317.3h3.305z" class="cls-2" data-name="Path 306" transform="translate(-170.144 -251.535)"/>
-        <path id="Path_307" d="M130.561 198.1v10.2H120.3v-10.2z" class="cls-2" data-name="Path 307" transform="translate(-113.295 -191.1)"/>
-        <path id="Path_308" d="M218.5 198h10.261v10.254H218.5z" class="cls-2" data-name="Path 308" transform="translate(-163.05 -191.049)"/>
-        <path id="Path_309" d="M130.512 306.554H120.3V296.3h10.212z" class="cls-2" data-name="Path 309" transform="translate(-113.295 -240.888)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="94" viewBox="0 0 94 94">
+  <g id="Сгруппировать_1560" data-name="Сгруппировать 1560" transform="translate(-2454.305 -1701.305)">
+    <rect id="Прямоугольник_1775" data-name="Прямоугольник 1775" width="94" height="94" transform="translate(2454.305 1701.305)" fill="#fff"/>
+    <g id="qr-code" transform="translate(2461.302 1708.302)">
+      <g id="Сгруппировать_1513" data-name="Сгруппировать 1513" transform="translate(0.73 0.73)">
+        <g id="Сгруппировать_1512" data-name="Сгруппировать 1512">
+          <path id="Контур_2681" data-name="Контур 2681" d="M0,0V25.855H25.855V0ZM19.771,19.771H6.083V6.083H19.771Z"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1515" data-name="Сгруппировать 1515" transform="translate(10.435 10.436)">
+        <g id="Сгруппировать_1514" data-name="Сгруппировать 1514" transform="translate(0 0)">
+          <rect id="Прямоугольник_1760" data-name="Прямоугольник 1760" width="7" height="7" transform="translate(-0.433 -0.433)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1517" data-name="Сгруппировать 1517" transform="translate(52.743 0.73)">
+        <g id="Сгруппировать_1516" data-name="Сгруппировать 1516">
+          <path id="Контур_2682" data-name="Контур 2682" d="M342,0V25.855h25.855V0Zm19.771,19.771H348.083V6.083h13.688Z" transform="translate(-342)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1519" data-name="Сгруппировать 1519" transform="translate(63.483 10.436)">
+        <g id="Сгруппировать_1518" data-name="Сгруппировать 1518" transform="translate(0 0)">
+          <rect id="Прямоугольник_1761" data-name="Прямоугольник 1761" width="6" height="7" transform="translate(-0.48 -0.433)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1521" data-name="Сгруппировать 1521" transform="translate(0.73 52.743)">
+        <g id="Сгруппировать_1520" data-name="Сгруппировать 1520">
+          <path id="Контур_2683" data-name="Контур 2683" d="M0,342v25.855H25.855V342Zm19.771,19.771H6.083V348.083H19.771Z" transform="translate(0 -342)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1523" data-name="Сгруппировать 1523" transform="translate(10.435 63.483)">
+        <g id="Сгруппировать_1522" data-name="Сгруппировать 1522" transform="translate(0 0)">
+          <rect id="Прямоугольник_1762" data-name="Прямоугольник 1762" width="7" height="6" transform="translate(-0.433 -0.48)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1525" data-name="Сгруппировать 1525" transform="translate(6.957 30.437)">
+        <g id="Сгруппировать_1524" data-name="Сгруппировать 1524" transform="translate(0 0)">
+          <rect id="Прямоугольник_1763" data-name="Прямоугольник 1763" width="6" height="7" transform="translate(0.046 -0.434)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1527" data-name="Сгруппировать 1527" transform="translate(12.897 36.774)">
+        <g id="Сгруппировать_1526" data-name="Сгруппировать 1526">
+          <path id="Контур_2684" data-name="Контур 2684" d="M86.083,243.083V237H80v6.083h5.931v6.084h6.083v-6.084Z" transform="translate(-80 -237)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1529" data-name="Сгруппировать 1529" transform="translate(43.481 12.175)">
+        <g id="Сгруппировать_1528" data-name="Сгруппировать 1528" transform="translate(0 0)">
+          <rect id="Прямоугольник_1764" data-name="Прямоугольник 1764" width="7" height="6" transform="translate(-0.479 -0.172)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1531" data-name="Сгруппировать 1531" transform="translate(32.176 6.957)">
+        <g id="Сгруппировать_1530" data-name="Сгруппировать 1530" transform="translate(0 0)">
+          <rect id="Прямоугольник_1765" data-name="Прямоугольник 1765" width="5" height="11" transform="translate(-0.173 0.046)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1533" data-name="Сгруппировать 1533" transform="translate(37.394 0)">
+        <g id="Сгруппировать_1532" data-name="Сгруппировать 1532" transform="translate(0 0)">
+          <rect id="Прямоугольник_1766" data-name="Прямоугольник 1766" width="6" height="7" transform="translate(-0.391 0.003)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1535" data-name="Сгруппировать 1535" transform="translate(31.147 18.524)">
+        <g id="Сгруппировать_1534" data-name="Сгруппировать 1534">
+          <path id="Контур_2685" data-name="Контур 2685" d="M206.083,117v6.083H200v6.083h12.167V117Z" transform="translate(-200 -117)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1537" data-name="Сгруппировать 1537" transform="translate(31.147 36.774)">
+        <g id="Сгруппировать_1536" data-name="Сгруппировать 1536">
+          <path id="Контур_2686" data-name="Контур 2686" d="M212.167,254.946v-5.931h-6.083V237H200v12.167h6.083V255.1h6.083v5.931h12.167v-6.083Z" transform="translate(-200 -237)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1539" data-name="Сгруппировать 1539" transform="translate(43.481 30.437)">
+        <g id="Сгруппировать_1538" data-name="Сгруппировать 1538" transform="translate(0 0)">
+          <rect id="Прямоугольник_1767" data-name="Прямоугольник 1767" width="7" height="13" transform="translate(-0.479 -0.434)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1541" data-name="Сгруппировать 1541" transform="translate(55.481 30.691)">
+        <g id="Сгруппировать_1540" data-name="Сгруппировать 1540">
+          <path id="Контур_2687" data-name="Контур 2687" d="M377.034,202.931V197h-11.1v6.083H360v6.083h6.083V215.1h17.034V202.931Zm0,6.083h-10.95v-5.931h10.95Z" transform="translate(-360 -197)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1543" data-name="Сгруппировать 1543" transform="translate(73.049 54.787)">
+        <g id="Сгруппировать_1542" data-name="Сгруппировать 1542" transform="translate(0 0)">
+          <rect id="Прямоугольник_1768" data-name="Прямоугольник 1768" width="6" height="12" transform="translate(-0.046 0.216)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1545" data-name="Сгруппировать 1545" transform="translate(49.569 43.481)">
+        <g id="Сгруппировать_1544" data-name="Сгруппировать 1544" transform="translate(0 0)">
+          <rect id="Прямоугольник_1769" data-name="Прямоугольник 1769" width="6" height="7" transform="translate(0.435 -0.478)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1547" data-name="Сгруппировать 1547" transform="translate(55.656 60.874)">
+        <g id="Сгруппировать_1546" data-name="Сгруппировать 1546" transform="translate(0 0)">
+          <rect id="Прямоугольник_1770" data-name="Прямоугольник 1770" width="7" height="6" transform="translate(0.347 0.129)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1549" data-name="Сгруппировать 1549" transform="translate(62.613 54.787)">
+        <g id="Сгруппировать_1548" data-name="Сгруппировать 1548" transform="translate(0 0)">
+          <rect id="Прямоугольник_1771" data-name="Прямоугольник 1771" width="5" height="6" transform="translate(0.39 0.216)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1551" data-name="Сгруппировать 1551" transform="translate(61.565 66.887)">
+        <g id="Сгруппировать_1550" data-name="Сгруппировать 1550">
+          <path id="Контур_2688" data-name="Контур 2688" d="M400,435v11.711h6.083v-5.627h4.867V435Z" transform="translate(-400 -435)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1553" data-name="Сгруппировать 1553" transform="translate(32.176 54.787)">
+        <g id="Сгруппировать_1552" data-name="Сгруппировать 1552" transform="translate(0 0)">
+          <rect id="Прямоугольник_1772" data-name="Прямоугольник 1772" width="5" height="12" transform="translate(-0.173 0.216)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1555" data-name="Сгруппировать 1555" transform="translate(37.231 66.431)">
+        <g id="Сгруппировать_1554" data-name="Сгруппировать 1554">
+          <path id="Контур_2689" data-name="Контур 2689" d="M252.167,438.083V432H240v12.167h6.083v-6.083h5.931v6.083H258.1v-6.083Z" transform="translate(-240 -432)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1557" data-name="Сгруппировать 1557" transform="translate(18.262 30.437)">
+        <g id="Сгруппировать_1556" data-name="Сгруппировать 1556" transform="translate(0 0)">
+          <rect id="Прямоугольник_1773" data-name="Прямоугольник 1773" width="14" height="7" transform="translate(-0.259 -0.434)"/>
+        </g>
+      </g>
+      <g id="Сгруппировать_1559" data-name="Сгруппировать 1559" transform="translate(0 36.524)">
+        <g id="Сгруппировать_1558" data-name="Сгруппировать 1558" transform="translate(0 0)">
+          <rect id="Прямоугольник_1774" data-name="Прямоугольник 1774" width="7" height="13" transform="translate(0.003 0.478)"/>
+        </g>
+      </g>
     </g>
+  </g>
 </svg>

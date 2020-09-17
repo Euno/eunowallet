@@ -222,11 +222,11 @@ QColor getRowColor(bool isLightTheme, bool isHovered, bool isSelected)
         }
     } else {
         if (isSelected) {
-            return QColor("#25b088ff");
+            return QColor("#444545");
         } else if (isHovered) {
-            return QColor("#25bababa");
+            return QColor("#343535");
         } else {
-            return QColor("#0f0b16");
+            return QColor("#242525");
         }
     }
 }

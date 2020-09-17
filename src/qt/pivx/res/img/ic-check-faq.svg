@@ -1,9 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
-    <title>Artboard</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M11.53125,16.7695312 C11.5234375,16.4882798 11.5195312,16.2773445 11.5195312,16.1367188 C11.5195312,15.3085896 11.6367176,14.593753 11.8710938,13.9921875 C12.0429696,13.5390602 12.3203106,13.0820336 12.703125,12.6210938 C12.9843764,12.2851546 13.4902307,11.7949251 14.2207031,11.1503906 C14.9511755,10.5058562 15.4257802,9.99218941 15.6445312,9.609375 C15.8632823,9.22656059 15.9726562,8.80859602 15.9726562,8.35546875 C15.9726562,7.53515215 15.652347,6.81445623 15.0117188,6.19335938 C14.3710905,5.57226252 13.5859421,5.26171875 12.65625,5.26171875 C11.757808,5.26171875 11.0078155,5.54296594 10.40625,6.10546875 C9.80468449,6.66797156 9.41015719,7.54686902 9.22265625,8.7421875 L7.0546875,8.484375 C7.25000098,6.88280449 7.8300733,5.65625426 8.79492188,4.8046875 C9.75977045,3.95312074 11.0351483,3.52734375 12.6210938,3.52734375 C14.3007896,3.52734375 15.64062,3.98437043 16.640625,4.8984375 C17.64063,5.81250457 18.140625,6.91796227 18.140625,8.21484375 C18.140625,8.9648475 17.9648455,9.65624684 17.6132812,10.2890625 C17.261717,10.9218782 16.5742239,11.6914017 15.5507812,12.5976562 C14.8632778,13.2070343 14.4140636,13.6562486 14.203125,13.9453125 C13.9921864,14.2343764 13.835938,14.5664044 13.734375,14.9414062 C13.632812,15.3164081 13.5742188,15.925777 13.5585938,16.7695312 L11.53125,16.7695312 Z M11.4023438,21 L11.4023438,18.5976562 L13.8046875,18.5976562 L13.8046875,21 L11.4023438,21 Z" id="?" fill="#FFFFFF" fill-rule="nonzero"></path>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="52"
+   height="52"
+   viewBox="0 0 52 52"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="ic-check-faq.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="12.836708"
+     inkscape:cx="19.442332"
+     inkscape:cy="25.876147"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Сгруппировать_1452" />
+  <defs
+     id="defs4">
+    <clipPath
+       id="clip-path">
+      <rect
+         id="Прямоугольник_1741"
+         data-name="Прямоугольник 1741"
+         width="52"
+         height="52"
+         transform="translate(3919 1871)"
+         fill="none"
+         stroke="#707070"
+         stroke-width="1" />
+    </clipPath>
+  </defs>
+  <g
+     id="Группа_масок_61"
+     data-name="Группа масок 61"
+     transform="translate(-3919 -1871)"
+     clip-path="url(#clip-path)">
+    <g
+       id="Сгруппировать_1462"
+       data-name="Сгруппировать 1462"
+       transform="translate(2.196 -0.964)">
+      <g
+         id="Сгруппировать_1452"
+         data-name="Сгруппировать 1452"
+         transform="translate(3918.163 1865.669)">
+        <path
+           id="Icon_awesome-question-circle"
+           data-name="Icon awesome-question-circle"
+           d="M26.391,13.477A12.914,12.914,0,1,1,13.477.563,12.914,12.914,0,0,1,26.391,13.477ZM13.823,4.833a6.745,6.745,0,0,0-6.069,3.32A.626.626,0,0,0,7.9,9L9.7,10.369a.625.625,0,0,0,.868-.111c.93-1.18,1.568-1.864,2.984-1.864,1.064,0,2.38.685,2.38,1.716,0,.78-.644,1.18-1.694,1.769-1.225.687-2.846,1.541-2.846,3.679v.208a.625.625,0,0,0,.625.625h2.916a.625.625,0,0,0,.625-.625V15.7c0-1.482,4.332-1.544,4.332-5.555C19.891,7.124,16.758,4.833,13.823,4.833Zm-.347,12.914a2.4,2.4,0,1,0,2.4,2.4A2.4,2.4,0,0,0,13.477,17.747Z"
+           transform="translate(10.732 10.732)"
+           fill="#fff" />
+      </g>
     </g>
+  </g>
 </svg>

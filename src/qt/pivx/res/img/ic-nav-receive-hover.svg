@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="40px" viewBox="0 0 24 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-    <title>Receive off</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Receive-off" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Path_18953" fill="#FFFFFF" points="19.178 23.734 17.822 22.265 13 26.716 13 13 11 13 11 26.716 6.178 22.266 4.822 23.734 12 30.361"></polygon>
-        <polygon id="Path_18954" fill="#FFFFFF" points="21 28 21 33 3 33 3 28 1 28 1 35 23 35 23 28"></polygon>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1692" data-name="Rectangle 1692" width="72" height="72" transform="translate(3173 1839)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_29" data-name="Mask Group 29" transform="translate(-3173 -1839)" clip-path="url(#clip-path)">
+    <path id="Icon_ionic-ios-send" data-name="Icon ionic-ios-send" d="M38.5.089.493,16.653a.871.871,0,0,0,.031,1.584L10.8,24.045a1.658,1.658,0,0,0,1.895-.186L32.97,6.384c.135-.114.456-.331.58-.207s-.072.445-.186.58L15.826,26.509a1.652,1.652,0,0,0-.166,1.977l6.719,10.777a.874.874,0,0,0,1.574-.021L39.668,1.238A.871.871,0,0,0,38.5.089Z" transform="translate(3228.819 1895.34) rotate(180)" fill="#562cdd"/>
+  </g>
 </svg>

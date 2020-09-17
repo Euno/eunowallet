@@ -1,19 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="ic_light_theme" width="24" height="24" viewBox="0 0 24 24" shape-rendering="geometricPrecision">
-    <defs>
-        <style type="text/css">
-            .cls-1{fill:#fff}.cls-2{fill:none}
-        </style>
-    </defs>
-    <g id="Group_8846" data-name="Group 8846">
-        <path id="Path_18900" d="M12 7a5 5 0 1 0 5 5 5.006 5.006 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3z" class="cls-1" data-name="Path 18900"/>
-        <path id="Rectangle_4418" d="M0 0h2v4H0z" class="cls-1" data-name="Rectangle 4418" transform="translate(11 2)"/>
-        <path id="Rectangle_4419" d="M0 0h2v4H0z" class="cls-1" data-name="Rectangle 4419" transform="translate(11 18)"/>
-        <path id="Rectangle_4420" d="M0 0h4v2H0z" class="cls-1" data-name="Rectangle 4420" transform="translate(2 11)"/>
-        <path id="Rectangle_4421" d="M0 0h4v2H0z" class="cls-1" data-name="Rectangle 4421" transform="translate(18 11)"/>
-        <path id="Rectangle_4422" d="M0 0h2v4H0z" class="cls-1" data-name="Rectangle 4422" transform="rotate(-45 8.914 -2.278)"/>
-        <path id="Rectangle_4423" d="M0 0h2v4H0z" class="cls-1" data-name="Rectangle 4423" transform="rotate(-45 28.228 -10.279)"/>
-        <path id="Rectangle_4424" d="M0 0h4v2H0z" class="cls-1" data-name="Rectangle 4424" transform="rotate(-45 24.278 4.086)"/>
-        <path id="Rectangle_4425" d="M0 0h4v2H0z" class="cls-1" data-name="Rectangle 4425" transform="rotate(-45 16.278 -15.229)"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="52"
+   height="52"
+   viewBox="0 0 52 52"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="ic-check-theme-light.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="835"
+     inkscape:window-height="480"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="4.5384615"
+     inkscape:cx="26"
+     inkscape:cy="26"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Сгруппировать_1453" />
+  <defs
+     id="defs4">
+    <clipPath
+       id="clip-path">
+      <rect
+         id="Прямоугольник_1740"
+         data-name="Прямоугольник 1740"
+         width="52"
+         height="52"
+         transform="translate(3856 1871)"
+         fill="none"
+         stroke="#707070"
+         stroke-width="1" />
+    </clipPath>
+  </defs>
+  <g
+     id="Группа_масок_60"
+     data-name="Группа масок 60"
+     transform="translate(-3856 -1871)"
+     clip-path="url(#clip-path)">
+    <g
+       id="Сгруппировать_1461"
+       data-name="Сгруппировать 1461"
+       transform="translate(0.321 -0.964)">
+      <g
+         id="Сгруппировать_1453"
+         data-name="Сгруппировать 1453"
+         transform="translate(3857.039 1865.669)">
+        <path
+           id="Icon_material-brightness-7"
+           data-name="Icon material-brightness-7"
+           d="M23.115,10.183V4.82H17.752L13.968,1.035,10.183,4.82H4.82v5.363L1.035,13.968,4.82,17.752v5.363h5.363L13.968,26.9l3.785-3.785h5.363V17.752L26.9,13.968ZM13.968,20.828a6.861,6.861,0,1,1,6.861-6.861A6.866,6.866,0,0,1,13.968,20.828Zm0-11.435a4.574,4.574,0,1,0,4.574,4.574A4.573,4.573,0,0,0,13.968,9.394Z"
+           transform="translate(10.26 10.26)"
+           fill="#fff" />
+      </g>
     </g>
-    <path id="Rectangle_4426" d="M0 0h24v24H0z" class="cls-2" data-name="Rectangle 4426"/>
+  </g>
 </svg>
