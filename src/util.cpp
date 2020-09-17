@@ -290,7 +290,7 @@ fs::path GetDefaultDataDir()
 // Unix: ~/.pivx
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "EUNO";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "EUNOPAY";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -302,10 +302,10 @@ fs::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "EUNO";
+    return pathRet / "EUNOPAY";
 #else
     // Unix
-    return pathRet / ".euno";
+    return pathRet / ".eunopay";
 #endif
 #endif
 }
