@@ -234,7 +234,7 @@ BOOST_AUTO_TEST_CASE(ccoins_serialization)
     CDataStream ssx(SER_DISK, CLIENT_VERSION);
     BOOST_CHECK_EQUAL(HexStr(ssx.begin(), ssx.end()), "");
 
-    CDataStream ss3(ParseHex("0004000600"), SER_DISK, CLIENT_VERSION);
+    CDataStream ss3(ParseHex("0001000000"), SER_DISK, CLIENT_VERSION);
     CCoins cc3;
     ss3 >> cc3;
     BOOST_CHECK_EQUAL(cc3.nVersion, 0);
@@ -246,7 +246,7 @@ BOOST_AUTO_TEST_CASE(ccoins_serialization)
     BOOST_CHECK_EQUAL(cc3.vout[0].scriptPubKey.size(), 0);
 
     // scriptPubKey that ends beyond the end of the stream
-    CDataStream ss4(ParseHex("0004000800"), SER_DISK, CLIENT_VERSION);
+    CDataStream ss4(ParseHex("0001000000"), SER_DISK, CLIENT_VERSION);
     try {
         CCoins cc4;
         ss4 >> cc4;
