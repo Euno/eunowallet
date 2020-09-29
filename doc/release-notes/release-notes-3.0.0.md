@@ -1,13 +1,13 @@
 PIVX Core version 3.0.0 is now available from:
 
-  <https://github.com/pivx-project/pivx/releases>
+  <https://git.blaize.tech/EUNO/euno-node.git/releases>
 
 This is a new major version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/pivx-project/pivx/issues>
+  <https://git.blaize.tech/EUNO/euno-node.git/issues>
 
 Mandatory Update
 ==============
