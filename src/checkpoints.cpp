@@ -80,6 +80,9 @@ int GetTotalBlocksEstimate()
 
     const MapCheckpoints& checkpoints = *Params().Checkpoints().mapCheckpoints;
 
+    if (!checkpoints.size())
+        return 0;
+
     return checkpoints.rbegin()->first;
 }
 

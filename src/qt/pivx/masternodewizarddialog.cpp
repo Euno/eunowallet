@@ -68,11 +68,11 @@ MasterNodeWizardDialog::MasterNodeWizardDialog(WalletModel *model, QWidget *pare
     ui->stackedWidget->setCurrentIndex(pos);
     ui->lineEditPort->setEnabled(false);    // use default port number
     if (walletModel->isRegTestNetwork()) {
-        ui->lineEditPort->setText("51476");
+        ui->lineEditPort->setText("46466");
     } else if (walletModel->isTestNetwork()) {
-        ui->lineEditPort->setText("51474");
+        ui->lineEditPort->setText("46464");
     } else {
-        ui->lineEditPort->setText("51472");
+        ui->lineEditPort->setText("46462");
     }
 
     // Confirm icons
@@ -262,7 +262,7 @@ bool MasterNodeWizardDialog::createMN()
         int indexOut = -1;
         for (int i=0; i < (int)walletTx->vout.size(); i++) {
             CTxOut& out = walletTx->vout[i];
-            if (out.nValue == 10000 * COIN) {
+            if (out.nValue == 8000000 * COIN) {
                 indexOut = i;
                 break;
             }
@@ -325,7 +325,7 @@ bool MasterNodeWizardDialog::createMN()
     if (lineCopy.size() == 0) {
         lineCopy = "# Masternode config file\n"
                    "# Format: alias IP:port masternodeprivkey collateral_output_txid collateral_output_index\n"
-                   "# Example: mn1 127.0.0.2:51472 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0"
+                   "# Example: mn1 127.0.0.2:46462 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0"
                    "#";
     }
     lineCopy += "\n";
