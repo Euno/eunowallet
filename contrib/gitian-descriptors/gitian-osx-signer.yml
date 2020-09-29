@@ -30,8 +30,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=pivx-osx-unsigned.tar.gz
-  SIGNED=pivx-osx-signed.dmg
+  UNSIGNED=euno-osx-unsigned.tar.gz
+  SIGNED=euno-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"
