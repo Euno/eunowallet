@@ -3846,7 +3846,7 @@ There was an error trying to save the address list to %1. Please try again.</tra
     </message>
     <message>
         <source>https://PIVX.org/</source>
-        <translation>https://EUNO.org/</translation>
+        <translation>https://EUNO.co/</translation>
     </message>
     <message>
         <source>1</source>
@@ -3956,7 +3956,7 @@ There was an error trying to save the address list to %1. Please try again.</tra
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://discord.EUNO.org'&gt;
+                           &lt;a style='color: #b088ff' href='https://discord.EUNO.co'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, You can do so at
                            &lt;a style='color: #b088ff' href='https://EUNO.freshdesk.com'&gt;

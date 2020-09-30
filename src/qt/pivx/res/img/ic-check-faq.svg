@@ -1,3 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="25.829" height="25.828" viewBox="0 0 25.829 25.828">
-  <path id="Icon_awesome-question-circle" data-name="Icon awesome-question-circle" d="M26.391,13.477A12.914,12.914,0,1,1,13.477.563,12.914,12.914,0,0,1,26.391,13.477ZM13.823,4.833a6.745,6.745,0,0,0-6.069,3.32A.626.626,0,0,0,7.9,9L9.7,10.369a.625.625,0,0,0,.868-.111c.93-1.18,1.568-1.864,2.984-1.864,1.064,0,2.38.685,2.38,1.716,0,.78-.644,1.18-1.694,1.769-1.225.687-2.846,1.541-2.846,3.679v.208a.625.625,0,0,0,.625.625h2.916a.625.625,0,0,0,.625-.625V15.7c0-1.482,4.332-1.544,4.332-5.555C19.891,7.124,16.758,4.833,13.823,4.833Zm-.347,12.914a2.4,2.4,0,1,0,2.4,2.4A2.4,2.4,0,0,0,13.477,17.747Z" transform="translate(-0.563 -0.563)" fill="#fff"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="25.829"
+   height="25.828"
+   viewBox="0 0 25.829 25.828"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="ic-check-faq.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <style
+     id="style834"></style>
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     id="namedview5"
+     showgrid="false"
+     inkscape:zoom="9.7643585"
+     inkscape:cx="12.9145"
+     inkscape:cy="12.914"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <path
+     id="Icon_awesome-question-circle"
+     data-name="Icon awesome-question-circle"
+     d="M 23.828,12.914 A 10.914,10.914 0 1 1 12.914,2 10.914,10.914 0 0 1 23.828,12.914 Z M 13.206415,5.6087021 A 5.7003972,5.7003972 0 0 0 8.0773249,8.4145315 0.52905095,0.52905095 0 0 0 8.2007138,9.130356 l 1.5212328,1.156983 a 0.52820582,0.52820583 0 0 0 0.7335724,-0.09381 c 0.78597,-0.9972529 1.325163,-1.5753213 2.521866,-1.5753213 0.899217,0 2.011407,0.5789133 2.011407,1.4502413 0,0.659202 -0.544263,0.997254 -1.431649,1.495034 -1.035283,0.580604 -2.405238,1.302345 -2.405238,3.109232 v 0.175786 a 0.52820582,0.52820583 0 0 0 0.528206,0.528206 h 2.464397 a 0.52820582,0.52820583 0 0 0 0.528206,-0.528206 v -0.05578 c 0,-1.252482 3.6611,-1.304879 3.6611,-4.694694 8.45e-4,-2.553135 -2.646945,-4.4893263 -5.127399,-4.4893263 z m -0.29326,10.9140009 a 2.0283104,2.0283104 0 1 0 2.02831,2.028309 A 2.0283104,2.0283104 0 0 0 12.914,16.522703 Z"
+     fill="#ffffff"
+     style="stroke-width:0.84513" />
 </svg>
