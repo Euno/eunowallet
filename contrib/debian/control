@@ -28,7 +28,7 @@ Build-Depends: debhelper,
  libzmq3-dev,
  dh-systemd
 Standards-Version: 3.9.2
-Homepage: http://www.pivx.org
+Homepage: http://www.euno.co
 Vcs-Git: git://github.com/PIVX-Project/PIVX.git
 Vcs-Browser: http://github.com/PIVX-Project/PIVX
 
