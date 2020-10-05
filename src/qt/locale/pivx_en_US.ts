@@ -775,10 +775,8 @@ for staking</translation>
         <translation>Error loading delegations: %1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
-stake on your behalf, while you keep the keys securely offline.</source>
-        <translation>You can delegate your EUNOs, letting a hot node (24/7 online node)
-stake on your behalf, while you keep the keys securely offline.</translation>
+        <source>You can delegate your PIVs, letting a hot node (24/7 online node) stake on your behalf, while you keep the keys securely offline.</source>
+        <translation>You can delegate your EUNOs, letting a hot node (24/7 online node) stake on your behalf, while you keep the keys securely offline.</translation>
     </message>
     <message>
         <source>Enter owner address</source>
