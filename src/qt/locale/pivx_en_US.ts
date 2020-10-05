@@ -5974,6 +5974,10 @@ EUNO Core Wallet</translation>
     </message>
     <message>
         <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
+        <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2015-%i The EUNO Core Developers</source>
         <translation>Copyright (C) 2015-%i The EUNO Core Developers</translation>
     </message>
     <message>
