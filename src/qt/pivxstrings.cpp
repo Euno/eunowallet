@@ -273,6 +273,7 @@ QT_TRANSLATE_NOOP("euno-core", "Connect to a node to retrieve peer addresses, an
 QT_TRANSLATE_NOOP("euno-core", "Connection options:"),
 QT_TRANSLATE_NOOP("euno-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
 QT_TRANSLATE_NOOP("euno-core", "Copyright (C) 2014-%i The Dash Core Developers"),
+QT_TRANSLATE_NOOP("euno-core", "Copyright (C) 2015-%i The PIVX Core Developers"),
 QT_TRANSLATE_NOOP("euno-core", "Copyright (C) 2015-%i The EUNO Core Developers"),
 QT_TRANSLATE_NOOP("euno-core", "Corrupted block database detected"),
 QT_TRANSLATE_NOOP("euno-core", "Could not parse masternode.conf"),
