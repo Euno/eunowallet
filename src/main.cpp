@@ -1500,9 +1500,9 @@ int64_t GetBlockValue(int nHeight)
     return nSubsidy;
 }
 
-int64_t GetMasternodePayment()
+int64_t GetMasternodePayment(int64_t blockValue)
 {
-    return 3 * COIN;
+    return blockValue * 80 / 100;
 }
 
 bool IsInitialBlockDownload()
@@ -3314,7 +3314,8 @@ bool CheckColdStakeFreeOutput(const CTransaction& tx, const int nHeight)
     const unsigned int outs = tx.vout.size();
     const CTxOut& lastOut = tx.vout[outs-1];
     if (outs >=3 && lastOut.scriptPubKey != tx.vout[outs-2].scriptPubKey) {
-        if (lastOut.nValue == GetMasternodePayment())
+        CAmount blockValue = GetBlockValue(nHeight);
+        if (lastOut.nValue == GetMasternodePayment(blockValue))
             return true;
 
         // This could be a budget block.
