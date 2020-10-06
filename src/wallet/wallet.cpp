@@ -2769,7 +2769,7 @@ bool CWallet::CreateCoinStake(
     // Get the list of stakable utxos
     std::vector<COutput> vCoins;
     if (!StakeableCoins(&vCoins)) {
-        LogPrintf("%s: No coin available to stake.\n", __func__);
+        // LogPrintf("%s: No coin available to stake.\n", __func__);
         return false;
     }
 
