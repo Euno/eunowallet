@@ -68,7 +68,7 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits
  */
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256S("00000048a7876fb1c12f5c7b03568d2f2df13eb6cdb3fe97b2083a8f62149d98"));
+    (0, uint256S("00000014a9269784e756d4a8e1456ba71097009830f4529d7d60c8afb90b40f5"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -102,9 +102,9 @@ public:
     {
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
-        genesis = CreateGenesisBlock(1602082800, 1974260, 0x1e0ffff0, 1, 0 * COIN, strNetworkID);
+        genesis = CreateGenesisBlock(1602083118, 4475394, 0x1e0ffff0, 1, 0 * COIN, strNetworkID);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000048a7876fb1c12f5c7b03568d2f2df13eb6cdb3fe97b2083a8f62149d98"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000014a9269784e756d4a8e1456ba71097009830f4529d7d60c8afb90b40f5"));
         assert(genesis.hashMerkleRoot == uint256S("0xede7d659d3674536765c924b8834c93d848e7ae69a3c3c68c55b3dec3887e036"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
@@ -157,7 +157,7 @@ public:
         consensus.ZC_MinMintConfirmations = 20;
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
-        consensus.ZC_TimeStart = 1602082800;        // Wednesday, 7 October 2020 , 15:00:00
+        consensus.ZC_TimeStart = 1602083118;        // Wednesday, 7 October 2020 , 15:00:00
         consensus.ZC_WrappedSerialsSupply = 4131563 * COIN;   // zerocoin supply at height_last_ZC_WrappedSerials
 
         // Network upgrades
