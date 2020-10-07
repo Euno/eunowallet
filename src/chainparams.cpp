@@ -47,9 +47,11 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
  *   vMerkleTree: e0028e
  */
-static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
+static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward, std::string networkID)
 {
-    const char* pszTimestamp = "U.S. News & World Report Jan 28 2016 With His Absence, Trump Dominates Another Debate";
+    char* pszTimestamp = "U.S. News & World Report Jan 28 2016 With His Absence, Trump Dominates Another Debate";
+    if (networkID == "main")
+        pszTimestamp = "Welcome to EUNO• 2.0";
     const CScript genesisOutputScript = CScript() << ParseHex("0439EFC316E77FDE5EDCA7B2A37F024A9D2DB7E493C7B0F488F78EE77BF0625AF2867C8C30AB425DCE416D07754ECFFFEE420DD4E167DC856DF6DB48D1476E27B6") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -66,7 +68,7 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits
  */
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256S("00000055bbced95bf1fe0b4eccaee23ece9d82ceae67e3a4ec4e757619159a9f"));
+    (0, uint256S("00000048a7876fb1c12f5c7b03568d2f2df13eb6cdb3fe97b2083a8f62149d98"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -100,10 +102,10 @@ public:
     {
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
-        genesis = CreateGenesisBlock(1600674444, 28524782, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1602082800, 1974260, 0x1e0ffff0, 1, 0 * COIN, strNetworkID);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000055bbced95bf1fe0b4eccaee23ece9d82ceae67e3a4ec4e757619159a9f"));
-        assert(genesis.hashMerkleRoot == uint256S("0xcac9b574e555da1e9626132086780af4e4d59645c408fdc2f16dbbe962296c7c"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000048a7876fb1c12f5c7b03568d2f2df13eb6cdb3fe97b2083a8f62149d98"));
+        assert(genesis.hashMerkleRoot == uint256S("0xede7d659d3674536765c924b8834c93d848e7ae69a3c3c68c55b3dec3887e036"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.powLimit   = ~UINT256_ZERO >> 20;   // PIVX starting difficulty is 1 / 2^12
@@ -155,7 +157,7 @@ public:
         consensus.ZC_MinMintConfirmations = 20;
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
-        consensus.ZC_TimeStart = 1600674444;        // October 17, 2017 4:30:00 AM
+        consensus.ZC_TimeStart = 1602082800;        // Wednesday, 7 October 2020 , 15:00:00
         consensus.ZC_WrappedSerialsSupply = 4131563 * COIN;   // zerocoin supply at height_last_ZC_WrappedSerials
 
         // Network upgrades
@@ -231,7 +233,7 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        genesis = CreateGenesisBlock(1600674444, 28524782, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1600674444, 28524782, 0x1e0ffff0, 1, 0 * COIN, strNetworkID);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000055bbced95bf1fe0b4eccaee23ece9d82ceae67e3a4ec4e757619159a9f"));
         assert(genesis.hashMerkleRoot == uint256S("0xcac9b574e555da1e9626132086780af4e4d59645c408fdc2f16dbbe962296c7c"));
@@ -364,7 +366,7 @@ public:
     {
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
-        genesis = CreateGenesisBlock(1600674444, 28524782, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1600674444, 28524782, 0x1e0ffff0, 1, 0 * COIN, strNetworkID);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000055bbced95bf1fe0b4eccaee23ece9d82ceae67e3a4ec4e757619159a9f"));
         assert(genesis.hashMerkleRoot == uint256S("0xcac9b574e555da1e9626132086780af4e4d59645c408fdc2f16dbbe962296c7c"));
