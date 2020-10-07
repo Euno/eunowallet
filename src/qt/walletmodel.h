@@ -1,24 +1,39 @@
-#ifndef WALLETMODEL_H
-#define WALLETMODEL_H
+// Copyright (c) 2011-2014 The Bitcoin developers
+// Copyright (c) 2014-2016 The Dash developers
+// Copyright (c) 2017-2020 The PIVX developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <QObject>
-#include <vector>
-#include <map>
+#ifndef PIVX_QT_WALLETMODEL_H
+#define PIVX_QT_WALLETMODEL_H
+
+#include "askpassphrasedialog.h"
+#include "paymentrequestplus.h"
+#include "walletmodeltransaction.h"
 
 #include "allocators.h" /* for SecureString */
-#include "instantx.h"
-#include "wallet.h"
+#include "swifttx.h"
+#include "wallet/wallet.h"
+#include "pairresult.h"
 
-class OptionsModel;
+#include <map>
+#include <vector>
+
+#include <QObject>
+
 class AddressTableModel;
+class OptionsModel;
+class RecentRequestsTableModel;
 class TransactionTableModel;
-class CWallet;
-class CKeyID;
-class CPubKey;
-class COutput;
-class COutPoint;
-class uint256;
+class WalletModelTransaction;
+
 class CCoinControl;
+class CKeyID;
+class COutPoint;
+class COutput;
+class CPubKey;
+class CWallet;
+class uint256;
 
 QT_BEGIN_NAMESPACE
 class QTimer;
@@ -27,22 +42,75 @@ QT_END_NAMESPACE
 class SendCoinsRecipient
 {
 public:
+    explicit SendCoinsRecipient() : amount(0), nVersion(SendCoinsRecipient::CURRENT_VERSION) {}
+    explicit SendCoinsRecipient(const QString& addr, const QString& label, const CAmount& amount, const QString& message) : address(addr), label(label), amount(amount), message(message), nVersion(SendCoinsRecipient::CURRENT_VERSION) {}
+
+    // If from an insecure payment request, this is used for storing
+    // the addresses, e.g. address-A<br />address-B<br />address-C.
+    // Info: As we don't need to process addresses in here when using
+    // payment requests, we can abuse it for displaying an address list.
+    // Todo: This is a hack, should be replaced with a cleaner solution!
     QString address;
     QString label;
-    QString narration;
-    int typeInd;
-    qint64 amount;
     AvailableCoinsType inputType;
-    bool useInstantX;
+    bool useSwiftTX = false;
+
+    // Cold staking.
+    bool isP2CS = false;
+    QString ownerAddress;
+
+    // Amount
+    CAmount amount;
+    // If from a payment request, this is used for storing the memo
+    QString message;
+
+    // If from a payment request, paymentRequest.IsInitialized() will be true
+    PaymentRequestPlus paymentRequest;
+    // Empty if no authentication or invalid signature/cert/etc.
+    QString authenticatedMerchant;
+
+    static const int CURRENT_VERSION = 1;
+    int nVersion;
+
+    ADD_SERIALIZE_METHODS;
+
+    template <typename Stream, typename Operation>
+    inline void SerializationOp(Stream& s, Operation ser_action)
+    {
+        std::string sAddress = address.toStdString();
+        std::string sLabel = label.toStdString();
+        std::string sMessage = message.toStdString();
+        std::string sPaymentRequest;
+        if (!ser_action.ForRead() && paymentRequest.IsInitialized())
+            paymentRequest.SerializeToString(&sPaymentRequest);
+        std::string sAuthenticatedMerchant = authenticatedMerchant.toStdString();
+
+        READWRITE(this->nVersion);
+        READWRITE(sAddress);
+        READWRITE(sLabel);
+        READWRITE(amount);
+        READWRITE(sMessage);
+        READWRITE(sPaymentRequest);
+        READWRITE(sAuthenticatedMerchant);
+
+        if (ser_action.ForRead()) {
+            address = QString::fromStdString(sAddress);
+            label = QString::fromStdString(sLabel);
+            message = QString::fromStdString(sMessage);
+            if (!sPaymentRequest.empty())
+                paymentRequest.parse(QByteArray::fromRawData(sPaymentRequest.data(), sPaymentRequest.size()));
+            authenticatedMerchant = QString::fromStdString(sAuthenticatedMerchant);
+        }
+    }
 };
 
-/** Interface to Bitcoin wallet from Qt view code. */
+/** Interface to PIVX wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT
 
 public:
-    explicit WalletModel(CWallet *wallet, OptionsModel *optionsModel, QObject *parent = 0);
+    explicit WalletModel(CWallet* wallet, OptionsModel* optionsModel, QObject* parent = 0);
     ~WalletModel();
 
     enum StatusCode // Returned by sendCoins
@@ -53,132 +121,210 @@ public:
         AmountExceedsBalance,
         AmountWithFeeExceedsBalance,
         DuplicateAddress,
-        TransactionCreationFailed, // Error returned when wallet is still locked
+        TransactionCreationFailed,
+        TransactionCheckFailed,
         TransactionCommitFailed,
-        NarrationTooLong,
-        Aborted,
-	      AnonymizeOnlyUnlocked
+        StakingOnlyUnlocked,
+        InsaneFee,
+        CannotCreateInternalAddress
     };
 
-    enum EncryptionStatus
-    {
-        Unencrypted,  // !wallet->IsCrypted()
-        Locked,       // wallet->IsCrypted() && wallet->IsLocked()
-        Unlocked,     // wallet->IsCrypted() && !wallet->IsLocked()
-	      UnlockedForAnonymizationOnly
+    enum EncryptionStatus {
+        Unencrypted,                 // !wallet->IsCrypted()
+        Locked,                      // wallet->IsCrypted() && wallet->IsLocked()
+        Unlocked,                    // wallet->IsCrypted() && !wallet->IsLocked()
+        UnlockedForStaking          // wallet->IsCrypted() && !wallet->IsLocked() && wallet->fWalletUnlockStaking
     };
 
-    OptionsModel *getOptionsModel();
-    AddressTableModel *getAddressTableModel();
-    TransactionTableModel *getTransactionTableModel();
+    OptionsModel* getOptionsModel();
+    AddressTableModel* getAddressTableModel();
+    TransactionTableModel* getTransactionTableModel();
+    RecentRequestsTableModel* getRecentRequestsTableModel();
 
-    qint64 getBalance(const CCoinControl *coinControl=NULL) const;
-    qint64 getStake() const;
-    qint64 getUnconfirmedBalance() const;
-    qint64 getImmatureBalance() const;
-    qint64 getAnonymizedBalance() const;
+    bool isTestNetwork() const;
+    bool isRegTestNetwork() const;
+    /** Whether cold staking is enabled or disabled in the network **/
+    bool isColdStakingNetworkelyEnabled() const;
+    CAmount getMinColdStakingAmount() const;
+    /* current staking status from the miner thread **/
+    bool isStakingStatusActive() const;
+
+    bool isHDEnabled() const;
+    bool upgradeWallet(std::string& upgradeError);
+
+    CAmount getBalance(const CCoinControl* coinControl = nullptr, bool fIncludeDelegated = true, bool fUnlockedOnly = false) const;
+    CAmount getUnlockedBalance(const CCoinControl* coinControl = nullptr, bool fIncludeDelegated = true) const;
+    CAmount getUnconfirmedBalance() const;
+    CAmount getImmatureBalance() const;
+    CAmount getLockedBalance() const;
+    CAmount getZerocoinBalance() const;
+    CAmount getUnconfirmedZerocoinBalance() const;
+    CAmount getImmatureZerocoinBalance() const;
+    bool haveWatchOnly() const;
+    CAmount getWatchBalance() const;
+    CAmount getWatchUnconfirmedBalance() const;
+    CAmount getWatchImmatureBalance() const;
+
+    CAmount getDelegatedBalance() const;
+    CAmount getColdStakedBalance() const;
+
+    bool isColdStaking() const;
+
     EncryptionStatus getEncryptionStatus() const;
+    bool isWalletUnlocked() const;
+    bool isWalletLocked(bool fFullUnlocked = true) const;
+    CKey generateNewKey() const; //for temporary paper wallet key generation
+    bool setAddressBook(const CTxDestination& address, const std::string& strName, const std::string& strPurpose);
+    void encryptKey(const CKey key, const std::string& pwd, const std::string& slt, std::vector<unsigned char>& crypted);
+    void decryptKey(const std::vector<unsigned char>& crypted, const std::string& slt, const std::string& pwd, CKey& key);
+    void emitBalanceChanged(); // Force update of UI-elements even when no values have changed
 
     // Check address for validity
-    bool validateAddress(const QString &address);
+    bool validateAddress(const QString& address);
+    // Check address for validity and type (whether cold staking address or not)
+    bool validateAddress(const QString& address, bool fStaking);
 
     // Return status record for SendCoins, contains error id + information
-    struct SendCoinsReturn
-    {
-        SendCoinsReturn(StatusCode status=Aborted,
-                         qint64 fee=0,
-                         QString hex=QString()):
-            status(status), fee(fee), hex(hex) {}
+    struct SendCoinsReturn {
+        SendCoinsReturn(StatusCode status = OK) : status(status) {}
+        SendCoinsReturn(CWallet::CommitResult _commitRes) : commitRes(_commitRes)
+        {
+            status = (_commitRes.status == CWallet::CommitStatus::OK ? OK : TransactionCommitFailed);
+        }
         StatusCode status;
-        qint64 fee; // is used in case status is "AmountWithFeeExceedsBalance"
-        QString hex; // is filled with the transaction hash if status is "OK"
+        CWallet::CommitResult commitRes;
     };
 
+    void setWalletDefaultFee(CAmount fee = DEFAULT_TRANSACTION_FEE);
+    bool hasWalletCustomFee();
+    bool getWalletCustomFee(CAmount& nFeeRet);
+    void setWalletCustomFee(bool fUseCustomFee, const CAmount& nFee = DEFAULT_TRANSACTION_FEE);
+
+    const CWalletTx* getTx(uint256 id);
+
+    // prepare transaction for getting txfee before sending coins
+    SendCoinsReturn prepareTransaction(WalletModelTransaction& transaction, const CCoinControl* coinControl = NULL, bool fIncludeDelegations = true);
+
     // Send coins to a list of recipients
-    SendCoinsReturn sendCoins(const QList<SendCoinsRecipient> &recipients, const CCoinControl *coinControl=NULL);
+    SendCoinsReturn sendCoins(WalletModelTransaction& transaction);
 
     // Wallet encryption
-    bool setWalletEncrypted(bool encrypted, const SecureString &passphrase);
+    bool setWalletEncrypted(bool encrypted, const SecureString& passphrase);
     // Passphrase only needed when unlocking
-    bool setWalletLocked(bool locked, const SecureString &passPhrase=SecureString(), bool anonymizeOnly=false);
-    bool changePassphrase(const SecureString &oldPass, const SecureString &newPass);
-    // Is wallet unlocked for anonymization only?
-    bool isAnonymizeOnlyUnlocked();
+    bool setWalletLocked(bool locked, const SecureString& passPhrase = SecureString(), bool stakingOnly = false);
+
+    // Method used to "lock" the wallet only for staking purposes. Just a flag that should prevent possible movements in the wallet.
+    // Passphrase only needed when unlocking.
+    bool lockForStakingOnly(const SecureString& passPhrase = SecureString());
+
+    bool changePassphrase(const SecureString& oldPass, const SecureString& newPass);
+    // Is wallet unlocked for staking only?
+    bool isStakingOnlyUnlocked();
     // Wallet backup
-    bool backupWallet(const QString &filename);
+    bool backupWallet(const QString& filename);
 
     // RAI object for unlocking wallet, returned by requestUnlock()
     class UnlockContext
     {
     public:
-        UnlockContext(WalletModel *wallet, bool valid, bool relock);
+        UnlockContext(WalletModel *wallet, bool valid, const WalletModel::EncryptionStatus& status_before);
         ~UnlockContext();
 
         bool isValid() const { return valid; }
 
+        // Copy constructor is disabled
+        UnlockContext(const UnlockContext&) = delete;
         // Copy operator and constructor transfer the context
-        UnlockContext(const UnlockContext& obj) { CopyFrom(obj); }
-        UnlockContext& operator=(const UnlockContext& rhs) { CopyFrom(rhs); return *this; }
+        UnlockContext(UnlockContext&& obj) { CopyFrom(std::move(obj)); }
+        UnlockContext& operator=(UnlockContext&& rhs) { CopyFrom(std::move(rhs)); return *this; }
+
     private:
         WalletModel *wallet;
         bool valid;
+        WalletModel::EncryptionStatus was_status;   // original status
         mutable bool relock; // mutable, as it can be set to false by copying
 
-        void CopyFrom(const UnlockContext& rhs);
+        UnlockContext& operator=(const UnlockContext&) = default;
+        void CopyFrom(UnlockContext&& rhs);
     };
 
     UnlockContext requestUnlock();
 
-    bool getPubKey(const CKeyID &address, CPubKey& vchPubKeyOut) const;
+    bool getPubKey(const CKeyID& address, CPubKey& vchPubKeyOut) const;
+    int64_t getCreationTime() const;
+    int64_t getKeyCreationTime(const CPubKey& key);
+    int64_t getKeyCreationTime(const CTxDestination& address);
+    PairResult getNewAddress(Destination& ret, std::string label = "") const;
+    /**
+     * Return a new address used to receive for delegated cold stake purpose.
+     */
+    PairResult getNewStakingAddress(Destination& ret, std::string label = "") const;
+
+    bool whitelistAddressFromColdStaking(const QString &addressStr);
+    bool blacklistAddressFromColdStaking(const QString &address);
+    bool updateAddressBookPurpose(const QString &addressStr, const std::string& purpose);
+    std::string getLabelForAddress(const CTxDestination& address);
+    bool getKeyId(const CTxDestination& address, CKeyID& keyID);
+
+    bool isMine(const CTxDestination& address);
+    bool isMine(const QString& addressStr);
+    bool isUsed(CTxDestination address);
     void getOutputs(const std::vector<COutPoint>& vOutpoints, std::vector<COutput>& vOutputs);
+    bool getMNCollateralCandidate(COutPoint& outPoint);
+    bool isSpent(const COutPoint& outpoint) const;
     void listCoins(std::map<QString, std::vector<COutput> >& mapCoins) const;
+
     bool isLockedCoin(uint256 hash, unsigned int n) const;
     void lockCoin(COutPoint& output);
     void unlockCoin(COutPoint& output);
     void listLockedCoins(std::vector<COutPoint>& vOutpts);
 
+    std::string GetUniqueWalletBackupName();
+    void loadReceiveRequests(std::vector<std::string>& vReceiveRequests);
+    bool saveReceiveRequest(const std::string& sAddress, const int64_t nId, const std::string& sRequest);
+
 private:
-    CWallet *wallet;
+    CWallet* wallet;
+    bool fHaveWatchOnly;
+    bool fForceCheckBalanceChanged;
 
     // Wallet has an options model for wallet-specific options
     // (transaction fee, for example)
-    OptionsModel *optionsModel;
+    OptionsModel* optionsModel;
 
-    AddressTableModel *addressTableModel;
-    TransactionTableModel *transactionTableModel;
+    AddressTableModel* addressTableModel;
+    TransactionTableModel* transactionTableModel;
+    RecentRequestsTableModel* recentRequestsTableModel;
 
     // Cache some values to be able to detect changes
-    qint64 cachedBalance;
-    qint64 cachedStake;
-    qint64 cachedUnconfirmedBalance;
-    qint64 cachedImmatureBalance;
-    qint64 cachedAnonymizedBalance;
-    qint64 cachedNumTransactions;
-    int cachedTxLocks;
-    int cachedDarksendRounds;
+    CAmount cachedBalance;
+    CAmount cachedUnconfirmedBalance;
+    CAmount cachedImmatureBalance;
+    CAmount cachedZerocoinBalance;
+    CAmount cachedUnconfirmedZerocoinBalance;
+    CAmount cachedImmatureZerocoinBalance;
+    CAmount cachedWatchOnlyBalance;
+    CAmount cachedWatchUnconfBalance;
+    CAmount cachedWatchImmatureBalance;
+    CAmount cachedDelegatedBalance;
+    CAmount cachedColdStakedBalance;
+
     EncryptionStatus cachedEncryptionStatus;
     int cachedNumBlocks;
+    int cachedTxLocks;
 
-    QTimer *pollTimer;
+    QTimer* pollTimer;
 
     void subscribeToCoreSignals();
     void unsubscribeFromCoreSignals();
-    void checkBalanceChanged();
+    Q_INVOKABLE void checkBalanceChanged();
 
-
-public slots:
-    /* Wallet status might have changed */
-    void updateStatus();
-    /* New transaction, or transaction changed status */
-    void updateTransaction(const QString &hash, int status);
-    /* New, updated or removed address book entry */
-    void updateAddressBook(const QString &address, const QString &label, bool isMine, int status);
-    /* Current, immature or unconfirmed balance might have changed - emit 'balanceChanged' if so */
-    void pollBalanceChanged();
-
-signals:
+Q_SIGNALS:
     // Signal that balance in wallet changed
-    void balanceChanged(qint64 balance, qint64 stake, qint64 unconfirmedBalance, qint64 immatureBalance, qint64 anonymizedBalance);
+    void balanceChanged(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance,
+                        const CAmount& zerocoinBalance, const CAmount& unconfirmedZerocoinBalance, const CAmount& immatureZerocoinBalance,
+                        const CAmount& watchOnlyBalance, const CAmount& watchUnconfBalance, const CAmount& watchImmatureBalance,
+                        const CAmount& delegatedBalance, const CAmount& coldStakingBalance);
 
     // Encryption status of wallet changed
     void encryptionStatusChanged(int status);
@@ -188,8 +334,34 @@ signals:
     // this means that the unlocking failed or was cancelled.
     void requireUnlock();
 
-    // Asynchronous message notification
-    void message(const QString &title, const QString &message, bool modal, unsigned int style);
+    // Fired when a message should be reported to the user
+    void message(const QString& title, const QString& body, unsigned int style, bool* ret = nullptr);
+
+    // Coins sent: from wallet, to recipient, in (serialized) transaction:
+    void coinsSent(CWallet* wallet, SendCoinsRecipient recipient, QByteArray transaction);
+
+    // Show progress dialog e.g. for rescan
+    void showProgress(const QString& title, int nProgress);
+
+    // Watch-only address added
+    void notifyWatchonlyChanged(bool fHaveWatchonly);
+
+    // Receive tab address may have changed
+    void notifyReceiveAddressChanged();
+
+public Q_SLOTS:
+    /* Wallet status might have changed */
+    void updateStatus();
+    /* New transaction, or transaction changed status */
+    void updateTransaction();
+    /* New, updated or removed address book entry */
+    void updateAddressBook(const QString& address, const QString& label, bool isMine, const QString& purpose, int status);
+    /* Watch-only added */
+    void updateWatchOnlyFlag(bool fHaveWatchonly);
+    /* Current, immature or unconfirmed balance might have changed - emit 'balanceChanged' if so */
+    void pollBalanceChanged();
+    /* Update address book labels in the database */
+    bool updateAddressBookLabels(const CTxDestination& address, const std::string& strName, const std::string& strPurpose);
 };
 
-#endif // WALLETMODEL_H
+#endif // PIVX_QT_WALLETMODEL_H

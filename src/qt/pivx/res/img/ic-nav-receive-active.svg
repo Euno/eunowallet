@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_20" data-name="Rectangle 20" width="72" height="72" transform="translate(3173 1732)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_15" data-name="Mask Group 15" transform="translate(-3173 -1732)" clip-path="url(#clip-path)">
+    <path id="Icon_ionic-ios-send" data-name="Icon ionic-ios-send" d="M38.5.089.493,16.653a.871.871,0,0,0,.031,1.584L10.8,24.045a1.658,1.658,0,0,0,1.895-.186L32.97,6.384c.135-.114.456-.331.58-.207s-.072.445-.186.58L15.826,26.509a1.652,1.652,0,0,0-.166,1.977l6.719,10.777a.874.874,0,0,0,1.574-.021L39.668,1.238A.871.871,0,0,0,38.5.089Z" transform="translate(3228.819 1788.34) rotate(180)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,329 +1,272 @@
-Copyright (c) 2009-2012 Bitcoin Developers
-Distributed under the MIT/X11 software license, see the accompanying
-file license.txt or http://www.opensource.org/licenses/mit-license.php.
-This product includes software developed by the OpenSSL Project for use in
-the OpenSSL Toolkit (http://www.openssl.org/).  This product includes
-cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP
-software written by Thomas Bernard.
-
-
 UNIX BUILD NOTES
-================
+====================
+Some notes on how to build PIVX Core in Unix.
+
+Note
+---------------------
+Always use absolute paths to configure and compile PIVX Core and the dependencies,
+For example, when specifying the path of the dependency:
+
+	../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
+
+Here BDB_PREFIX must be an absolute path - it is defined using $(pwd) which ensures
+the usage of the absolute path.
+
+To Build
+---------------------
+
+```bash
+./autogen.sh
+./configure
+make
+make install # optional
+```
+
+This will build pivx-qt as well, if the dependencies are met.
 
 Dependencies
 ---------------------
 
 These dependencies are required:
 
- Library     | Purpose          | Description
- ------------|------------------|----------------------
- libssl      | Crypto           | Random Number Generation
- libgmp      | Secp256k1        | Secp256k1 Dependency
- libboost    | Utility          | Library for threading, data structures, etc
- libevent    | Networking       | OS independent asynchronous networking
- libdb4.8    | Berkeley DB      | Wallet storage (only needed when wallet enabled)
- libsecp256k1| Secp256k1        | Elliptic Curve Cryptography
+ Library     | Purpose            | Description
+ ------------|--------------------|----------------------
+ libssl      | Crypto             | Random Number Generation, Elliptic Curve Cryptography
+ libboost    | Utility            | Library for threading, data structures, etc
+ libevent    | Networking         | OS independent asynchronous networking
+ libgmp      | Bignum Arithmetic  | Precision arithmetic
 
 Optional dependencies:
 
  Library     | Purpose          | Description
  ------------|------------------|----------------------
  miniupnpc   | UPnP Support     | Firewall-jumping support
+ libdb4.8    | Berkeley DB      | Wallet storage (only needed when wallet enabled)
  qt          | GUI              | GUI toolkit (only needed when GUI enabled)
  protobuf    | Payments in GUI  | Data interchange format used for payment protocol (only needed when GUI enabled)
- libqrencode | QR codes in GUI  | Optional for generating QR codes (only needed when GUI enabled)
+ univalue    | Utility          | JSON parsing and encoding (bundled version will be used unless --with-system-univalue passed to configure)
+ libzmq3     | ZMQ notification | Optional, allows generating ZMQ notifications (requires ZMQ version >= 4.0.0)
 
+For the versions used, see [dependencies.md](dependencies.md)
 
-System requirements
+Memory Requirements
 --------------------
 
-C++ compilers are memory-hungry. It is recommended to have at least 1 GB of
-memory available when compiling Euno Core. With 512MB of memory or less
-compilation will take much longer due to swap thrashing.
+C++ compilers are memory-hungry. It is recommended to have at least 1.5 GB of
+memory available when compiling PIVX Core. On systems with less, gcc can be
+tuned to conserve memory with additional CXXFLAGS:
 
-Dependency Build Instructions: Ubuntu & Debian
-----------------------------------------------
+
+    ./configure CXXFLAGS="--param ggc-min-expand=1 --param ggc-min-heapsize=32768"
+
+
+## Linux Distribution Specific Instructions
+
+### Ubuntu & Debian
+
+#### Dependency Build Instructions
+
 Build requirements:
 
-    sudo apt-get install build-essential libtool automake autotools-dev autoconf pkg-config libssl-dev libgmp3-dev libevent-dev bsdmainutils
+    sudo apt-get install build-essential libtool bsdmainutils autotools-dev autoconf pkg-config automake python3
 
-On at least Ubuntu 14.04+ and Debian 7+ there are generic names for the
-individual boost development packages, so the following can be used to only
-install necessary parts of boost:
+Now, you can either build from self-compiled [depends](/depends/README.md) or install the required dependencies:
 
-    sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
+    sudo apt-get install libssl-dev libgmp-dev libevent-dev libboost-all-dev
 
-If that doesn't work, you can install all boost development packages with:
+BerkeleyDB is required for the wallet.
 
-    sudo apt-get install libboost-all-dev
+ **For Ubuntu only:** db4.8 packages are available [here](https://launchpad.net/~pivx/+archive/pivx).
+ You can add the repository using the following command:
 
-BerkeleyDB is required for the wallet. db4.8 packages are available [here](https://launchpad.net/~bitcoin/+archive/bitcoin).
-You can add the repository and install using the following commands:
-
-    sudo add-apt-repository ppa:bitcoin/bitcoin
+    sudo apt-get install software-properties-common
+    sudo add-apt-repository ppa:pivx/pivx
     sudo apt-get update
     sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
-If that does not work alternatively download and compile:
-
-    cd ~
-    mkdir bitcoin/db4/
-
-    wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
-    tar -xzvf db-4.8.30.NC.tar.gz
-    cd db-4.8.30.NC/build_unix/
-    ../dist/configure --enable-cxx
-    make
-    sudo make install
-
-
 Ubuntu and Debian have their own libdb-dev and libdb++-dev packages, but these will install
-BerkeleyDB 5.1 or later, which break binary wallet compatibility with the distributed executables which
+BerkeleyDB 5.1 or later. This will break binary wallet compatibility with the distributed executables, which
 are based on BerkeleyDB 4.8. If you do not care about wallet compatibility,
 pass `--with-incompatible-bdb` to configure.
 
-To build Secp256k1:
+Otherwise, you can build from self-compiled `depends` (see above).
 
-    cd src/secp256k1/ && ./configure && make
-    sudo make install
-    sudo ldconfig
+To build PIVX Core without wallet, see [*Disable-wallet mode*](/doc/build-unix.md#disable-wallet-mode)
+
+
+Optional (see --with-miniupnpc and --enable-upnp-default):
+
+    sudo apt-get install libminiupnpc-dev
+
+ZMQ dependencies (provides ZMQ API):
+
+    sudo apt-get install libzmq3-dev
+
+GUI dependencies:
+
+If you want to build pivx-qt, make sure that the required packages for Qt development
+are installed. Qt 5 is necessary to build the GUI.
+To build without GUI pass `--without-gui`.
+
+To build with Qt 5 you need the following:
+
+    sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 libqt5svg5-dev libqt5charts5-dev qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev
+
+**Note:** Ubuntu versions prior to Bionic (18.04), and Debian version prior to Buster, do not have the `libqt5charts5-dev` package. If you are compiling on one of these older versions, you will need to omit `libqt5charts5-dev` from the above command.
+
+Once these are installed, they will be found by configure and a pivx-qt executable will be
+built by default.
+
+
+### Fedora
+
+#### Dependency Build Instructions
+
+Build requirements:
+
+    sudo dnf install which gcc-c++ libtool make autoconf automake compat-openssl10-devel libevent-devel boost-devel libdb4-devel libdb4-cxx-devel gmp-devel python3
 
 Optional:
 
-    sudo apt-get install libminiupnpc-dev (see --with-miniupnpc and --enable-upnp-default)
+    sudo dnf install miniupnpc-devel zeromq-devel
 
-Dependencies for the GUI: Ubuntu & Debian
------------------------------------------
+To build with Qt 5 you need the following:
 
-If you want to build Euno-Qt, make sure that the required packages for Qt development
-are installed. Qt 5 is necessary to build the GUI.
-If both Qt 4 and Qt 5 are installed, Qt 5 will be used.
-
-To build with Qt 5 (recommended) you need the following:
-
-    sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
-
-libqrencode (optional) can be installed with:
-
-    sudo apt-get install libqrencode-dev
-
-Once these are installed, they will be found by configure and a Euno-qt executable will be
-built by default.
-
-```
+    sudo dnf install qt5-qttools-devel qt5-qtbase-devel qt5-qtsvg-devel qt5-qtcharts-devel protobuf-devel qrencode-devel
 
 Notes
 -----
-1) You only need Berkeley DB if the wallet is enabled (see the section *Disable-Wallet mode* below).
-
-2) The release is built with GCC and then "strip transferd" to strip the debug
+The release is built with GCC and then "strip pivxd" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
-If you get an error about secp256k1
-cd secp256k1/
-./autogen.sh
-./configure.sh
-make
-cd ..
-make -f makefile.unix
-strip eunod
 
-To Build eunod
+miniupnpc
+---------
+
+[miniupnpc](http://miniupnp.free.fr/) may be used for UPnP port mapping.  It can be downloaded from [here](
+http://miniupnp.tuxfamily.org/files/).  UPnP support is compiled in and
+turned off by default.  See the configure options for upnp behavior desired:
+
+	--without-miniupnpc      No UPnP support miniupnp not required
+	--disable-upnp-default   (the default) UPnP support turned off by default at runtime
+	--enable-upnp-default    UPnP support turned on by default at runtime
+
+To build:
+
+    tar -xzvf miniupnpc-1.6.tar.gz
+    cd miniupnpc-1.6
+    make
+    sudo su
+    make install
+
+
+Berkeley DB
+-----------
+It is recommended to use Berkeley DB 4.8. If you have to build it yourself,
+you can use [the installation script included in contrib/](/contrib/install_db4.sh)
+like so:
+
+```shell
+./contrib/install_db4.sh `pwd`
+```
+
+from the root of the repository.
+
+**Note**: You only need Berkeley DB if the wallet is enabled (see [*Disable-wallet mode*](/doc/build-unix.md#disable-wallet-mode)).
+
+Boost
+-----
+If you need to build Boost yourself:
+
+	sudo su
+	./bootstrap.sh
+	./bjam install
+
+
+Security
 --------
+To help make your PIVX Core installation more secure by making certain attacks impossible to
+exploit even if a vulnerability is found, binaries are hardened by default.
+This can be disabled with:
 
-With UPNP:
+Hardening Flags:
 
-    cd src && \
-    make -f makefile.unix && \
-    strip eunod
+	./configure --enable-hardening
+	./configure --disable-hardening
 
-(Recommended) Without UPNP:
 
-    cd src && \
-    make -f makefile.unix USE_UPNP= && \
-    strip eunod
+Hardening enables the following features:
+* _Position Independent Executable_: Build position independent code to take advantage of Address Space Layout Randomization
+    offered by some kernels. Attackers who can cause execution of code at an arbitrary memory
+    location are thwarted if they don't know where anything useful is located.
+    The stack and heap are randomly located by default, but this allows the code section to be
+    randomly located as well.
 
-To Build Euno-Qt
---------
+    On an AMD64 processor where a library was not compiled with -fPIC, this will cause an error
+    such as: "relocation R_X86_64_32 against `......' can not be used when making a shared object;"
 
-With UPNP:
-    qmake -qt=qt5 && \
-    make \
+    To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-(Recommended) Without UPNP:
+    	scanelf -e ./pivxd
 
-    qmake -qt=qt5 USE_UPNP=- && \
-    make \
-```
+    The output should contain:
 
-# STATIC BUILD INSTRUCTIONS
-The following instructions have been tested on the following distributions:
+     TYPE
+    ET_DYN
 
-1. Ubuntu 16.04.4
-2. Linux Mint 18.3
+* _Non-executable Stack_: If the stack is executable then trivial stack-based buffer overflow exploits are possible if
+    vulnerable buffers are found. By default, PIVX Core should be built with a non-executable stack
+    but if one of the libraries it uses asks for an executable stack or someone makes a mistake
+    and uses a compiler extension which requires an executable stack, it will silently build an
+    executable without the non-executable stack protection.
 
-The advantage of building the wallet this way is that it will be able to be executed even on a fresh ubuntu installation without adding additional libraries. There will be no dependencies error messages at startup in case some shared libs are missing. The current release was build that way.
+    To verify that the stack is non-executable after compiling use:
+    `scanelf -e ./pivxd`
 
-## Get the building environment ready (same as above)
+    The output should contain:
+	STK/REL/PTL
+	RW- R-- RW-
 
-Open a terminal window. If git is not installed in your system, install it by issuing the following command
-```
-sudo apt-get install git
-```
-Install Linux development tools
-```
-sudo apt-get install build-essential libtool automake autotools-dev autoconf pkg-config libgmp3-dev libevent-dev bsdmainutils
-```
-## Compile all dependencies manually and use their static libs
-### Download and build BerkeleyDB 5.0.32.NC
-```
-mkdir ~/deps
-cd ~/deps
-wget 'http://download.oracle.com/berkeley-db/db-5.0.32.NC.tar.gz'
-tar -xzvf db-5.0.32.NC.tar.gz
-cd db-5.0.32.NC/build_unix/
-../dist/configure --enable-cxx --disable-shared
-make
+    The STK RW- means that the stack is readable and writeable but not executable.
 
-```
+Disable-wallet mode
+--------------------
+**Note:** This functionality is not yet completely implemented, and compilation using the below option will currently fail.
 
-### Compiling Boost 1.58
+When the intention is to run only a P2P node without a wallet, PIVX Core may be compiled in
+disable-wallet mode with:
 
-Download Boost 1.58 here :
-https://sourceforge.net/projects/boost/files/boost/1.58.0/boost_1_58_0.tar.gz/download<br>
-Put the archive in ~/deps
+    ./configure --disable-wallet
 
-```
-cd ~/deps
-tar xvfz boost_1_58_0.tar.gz
-cd ~/deps/boost_1_58_0
-./bootstrap.sh
+In this case there is no dependency on Berkeley DB 4.8.
 
-./b2 --build-type=complete --layout=versioned --with-chrono --with-filesystem --with-program_options --with-system --with-thread toolset=gcc variant=release link=static threading=multi runtime-link=static stage
 
-```
+Additional Configure Flags
+--------------------------
+A list of additional configure flags can be displayed with:
 
-### Compiling miniupnpc
+    ./configure --help
 
-Install Miniupnpc. Download it from here http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.tar.gz<br>
-and place it in your deps folder, then :
-```
-cd ~/deps
-tar xvfz miniupnpc-1.9.tar.gz
 
-mv miniupnpc-1.9 miniupnpc
-cd miniupnpc
-make upnpc-static
-```
-==> Important : don't forget to rename "miniupnpc-1.9" directory to "miniupnpc"
+ARM Cross-compilation
+-------------------
+These steps can be performed on, for example, an Ubuntu VM. The depends system
+will also work on other Linux distributions, however the commands for
+installing the toolchain will be different.
 
-### Compiling OpenSSL
+Make sure you install the build requirements mentioned above.
+Then, install the toolchain and curl:
 
-download 1.0.2g version here : https://www.openssl.org/source/old/1.0.2/openssl-1.0.2g.tar.gz<br>
-place archive in deps folders then :
-```
-cd ~/deps
-tar xvfz openssl-1.0.2g.tar.gz
-cd openssl-1.0.2g
-./config no-shared no-dso
-make depend
-make
-```
+    sudo apt-get install g++-arm-linux-gnueabihf curl
 
-### Compiling QT 5.10.1 statically
-Download QT 5.10.1 sources
-https://download.qt.io/official_releases/qt/5.10/5.10.1/single/qt-everywhere-src-5.10.1.tar.xz<br>
-Extract in deps folder
-```
-cd ~/deps/
-tar xvfJ qt-everywhere-src-5.10.1.tar.xz
-```
-after everything is extracted, create another directory where static libs will be installed.
-For example, i created ~/deps/Qt/5.10.1_static and used that directory in configure command below (it may take a while) :
-```
-mkdir  ~/deps/Qt
-mkdir  ~/deps/Qt/5.10.1_static
-cd ~/deps/qt-everywhere-src-5.10.1
+To build executables for ARM:
 
-./configure -static -opensource -release -confirm-license -no-compile-examples -nomake tests -prefix ~/deps/Qt/5.10.1_static -qt-zlib -qt-libpng -no-libjpeg -qt-xcb -qt-freetype -qt-pcre -qt-harfbuzz -no-openssl -skip wayland -skip qtserialport -skip script -pulseaudio -alsa -nomake tools
-```
-After it successfuly ends :
-```
-make
-make install
-```
-### Compiling  Euno-Qt wallet
+    cd depends
+    make HOST=arm-linux-gnueabihf NO_QT=1
+    cd ..
+    ./autogen.sh
+    ./configure --prefix=$PWD/depends/arm-linux-gnueabihf --enable-glibc-back-compat --enable-reduce-exports LDFLAGS=-static-libstdc++
+    make
 
-Clone the euno repository
-```
-git clone https://github.com/euno/eunowallet.git
-```
-if required, fix the leveldb files permissions
-```
-cd ~/eunowallet/src/leveldb
-chmod +x build_detect_platform
-chmod 775 *
-```
-you may also be required to build leveldb prior to start the wallet build
-```
-make clean
-make libleveldb.a libmemenv.a
-```
-build libsecp256k1
-```
-cd ~/eunowallet/src/secp256k1
-./autogen.sh
-./configure --enable-static --disable-shared
-make
-```
-Just by precaution, go to secp256k1/.libs dir and delete all non static libs (all except *.a files) if present, to make sure only static libs will be used during linking
 
-go back to euno dir to modify euno-qt.pro if needed :
-```
-cd ~/eunowallet
-nano euno-qt.pro
-```
-All dependencies dir variables to set according to what have been done above in linux {} section :
-```
-linux {
-	DEPS_PATH = $(HOME)/deps
-	SECP256K1_LIB_PATH = src/secp256k1/.libs
-	SECP256K1_INCLUDE_PATH = src/secp256k1/include
-## comment below dependencies if u don't need to compile a static binary on linux
-	MINIUPNPC_LIB_PATH = $$DEPS_PATH/miniupnpc
-	MINIUPNPC_INCLUDE_PATH = $$DEPS_PATH
-	BOOST_LIB_PATH = $$DEPS_PATH/boost_1_58_0/stage/lib
-	BOOST_INCLUDE_PATH = $$DEPS_PATH/boost_1_58_0
-	BDB_LIB_PATH = $$DEPS_PATH/db-5.0.32.NC/build_unix
-	BDB_INCLUDE_PATH = $$DEPS_PATH/db-5.0.32.NC/build_unix
-	OPENSSL_LIB_PATH = $$DEPS_PATH/openssl-1.0.2g
-	OPENSSL_INCLUDE_PATH = $$DEPS_PATH/openssl-1.0.2g/include
-}
-```
-After saving the .pro file :
-```
-export PATH=$HOME/deps/Qt/5.4.2_static/bin:$PATH
-qmake
-make
-```
-
-### Compiling eunod
-With dependencies (except QT cause not needed here) compliled as above, put these lines in ~/eunowallet/src/makefile.unix (first lines)
-```
-DEPS_PATH = $(HOME)/deps
-SECP256K1_LIB_PATH = src/secp256k1/.libs
-SECP256K1_INCLUDE_PATH = src/secp256k1/include
-MINIUPNPC_LIB_PATH = $(DEPS_PATH)/miniupnpc
-MINIUPNPC_INCLUDE_PATH = $(DEPS_PATH)
-BOOST_LIB_PATH = $(DEPS_PATH)/boost_1_58_0/stage/lib
-BOOST_INCLUDE_PATH = $(DEPS_PATH)/boost_1_58_0
-BDB_LIB_PATH = $(DEPS_PATH)/db-5.0.32.NC/build_unix
-BDB_INCLUDE_PATH = $(DEPS_PATH)/db-5.0.32.NC/build_unix
-OPENSSL_LIB_PATH = $(DEPS_PATH)/openssl-1.0.2g
-OPENSSL_INCLUDE_PATH = $(DEPS_PATH)/openssl-1.0.2g/include
-```
-After that in ~/eunowallet/src
-```
-make -f makefile.unix
-strip eunod
-```
+For further documentation on the depends system see [README.md](../depends/README.md) in the depends directory.

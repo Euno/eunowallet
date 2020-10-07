@@ -1,8 +1,7 @@
 // Copyright (c) 2011 The LevelDB Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
-
-#ifndef LEVELDB_PLATFORM_WINDOWS
+#if !defined(LEVELDB_PLATFORM_WINDOWS)
 
 #include <dirent.h>
 #include <errno.h>
@@ -122,6 +121,8 @@ class PosixSequentialFile: public SequentialFile {
     }
     return Status::OK();
   }
+
+  virtual std::string GetName() const { return filename_; }
 };
 
 // pread() based random-access
@@ -173,6 +174,8 @@ class PosixRandomAccessFile: public RandomAccessFile {
     }
     return s;
   }
+
+  virtual std::string GetName() const { return filename_; }
 };
 
 // mmap() based random-access
@@ -207,6 +210,8 @@ class PosixMmapReadableFile: public RandomAccessFile {
     }
     return s;
   }
+
+  virtual std::string GetName() const { return filename_; }
 };
 
 class PosixWritableFile : public WritableFile {
@@ -267,7 +272,7 @@ class PosixWritableFile : public WritableFile {
       if (fd < 0) {
         s = IOError(dir, errno);
       } else {
-        if (fsync(fd) < 0) {
+        if (fsync(fd) < 0 && errno != EINVAL) {
           s = IOError(dir, errno);
         }
         close(fd);
@@ -288,6 +293,8 @@ class PosixWritableFile : public WritableFile {
     }
     return s;
   }
+
+  virtual std::string GetName() const { return filename_; }
 };
 
 static int LockOrUnlock(int fd, bool lock) {
@@ -696,4 +703,4 @@ Env* Env::Default() {
 
 }  // namespace leveldb
 
-#endif /* LEVELDB_PLATFORM_WINDOWS */
+#endif

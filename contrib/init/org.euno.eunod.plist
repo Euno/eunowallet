@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>org.euno.eunod</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/eunod</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+</dict>
+</plist>
+
+git mv org.euno.eunod.plist org.euno.eunod.plist
+git mv eunod.conf eunod.conf
+git mv eunod.init eunod.init
+git mv eunod.openrc eunod.openrc
+git mv eunod.openrcconf eunod.openrcconf
+git mv eunod.service eunod.service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

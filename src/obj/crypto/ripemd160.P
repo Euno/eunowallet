@@ -1,6 +1,0 @@
-obj/crypto/ripemd160.o: crypto/ripemd160.cpp \
- /home/ag/eunowallet/src/crypto/ripemd160.h \
- /home/ag/eunowallet/src/crypto/common.h
-crypto/ripemd160.cpp :
- /home/ag/eunowallet/src/crypto/ripemd160.h :
- /home/ag/eunowallet/src/crypto/common.h :
