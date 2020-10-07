@@ -175,7 +175,7 @@ void WelcomeContentWidget::initLanguages()
 {
     /* Language selector */
     QDir translations(":translations");
-    ui->comboBoxLanguage->addItem(QString("(") + tr("default") + QString(")"), QVariant(""));
+    ui->comboBoxLanguage->addItem(QString("(") + tr("default") + QString(")"), QVariant("en"));
     Q_FOREACH (const QString& langStr, translations.entryList()) {
         QLocale locale(langStr);
 
@@ -188,6 +188,7 @@ void WelcomeContentWidget::initLanguages()
             ui->comboBoxLanguage->addItem(locale.nativeLanguageName() + QString(" (") + langStr + QString(")"), QVariant(langStr));
         }
     }
+    checkLanguage();
 }
 
 void WelcomeContentWidget::setModel(OptionsModel *model)
