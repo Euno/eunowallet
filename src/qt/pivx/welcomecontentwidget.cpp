@@ -189,6 +189,7 @@ void WelcomeContentWidget::initLanguages()
         }
     }
     checkLanguage();
+    ui->retranslateUi(this);
 }
 
 void WelcomeContentWidget::setModel(OptionsModel *model)
