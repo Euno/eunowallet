@@ -134,12 +134,12 @@ public:
         consensus.nTime_RejectOldSporkKey = 1569538800;     //!> September 26, 2019 11:00:00 PM GMT
 
         // height-based activations
-        consensus.height_last_ZC_AccumCheckpoint = 651;
-        consensus.height_last_ZC_WrappedSerials = 651;
-        consensus.height_start_InvalidUTXOsCheck = 651;
-        consensus.height_start_ZC_InvalidSerials = 651;
-        consensus.height_start_ZC_SerialRangeCheck = 651;
-        consensus.height_ZC_RecalcAccumulators = 651;
+        consensus.height_last_ZC_AccumCheckpoint = 1441;
+        consensus.height_last_ZC_WrappedSerials = 1441;
+        consensus.height_start_InvalidUTXOsCheck = 1441;
+        consensus.height_start_ZC_InvalidSerials = 1441;
+        consensus.height_start_ZC_SerialRangeCheck = 1441;
+        consensus.height_ZC_RecalcAccumulators = 1441;
 
         // validation by-pass
         consensus.nPivxBadBlockTime = 1471401614;    // Skip nBit validation of Block 259201 per PR #915
@@ -165,14 +165,14 @@ public:
                 Consensus::NetworkUpgrade::ALWAYS_ACTIVE;
         consensus.vUpgrades[Consensus::UPGRADE_TESTDUMMY].nActivationHeight =
                 Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
-        consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight           = 651;
-        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight        = 651;
-        consensus.vUpgrades[Consensus::UPGRADE_ZC].nActivationHeight            = 651;
-        consensus.vUpgrades[Consensus::UPGRADE_ZC_V2].nActivationHeight         = 651;
-        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight         = 651;
-        consensus.vUpgrades[Consensus::UPGRADE_ZC_PUBLIC].nActivationHeight     = 651;
-        consensus.vUpgrades[Consensus::UPGRADE_V3_4].nActivationHeight          = 651;
-        consensus.vUpgrades[Consensus::UPGRADE_V4_0].nActivationHeight          = 651;
+        consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight           = 1441;
+        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight        = 1441;
+        consensus.vUpgrades[Consensus::UPGRADE_ZC].nActivationHeight            = 1441;
+        consensus.vUpgrades[Consensus::UPGRADE_ZC_V2].nActivationHeight         = 1441;
+        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight         = 1441;
+        consensus.vUpgrades[Consensus::UPGRADE_ZC_PUBLIC].nActivationHeight     = 1441;
+        consensus.vUpgrades[Consensus::UPGRADE_V3_4].nActivationHeight          = 1441;
+        consensus.vUpgrades[Consensus::UPGRADE_V4_0].nActivationHeight          = 1441;
         consensus.vUpgrades[Consensus::UPGRADE_V5_DUMMY].nActivationHeight =
                 Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
 
