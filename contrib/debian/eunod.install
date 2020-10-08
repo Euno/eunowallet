@@ -1,0 +1,3 @@
+usr/local/bin/eunod usr/bin
+usr/local/bin/euno-cli usr/bin
+debian/examples/euno.conf etc/euno

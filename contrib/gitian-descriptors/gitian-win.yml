@@ -1,5 +1,5 @@
 ---
-name: "euno-win-4.2"
+name: "euno-win-1.0"
 enable_cache: true
 distro: "ubuntu"
 suites:
@@ -24,7 +24,7 @@ packages:
 - "python3"
 - "rename"
 remotes:
-- "url": "https://git.blaize.tech/EUNO/euno-node.git.git"
+- "url": "https://git.blaize.tech/EUNO/euno-node.git"
   "dir": "euno"
 files: []
 script: |

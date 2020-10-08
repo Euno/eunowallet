@@ -1,5 +1,5 @@
 ---
-name: "pivx-linux-4.2"
+name: "euno-linux-1.0"
 enable_cache: true
 distro: "ubuntu"
 suites:
@@ -33,7 +33,7 @@ packages:
 - "ca-certificates"
 - "python3"
 remotes:
-- "url": "https://git.blaize.tech/EUNO/euno-node.git.git"
+- "url": "https://git.blaize.tech/EUNO/euno-node.git"
   "dir": "euno"
 files: []
 script: |

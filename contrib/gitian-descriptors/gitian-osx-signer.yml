@@ -1,5 +1,5 @@
 ---
-name: "pivx-dmg-signer"
+name: "euno-dmg-signer"
 distro: "ubuntu"
 suites:
 - "bionic"
@@ -11,7 +11,7 @@ remotes:
 - "url": "https://git.blaize.tech/EUNO/euno-node.git-detached-sigs.git"
   "dir": "signature"
 files:
-- "pivx-osx-unsigned.tar.gz"
+- "euno-osx-unsigned.tar.gz"
 script: |
   set -e -o pipefail
 

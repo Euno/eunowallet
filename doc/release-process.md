@@ -52,7 +52,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/pivx-project/gitian.sigs.git
     git clone https://git.blaize.tech/EUNO/euno-node.git-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://git.blaize.tech/EUNO/euno-node.git.git
+    git clone https://git.blaize.tech/EUNO/euno-node.git
 
 ### PIVX maintainers/release engineers, suggestion for writing release notes
 

@@ -1,5 +1,5 @@
 ---
-name: "euno-osx-4.2"
+name: "euno-osx-1.0"
 enable_cache: true
 distro: "ubuntu"
 suites:
@@ -29,7 +29,7 @@ packages:
 - "python3-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://git.blaize.tech/EUNO/euno-node.git.git"
+- "url": "https://git.blaize.tech/EUNO/euno-node.git"
   "dir": "euno"
 files:
 - "MacOSX10.11.sdk.tar.gz"
