@@ -3040,7 +3040,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     border-bottom: 1px solid #FFFFFF;
     border-radius:0px;
     color: #ffffff;
-    background-color:#FFFFFF;
+    background-color:#505050;
 }
 
 
@@ -3049,7 +3049,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     border-bottom: 1px solid #FFFFFF;
     border-radius:0px;
     color: #ffffff;
-    background-color:#FFFFFF;
+    background-color:#505050;
 }
 
 
@@ -3059,11 +3059,11 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 #treeWidget::branch:selected {
-    background-color:#FFFFFF;
+    background-color:#505050;
 }
 
 #treeWidget::branch:!selected {
-    background-color:#FFFFFF;
+    background-color:#505050;
 }
 
 #treeWidget::branch:hover {
