@@ -1,16 +1,16 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2017-2018 Euno developers
+// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef SRC_MASTERNODECONFIG_H_
 #define SRC_MASTERNODECONFIG_H_
 
+#include "fs.h"
+
 #include <string>
 #include <vector>
-#include <boost/filesystem.hpp>
-#include <boost/filesystem/fstream.hpp>
+
 
 class CMasternodeConfig;
 extern CMasternodeConfig masternodeConfig;
@@ -26,18 +26,15 @@ public:
         std::string privKey;
         std::string txHash;
         std::string outputIndex;
-        std::string acceptStakeRewards;
 
     public:
-        CMasternodeEntry(std::string alias, std::string ip, std::string privKey, std::string txHash,
-                         std::string outputIndex, std::string acceptStakeRewards)
+        CMasternodeEntry(std::string alias, std::string ip, std::string privKey, std::string txHash, std::string outputIndex)
         {
             this->alias = alias;
             this->ip = ip;
             this->privKey = privKey;
             this->txHash = txHash;
             this->outputIndex = outputIndex;
-            this->acceptStakeRewards = acceptStakeRewards;
         }
 
         const std::string& getAlias() const
@@ -54,6 +51,8 @@ public:
         {
             return outputIndex;
         }
+
+        bool castOutputIndex(int& n) const;
 
         void setOutputIndex(const std::string& outputIndex)
         {
@@ -89,16 +88,6 @@ public:
         {
             this->ip = ip;
         }
-
-        const std::string& getAcceptStakeRewards() const
-        {
-            return acceptStakeRewards;
-        }
-
-        void setAcceptStakeRewards(const std::string& acceptStakeRewards)
-        {
-            this->acceptStakeRewards = acceptStakeRewards;
-        }
     };
 
     CMasternodeConfig()
@@ -108,16 +97,26 @@ public:
 
     void clear();
     bool read(std::string& strErr);
-    void add(std::string alias, std::string ip, std::string privKey, std::string txHash,
-             std::string outputIndex, std::string acceptStakeRewards);
+    CMasternodeConfig::CMasternodeEntry* add(std::string alias, std::string ip, std::string privKey, std::string txHash, std::string outputIndex);
+    void remove(std::string alias);
 
     std::vector<CMasternodeEntry>& getEntries()
     {
         return entries;
     }
 
+    int getCount()
+    {
+        int c = -1;
+        for (CMasternodeEntry e : entries) {
+            if (e.getAlias() != "") c++;
+        }
+        return c;
+    }
+
 private:
     std::vector<CMasternodeEntry> entries;
 };
+
 
 #endif /* SRC_MASTERNODECONFIG_H_ */

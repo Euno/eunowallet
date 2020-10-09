@@ -1,113 +1,124 @@
-// Copyright (c) 2018 Euno Developers
-// Copyright (c) 2009-2012 The Darkcoin developers
+// Copyright (c) 2014-2016 The Dash developers
+// Copyright (c) 2016-2020 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 #ifndef SPORK_H
 #define SPORK_H
 
-#include "bignum.h"
-#include "sync.h"
-#include "net.h"
-#include "key.h"
-
-#include "util.h"
-#include "script.h"
 #include "base58.h"
+#include "hash.h"
+#include "key.h"
 #include "main.h"
+#include "messagesigner.h"
+#include "net.h"
+#include "sporkid.h"
+#include "sync.h"
+#include "util.h"
 
-using namespace std;
-using namespace boost;
+#include "protocol.h"
 
-// Don't ever reuse these IDs for other sporks
-#define SPORK_1_MASTERNODE_PAYMENTS_ENFORCEMENT               10000
-#define SPORK_2_MAX_VALUE                                     10002
-#define SPORK_3_REPLAY_BLOCKS                                 10003
-#define SPORK_4_NOTUSED                                       10004
-
-
-#define SPORK_1_MASTERNODE_PAYMENTS_ENFORCEMENT_DEFAULT       2428537599  //2015-4-8 23:59:59 GMT
-#define SPORK_2_MAX_VALUE_DEFAULT                             10000        //500 euno
-#define SPORK_3_REPLAY_BLOCKS_DEFAULT                         0
-#define SPORK_4_RECONVERGE_DEFAULT                            1420070400  //2047-1-1
 
 class CSporkMessage;
 class CSporkManager;
 
-#include "bignum.h"
-#include "net.h"
-#include "key.h"
-#include "util.h"
-#include "protocol.h"
-#include "darksend.h"
-#include <boost/lexical_cast.hpp>
-
-using namespace std;
-using namespace boost;
-
+extern std::vector<CSporkDef> sporkDefs;
 extern std::map<uint256, CSporkMessage> mapSporks;
-extern std::map<int, CSporkMessage> mapSporksActive;
 extern CSporkManager sporkManager;
 
-void ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStream& vRecv);
-int GetSporkValue(int nSporkID);
-bool IsSporkActive(int nSporkID);
-void ExecuteSpork(int nSporkID, int nValue);
-
 //
-// Spork Class
-// Keeps track of all of the network spork settings
+// Spork Classes
+// Keep track of all of the network spork settings
 //
 
-class CSporkMessage
+class CSporkMessage : public CSignedMessage
 {
 public:
-    std::vector<unsigned char> vchSig;
-    int nSporkID;
+    SporkId nSporkID;
     int64_t nValue;
     int64_t nTimeSigned;
 
-    uint256 GetHash(){
-        uint256 n = Hash(BEGIN(nSporkID), END(nTimeSigned));
-        return n;
-    }
+    CSporkMessage() :
+        CSignedMessage(),
+        nSporkID((SporkId)0),
+        nValue(0),
+        nTimeSigned(0)
+    {}
+
+    CSporkMessage(SporkId nSporkID, int64_t nValue, int64_t nTimeSigned) :
+        CSignedMessage(),
+        nSporkID(nSporkID),
+        nValue(nValue),
+        nTimeSigned(nTimeSigned)
+    { }
+
+    uint256 GetHash() const { return HashQuark(BEGIN(nSporkID), END(nTimeSigned)); }
+
+    // override CSignedMessage functions
+    uint256 GetSignatureHash() const override;
+    std::string GetStrMessage() const override;
+    const CTxIn GetVin() const override { return CTxIn(); };
+
+    // override GetPublicKey - gets Params().SporkPubkey()
+    const CPubKey GetPublicKey(std::string& strErrorRet) const override;
+    const CPubKey GetPublicKeyOld() const;
+
+    void Relay();
 
     ADD_SERIALIZE_METHODS;
 
     template <typename Stream, typename Operation>
-    inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion) {
-	unsigned int nSerSize = 0;
+    inline void SerializationOp(Stream& s, Operation ser_action)
+    {
         READWRITE(nSporkID);
         READWRITE(nValue);
         READWRITE(nTimeSigned);
         READWRITE(vchSig);
-	}
+        try
+        {
+            READWRITE(nMessVersion);
+        } catch (...) {
+            nMessVersion = MessageVersion::MESS_VER_STRMESS;
+        }
+    }
 };
 
 
 class CSporkManager
 {
 private:
-    std::vector<unsigned char> vchSig;
-
+    mutable RecursiveMutex cs;
     std::string strMasterPrivKey;
-    std::string strTestPubKey;
-    std::string strMainPubKey;
+    std::map<SporkId, CSporkDef*> sporkDefsById;
+    std::map<std::string, CSporkDef*> sporkDefsByName;
+    std::map<SporkId, CSporkMessage> mapSporksActive;
 
 public:
+    CSporkManager();
 
-    CSporkManager() {
-        strMainPubKey = "04a983220ea7a38a7106385003fef77896538a382a0dcc389cc45f3c98751d9af423a097789757556259351198a8aaa628a1fd644c3232678c5845384c744ff8d7";
-        strTestPubKey = "04a983220ea7a38a7106385003fef77896538a382a0dcc389cc45f3c98751d9af423a097789757556259351198a8aaa628a1fd644c3232678c5845384c744ff8d7";
+    ADD_SERIALIZE_METHODS;
+
+    template <typename Stream, typename Operation>
+    inline void SerializationOp(Stream& s, Operation ser_action)
+    {
+        READWRITE(mapSporksActive);
+        // we don't serialize private key to prevent its leakage
     }
 
-    std::string GetSporkNameByID(int id);
-    int GetSporkIDByName(std::string strName);
-    bool UpdateSpork(int nSporkID, int64_t nValue);
-    bool SetPrivKey(std::string strPrivKey);
-    bool CheckSignature(CSporkMessage& spork);
-    bool Sign(CSporkMessage& spork);
-    void Relay(CSporkMessage& msg);
+    void Clear();
+    void LoadSporksFromDB();
 
+    void ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStream& vRecv);
+    int64_t GetSporkValue(SporkId nSporkID);
+    void ExecuteSpork(SporkId nSporkID, int nValue);
+    bool UpdateSpork(SporkId nSporkID, int64_t nValue);
+
+    bool IsSporkActive(SporkId nSporkID);
+    std::string GetSporkNameByID(SporkId id);
+    SporkId GetSporkIDByName(std::string strName);
+
+    bool SetPrivKey(std::string strPrivKey);
+    std::string ToString() const;
 };
 
 #endif

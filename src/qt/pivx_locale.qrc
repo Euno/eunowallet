@@ -1,0 +1,6 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="en">locale/pivx_en.qm</file>
+        <file alias="en_US">locale/pivx_en_US.qm</file>
+    </qresource>
+</RCC>

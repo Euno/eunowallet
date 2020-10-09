@@ -7,6 +7,15 @@
 /* Define if building universal (internal helper macro) */
 #undef AC_APPLE_UNIVERSAL_BUILD
 
+/* Define this symbol to compile out all VERIFY code */
+#undef COVERAGE
+
+/* Define this symbol to enable the ECDH module */
+#undef ENABLE_MODULE_ECDH
+
+/* Define this symbol to enable the ECDSA pubkey recovery module */
+#undef ENABLE_MODULE_RECOVERY
+
 /* Define this symbol if OpenSSL EC functions are available */
 #undef ENABLE_OPENSSL_TESTS
 
@@ -18,6 +27,9 @@
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #undef HAVE_INTTYPES_H
+
+/* Define this symbol if libcrypto is installed */
+#undef HAVE_LIBCRYPTO
 
 /* Define this symbol if libgmp is installed */
 #undef HAVE_LIBGMP
@@ -79,8 +91,15 @@
 /* Define this symbol to enable x86_64 assembly optimizations */
 #undef USE_ASM_X86_64
 
+/* Define this symbol to use a statically generated ecmult table */
+#undef USE_ECMULT_STATIC_PRECOMPUTATION
+
 /* Define this symbol to use endomorphism optimization */
 #undef USE_ENDOMORPHISM
+
+/* Define this symbol if an external (non-inline) assembly implementation is
+   used */
+#undef USE_EXTERNAL_ASM
 
 /* Define this symbol to use the FIELD_10X26 implementation */
 #undef USE_FIELD_10X26
