@@ -148,7 +148,6 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
     }
 }
 
-//#include "pivx.moc"
 
 BitcoinCore::BitcoinCore() : QObject()
 {
