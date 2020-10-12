@@ -265,11 +265,11 @@ UniValue stop(const JSONRPCRequest& jsonRequest)
     if (jsonRequest.fHelp || jsonRequest.params.size() > 1)
         throw std::runtime_error(
             "stop\n"
-            "\nStop PIVX server.");
+            "\nStop EUNO server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "PIVX server stopping";
+    return "EUNO server stopping";
 }
 
 
@@ -360,31 +360,31 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true },
 
         /* PIVX features */
-        {"pivx", "listmasternodes", &listmasternodes, true },
-        {"pivx", "getmasternodecount", &getmasternodecount, true },
-        {"pivx", "createmasternodebroadcast", &createmasternodebroadcast, true },
-        {"pivx", "decodemasternodebroadcast", &decodemasternodebroadcast, true },
-        {"pivx", "relaymasternodebroadcast", &relaymasternodebroadcast, true },
-        {"pivx", "masternodecurrent", &masternodecurrent, true },
-        {"pivx", "startmasternode", &startmasternode, true },
-        {"pivx", "createmasternodekey", &createmasternodekey, true },
-        {"pivx", "getmasternodeoutputs", &getmasternodeoutputs, true },
-        {"pivx", "listmasternodeconf", &listmasternodeconf, true },
-        {"pivx", "getmasternodestatus", &getmasternodestatus, true },
-        {"pivx", "getmasternodewinners", &getmasternodewinners, true },
-        {"pivx", "getmasternodescores", &getmasternodescores, true },
-        {"pivx", "preparebudget", &preparebudget, true },
-        {"pivx", "submitbudget", &submitbudget, true },
-        {"pivx", "mnbudgetvote", &mnbudgetvote, true },
-        {"pivx", "getbudgetvotes", &getbudgetvotes, true },
-        {"pivx", "getnextsuperblock", &getnextsuperblock, true },
-        {"pivx", "getbudgetprojection", &getbudgetprojection, true },
-        {"pivx", "getbudgetinfo", &getbudgetinfo, true },
-        {"pivx", "mnbudgetrawvote", &mnbudgetrawvote, true },
-        {"pivx", "mnfinalbudget", &mnfinalbudget, true },
-        {"pivx", "checkbudgets", &checkbudgets, true },
-        {"pivx", "mnsync", &mnsync, true },
-        {"pivx", "spork", &spork, true },
+        {"euno", "listmasternodes", &listmasternodes, true },
+        {"euno", "getmasternodecount", &getmasternodecount, true },
+        {"euno", "createmasternodebroadcast", &createmasternodebroadcast, true },
+        {"euno", "decodemasternodebroadcast", &decodemasternodebroadcast, true },
+        {"euno", "relaymasternodebroadcast", &relaymasternodebroadcast, true },
+        {"euno", "masternodecurrent", &masternodecurrent, true },
+        {"euno", "startmasternode", &startmasternode, true },
+        {"euno", "createmasternodekey", &createmasternodekey, true },
+        {"euno", "getmasternodeoutputs", &getmasternodeoutputs, true },
+        {"euno", "listmasternodeconf", &listmasternodeconf, true },
+        {"euno", "getmasternodestatus", &getmasternodestatus, true },
+        {"euno", "getmasternodewinners", &getmasternodewinners, true },
+        {"euno", "getmasternodescores", &getmasternodescores, true },
+        {"euno", "preparebudget", &preparebudget, true },
+        {"euno", "submitbudget", &submitbudget, true },
+        {"euno", "mnbudgetvote", &mnbudgetvote, true },
+        {"euno", "getbudgetvotes", &getbudgetvotes, true },
+        {"euno", "getnextsuperblock", &getnextsuperblock, true },
+        {"euno", "getbudgetprojection", &getbudgetprojection, true },
+        {"euno", "getbudgetinfo", &getbudgetinfo, true },
+        {"euno", "mnbudgetrawvote", &mnbudgetrawvote, true },
+        {"euno", "mnfinalbudget", &mnfinalbudget, true },
+        {"euno", "checkbudgets", &checkbudgets, true },
+        {"euno", "mnsync", &mnsync, true },
+        {"euno", "spork", &spork, true },
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -597,14 +597,14 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(std::string methodname, std::string args)
 {
-    return "> pivx-cli " + methodname + " " + args + "\n";
+    return "> euno-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(std::string methodname, std::string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:51473/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:46463/\n";
 }
 
 void RPCSetTimerInterfaceIfUnset(RPCTimerInterface *iface)

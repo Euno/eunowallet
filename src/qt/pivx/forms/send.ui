@@ -464,7 +464,7 @@
                      <item>
                       <widget class="QLabel" name="labelAmountSend">
                        <property name="text">
-                        <string notr="true">0.00 PIV</string>
+                        <string notr="true">0.00 EUNO</string>
                        </property>
                       </widget>
                      </item>

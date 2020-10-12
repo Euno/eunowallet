@@ -60,9 +60,9 @@ WelcomeContentWidget::WelcomeContentWidget(QWidget *parent) :
 
     // position
     backButton->move(backX, backY);
-    backButton->setStyleSheet("background: url(://ic-arrow-white-left); background-repeat:no-repeat;background-position:center;border:  0;background-color:#5c4b7d;color: #5c4b7d; border-radius:2px;");
+    backButton->setStyleSheet("background: url(://ic-arrow-white-left); background-repeat:no-repeat;background-position:center;border:  0;background-color:#7599f2;color: #7599f2; border-radius:2px;");
     nextButton->move(nextX, nextY);
-    nextButton->setStyleSheet("background: url(://ic-arrow-white-right);background-repeat:no-repeat;background-position:center;border:  0;background-color:#5c4b7d;color: #5c4b7d; border-radius:2px;");
+    nextButton->setStyleSheet("background: url(://ic-arrow-white-right);background-repeat:no-repeat;background-position:center;border:  0;background-color:#7599f2;color: #7599f2; border-radius:2px;");
 
     if (pos == 0) {
         backButton->setVisible(false);
@@ -175,7 +175,7 @@ void WelcomeContentWidget::initLanguages()
 {
     /* Language selector */
     QDir translations(":translations");
-    ui->comboBoxLanguage->addItem(QString("(") + tr("default") + QString(")"), QVariant(""));
+    ui->comboBoxLanguage->addItem(QString("(") + tr("default") + QString(")"), QVariant("en"));
     Q_FOREACH (const QString& langStr, translations.entryList()) {
         QLocale locale(langStr);
 
@@ -188,6 +188,7 @@ void WelcomeContentWidget::initLanguages()
             ui->comboBoxLanguage->addItem(locale.nativeLanguageName() + QString(" (") + langStr + QString(")"), QVariant(langStr));
         }
     }
+    checkLanguage();
 }
 
 void WelcomeContentWidget::setModel(OptionsModel *model)

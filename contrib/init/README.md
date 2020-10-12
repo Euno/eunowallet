@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: pivxd.service
-Upstart: pivxd.conf
-OpenRC:  pivxd.openrc
-         pivxd.openrcconf
-CentOS:  pivxd.init
-macOS:    org.pivx.pivxd.plist
+SystemD: eunod.service
+Upstart: eunod.conf
+OpenRC:  eunod.openrc
+         eunod.openrcconf
+CentOS:  eunod.init
+macOS:    org.euno.eunod.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

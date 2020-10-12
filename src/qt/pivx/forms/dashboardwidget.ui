@@ -567,7 +567,7 @@
           <item>
            <widget class="QLabel" name="labelAmountPiv">
             <property name="text">
-             <string notr="true">0 PIV</string>
+             <string notr="true">0 EUNO</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -577,7 +577,7 @@
           <item>
            <widget class="QLabel" name="labelAmountZpiv">
             <property name="text">
-             <string notr="true">0 zPIV</string>
+             <string notr="true">0 zEUNO</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -694,7 +694,7 @@
                 <item>
                  <widget class="QLabel" name="labelPiv">
                   <property name="text">
-                   <string notr="true">PIV</string>
+                   <string>EUNO</string>
                   </property>
                  </widget>
                 </item>
@@ -736,7 +736,7 @@
                 <item>
                  <widget class="QLabel" name="labelZpiv">
                   <property name="text">
-                   <string notr="true">zPIV</string>
+                   <string>zEUNO</string>
                   </property>
                  </widget>
                 </item>

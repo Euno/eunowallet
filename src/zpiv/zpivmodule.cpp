@@ -158,12 +158,12 @@ namespace ZPIVModule {
         if (!fUseV1Params) {
             CKey key;
             if (!mint.GetKeyPair(key))
-                return error("%s: failed to set zPIV privkey mint.", __func__);
+                return error("%s: failed to set zEUNO privkey mint.", __func__);
             spend.setPubKey(key.GetPubKey(), true);
 
             std::vector<unsigned char> vchSig;
             if (!key.Sign(spend.signatureHash(), vchSig))
-                return error("%s: ZPIVModule failed to sign signatureHash.", __func__);
+                return error("%s: ZEUNOModule failed to sign signatureHash.", __func__);
             spend.setVchSig(vchSig);
 
         }

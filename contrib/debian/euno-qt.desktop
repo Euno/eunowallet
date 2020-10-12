@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=EUNO Core
+Comment=EUNO P2P Cryptocurrency
+Comment[fr]=EUNO, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=EUNO, eşten eşe kriptografik sanal para birimi
+Exec=euno-qt %u
+Terminal=false
+Type=Application
+Icon=euno128
+MimeType=x-scheme-handler/euno;
+Categories=Office;Finance;
+StartupWMClass=Euno-qt

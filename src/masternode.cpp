@@ -324,7 +324,7 @@ bool CMasternode::IsInputAssociatedWithPubkey() const
     uint256 hash;
     if(GetTransaction(vin.prevout.hash, txVin, hash, true)) {
         for (CTxOut out : txVin.vout) {
-            if (out.nValue == 10000 * COIN && out.scriptPubKey == payee) return true;
+            if (out.nValue == 8000000 * COIN && out.scriptPubKey == payee) return true;
         }
     }
 
@@ -537,8 +537,8 @@ bool CMasternodeBroadcast::CheckAndUpdate(int& nDos)
     }
 
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
-        if (addr.GetPort() != 51472) return false;
-    } else if (addr.GetPort() == 51472)
+        if (addr.GetPort() != 46462) return false;
+    } else if (addr.GetPort() == 46462)
         return false;
 
     //search existing Masternode list, this is where we update existing Masternodes with new mnb broadcasts

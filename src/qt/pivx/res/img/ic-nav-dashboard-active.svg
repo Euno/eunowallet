@@ -1,19 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="40px" viewBox="0 0 24 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-    <title>Dashboard</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(1.000000, 11.000000)" fill="#B088FF" fill-rule="nonzero">
-            <g id="Group_8812">
-                <path d="M10,8 L0,8 L0,0 L10,0 L10,8 Z M2,6 L8,6 L8,2 L2,2 L2,6 Z" id="Path_18866"></path>
-            </g>
-            <g id="Group_8813" transform="translate(12.000000, 0.000000)">
-                <path d="M10,22 L0,22 L0,0 L10,0 L10,22 Z M2,20 L8,20 L8,2 L2,2 L2,20 Z" id="Path_18867"></path>
-            </g>
-            <g id="Group_8814" transform="translate(0.000000, 10.000000)">
-                <path d="M10,12 L0,12 L0,0 L10,0 L10,12 Z M2,10 L8,10 L8,2 L2,2 L2,10 Z" id="Path_18868"></path>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_18" data-name="Rectangle 18" width="72" height="72" transform="translate(2989 1732)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_13" data-name="Mask Group 13" transform="translate(-2989 -1732)" clip-path="url(#clip-path)">
+    <path id="Icon_material-home" data-name="Icon material-home" d="M21.7,44.247V30.219h9.352V44.247h11.69v-18.7h7.014L26.381,4.5,3,25.543h7.014v18.7Z" transform="translate(2998.919 1744.094)" fill="#fff"/>
+  </g>
 </svg>

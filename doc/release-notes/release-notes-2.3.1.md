@@ -1,13 +1,13 @@
 PIVX Core version 2.3.1 is now available from:
 
-  <https://github.com/pivx-project/pivx/releases>
+  <https://git.blaize.tech/EUNO/euno-node.git/releases>
 
 This is a new minor version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/pivx-project/pivx/issues>
+  <https://git.blaize.tech/EUNO/euno-node.git/issues>
 
 How to Upgrade
 ==============
@@ -99,7 +99,7 @@ Result: (for other sets):
 
 Examples:
 > pivx-cli startmasternode "alias" true "my_mn"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "startmasternode", "params": ["alias" true "my_mn"] }' -H 'content-type: text/plain;' http://127.0.0.1:51473/
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "startmasternode", "params": ["alias" true "my_mn"] }' -H 'content-type: text/plain;' http://127.0.0.1:46463/
 ```
 
 ##### `preparebudget` & `submitbudget` Commands #####
@@ -134,7 +134,7 @@ Result:
 
 Examples:
 > pivx-cli mnbudgetvote "local" "ed2f83cedee59a91406f5f47ec4d60bf5a7f9ee6293913c82976bd2d3a658041" "yes"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "mnbudgetvote", "params": ["local" "ed2f83cedee59a91406f5f47ec4d60bf5a7f9ee6293913c82976bd2d3a658041" "yes"] }' -H 'content-type: text/plain;' http://127.0.0.1:51473/
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "mnbudgetvote", "params": ["local" "ed2f83cedee59a91406f5f47ec4d60bf5a7f9ee6293913c82976bd2d3a658041" "yes"] }' -H 'content-type: text/plain;' http://127.0.0.1:46463/
 ```
 
 ##### `getbudgetinfo` Command #####
@@ -176,7 +176,7 @@ Result:
 
 Examples:
 > pivx-cli getbudgetinfo
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getbudgetinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:51473/
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getbudgetinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:46463/
 ```
 
 #### Masternode network protocol layer reporting ####

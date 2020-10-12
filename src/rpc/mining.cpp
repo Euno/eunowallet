@@ -101,7 +101,7 @@ UniValue getgenerate(const JSONRPCRequest& request)
         throw std::runtime_error(
             "getgenerate\n"
             "\nReturn if the server is set to generate coins or not. The default is false.\n"
-            "It is set with the command line argument -gen (or pivx.conf setting gen)\n"
+            "It is set with the command line argument -gen (or euno.conf setting gen)\n"
             "It can also be set with the setgenerate call.\n"
 
             "\nResult\n"
@@ -479,10 +479,10 @@ UniValue getblocktemplate(const JSONRPCRequest& request)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid mode");
 
     if (vNodes.empty())
-        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "PIVX is not connected!");
+        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "EUNO is not connected!");
 
     if (IsInitialBlockDownload())
-        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "PIVX is downloading blocks...");
+        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "EUNO is downloading blocks...");
 
     static unsigned int nTransactionsUpdatedLast;
 

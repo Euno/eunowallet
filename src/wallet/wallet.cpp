@@ -352,7 +352,7 @@ bool CWallet::Unlock(const CKeyingMaterial& vMasterKeyIn)
             if (CWalletDB(strWalletFile).ReadCurrentSeedHash(hashSeed)) {
                 uint256 nSeed;
                 if (!GetDeterministicSeed(hashSeed, nSeed)) {
-                    return error("Failed to read zPIV seed from DB. Wallet is probably corrupt.");
+                    return error("Failed to read zEUNO seed from DB. Wallet is probably corrupt.");
                 }
                 zwalletMain->SetMasterSeed(nSeed, false);
             }
@@ -1407,7 +1407,7 @@ CAmount CWalletTx::GetUnlockedCredit() const
         const CTxOut& txout = vout[i];
 
         if (pwallet->IsSpent(hashTx, i) || pwallet->IsLockedCoin(hashTx, i)) continue;
-        if (fMasterNode && vout[i].nValue == 10000 * COIN) continue; // do not count MN-like outputs
+        if (fMasterNode && vout[i].nValue == 8000000 * COIN) continue; // do not count MN-like outputs
 
         nCredit += pwallet->GetCredit(txout, ISMINE_SPENDABLE);
         if (!Params().GetConsensus().MoneyRange(nCredit))
@@ -1441,7 +1441,7 @@ CAmount CWalletTx::GetLockedCredit() const
         }
 
         // Add masternode collaterals which are handled like locked coins
-        else if (fMasterNode && vout[i].nValue == 10000 * COIN) {
+        else if (fMasterNode && vout[i].nValue == 8000000 * COIN) {
             nCredit += pwallet->GetCredit(txout, ISMINE_SPENDABLE);
         }
 
@@ -1516,7 +1516,7 @@ CAmount CWalletTx::GetLockedWatchOnlyCredit() const
         }
 
         // Add masternode collaterals which are handled likc locked coins
-        else if (fMasterNode && vout[i].nValue == 10000 * COIN) {
+        else if (fMasterNode && vout[i].nValue == 8000000 * COIN) {
             nCredit += pwallet->GetCredit(txout, ISMINE_WATCH_ONLY);
         }
 
@@ -2038,8 +2038,8 @@ bool CWallet::GetMasternodeVinAndKeys(CTxIn& txinRet, CPubKey& pubKeyRet, CKey& 
     CTxOut txOut = wtx.vout[nOutputIndex];
 
     // Masternode collateral value
-    if (txOut.nValue != 10000 * COIN) {
-        strError = "Invalid collateral tx value, must be 10,000 PIV";
+    if (txOut.nValue != 8000000 * COIN) {
+        strError = "Invalid collateral tx value, must be 8,000,000 EUNO";
         return error("%s: tx %s, index %d not a masternode collateral", __func__, strTxHash, nOutputIndex);
     }
 
@@ -2111,8 +2111,8 @@ bool CWallet::AvailableCoins(std::vector<COutput>* pCoins,      // --> populates
 
             for (unsigned int i = 0; i < pcoin->vout.size(); i++) {
                 bool found = false;
-                if (nCoinType == ONLY_10000) {
-                    found = pcoin->vout[i].nValue == 10000 * COIN;
+                if (nCoinType == ONLY_8000000) {
+                    found = pcoin->vout[i].nValue == 8000000 * COIN;
                 } else {
                     found = true;
                 }
@@ -2125,7 +2125,7 @@ bool CWallet::AvailableCoins(std::vector<COutput>* pCoins,      // --> populates
                 if (  (mine == ISMINE_NO) ||
                       (mine == ISMINE_SPENDABLE && nWatchonlyConfig == 2) ||
                       (mine == ISMINE_WATCH_ONLY && nWatchonlyConfig == 1) ||
-                      (IsLockedCoin((*it).first, i) && nCoinType != ONLY_10000) ||
+                      (IsLockedCoin((*it).first, i) && nCoinType != ONLY_8000000) ||
                       (pcoin->vout[i].nValue <= 0 && !fIncludeZeroValue) ||
                       (fCoinsSelected && !coinControl->fAllowOtherInputs && !coinControl->IsSelected(COutPoint((*it).first, i)))
                    ) continue;
@@ -2769,7 +2769,7 @@ bool CWallet::CreateCoinStake(
     // Get the list of stakable utxos
     std::vector<COutput> vCoins;
     if (!StakeableCoins(&vCoins)) {
-        LogPrintf("%s: No coin available to stake.\n", __func__);
+        // LogPrintf("%s: No coin available to stake.\n", __func__);
         return false;
     }
 

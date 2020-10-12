@@ -1,0 +1,6 @@
+usr/local/bin/euno-qt usr/bin
+share/pixmaps/euno32.xpm usr/share/pixmaps
+share/pixmaps/euno16.xpm usr/share/pixmaps
+share/pixmaps/euno128.png usr/share/pixmaps
+debian/euno-qt.desktop usr/share/applications
+debian/euno-qt.protocol usr/share/kde4/services/

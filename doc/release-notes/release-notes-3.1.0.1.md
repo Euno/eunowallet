@@ -1,8 +1,8 @@
-PIVX Core version *3.1.0.1* is now available from:  <https://github.com/pivx-project/pivx/releases>
+PIVX Core version *3.1.0.1* is now available from:  <https://git.blaize.tech/EUNO/euno-node.git/releases>
 
-This is a new bugfix release, specifically addressing a bug with windows OS masternode control wallets. Users upgrading to this version are encouraged to also read the detailed release notes for the previous [3.1.0](https://github.com/PIVX-Project/PIVX/releases/tag/v3.1.0) release as information will not be duplicated here.
+This is a new bugfix release, specifically addressing a bug with windows OS masternode control wallets. Users upgrading to this version are encouraged to also read the detailed release notes for the previous [3.1.0](https://git.blaize.tech/EUNO/euno-node.git/releases/tag/v3.1.0) release as information will not be duplicated here.
 
-Please report bugs using the issue tracker at github: <https://github.com/pivx-project/pivx/issues>
+Please report bugs using the issue tracker at github: <https://git.blaize.tech/EUNO/euno-node.git/issues>
 
 How to Upgrade
 ==============

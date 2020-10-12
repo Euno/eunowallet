@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="40px" viewBox="0 0 24 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-    <title>Address Active</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Address-Active" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-2" transform="translate(3.000000, 12.000000)" fill="#B088FF" fill-rule="nonzero">
-            <path d="M4,0 L0,0 L0,22 L18,22 L18,0 L4,0 Z M2,20 L2,2 L3,2 L3,20 L2,20 Z M16,20 L5,20 L5,2 L16,2 L16,20 Z" id="Path_18863"></path>
-            <path d="M15,4 L6,4 L6,10 L15,10 L15,4 Z M13,8 L8,8 L8,6 L13,6 L13,8 Z" id="Path_18864"></path>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_21" data-name="Rectangle 21" width="72" height="72" transform="translate(3265 1732)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_16" data-name="Mask Group 16" transform="translate(-3265 -1732)" clip-path="url(#clip-path)">
+    <path id="Icon_material-perm-contact-calendar" data-name="Icon material-perm-contact-calendar" d="M36.3,5.475H34.312V1.5H30.337V5.475h-15.9V1.5H10.462V5.475H8.475A3.974,3.974,0,0,0,4.5,9.45V37.275A3.974,3.974,0,0,0,8.475,41.25H36.3a3.987,3.987,0,0,0,3.975-3.975V9.45A3.987,3.987,0,0,0,36.3,5.475ZM22.387,11.437A5.962,5.962,0,1,1,16.425,17.4,5.954,5.954,0,0,1,22.387,11.437Zm11.925,23.85H10.462V33.3c0-3.975,7.95-6.161,11.925-6.161S34.312,29.325,34.312,33.3Z" transform="translate(3278.169 1747.094)" fill="#fff"/>
+  </g>
 </svg>

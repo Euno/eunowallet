@@ -97,7 +97,7 @@ enum WalletFeature {
 
 enum AvailableCoinsType {
     ALL_COINS = 1,
-    ONLY_10000 = 5,                                 // find masternode outputs including locked ones (use with caution)
+    ONLY_8000000 = 5,                                 // find masternode outputs including locked ones (use with caution)
     STAKEABLE_COINS = 6                             // UTXO's that are valid for staking
 };
 
@@ -255,7 +255,7 @@ private:
 
 public:
 
-    static const CAmount DEFAULT_STAKE_SPLIT_THRESHOLD = 500 * COIN;
+    static const CAmount DEFAULT_STAKE_SPLIT_THRESHOLD = 100000 * COIN;
 
     //! Generates hd wallet //
     bool SetupSPKM();

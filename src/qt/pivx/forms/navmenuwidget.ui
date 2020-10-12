@@ -36,7 +36,7 @@ margin:0px;</string>
    </property>
    <item>
     <widget class="QWidget" name="navContainer_2" native="true">
-     <layout class="QVBoxLayout" name="navContainer" stretch="0,0,0,0">
+     <layout class="QVBoxLayout" name="navContainer" stretch="0,0,0,0,0">
       <property name="spacing">
        <number>0</number>
       </property>
@@ -115,8 +115,8 @@ background-color:transparent;
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>100</width>
-           <height>640</height>
+           <width>102</width>
+           <height>620</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -352,12 +352,12 @@ STAKING</string>
         <property name="sizeHint" stdset="0">
          <size>
           <width>20</width>
-          <height>20</height>
+          <height>10</height>
          </size>
         </property>
        </spacer>
       </item>
-      <item alignment="Qt::AlignHCenter">
+      <item>
        <widget class="QLabel" name="labelVersion">
         <property name="maximumSize">
          <size>
@@ -372,6 +372,22 @@ STAKING</string>
          <set>Qt::AlignBottom|Qt::AlignHCenter</set>
         </property>
        </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>10</height>
+         </size>
+        </property>
+       </spacer>
       </item>
      </layout>
     </widget>

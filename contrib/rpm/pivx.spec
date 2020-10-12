@@ -20,8 +20,8 @@ Summary:	Peer to Peer Cryptographic Currency
 
 Group:		Applications/System
 License:	MIT
-URL:		https://pivx.org/
-Source0:	https://pivx.org/bin/pivx-core-%{version}/pivx-%{version}.tar.gz
+URL:		https://euno.co/
+Source0:	https://euno.co/bin/pivx-core-%{version}/pivx-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
 Source10:	https://raw.githubusercontent.com/pivx-project/pivx/v%{version}/contrib/debian/examples/pivx.conf
@@ -243,7 +243,7 @@ done
 
 %if %{_buildqt}
 # qt icons
-install -D -p share/pixmaps/pivx.ico %{buildroot}%{_datadir}/pixmaps/pivx.ico
+install -D -p share/pixmaps/euno.ico %{buildroot}%{_datadir}/pixmaps/euno.ico
 install -p share/pixmaps/nsis-header.bmp %{buildroot}%{_datadir}/pixmaps/
 install -p share/pixmaps/nsis-wizard.bmp %{buildroot}%{_datadir}/pixmaps/
 install -p %{SOURCE100} %{buildroot}%{_datadir}/pixmaps/pivx.svg
