@@ -2964,7 +2964,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     background-color:#303030;;
     background-position:center;
     background-repeat:no-repeat;
-    selection-background-color:#FFFFFF;
+    selection-background-color:#505050;
     selection-color: white;
     font-size:14px;
     border-radius:0px;
@@ -3055,7 +3055,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 
 #treeWidget::branch {
     background-color: #303030;
-    selection-background-color:#FFFFFF;
+    selection-background-color:#505050;
 }
 
 #treeWidget::branch:selected {
