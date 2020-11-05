@@ -1,61 +1,63 @@
-<TS language="en_US" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS language="it" version="2.1">
 <context>
     <name>AddNewAddressDialog</name>
     <message>
         <source>Dialog</source>
-        <translation>Dialog</translation>
+        <translation>Finestra di dialogo</translation>
     </message>
     <message>
         <source>New Address</source>
-        <translation>New Address</translation>
+        <translation>Nuovo Indirizzo</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Indirizzo</translation>
     </message>
     <message>
         <source>PushButton</source>
-        <translation>PushButton</translation>
+        <translation>Premi il bottone</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation>CANCEL</translation>
+        <translation>CANCELLA</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation>SAVE</translation>
+        <translation>SALVA</translation>
     </message>
 </context>
 <context>
     <name>AddNewContactDialog</name>
     <message>
         <source>Dialog</source>
-        <translation>Dialog</translation>
+        <translation>Finestra di dialogo</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation>CANCEL</translation>
+        <translation>CANCELLA</translation>
     </message>
     <message>
         <source>Edit Contact</source>
-        <translation>Edit Contact</translation>
+        <translation>Modifica il contatto</translation>
     </message>
     <message>
         <source>Set a label for the selected address</source>
-        <translation>Set a label for the selected address</translation>
+        <translation>Imposta un'etichetta per l'indirizzo selezionato</translation>
     </message>
     <message>
         <source>Enter a label for the address (e.g. Exchange)</source>
-        <translation>Enter a label for the address (e.g. Exchange)</translation>
+        <translation>Inserisci un nome per l'indirizzo (ad es. Exchange)</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation>SAVE</translation>
+        <translation>SALVA</translation>
     </message>
     <message>
         <source>Edit label for the selected address:
 %1</source>
-        <translation>Edit label for the selected address:
+        <translation>Modifica l'etichetta per l'indirizzo selezionato
 %1</translation>
     </message>
 </context>
@@ -63,106 +65,106 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Right-click to edit address or label</translation>
+        <translation>Fare click col pulsante destro per modificare l'indirizzo o l'etichetta</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Create a new address</translation>
+        <translation>Crea un nuovo indirizzo</translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>&amp;New</translation>
+        <translation>&amp;Nuovo</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Copy the currently selected address to the system clipboard</translation>
+        <translation>Copia l'indirizzo selezionato negli appunti</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
-        <translation>&amp;Copy</translation>
+        <translation>&amp;Copia</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Delete the currently selected address from the list</translation>
+        <translation>Elimina l'indirizzo selezionato dalla lista</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>&amp;Delete</translation>
+        <translation>&amp;Elimina</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Export the data in the current tab to a file</translation>
+        <translation>Esporta i dati della scheda corrente in un file</translation>
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;Export</translation>
+        <translation>&amp;Esporta</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>C&amp;lose</translation>
+        <translation>C&amp;hiudi</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Choose the address to send coins to</translation>
+        <translation>Seleziona l'indirizzo a cui inviare valuta</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Choose the address to receive coins with</translation>
+        <translation>Seleziona l'indirizzo a cui ricevere valuta</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation>C&amp;hoose</translation>
+        <translation>&amp;Seleziona</translation>
     </message>
     <message>
         <source>Sending addresses</source>
-        <translation>Sending addresses</translation>
+        <translation>Indirizzi di destinazione</translation>
     </message>
     <message>
         <source>Receiving addresses</source>
-        <translation>Receiving addresses</translation>
+        <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
         <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your EUNO addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <translation>Questi sono gli indirizzi EUNO per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
         <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>These are your EUNO addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
+        <translation>Questi sono gli indirizzi EUNO per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation>&amp;Copy Address</translation>
+        <translation>&amp;Copia indirizzo</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation>Copy &amp;Label</translation>
+        <translation>Copia &amp;etichetta</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>&amp;Edit</translation>
+        <translation>&amp;Modifica</translation>
     </message>
     <message>
         <source>Export Address List</source>
-        <translation>Export Address List</translation>
+        <translation>Esporta elenco indirizzi</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>Comma separated file (*.csv)</translation>
+        <translation>File separato da virgola (*.csv)</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>Exporting Failed</translation>
+        <translation>Esportazione fallita</translation>
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>There was an error trying to save the address list to %1. Please try again.</translation>
+        <translation>Si &#232; verificato un errore nel salvataggio dell'elenco indirizzi in %1. Si prega di ritentare.</translation>
     </message>
 </context>
 <context>
     <name>AddressLabelRow</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Bob Allen</source>
@@ -177,94 +179,94 @@
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation>Etichetta</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Indirizzo</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Type</translation>
+        <translation>Tipo</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(no label)</translation>
+        <translation>(nessuna etichetta)</translation>
     </message>
 </context>
 <context>
     <name>AddressesWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Contact name</source>
-        <translation>Contact name</translation>
+        <translation>Nome del contatto</translation>
     </message>
     <message>
         <source>Enter address</source>
-        <translation>Enter address</translation>
+        <translation>Inserire indirizzo</translation>
     </message>
     <message>
         <source>Contacts</source>
-        <translation>Contacts</translation>
+        <translation>Contatti</translation>
     </message>
     <message>
         <source>You can add a new one in the options menu to the side.</source>
-        <translation>You can add a new one in the options menu to the side.</translation>
+        <translation>Puoi aggiungerne uno nuovo nel menu delle opzioni a lato.</translation>
     </message>
     <message>
         <source>No contacts yet</source>
-        <translation>No contacts yet</translation>
+        <translation>Ancora nessun contatto</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation>SAVE</translation>
+        <translation>SALVA</translation>
     </message>
     <message>
         <source>Add new contact</source>
-        <translation>Add new contact</translation>
+        <translation>Aggiungi nuovo contatto</translation>
     </message>
     <message>
         <source>Generate a new address to receive tokens.</source>
-        <translation>Generate a new address to receive tokens.</translation>
+        <translation>Generare un nuovo indirizzo per ricevere i token.</translation>
     </message>
     <message>
         <source>Invalid Contact Address</source>
-        <translation>Invalid Contact Address</translation>
+        <translation>Indirizzo di contatto non valido</translation>
     </message>
     <message>
         <source>Cannot store your own address as contact</source>
-        <translation>Cannot store your own address as contact</translation>
+        <translation>Impossibile memorizzare il proprio indirizzo come contatto</translation>
     </message>
     <message>
         <source>Address already stored, label: %1</source>
-        <translation>Address already stored, label: %1</translation>
+        <translation>Indirizzo gi&#224; memorizzato, etichetta: %1</translation>
     </message>
     <message>
         <source>New Contact Stored</source>
-        <translation>New Contact Stored</translation>
+        <translation>Nuovo contatto memorizzato</translation>
     </message>
     <message>
         <source>Error Storing Contact</source>
-        <translation>Error Storing Contact</translation>
+        <translation>Errore durante la memorizzazione del contatto</translation>
     </message>
     <message>
         <source>Contact edited</source>
-        <translation>Contact edited</translation>
+        <translation>Contatto modificato</translation>
     </message>
     <message>
         <source>Contact edit failed</source>
-        <translation>Contact edit failed</translation>
+        <translation>Modifica contatto non riuscita</translation>
     </message>
     <message>
         <source>Delete Contact</source>
-        <translation>Delete Contact</translation>
+        <translation>Cancella contatto</translation>
     </message>
     <message>
         <source>You are just about to remove the contact:
@@ -272,128 +274,128 @@
 %1
 
 Are you sure?</source>
-        <translation>You are just about to remove the contact:
+        <translation>Stai per rimuovere il contatto:
 
 %1
 
-Are you sure?</translation>
+Sei sicuro?</translation>
     </message>
     <message>
         <source>Contact Deleted</source>
-        <translation>Contact Deleted</translation>
+        <translation>Contatto cancellato</translation>
     </message>
     <message>
         <source>Error deleting a contact</source>
-        <translation>Error deleting a contact</translation>
+        <translation>Errore cancellando il contatto</translation>
     </message>
     <message>
         <source>Address copied</source>
-        <translation>Address copied</translation>
+        <translation>Indirizzo copiato</translation>
     </message>
 </context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Passphrase Dialog</translation>
+        <translation>Inserimento frase d'accesso</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TextLabel</translation>
+        <translation>Etichetta</translation>
     </message>
     <message>
         <source>PushButton</source>
-        <translation>PushButton</translation>
+        <translation>Premi il bottone</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</translation>
+        <translation>Inserisci la nuova frase d'accesso per il portafoglio.&lt;br/&gt;Si raccomanda di usare una frase d'accesso di &lt;b&gt;dieci o pi&#249; caratteri casuali&lt;/b&gt;, oppure di &lt;b&gt;otto o pi&#249; parole&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
-        <translation>Encrypt wallet</translation>
+        <translation>Crittografa portafoglio</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>This operation needs your wallet passphrase to unlock the wallet.</translation>
+        <translation>Questa operazione richiede la parola d'ordine per sbloccare il portafoglio.</translation>
     </message>
     <message>
         <source>Unlock wallet
 for staking</source>
-        <translation>Unlock wallet
-for staking</translation>
+        <translation>Sblocca portafoglio
+per lo staking</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
-        <translation>Unlock wallet</translation>
+        <translation>Sblocca portafoglio</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>This operation needs your wallet passphrase to decrypt the wallet.</translation>
+        <translation>Questa operazione richiede la parola d'ordine per decrittografare il portafoglio.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
-        <translation>Decrypt wallet</translation>
+        <translation>Decrittografa portafoglio</translation>
     </message>
     <message>
         <source>Change passphrase</source>
-        <translation>Change passphrase</translation>
+        <translation>Cambia frase d'accesso</translation>
     </message>
     <message>
         <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Enter the old and new passphrase to the wallet.</translation>
+        <translation>Inserire la vecchia e la nuova parola d'ordine per il portafoglio.</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>Confirm wallet encryption</translation>
+        <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
         <source>WARNING</source>
-        <translation>WARNING</translation>
+        <translation>ATTENZIONE</translation>
     </message>
     <message>
         <source>If you encrypt your wallet and lose your passphrase, you will</source>
-        <translation>If you encrypt your wallet and lose your passphrase, you will</translation>
+        <translation>Se crittografi il portafoglio e poi perdi la parola d'ordine,</translation>
     </message>
     <message>
         <source>ENCRYPT</source>
-        <translation>ENCRYPT</translation>
+        <translation>CRITTOGRAFA</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation>CANCEL</translation>
+        <translation>CANCELLA</translation>
     </message>
     <message>
         <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>EUNO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EUNOs from being stolen by malware infecting your computer.</translation>
+        <translation>EUNO verr&#224; ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi EUNO dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Are you sure you wish to encrypt your wallet?</translation>
+        <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
-        <translation>Wallet encrypted</translation>
+        <translation>Portafoglio crittografato</translation>
     </message>
     <message>
         <source>WARNING:</source>
-        <translation>WARNING:</translation>
+        <translation>ATTENZIONE:</translation>
     </message>
     <message>
         <source>The caps lock key is on!</source>
-        <translation>The caps lock key is on!</translation>
+        <translation>Attenzione: il tasto Caps Lock &#232; attivo!</translation>
     </message>
     <message>
         <source>Passphrases do not match!</source>
-        <translation>Passphrases do not match!</translation>
+        <translation>Le passphrase non corrispondono!</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</translation>
+        <translation>IMPORTANTE: Eventuali file di back-up precedenti del tuo portafoglio dovrebbero essere sostituiti con il nuovo file criptato generato. Per motivi di sicurezza, precedenti file di back-up del portafoglio non criptato diventeranno inutilizzabili nel momento in cui inizierai ad utilizzare il nuovo portafoglio criptato.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
-        <translation>Wallet encryption failed</translation>
+        <translation>Cifratura portafoglio fallita</translation>
     </message>
     <message>
         <source>OK</source>
@@ -401,31 +403,31 @@ for staking</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</translation>
+        <translation>La cifratura del portafoglio &#232; fallita a causa di un errore interno. Il portafoglio non &#232; stato crittografato.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
-        <translation>The supplied passphrases do not match.</translation>
+        <translation>Le parole d'ordine fornite con coincidono.</translation>
     </message>
     <message>
         <source>LOSE ALL OF YOUR COINS</source>
-        <translation>LOSE ALL OF YOUR COINS</translation>
+        <translation>PERDERAI TUTTI I TUOI TOKEN</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
-        <translation>Wallet unlock failed</translation>
+        <translation>Sblocco portafoglio fallito</translation>
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>The passphrase entered for the wallet decryption was incorrect.</translation>
+        <translation>La frase immessa per la decrittografare il portafoglio era errata.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
-        <translation>Wallet decryption failed</translation>
+        <translation>Decodifica del portafoglio non riuscita</translation>
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>Wallet passphrase was successfully changed.</translation>
+        <translation>La passphrase del portafoglio &#232; stata modificata correttamente.</translation>
     </message>
 </context>
 <context>
@@ -436,18 +438,18 @@ for staking</translation>
     </message>
     <message>
         <source>Banned Until</source>
-        <translation>Banned Until</translation>
+        <translation>Bloccato fino a</translation>
     </message>
 </context>
 <context>
     <name>CSRow</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Savings</source>
-        <translation>Savings</translation>
+        <translation>Risparmi</translation>
     </message>
     <message>
         <source>0,00 PIV</source>
@@ -455,69 +457,69 @@ for staking</translation>
     </message>
     <message>
         <source>address</source>
-        <translation>address</translation>
+        <translation>indirizzo</translation>
     </message>
     <message>
         <source>Not Staking</source>
-        <translation>Not Staking</translation>
+        <translation>Staking non attivo</translation>
     </message>
     <message>
         <source>Own delegation</source>
-        <translation>Own delegation</translation>
+        <translation>Propria delega</translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
-        <translation>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</translation>
+        <translation>Totale: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Sconosciuti: %5)</translation>
     </message>
 </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
         <source>Quantity:</source>
-        <translation>Quantity:</translation>
+        <translation>Quantit&#224;:</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <translation>Byte:</translation>
     </message>
     <message>
         <source>Fee:</source>
-        <translation>Fee:</translation>
+        <translation>Commissione:</translation>
     </message>
     <message>
         <source>Coin Selection</source>
-        <translation>Coin Selection</translation>
+        <translation>Selezione valuta</translation>
     </message>
     <message>
         <source>Select PIV Outputs to Spend</source>
-        <translation>Select EUNO Outputs to Spend</translation>
+        <translation>Seleziona EUNO da spendere</translation>
     </message>
     <message>
         <source>Dust:</source>
-        <translation>Dust:</translation>
+        <translation>Polvere:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Change:</translation>
+        <translation>Differenza:</translation>
     </message>
     <message>
         <source>Tree mode</source>
-        <translation>Tree mode</translation>
+        <translation>Modalit&#224; albero</translation>
     </message>
     <message>
         <source>List mode</source>
-        <translation>List mode</translation>
+        <translation>Modalit&#224; lista</translation>
     </message>
     <message>
         <source>(1 locked)</source>
-        <translation>(1 locked)</translation>
+        <translation>(1 bloccato)</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Amount</translation>
+        <translation>Ammontare</translation>
     </message>
     <message>
         <source>0.00 PIV</source>
@@ -529,23 +531,23 @@ for staking</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>Select all</translation>
+        <translation>Seleziona tutto</translation>
     </message>
     <message>
         <source>Toggle lock state</source>
-        <translation>Toggle lock state</translation>
+        <translation>Attiva/disattiva stato bloccato</translation>
     </message>
     <message>
         <source>Received with label</source>
-        <translation>Received with label</translation>
+        <translation>Ricevute con etichetta</translation>
     </message>
     <message>
         <source>Received with address</source>
-        <translation>Received with address</translation>
+        <translation>Ricevute con indirizzo</translation>
     </message>
     <message>
         <source>After Fee: </source>
-        <translation>After Fee: </translation>
+        <translation>Al netto della commissione:</translation>
     </message>
     <message>
         <source>OK</source>
@@ -553,135 +555,135 @@ for staking</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Confirmations</source>
-        <translation>Confirmations</translation>
+        <translation>Conferme</translation>
     </message>
     <message>
         <source>Confirmed</source>
-        <translation>Confirmed</translation>
+        <translation>Confermata</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Copy address</translation>
+        <translation>Copia indirizzo</translation>
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Copy label</translation>
+        <translation>Copia etichetta</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Copy amount</translation>
+        <translation>Copia ammontare</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Copy transaction ID</translation>
+        <translation>Copia ID transazione</translation>
     </message>
     <message>
         <source>Lock unspent</source>
-        <translation>Lock unspent</translation>
+        <translation>Blocca non spesi</translation>
     </message>
     <message>
         <source>Unlock unspent</source>
-        <translation>Unlock unspent</translation>
+        <translation>Sblocca non spesi</translation>
     </message>
     <message>
         <source>Unselect all</source>
-        <translation>Unselect all</translation>
+        <translation>Deseleziona tutto</translation>
     </message>
     <message>
         <source>Please switch to "List mode" to use this function.</source>
-        <translation>Please switch to "List mode" to use this function.</translation>
+        <translation>Prego selezionare "Modalit&#224; lista" per utilizzare questa funzione</translation>
     </message>
     <message>
         <source>Quantity Copied</source>
-        <translation>Quantity Copied</translation>
+        <translation>Quantit&#224; Copiata</translation>
     </message>
     <message>
         <source>Amount Copied</source>
-        <translation>Amount Copied</translation>
+        <translation>Importo Copiato</translation>
     </message>
     <message>
         <source>Fee Copied</source>
-        <translation>Fee Copied</translation>
+        <translation>Fee Copiate</translation>
     </message>
     <message>
         <source>After Fee Copied</source>
-        <translation>After Fee Copied</translation>
+        <translation>Netto Fee copiato</translation>
     </message>
     <message>
         <source>Bytes Copied</source>
-        <translation>Bytes Copied</translation>
+        <translation>Bytes Copiati</translation>
     </message>
     <message>
         <source>Dust Copied</source>
-        <translation>Dust Copied</translation>
+        <translation>Povere Copiata</translation>
     </message>
     <message>
         <source>Change Copied</source>
-        <translation>Change Copied</translation>
+        <translation>Cambio Copiato</translation>
     </message>
     <message>
         <source>highest</source>
-        <translation>highest</translation>
+        <translation>massima</translation>
     </message>
     <message>
         <source>higher</source>
-        <translation>higher</translation>
+        <translation>molto alta</translation>
     </message>
     <message>
         <source>high</source>
-        <translation>high</translation>
+        <translation>alta</translation>
     </message>
     <message>
         <source>medium-high</source>
-        <translation>medium-high</translation>
+        <translation>medio-alta</translation>
     </message>
     <message>
         <source>medium</source>
-        <translation>medium</translation>
+        <translation>media</translation>
     </message>
     <message>
         <source>low-medium</source>
-        <translation>low-medium</translation>
+        <translation>medio-bassa</translation>
     </message>
     <message>
         <source>low</source>
-        <translation>low</translation>
+        <translation>basso</translation>
     </message>
     <message>
         <source>lower</source>
-        <translation>lower</translation>
+        <translation>bassa</translation>
     </message>
     <message>
         <source>lowest</source>
-        <translation>lowest</translation>
+        <translation>minima</translation>
     </message>
     <message>
         <source>(%1 locked)</source>
-        <translation>(%1 locked)</translation>
+        <translation>(%1 bloccati)</translation>
     </message>
     <message>
         <source>none</source>
-        <translation>none</translation>
+        <translation>nessuno</translation>
     </message>
     <message>
         <source>yes</source>
-        <translation>yes</translation>
+        <translation>si</translation>
     </message>
     <message>
         <source>Can vary +/- %1 u%2 per input.</source>
-        <translation>Can vary +/- %1 u%2 per input.</translation>
+        <translation>Pu&#242; variare  +/- %1 u%2 per input.</translation>
     </message>
     <message>
         <source>delegated to %1 for cold staking</source>
-        <translation>delegated to %1 for cold staking</translation>
+        <translation>delegato a %1 per il cold staking</translation>
     </message>
     <message>
         <source>Select All</source>
-        <translation>Select All</translation>
+        <translation>Seleziona tutto</translation>
     </message>
     <message>
         <source>no</source>
@@ -689,54 +691,54 @@ for staking</translation>
     </message>
     <message>
         <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>This label turns red, if the transaction size is greater than 1000 bytes.</translation>
+        <translation>Questa etichetta diventer&#224; rossa se la transazione supera i 1000 bytes</translation>
     </message>
     <message>
         <source>This means a fee of at least %1 per kB is required.</source>
-        <translation>This means a fee of at least %1 per kB is required.</translation>
+        <translation>Vuol dire che &#232; richiesta una commissione minima di %1 per kB.</translation>
     </message>
     <message>
         <source>Can vary +/- 1 byte per input.</source>
-        <translation>Can vary +/- 1 byte per input.</translation>
+        <translation>Pu&#242; variare di +/- 1 byte per input.</translation>
     </message>
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
-        <translation>Transactions with higher priority are more likely to get included into a block.</translation>
+        <translation>Transazioni con priorit&#224; maggiore verranno aggiunte con maggiore probabilit&#224; in un blocco.</translation>
     </message>
     <message>
         <source>This label turns red, if the priority is smaller than "medium".</source>
-        <translation>This label turns red, if the priority is smaller than "medium".</translation>
+        <translation>Questa etichetta diventa rossa se la priorit&#224; &#232; inferiore a "media".</translation>
     </message>
     <message>
         <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>This label turns red, if any recipient receives an amount smaller than %1.</translation>
+        <translation>Questa etichetta diventa rossa se uno dei destinatari riceve un importo inferiore a %1.</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(no label)</translation>
+        <translation>(nessuna etichetta)</translation>
     </message>
     <message>
         <source>change from %1 (%2)</source>
-        <translation>change from %1 (%2)</translation>
+        <translation>resto da %1 (%2)</translation>
     </message>
     <message>
         <source>(change)</source>
-        <translation>(change)</translation>
+        <translation>(resto)</translation>
     </message>
 </context>
 <context>
     <name>ColdStakingWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Owner address (optional, if empty a new address will be created)</source>
-        <translation>Owner address (optional, if empty a new address will be created)</translation>
+        <translation>Indirizzo del proprietario (facoltativo, se vuoto verr&#224; creato un nuovo indirizzo)</translation>
     </message>
     <message>
         <source>Total Staking:</source>
-        <translation>Total Staking:</translation>
+        <translation>Totale Staking:</translation>
     </message>
     <message>
         <source>Cold Staking</source>
@@ -748,105 +750,107 @@ for staking</translation>
     </message>
     <message>
         <source>Delegation</source>
-        <translation>Delegation</translation>
+        <translation>Delega</translation>
     </message>
     <message>
         <source>Delegate</source>
-        <translation>Delegate</translation>
+        <translation>Delegato</translation>
     </message>
     <message>
         <source>Clear All</source>
-        <translation>Clear All</translation>
+        <translation>Cancella tutto</translation>
     </message>
     <message>
         <source>Delegated balance history</source>
-        <translation>Delegated balance history</translation>
+        <translation>Storia dei saldi delegati</translation>
     </message>
     <message>
         <source>No delegations yet</source>
-        <translation>No delegations yet</translation>
+        <translation>Ancora nessuna delega</translation>
     </message>
     <message>
         <source>Total Staking: %1</source>
-        <translation>Total Staking: %1</translation>
+        <translation>Totale Staking: %1</translation>
     </message>
     <message>
         <source>Error loading delegations: %1</source>
-        <translation>Error loading delegations: %1</translation>
+        <translation>Errore durante il caricamento delle deleghe: %1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node) stake on your behalf, while you keep the keys securely offline.</source>
-        <translation>You can delegate your EUNOs, letting a hot node (24/7 online node) stake on your behalf, while you keep the keys securely offline.</translation>
+        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
+stake on your behalf, while you keep the keys securely offline.</source>
+        <translation>Puoi delegare i tuoi EUNO, delegando ad un nodo attivo (online 24/7)
+lo staking delle tue monete, mantenendo le tue chiavi private in &#8203;&#8203;un luogo sicuro e offline.</translation>
     </message>
     <message>
         <source>Enter owner address</source>
-        <translation>Enter owner address</translation>
+        <translation>Inserire l'indirizzo del proprietario</translation>
     </message>
     <message>
         <source>Accept PIV delegation / Delegate PIV</source>
-        <translation>Accept EUNO delegation / Delegate EUNO</translation>
+        <translation>Accettare delegazione EUNO / Delega EUNO</translation>
     </message>
     <message>
         <source>Cold Staking address</source>
-        <translation>Cold Staking address</translation>
+        <translation>Indirizzo Cold Staking</translation>
     </message>
     <message>
         <source>No receive addresses available, you can go to the receive screen and create some there!</source>
-        <translation>No receive addresses available, you can go to the receive screen and create some there!</translation>
+        <translation>Nessun indirizzo di ricezione disponibile, puoi andare alla schermata ricevi e aggiungerne alcuni!</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
-        <translation>No contacts available, you can go to the contacts screen and add some there!</translation>
+        <translation>Nessun contatto disponibile, puoi andare alla schermata dei contatti e aggiungerne alcuni!</translation>
     </message>
     <message>
         <source>Cannot send delegation, wallet locked</source>
-        <translation>Cannot send delegation, wallet locked</translation>
+        <translation>Impossibile inviare delega, portafoglio bloccato</translation>
     </message>
     <message>
         <source>Cold staking is networkely disabled</source>
-        <translation>Cold staking is networkely disabled</translation>
+        <translation>Il cold staking &#232; disabilitato sulla rete</translation>
     </message>
     <message>
         <source>Coin Control</source>
-        <translation>Coin Control</translation>
+        <translation>Controllo Valuta</translation>
     </message>
     <message>
         <source>Select %1 outputs to delegate.</source>
-        <translation>Select %1 outputs to delegate.</translation>
+        <translation>Seleziona %1 da delegare.</translation>
     </message>
     <message>
         <source>Create Cold Staking Address</source>
-        <translation>Create Cold Staking Address</translation>
+        <translation>Crea indirizzo Cold Staking</translation>
     </message>
     <message>
         <source>Creates an address to receive delegated coins
 and stake them on their owner's behalf.</source>
-        <translation>Creates an address to receive delegated coins
-and stake them on their owner's behalf.</translation>
+        <translation>Crea un indirizzo per ricevere le monete delegate
+e fai staking per conto dei proprietari.</translation>
     </message>
     <message>
         <source>My Cold Staking Addresses</source>
-        <translation>My Cold Staking Addresses</translation>
+        <translation>Mio indirizzo Cold Staking</translation>
     </message>
     <message>
         <source>List your own cold staking addresses.</source>
-        <translation>List your own cold staking addresses.</translation>
+        <translation>Elenca i tuoi indirizzi per il cold staking.</translation>
     </message>
     <message>
         <source>Invalid entry</source>
-        <translation>Invalid entry</translation>
+        <translation>Valore non valido</translation>
     </message>
     <message>
         <source>Invalid entry, minimum delegable amount is </source>
-        <translation>Invalid entry, minimum delegable amount is </translation>
+        <translation>Importo non valido, l'importo minimo delegabile &#232;</translation>
     </message>
     <message>
         <source>Owner address invalid</source>
-        <translation>Owner address invalid</translation>
+        <translation>Indirizzo proprietario non valido</translation>
     </message>
     <message>
         <source>ALERT!</source>
-        <translation>ALERT!</translation>
+        <translation>AVVISO!</translation>
     </message>
     <message>
         <source>Delegating to an external owner address!
@@ -856,49 +860,49 @@ Spending these coins will need to be done from the wallet or
 device containing the owner address.
 
 Do you wish to proceed?</source>
-        <translation>Delegating to an external owner address!
+        <translation>Delega a un indirizzo di propriet&#224; esterna!
 
-The delegated coins will NOT be spendable by this wallet.
-Spending these coins will need to be done from the wallet or
-device containing the owner address.
+Le valute delegate NON saranno spendibili da questo portafoglio.
+La spesa di queste valute dovr&#224; essere effettuata dal portafoglio o
+dispositivo contenente l'indirizzo del proprietario.
 
-Do you wish to proceed?</translation>
+Vuoi procedere?</translation>
     </message>
     <message>
         <source>Staking address corresponds to this wallet, change it to an external node</source>
-        <translation>Staking address corresponds to this wallet, change it to an external node</translation>
+        <translation>L'indirizzo di staking corrisponde a questo portafoglio, cambiarlo in un nodo esterno</translation>
     </message>
     <message>
         <source>Cannot create transaction.</source>
-        <translation>Cannot create transaction.</translation>
+        <translation>Impossibile creare la transazione.</translation>
     </message>
     <message>
         <source>Coins delegated</source>
-        <translation>Coins delegated</translation>
+        <translation>Valute delegate</translation>
     </message>
     <message>
         <source>You don't have any %1 to select.</source>
-        <translation>You don't have any %1 to select.</translation>
+        <translation>Non hai alcun %1 da selezionare.</translation>
     </message>
     <message>
         <source>Cannot perform operation, wallet locked</source>
-        <translation>Cannot perform operation, wallet locked</translation>
+        <translation>Impossibile completare l'operazione, portafoglio bloccato</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
-        <translation>URI copied to clipboard</translation>
+        <translation>URI copiato negli appunti</translation>
     </message>
     <message>
         <source>Address copied to clipboard</source>
-        <translation>Address copied to clipboard</translation>
+        <translation>Indirizzo copiato negli appunti</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copy</translation>
+        <translation>Copia</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation>Modifica</translation>
     </message>
     <message>
         <source>Stake</source>
@@ -906,29 +910,29 @@ Do you wish to proceed?</translation>
     </message>
     <message>
         <source>Blacklist</source>
-        <translation>Blacklist</translation>
+        <translation>Lista nera</translation>
     </message>
     <message>
         <source>Edit Label</source>
-        <translation>Edit Label</translation>
+        <translation>Modifica etichetta</translation>
     </message>
     <message>
         <source>Copy owner
 address</source>
-        <translation>Copy owner
-address</translation>
+        <translation>Copia indirizzo
+proprietario</translation>
     </message>
     <message>
         <source>Address copied</source>
-        <translation>Address copied</translation>
+        <translation>Indirizzo copiato</translation>
     </message>
     <message>
         <source>Edit Cold Address Label</source>
-        <translation>Edit Cold Address Label</translation>
+        <translation>Modifica etichetta indirizzo "cold"</translation>
     </message>
     <message>
         <source>Whitelist failed, please check the logs</source>
-        <translation>Whitelist failed, please check the logs</translation>
+        <translation>Lista bianca non riuscita, controlla i registri</translation>
     </message>
     <message>
         <source> staking!</source>
@@ -936,130 +940,130 @@ address</translation>
     </message>
     <message>
         <source>Blacklist failed, please check the logs</source>
-        <translation>Blacklist failed, please check the logs</translation>
+        <translation>Lista nera non riuscita, controlla i registri</translation>
     </message>
     <message>
         <source> blacklisted from staking</source>
-        <translation> blacklisted from staking</translation>
+        <translation>in lista nera dallo staking</translation>
     </message>
     <message>
         <source>Owner address copied</source>
-        <translation>Owner address copied</translation>
+        <translation>Indirizzo del proprietario copiato</translation>
     </message>
     <message>
         <source>Edit Owner Address Label</source>
-        <translation>Edit Owner Address Label</translation>
+        <translation>Modifica etichetta indirizzo proprietario</translation>
     </message>
     <message>
         <source>Address label saved</source>
-        <translation>Address label saved</translation>
+        <translation>Etichetta salvata</translation>
     </message>
     <message>
         <source>Error storing address label</source>
-        <translation>Error storing address label</translation>
+        <translation>Errore salvando l'etichetta indirizzo</translation>
     </message>
 </context>
 <context>
     <name>ContactDropdownRow</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
 </context>
 <context>
     <name>DashboardWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Transactions</source>
-        <translation>Transactions</translation>
+        <translation>Transazioni</translation>
     </message>
     <message>
         <source>Staking Rewards</source>
-        <translation>Staking Rewards</translation>
+        <translation>Premi dello Staking</translation>
     </message>
     <message>
         <source>Staking statistics</source>
-        <translation>Staking statistics</translation>
+        <translation>Statistiche dello Staking</translation>
     </message>
     <message>
         <source>View your account's history</source>
-        <translation>View your account's history</translation>
+        <translation>Guarda la cronologia del tuo account</translation>
     </message>
     <message>
         <source>How to get PIV</source>
-        <translation>How to get EUNO</translation>
+        <translation>Come ottenere EUNO</translation>
     </message>
     <message>
         <source>Sort by</source>
-        <translation>Sort by</translation>
+        <translation>Ordina per</translation>
     </message>
     <message>
         <source>Days</source>
-        <translation>Days</translation>
+        <translation>Giorni</translation>
     </message>
     <message>
         <source>Months</source>
-        <translation>Months</translation>
+        <translation>Mesi</translation>
     </message>
     <message>
         <source>Years</source>
-        <translation>Years</translation>
+        <translation>Anni</translation>
     </message>
     <message>
         <source>Filter by</source>
-        <translation>Filter by</translation>
+        <translation>Filtra per</translation>
     </message>
     <message>
         <source>Amount of PIV and zPIV staked.</source>
-        <translation>Amount of EUNO and zEUNO staked.</translation>
+        <translation>Quantit&#224; di EUNO e zEUNO dallo stake.</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
-        <translation>Please wait until the wallet is fully synced to see your correct balance</translation>
+        <translation>Attendi fino a quando il portafoglio non &#232; completamente sincronizzato per vedere il tuo saldo corretto</translation>
     </message>
     <message>
         <source>No transactions yet</source>
-        <translation>No transactions yet</translation>
+        <translation>Ancora nessuna transazione</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
 It will start automatically as soon as the wallet has enough confirmations on any unspent balances, and the wallet has synced.</source>
-        <translation>You can verify the staking activity in the status bar at the top right of the wallet.
-It will start automatically as soon as the wallet has enough confirmations on any unspent balances, and the wallet has synced.</translation>
+        <translation>Puoi verificare l'attivit&#224; di staking nella barra di stato in alto a destra nel portafoglio.
+Si avvier&#224; automaticamente non appena il portafoglio avr&#224; sufficienti conferme su eventuali saldi non spesi e il portafoglio si sar&#224; sincronizzato.</translation>
     </message>
     <message>
         <source>You have no staking rewards</source>
-        <translation>You have no staking rewards</translation>
+        <translation>Non hai ricompense di staking</translation>
     </message>
     <message>
         <source>No charts library</source>
-        <translation>No charts library</translation>
+        <translation>Nessuna libreria di grafici</translation>
     </message>
     <message>
         <source>Loading chart..</source>
-        <translation>Loading chart..</translation>
+        <translation>Caricando i grafici...</translation>
     </message>
     <message>
         <source>Error loading chart, invalid show option</source>
-        <translation>Error loading chart, invalid show option</translation>
+        <translation>Errore durante il caricamento del grafico, opzione di visualizzazione non valida</translation>
     </message>
     <message>
         <source>Error loading chart, invalid data</source>
-        <translation>Error loading chart, invalid data</translation>
+        <translation>Errore durante il caricamento del grafico, data non valida</translation>
     </message>
     <message>
         <source>Error loading chart: %1</source>
-        <translation>Error loading chart: %1</translation>
+        <translation>Errore durante il caricamento del grafico: %1</translation>
     </message>
 </context>
 <context>
     <name>DefaultDialog</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1067,99 +1071,99 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <source>CANCEL</source>
-        <translation>CANCEL</translation>
+        <translation>CANCELLA</translation>
     </message>
 </context>
 <context>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
-        <translation>Edit Address</translation>
+        <translation>Modifica indirizzo</translation>
     </message>
     <message>
         <source>&amp;Label</source>
-        <translation>&amp;Label</translation>
+        <translation>&amp;Etichetta</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
-        <translation>The label associated with this address list entry</translation>
+        <translation>L'etichetta associata a questa voce dell'elenco indirizzi</translation>
     </message>
     <message>
         <source>&amp;Address</source>
-        <translation>&amp;Address</translation>
+        <translation>&amp;Indirizzo</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>The address associated with this address list entry. This can only be modified for sending addresses.</translation>
+        <translation>L'indirizzo associato a questa voce dell'elenco indirizzi. Questo pu&#242; essere modificato solo per l'invio di indirizzi.</translation>
     </message>
     <message>
         <source>New receiving address</source>
-        <translation>New receiving address</translation>
+        <translation>Nuovo indirizzo di ricezione</translation>
     </message>
     <message>
         <source>New sending address</source>
-        <translation>New sending address</translation>
+        <translation>Nuovo indirizzo di invio</translation>
     </message>
     <message>
         <source>Edit receiving address</source>
-        <translation>Edit receiving address</translation>
+        <translation>Modifica indirizzo di ricezione</translation>
     </message>
     <message>
         <source>Edit sending address</source>
-        <translation>Edit sending address</translation>
+        <translation>Modifica indirizzo di invio</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid PIVX address.</source>
-        <translation>The entered address "%1" is not a valid EUNO address.</translation>
+        <translation>L'indirizzo inserito "%1" non &#232; un indirizzo EUNO valido.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
-        <translation>The entered address "%1" is already in the address book.</translation>
+        <translation>L'indirizzo inserito "%1" &#232; gi&#224; presente in rubrica.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
-        <translation>Could not unlock wallet.</translation>
+        <translation>Impossibile sbloccare il portafoglio</translation>
     </message>
     <message>
         <source>New key generation failed.</source>
-        <translation>New key generation failed.</translation>
+        <translation>Generazione nuovo codice fallita.</translation>
     </message>
 </context>
 <context>
     <name>ExpandableButton</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
 </context>
 <context>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation>A new data directory will be created.</translation>
+        <translation>Verr&#224; creata una nuova cartella dati.</translation>
     </message>
     <message>
         <source>name</source>
-        <translation>name</translation>
+        <translation>nome</translation>
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Directory already exists. Add %1 if you intend to create a new directory here.</translation>
+        <translation>Cartella esistente. Aggiunti %1 se intendi creare una nuova cartella qui.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
-        <translation>Path already exists, and is not a directory.</translation>
+        <translation>Percorso gi&#224; esistente, e non &#232; una cartella.</translation>
     </message>
     <message>
         <source>Cannot create data directory here.</source>
-        <translation>Cannot create data directory here.</translation>
+        <translation>Impossibile creare la cartella dati qui.</translation>
     </message>
 </context>
 <context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
-        <translation>version</translation>
+        <translation>versione</translation>
     </message>
     <message>
         <source>PIVX Core</source>
@@ -1171,47 +1175,47 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <source>About PIVX Core</source>
-        <translation>About EUNO Core</translation>
+        <translation>Informazioni su EUNO Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
-        <translation>Command-line options</translation>
+        <translation>Opzioni linea di comando</translation>
     </message>
     <message>
         <source>Usage:</source>
-        <translation>Usage:</translation>
+        <translation>Utilizzo:</translation>
     </message>
     <message>
         <source>command-line options</source>
-        <translation>command-line options</translation>
+        <translation>opzioni linea di comando</translation>
     </message>
     <message>
         <source>UI Options:</source>
-        <translation>UI Options:</translation>
+        <translation>Opzioni interfaccia:</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: %u)</source>
-        <translation>Choose data directory on startup (default: %u)</translation>
+        <translation>Seleziona cartella dati all'avvio (predefinita: %u)</translation>
     </message>
     <message>
         <source>Show splash screen on startup (default: %u)</source>
-        <translation>Show splash screen on startup (default: %u)</translation>
+        <translation>Mostra schermata di benvenuto all'avvio (predefinita: %u)</translation>
     </message>
     <message>
         <source>Hide QT staking charts on startup (default: %u)</source>
-        <translation>Hide QT staking charts on startup (default: %u)</translation>
+        <translation>Nascondi grafici QT staking all'avvio (default: %u)</translation>
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Set language, for example "de_DE" (default: system locale)</translation>
+        <translation>Imposta lingua, per esempio "it_IT" (predefinito: lingua di sistema)</translation>
     </message>
     <message>
         <source>Start minimized</source>
-        <translation>Start minimized</translation>
+        <translation>Avvio ridotto a icona</translation>
     </message>
     <message>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Set SSL root certificates for payment request (default: -system-)</translation>
+        <translation>Imposta certificati SSL root per richiesta di pagamento (predefinito: -system-)</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1222,31 +1226,31 @@ It will start automatically as soon as the wallet has enough confirmations on an
     <name>Intro</name>
     <message>
         <source>Welcome</source>
-        <translation>Welcome</translation>
+        <translation>Benvenuto</translation>
     </message>
     <message>
         <source>Welcome to PIVX Core.</source>
-        <translation>Welcome to EUNO Core.</translation>
+        <translation>Benvenuto in EUNOIX Core.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>As this is the first time the program is launched, you can choose where EUNO Core will store its data.</translation>
+        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove EUNO Core salver&#224; i propri dati.</translation>
     </message>
     <message>
         <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>EUNO Core will download and store a copy of the EUNO block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <translation>EUNO Core scaricher&#224; e salver&#224; una copia della blockchain EUNO. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verr&#224; salvato anche il portafoglio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
-        <translation>Use the default data directory</translation>
+        <translation>Utilizza la cartella dati predefinita</translation>
     </message>
     <message>
         <source>Use a custom data directory</source>
-        <translation>Use a custom data directory</translation>
+        <translation>Utilizza una cartella dati personalizzata</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation>CANCEL</translation>
+        <translation>CANCELLA</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1258,34 +1262,34 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
-        <translation>Error: Specified data directory "%1" cannot be created.</translation>
+        <translation>Errore: la cartella dati specificata "%1" non pu&#242; essere creata.</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation>Errore</translation>
     </message>
     <message>
         <source>%1 GB of free space available</source>
-        <translation>%1 GB of free space available</translation>
+        <translation>%1 GB di spazio disponibile</translation>
     </message>
     <message>
         <source>(of %1 GB needed)</source>
-        <translation>(of %1 GB needed)</translation>
+        <translation>(di %1 GB necessari)</translation>
     </message>
 </context>
 <context>
     <name>LoadingDialog</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TextLabel</translation>
+        <translation>Etichetta</translation>
     </message>
     <message>
         <source>Loading</source>
-        <translation>Loading</translation>
+        <translation>Caricamento</translation>
     </message>
     <message>
         <source>.</source>
@@ -1296,30 +1300,30 @@ It will start automatically as soon as the wallet has enough confirmations on an
     <name>LockUnlock</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Unlock Wallet</source>
-        <translation>Unlock Wallet</translation>
+        <translation>Sblocca portafoglio</translation>
     </message>
     <message>
         <source>Lock Wallet</source>
-        <translation>Lock Wallet</translation>
+        <translation>Blocca portafoglio</translation>
     </message>
     <message>
         <source>Staking Only</source>
-        <translation>Staking Only</translation>
+        <translation>Solo Staking</translation>
     </message>
 </context>
 <context>
     <name>MNRow</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Collateral tx not found</source>
-        <translation>Collateral tx not found</translation>
+        <translation>Tx Collaterale non trovata</translation>
     </message>
     <message>
         <source>Status: %1</source>
@@ -1330,7 +1334,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     <name>MasterNodeWizardDialog</name>
     <message>
         <source>Dialog</source>
-        <translation>Dialog</translation>
+        <translation>Finestra di dialogo</translation>
     </message>
     <message>
         <source>1</source>
@@ -1350,128 +1354,128 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <source>Name</source>
-        <translation>Name</translation>
+        <translation>Nome</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Indirizzo</translation>
     </message>
     <message>
         <source>Create New Masternode Controller</source>
-        <translation>Create New Masternode Controller</translation>
+        <translation>Crea nuovo controller Masternode</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 8,000,000 PIV (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a EUNO Masternode you must dedicate 8,000,000 EUNO (the unit of EUNO) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Per creare un Masternode EUNO devi dedicare 8,000,000 EUNO (l'unit&#224; di EUNO) alla rete (tuttavia, queste coin sono ancora tue e saranno sempre in tuo possesso). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Puoi disattivare il nodo e sbloccare le valute in qualsiasi momento.</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
-        <translation>Set Masternode Name</translation>
+        <translation>Imposta Nome Masternode</translation>
     </message>
     <message>
         <source>Set Masternode IP and Port</source>
-        <translation>Set Masternode IP and Port</translation>
+        <translation>Imposta IP e Porta Masternode</translation>
     </message>
     <message>
         <source>Enter port</source>
-        <translation>Enter port</translation>
+        <translation>Inserisci porta</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
-        <translation>Make sure you have this amount of coins.</translation>
+        <translation>Assicurati di avere questa quantit&#224; di valuta.</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 8,000,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 8,000,000 EUNO will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Verr&#224; effettuata una transazione di 8,000,000 EUNO&lt;/p&gt;&lt;p&gt;a un nuovo indirizzo vuoto nel tuo portafoglio.&lt;p&gt;L'indirizzo &#232; etichettato con il nome del Masternode.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
-        <translation>Address of the node that must always be online running the actual master node.</translation>
+        <translation>Indirizzo del nodo che deve essere sempre online che esegue il Masternode effettivo.</translation>
     </message>
     <message>
         <source>Enter IP address</source>
-        <translation>Enter IP address</translation>
+        <translation>Inserire indirizzo IP</translation>
     </message>
     <message>
         <source>NEXT</source>
-        <translation>NEXT</translation>
+        <translation>AVANTI</translation>
     </message>
     <message>
         <source>BACK</source>
-        <translation>BACK</translation>
+        <translation>INDIETRO</translation>
     </message>
     <message>
         <source>address label cannot be empty</source>
-        <translation>address label cannot be empty</translation>
+        <translation>l'etichetta dell'indirizzo non pu&#242; essere vuota</translation>
     </message>
     <message>
         <source>IP or port cannot be empty</source>
-        <translation>IP or port cannot be empty</translation>
+        <translation>IP o porta non possono essere vuoti</translation>
     </message>
     <message>
         <source>Invalid IP address</source>
-        <translation>Invalid IP address</translation>
+        <translation>Indirizzo IP non valido</translation>
     </message>
     <message>
         <source>Unknown error</source>
-        <translation>Unknown error</translation>
+        <translation>Errore sconosciuto</translation>
     </message>
     <message>
         <source>Prepare master node failed.
 
 %1
 </source>
-        <translation>Prepare master node failed.
+        <translation>Preparazione del Masternode non riuscita.
 
 %1
 </translation>
     </message>
     <message>
         <source>Invalid collateral output index</source>
-        <translation>Invalid collateral output index</translation>
+        <translation>Indice di output collaterale non valido</translation>
     </message>
     <message>
         <source>Master node created! Wait %1 confirmations before starting it.</source>
-        <translation>Master node created! Wait %1 confirmations before starting it.</translation>
+        <translation>Masternode creato! Attendi %1 conferme prima di avviarlo.</translation>
     </message>
     <message>
         <source>Cannot send collateral transaction.
 
 %1</source>
-        <translation>Cannot send collateral transaction.
+        <translation>Impossibile inviare Tx Collaterale.
 
 %1</translation>
     </message>
     <message>
         <source>walletModel not set</source>
-        <translation>walletModel not set</translation>
+        <translation>walletModel non impostato</translation>
     </message>
     <message>
         <source>Invalid masternode.conf file</source>
-        <translation>Invalid masternode.conf file</translation>
+        <translation>Il file masternode.conf non &#232; valido</translation>
     </message>
     <message>
         <source>Error parsing masternode.conf file</source>
-        <translation>Error parsing masternode.conf file</translation>
+        <translation>Errore durante l'analisi del file masternode.conf</translation>
     </message>
     <message>
         <source>masternode.conf file doesn't exists</source>
-        <translation>masternode.conf file doesn't exists</translation>
+        <translation>il file masternode.conf non esiste</translation>
     </message>
 </context>
 <context>
     <name>MasterNodesWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Start All</source>
-        <translation>Start All</translation>
+        <translation>Avvia Tutto</translation>
     </message>
     <message>
         <source>Start Inactive/s</source>
-        <translation>Start Inactive/s</translation>
+        <translation>Avvia Inattivo/i</translation>
     </message>
     <message>
         <source>Masternodes</source>
@@ -1480,24 +1484,24 @@ It will start automatically as soon as the wallet has enough confirmations on an
     <message>
         <source>Full nodes that incentivize node operators to perform the core consensus functions
 and vote on the treasury system receiving a periodic reward.</source>
-        <translation>Full nodes that incentivize node operators to perform the core consensus functions
-and vote on the treasury system receiving a periodic reward.</translation>
+        <translation>Nodi completi che incentivano gli operatori dei nodi a svolgere le funzioni di consenso di base
+e votano il sistema di tesoreria ricevendo una ricompensa periodica.</translation>
     </message>
     <message>
         <source>Create Masternode Controller</source>
-        <translation>Create Masternode Controller</translation>
+        <translation>Creare il Masternode Controller</translation>
     </message>
     <message>
         <source>No active Masternode yet</source>
-        <translation>No active Masternode yet</translation>
+        <translation>Ancora nessun Masternode attivo</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation>Start</translation>
+        <translation>Avvia</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Delete</translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <source>Info</source>
@@ -1505,63 +1509,63 @@ and vote on the treasury system receiving a periodic reward.</translation>
     </message>
     <message>
         <source>Please wait until the node is fully synced</source>
-        <translation>Please wait until the node is fully synced</translation>
+        <translation>Per favore attendere la sincronizzazione completa</translation>
     </message>
     <message>
         <source>Start Masternode</source>
-        <translation>Start Masternode</translation>
+        <translation>Avvia Masternode</translation>
     </message>
     <message>
         <source>Are you sure you want to start masternode %1?
 </source>
-        <translation>Are you sure you want to start masternode %1?
+        <translation>Confermi di voler avviare il masternode %1?
 </translation>
     </message>
     <message>
         <source>Cannot edit masternode, wallet locked</source>
-        <translation>Cannot edit masternode, wallet locked</translation>
+        <translation>Impossibile modificare masternode, portafoglio bloccato</translation>
     </message>
     <message>
         <source>Cannot start masternode, the collateral transaction has not been confirmed by the network yet.
 Please wait few more minutes (masternode collaterals require %1 confirmations).</source>
-        <translation>Cannot start masternode, the collateral transaction has not been confirmed by the network yet.
-Please wait few more minutes (masternode collaterals require %1 confirmations).</translation>
+        <translation>Impossibile avviare il masternode, la transazione per il collaterale non &#232; stata ancora confermata dalla rete.
+Per favore, attendi qualche minuto (il collaterale del masternode richiede %1 conferme).</translation>
     </message>
     <message>
         <source>Background task is being executed, please wait</source>
-        <translation>Background task is being executed, please wait</translation>
+        <translation>L'attivit&#224; in background &#232; in esecuzione, si prega di attendere</translation>
     </message>
     <message>
         <source>Start ALL masternodes failed</source>
-        <translation>Start ALL masternodes failed</translation>
+        <translation>Inizializzazione di TUTTI i masternode fallita.</translation>
     </message>
     <message>
         <source>Wallet unlock cancelled</source>
-        <translation>Wallet unlock cancelled</translation>
+        <translation>Sblocco portafoglio cancellato</translation>
     </message>
     <message>
         <source>Cannot perform Masternodes start</source>
-        <translation>Cannot perform Masternodes start</translation>
+        <translation>Impossibile eseguire l'avvio dei Masternode</translation>
     </message>
     <message>
         <source>%1 Masternodes failed to start, %2 started</source>
-        <translation>%1 Masternodes failed to start, %2 started</translation>
+        <translation>Avvio di %1 Masternode fallito, %2 avviato/i</translation>
     </message>
     <message>
         <source>All Masternodes started!</source>
-        <translation>All Masternodes started!</translation>
+        <translation>Tutti i Masternode sono avviati!</translation>
     </message>
     <message>
         <source>Cannot show Masternode information, wallet locked</source>
-        <translation>Cannot show Masternode information, wallet locked</translation>
+        <translation>Impossibile mostrare informazioni Masternode, wallet bloccato</translation>
     </message>
     <message>
         <source>Masternode data copied to the clipboard.</source>
-        <translation>Masternode data copied to the clipboard.</translation>
+        <translation>Dati Masternode copiati negli appunti.</translation>
     </message>
     <message>
         <source>Not enough balance to create a masternode, 8,000,000 %1 required.</source>
-        <translation>Not enough balance to create a masternode, 8,000,000 %1 required.</translation>
+        <translation>Saldo insufficiente per creare un masternode, sono necessari 8,000,000 %1.</translation>
     </message>
     <message>
         <source>Remote Masternode Data</source>
@@ -1569,19 +1573,19 @@ Please wait few more minutes (masternode collaterals require %1 confirmations).<
     </message>
     <message>
         <source>What is a Masternode?</source>
-        <translation>What is a Masternode?</translation>
+        <translation>Cos'&#232; un Masternode?</translation>
     </message>
     <message>
         <source>FAQ explaining what Masternodes are</source>
-        <translation>FAQ explaining what Masternodes are</translation>
+        <translation>FAQ cosa sono i Masternode</translation>
     </message>
     <message>
         <source>What is a Controller?</source>
-        <translation>What is a Controller?</translation>
+        <translation>Cos'&#232; un Masternode controller?</translation>
     </message>
     <message>
         <source>FAQ explaining what is a Masternode Controller</source>
-        <translation>FAQ explaining what is a Masternode Controller</translation>
+        <translation>FAQ Cos'&#232; un Masternode Controller</translation>
     </message>
     <message>
         <source>You are just about to export the required data to run a Masternode
@@ -1592,109 +1596,109 @@ You will only have to paste the data in the pivx.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
-        <translation>You are just about to export the required data to run a Masternode
-on a remote server to your clipboard.
+        <translation>Stai per esportare negli appunti i dati richiesti per eseguire
+un Masternode su un server remoto .
 
 
-You will only have to paste the data in the euno.conf file
-of your remote server and start it, then start the Masternode using
-this controller wallet (select the Masternode in the list and press "start").
+Dovrai solo incollare i dati nel file euno.conf del server remoto
+e avviarlo, quindi avviare il Masternode utilizzando questo portafoglio
+come controller (selezionare il Masternode nell'elenco e premere "start").
 </translation>
     </message>
     <message>
         <source>Delete Masternode</source>
-        <translation>Delete Masternode</translation>
+        <translation>Cancella Masternode</translation>
     </message>
     <message>
         <source>You are just about to delete Masternode:
 %1
 
 Are you sure?</source>
-        <translation>You are just about to delete Masternode:
+        <translation>Stai per rimuovere il Masternode:
 %1
 
-Are you sure?</translation>
+Sei sicuro?</translation>
     </message>
     <message>
         <source>Invalid masternode.conf file</source>
-        <translation>Invalid masternode.conf file</translation>
+        <translation>Il file masternode.conf non &#232; valido</translation>
     </message>
     <message>
         <source>Error parsing masternode.conf file</source>
-        <translation>Error parsing masternode.conf file</translation>
+        <translation>Errore durante l'analisi del file masternode.conf</translation>
     </message>
     <message>
         <source>masternode.conf file doesn't exists</source>
-        <translation>masternode.conf file doesn't exists</translation>
+        <translation>il file masternode.conf non esiste</translation>
     </message>
     <message>
         <source>Cannot create Masternode controller, wallet locked</source>
-        <translation>Cannot create Masternode controller, wallet locked</translation>
+        <translation>Impossibile creare un Masternode controller, wallet bloccato</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
-        <translation>Error creating masternode</translation>
+        <translation>Errore in fase di creazione del Masternode</translation>
     </message>
 </context>
 <context>
     <name>MnInfoDialog</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Masternode Information</source>
-        <translation>Masternode Information</translation>
+        <translation>Informazioni Masternode</translation>
     </message>
     <message>
         <source>Public Key:</source>
-        <translation>Public Key:</translation>
+        <translation>Chiave pubblica:</translation>
     </message>
     <message>
         <source>Address: </source>
-        <translation>Address: </translation>
+        <translation>Indirizzo:</translation>
     </message>
     <message>
         <source>Collaterall tx id:</source>
-        <translation>Collaterall tx id:</translation>
+        <translation>Collaterale tx id:</translation>
     </message>
     <message>
         <source>Output index:</source>
-        <translation>Output index:</translation>
+        <translation>Indice di uscita:</translation>
     </message>
     <message>
         <source>1 Inputs</source>
-        <translation>1 Inputs</translation>
+        <translation>1 Input</translation>
     </message>
     <message>
         <source>Status:</source>
-        <translation>Status:</translation>
+        <translation>Stato:</translation>
     </message>
     <message>
         <source>Export data to run the Masternode on a remote server</source>
-        <translation>Export data to run the Masternode on a remote server</translation>
+        <translation>Esporta i dati per eseguire il Masternode su un server remoto</translation>
     </message>
     <message>
         <source>Masternode public key copied</source>
-        <translation>Masternode public key copied</translation>
+        <translation>Copia pubblica Masternode copiata</translation>
     </message>
     <message>
         <source>Collateral tx id copied</source>
-        <translation>Collateral tx id copied</translation>
+        <translation>Tx Collaterale copiata</translation>
     </message>
 </context>
 <context>
     <name>MyAddressRow</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
 </context>
 <context>
     <name>NavMenuWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>HOME
@@ -1705,26 +1709,26 @@ Are you sure?</translation>
     <message>
         <source>SEND
 </source>
-        <translation>SEND
+        <translation>INVIA
 </translation>
     </message>
     <message>
         <source>RECEIVE
 </source>
-        <translation>RECEIVE
+        <translation>RICEVI
 </translation>
     </message>
     <message>
         <source>CONTACTS
 </source>
-        <translation>CONTACTS
+        <translation>CONTATTI
 </translation>
     </message>
     <message>
         <source>MASTER
 NODES</source>
         <translation>MASTER
-NODES</translation>
+NODE</translation>
     </message>
     <message>
         <source>COLD
@@ -1735,7 +1739,7 @@ STAKING</translation>
     <message>
         <source>SETTINGS
 </source>
-        <translation>SETTINGS
+        <translation>IMPOSTAZIONI
 </translation>
     </message>
     <message>
@@ -1751,19 +1755,19 @@ STAKING</translation>
     <name>OpenURIDialog</name>
     <message>
         <source>Open URI</source>
-        <translation>Open URI</translation>
+        <translation>Apri URI</translation>
     </message>
     <message>
         <source>Open payment request from URI or file</source>
-        <translation>Open payment request from URI or file</translation>
+        <translation>Seleziona il file o URI di richiesta di pagamento</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TextLabel</translation>
+        <translation>Etichetta</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation>CANCEL</translation>
+        <translation>CANCELLA</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1771,37 +1775,37 @@ STAKING</translation>
     </message>
     <message>
         <source>Select payment request file</source>
-        <translation>Select payment request file</translation>
+        <translation>Seleziona il file di richiesta di pagamento</translation>
     </message>
     <message>
         <source>Select payment request file to open</source>
-        <translation>Select payment request file to open</translation>
+        <translation>Seleziona il file di richiesta di pagamento da aprire</translation>
     </message>
     <message>
         <source>File not found</source>
-        <translation>File not found</translation>
+        <translation>File non trovato</translation>
     </message>
     <message>
         <source>Parsed data too large</source>
-        <translation>Parsed data too large</translation>
+        <translation>Dati analizzati troppo grandi</translation>
     </message>
     <message>
         <source>Invalid URI, not starting with "pivx" prefix</source>
-        <translation>Invalid URI, not starting with "euno" prefix</translation>
+        <translation>URI non valido, che non inizia con il prefisso "euno"</translation>
     </message>
 </context>
 <context>
     <name>OptionButton</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
 </context>
 <context>
     <name>OptionsDialog</name>
     <message>
         <source>Options</source>
-        <translation>Options</translation>
+        <translation>Opzioni</translation>
     </message>
     <message>
         <source>&amp;Main</source>
@@ -1809,7 +1813,7 @@ STAKING</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
-        <translation>Size of &amp;database cache</translation>
+        <translation>Dimensione della cache del &amp;database</translation>
     </message>
     <message>
         <source>MB</source>
@@ -1817,11 +1821,11 @@ STAKING</translation>
     </message>
     <message>
         <source>Number of script &amp;verification threads</source>
-        <translation>Number of script &amp;verification threads</translation>
+        <translation>Numero di script e processi di &amp;verifica</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation>(0 = auto, &lt;0 = leave that many cores free)</translation>
+        <translation>(0 = auto, &lt;0 = lascia molti core liberi)</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1829,55 +1833,55 @@ STAKING</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
-        <translation>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</translation>
+        <translation>Se si disabilita la spesa per la modifica non confermata, la modifica da una transazione&lt;br/&gt;non pu&#242; essere utilizzata fino a quando tale transazione non ha almeno una conferma.&lt;br/&gt;Ci&#242; influisce anche sul modo in cui viene calcolato il saldo.</translation>
     </message>
     <message>
         <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the EUNO client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <translation>Apri automaticamente la porta client EUNO sul router. Funziona solo quando il router supporta UPnP ed &#232; abilitato.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
-        <translation>Accept connections from outside</translation>
+        <translation>Accetta connessioni dall'esterno</translation>
     </message>
     <message>
         <source>Allow incoming connections</source>
-        <translation>Allow incoming connections</translation>
+        <translation>Consenti connessioni in entrata</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>&amp;Connect through SOCKS5 proxy (default proxy):</translation>
+        <translation>&amp;Connetti tramite proxy SOCKS5 (proxy predefinito):</translation>
     </message>
     <message>
         <source>Expert</source>
-        <translation>Expert</translation>
+        <translation>Esperto</translation>
     </message>
     <message>
         <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Automatically start EUNO after logging in to the system.</translation>
+        <translation>Avvia automaticamente EUNO dopo aver effettuato l'accesso al sistema.</translation>
     </message>
     <message>
         <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;Start EUNO on system login</translation>
+        <translation>&amp;Start EUNO all'accesso al sistema</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Whether to show coin control features or not.</translation>
+        <translation>Se mostrare o meno le funzionalit&#224; di controllo della valuta.</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Enable coin &amp;control features</translation>
+        <translation>Attiva la funzionalit&#224; di &amp;controllo della moneta</translation>
     </message>
     <message>
         <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
-        <translation>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</translation>
+        <translation>Mostra la scheda aggiuntiva che elenca tutti i tuoi Masternode nella prima sottoscheda&lt;br/&gt;e tutti i Masternode della rete nella seconda sottoscheda.</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
-        <translation>Show Masternodes Tab</translation>
+        <translation>Mostra la scheda dei Masternode</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp;Spend unconfirmed change</translation>
+        <translation>&amp;Spendi modifica non confermata</translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -1885,57 +1889,57 @@ STAKING</translation>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting EUNO.</translation>
+        <translation>La lingua dell'interfaccia utente pu&#242; essere impostata qui. Questa impostazione avr&#224; effetto dopo il riavvio di EUNO.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
 https://www.transifex.com/pivx-project/pivx-project-translations</source>
-        <translation>Language missing or translation incomplete? Help contributing translations here:
+        <translation>Lingua mancante o traduzione incompleta? Aiutaci a contribuire alle traduzioni qui:
 https://www.transifex.com/euno-project/euno-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
-        <translation>Map port using &amp;UPnP</translation>
+        <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
         <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Enable automatic minting of EUNO units to zEUNO</translation>
+        <translation>Attiva la forgiatura automatica di unit&#224; EUNO in zEUNO</translation>
     </message>
     <message>
         <source>Enable zPIV Automint</source>
-        <translation>Enable zEUNO Automint</translation>
+        <translation>Attiva forgiatura automatica zEUNO</translation>
     </message>
     <message>
         <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>Enable automatic zEUNO minting from specific addresses</translation>
+        <translation>Attiva la forgiatura automatica di zEUNO da indirizzi specifici</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
-        <translation>Enable Automint Addresses</translation>
+        <translation>Abilita indirizzi forgiatura automatica</translation>
     </message>
     <message>
         <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage of incoming EUNO which get automatically converted to zEUNO via Zerocoin Protocol (min: 10%)</translation>
+        <translation>Percentuale di EUNO in entrata che viene automaticamente convertita in zEUNO attraverso il protocollo Zerocoin (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zPIV</source>
-        <translation>Percentage of autominted zEUNO</translation>
+        <translation>Percentuale di zEUNO Percentuale di zEUNO da forgiare automaticamente</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Wait with automatic conversion to Zerocoin until enough EUNO for this denomination is available</translation>
+        <translation>Attendere la conversione automatica in Zerocoin fino a quando non saranno disponibili abbastanza EUNO per questa denominazione</translation>
     </message>
     <message>
         <source>Preferred Automint zPIV Denomination</source>
-        <translation>Preferred Automint zEUNO Denomination</translation>
+        <translation>Denominazione preferita forgiatura automatica zEUNO</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
-        <translation>Stake split threshold:</translation>
+        <translation>Soglia di divisione dello stake</translation>
     </message>
     <message>
         <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Connect to the EUNO network through a SOCKS5 proxy.</translation>
+        <translation>Connettiti alla rete EUNO tramite un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1943,35 +1947,35 @@ https://www.transifex.com/euno-project/euno-project-translations</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>Indirizzo IP del proxy (ad es. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>&amp;Port:</source>
-        <translation>&amp;Port:</translation>
+        <translation>&amp;Porta:</translation>
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Port of the proxy (e.g. 9050)</translation>
+        <translation>Porta del proxy (ad es. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
-        <translation>&amp;Window</translation>
+        <translation>&amp;Finestra</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
-        <translation>Show only a tray icon after minimizing the window.</translation>
+        <translation>Mostra solo l'icona della barra delle applicazioni dopo aver ridotto a icona la finestra.</translation>
     </message>
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Minimize to the tray instead of the taskbar</translation>
+        <translation>&amp;Minimizza a icona nel vassoio anzich&#233; nella barra delle applicazioni</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</translation>
+        <translation>Riduci a icona invece di uscire dall'applicazione quando la finestra &#232; chiusa. Quando questa opzione &#232; abilitata, l'applicazione verr&#224; chiusa solo dopo aver selezionato "Esci" nel menu.</translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
-        <translation>M&amp;inimize on close</translation>
+        <translation>M&amp;inimizza in chiusura</translation>
     </message>
     <message>
         <source>&amp;Display</source>
@@ -1979,55 +1983,55 @@ https://www.transifex.com/euno-project/euno-project-translations</translation>
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>User Interface &amp;language:</translation>
+        <translation>$lingua dell'interfaccia utente:</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
-        <translation>User Interface Theme:</translation>
+        <translation>Tema dell'interfaccia utente:</translation>
     </message>
     <message>
         <source>Unit to show amounts in:</source>
-        <translation>Unit to show amounts in:</translation>
+        <translation>Unit&#224; di misura in cui mostrare gli importi:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Choose the default subdivision unit to show in the interface and when sending coins.</translation>
+        <translation>Scegli l'unit&#224; di suddivisione predefinita da mostrare nell'interfaccia e quando si inviano valute.</translation>
     </message>
     <message>
         <source>Decimal digits</source>
-        <translation>Decimal digits</translation>
+        <translation>Cifre decimali</translation>
     </message>
     <message>
         <source>Hide empty balances</source>
-        <translation>Hide empty balances</translation>
+        <translation>Nascondi bilanci vuoti</translation>
     </message>
     <message>
         <source>Hide orphan stakes in transaction lists</source>
-        <translation>Hide orphan stakes in transaction lists</translation>
+        <translation>Nascondi le stakes orfane nella lista delle transazioni</translation>
     </message>
     <message>
         <source>Hide orphan stakes</source>
-        <translation>Hide orphan stakes</translation>
+        <translation>Nascondi le stakes orfane</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</translation>
+        <translation>URL di terze parti (ad esempio un esploratore di blocchi) che vengono visualizzati nella scheda Transazioni come voci di menu contestuale. %s nell'URL &#232; sostituito dall'hash della transazione. Pi&#249; URL sono separati da una barra verticale |.</translation>
     </message>
     <message>
         <source>Third party transaction URLs</source>
-        <translation>Third party transaction URLs</translation>
+        <translation>URL di transazione di terze parti</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
-        <translation>Active command-line options that override above options:</translation>
+        <translation>Opzioni della riga di comando attive che sovrascrivono le opzioni sopra:</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation>Reset all client options to default.</translation>
+        <translation>Ripristina tutte le opzioni client ai valori predefiniti.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
-        <translation>&amp;Reset Options</translation>
+        <translation>Opzioni &amp;Reset</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -2035,47 +2039,47 @@ https://www.transifex.com/euno-project/euno-project-translations</translation>
     </message>
     <message>
         <source>&amp;Cancel</source>
-        <translation>&amp;Cancel</translation>
+        <translation>&amp;Cancella</translation>
     </message>
     <message>
         <source>Any</source>
-        <translation>Any</translation>
+        <translation>Qualsiasi</translation>
     </message>
     <message>
         <source>default</source>
-        <translation>default</translation>
+        <translation>predefinito</translation>
     </message>
     <message>
         <source>none</source>
-        <translation>none</translation>
+        <translation>nessuno</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
-        <translation>Confirm options reset</translation>
+        <translation>Conferma il ripristino delle opzioni</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
-        <translation>Client restart required to activate changes.</translation>
+        <translation>Riavvio del client richiesto per attivare le modifiche.</translation>
     </message>
     <message>
         <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>Client will be shutdown, do you want to proceed?</translation>
+        <translation>Il client verr&#224; arrestato, vuoi procedere?</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
-        <translation>This change would require a client restart.</translation>
+        <translation>Questa modifica richiederebbe un riavvio del client.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>The supplied proxy address is invalid.</translation>
+        <translation>L'indirizzo proxy inserito non &#232; valido.</translation>
     </message>
     <message>
         <source>The supplied proxy port is invalid.</source>
-        <translation>The supplied proxy port is invalid.</translation>
+        <translation>La porta proxy inserita non &#232; valida.</translation>
     </message>
     <message>
         <source>The supplied proxy settings are invalid.</source>
-        <translation>The supplied proxy settings are invalid.</translation>
+        <translation>Le impostazioni proxy inserite non sono valide.</translation>
     </message>
 </context>
 <context>
@@ -2086,59 +2090,59 @@ https://www.transifex.com/euno-project/euno-project-translations</translation>
     </message>
     <message>
         <source>Wallet</source>
-        <translation>Wallet</translation>
+        <translation>Portafoglio</translation>
     </message>
     <message>
         <source>Node</source>
-        <translation>Node</translation>
+        <translation>Nodo</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
-        <translation>&amp;Show / Hide</translation>
+        <translation>&amp;Mostra / Nascondi</translation>
     </message>
     <message>
         <source>Show or hide the main Window</source>
-        <translation>Show or hide the main Window</translation>
+        <translation>Mostra o nasconde la finestra principale</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
-        <translation>E&amp;xit</translation>
+        <translation>&amp;Esci</translation>
     </message>
     <message>
         <source>Quit application</source>
-        <translation>Quit application</translation>
+        <translation>Chiude l'applicazione</translation>
     </message>
     <message>
         <source>PIVX Core client</source>
-        <translation>EUNO Core client</translation>
+        <translation>EUNO Core</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation>Errore</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>Warning</translation>
+        <translation>Avvertimento</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Information</translation>
+        <translation>Informazioni</translation>
     </message>
     <message>
         <source>System Message</source>
-        <translation>System Message</translation>
+        <translation>Messaggio di sistema</translation>
     </message>
     <message>
         <source>Sent MultiSend transaction</source>
-        <translation>Sent MultiSend transaction</translation>
+        <translation>Transazioni MultiSend inviate</translation>
     </message>
     <message>
         <source>Sent transaction</source>
-        <translation>Sent transaction</translation>
+        <translation>Transazioni Inviate</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
-        <translation>Incoming transaction</translation>
+        <translation>Transazione in entrata</translation>
     </message>
     <message>
         <source>Date: %1
@@ -2146,10 +2150,10 @@ Amount: %2
 Type: %3
 Address: %4
 </source>
-        <translation>Date: %1
-Amount: %2
-Type: %3
-Address: %4
+        <translation>Data: %1
+Ammontare: %2
+Tipo: %3
+Indirizzo: %4
 </translation>
     </message>
 </context>
@@ -2157,102 +2161,102 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <source>Payment request error</source>
-        <translation>Payment request error</translation>
+        <translation>Errore nella richiesta di pagamento</translation>
     </message>
     <message>
         <source>URI handling</source>
-        <translation>URI handling</translation>
+        <translation>Gestione degli URI</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
-        <translation>Payment request fetch URL is invalid: %1</translation>
+        <translation>L'URL di recupero della richiesta di pagamento non &#232; valido: %1</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
-        <translation>Payment request file handling</translation>
+        <translation>Gestione dei file delle richieste di pagamento</translation>
     </message>
     <message>
         <source>Invalid payment address %1</source>
-        <translation>Invalid payment address %1</translation>
+        <translation>Indirizzo di pagamento %1 invalido</translation>
     </message>
     <message>
         <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Cannot start euno: click-to-pay handler</translation>
+        <translation>Impossibile avviare euno: gestore click-to-pay</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
-        <translation>URI cannot be parsed! This can be caused by an invalid EUNO address or malformed URI parameters.</translation>
+        <translation>Impossibile leggere il file della richiesta di pagamento! Ci&#242; pu&#242; essere causato da un indirizzo EUNO non valido o parametri URI non validi.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Payment request file cannot be read! This can be caused by an invalid payment request file.</translation>
+        <translation>Impossibile leggere il file della richiesta di pagamento! Ci&#242; pu&#242; essere causato da un file di richiesta di pagamento non valido.</translation>
     </message>
     <message>
         <source>Payment request rejected</source>
-        <translation>Payment request rejected</translation>
+        <translation>Richiesta di pagamento rifiutata</translation>
     </message>
     <message>
         <source>Payment request network doesn't match client network.</source>
-        <translation>Payment request network doesn't match client network.</translation>
+        <translation>La rete di richiesta di pagamento non corrisponde alla rete client.</translation>
     </message>
     <message>
         <source>Payment request has expired.</source>
-        <translation>Payment request has expired.</translation>
+        <translation>La richiesta di pagamento &#232; scaduta.</translation>
     </message>
     <message>
         <source>Payment request is not initialized.</source>
-        <translation>Payment request is not initialized.</translation>
+        <translation>La richiesta di pagamento non &#232; inizializzata.</translation>
     </message>
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>Unverified payment requests to custom payment scripts are unsupported.</translation>
+        <translation>Le richieste di pagamento non verificate per gli script di pagamento personalizzati non sono supportate.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Requested payment amount of %1 is too small (considered dust).</translation>
+        <translation>L'ammontare della richiesta di pagamento di %1 &#232; troppo basso (considerato polvere).</translation>
     </message>
     <message>
         <source>Refund from %1</source>
-        <translation>Refund from %1</translation>
+        <translation>Risarcimento da %1</translation>
     </message>
     <message>
         <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</translation>
+        <translation>La richiesta di pagamento %1 &#232; troppo grande (%2 byte, consentiti %3 byte).</translation>
     </message>
     <message>
         <source>Payment request DoS protection</source>
-        <translation>Payment request DoS protection</translation>
+        <translation>La richiesta di pagamento richiede protezione DoS</translation>
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
-        <translation>Error communicating with %1: %2</translation>
+        <translation>Errore durante la comunicazione con %1: %2</translation>
     </message>
     <message>
         <source>Payment request cannot be parsed!</source>
-        <translation>Payment request cannot be parsed!</translation>
+        <translation>La richiesta di pagamento non pu&#242; essere analizzata!</translation>
     </message>
     <message>
         <source>Bad response from server %1</source>
-        <translation>Bad response from server %1</translation>
+        <translation>Risposta errata dal server %1</translation>
     </message>
     <message>
         <source>Network request error</source>
-        <translation>Network request error</translation>
+        <translation>Errore di richiesta di rete</translation>
     </message>
     <message>
         <source>Payment acknowledged</source>
-        <translation>Payment acknowledged</translation>
+        <translation>Pagamento confermato</translation>
     </message>
 </context>
 <context>
     <name>PeerTableModel</name>
     <message>
         <source>Address/Hostname</source>
-        <translation>Address/Hostname</translation>
+        <translation>Indirizzo/Nome host</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation>Versione</translation>
     </message>
     <message>
         <source>Ping Time</source>
@@ -2263,11 +2267,11 @@ Address: %4
     <name>QObject</name>
     <message>
         <source>Amount</source>
-        <translation>Amount</translation>
+        <translation>Ammontare</translation>
     </message>
     <message>
         <source>Enter PIVX address (e.g. %1)</source>
-        <translation>Enter EUNO address (e.g. %1)</translation>
+        <translation>Inserisci un indirizzo EUNO (ad es. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2295,15 +2299,15 @@ Address: %4
     </message>
     <message>
         <source>UNKNOWN</source>
-        <translation>UNKNOWN</translation>
+        <translation>SCONOSCIUTO</translation>
     </message>
     <message>
         <source>None</source>
-        <translation>None</translation>
+        <translation>Nessuno</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation>N/A</translation>
+        <translation>N/D</translation>
     </message>
     <message>
         <source>%1 ms</source>
@@ -2311,7 +2315,7 @@ Address: %4
     </message>
     <message>
         <source>A fatal error occurred. PIVX can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. EUNO can no longer continue safely and will quit.</translation>
+        <translation>Si &#232; verificato un errore irreversibile. EUNO non pu&#242; pi&#249; continuare in modo sicuro e verr&#224; chiuso.</translation>
     </message>
     <message>
         <source>PIVX Core</source>
@@ -2319,39 +2323,39 @@ Address: %4
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
-        <translation>Error: Specified data directory "%1" does not exist.</translation>
+        <translation>Errore: la cartella dati specificata "%1" non esiste.</translation>
     </message>
     <message>
         <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation>Error: Cannot parse configuration file: %1. Only use key=value syntax.</translation>
+        <translation>Errore: impossibile analizzare il file di configurazione: %1. Utilizzare solo la sintassi key=value.</translation>
     </message>
     <message>
         <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation>Error: Invalid combination of -regtest and -testnet.</translation>
+        <translation>Errore: combinazione non valida di -regtest e -testnet.</translation>
     </message>
     <message>
         <source>Error reading masternode configuration file: %1</source>
-        <translation>Error reading masternode configuration file: %1</translation>
+        <translation>Errore durante la lettura del file di configurazione del Masternode: %1</translation>
     </message>
     <message>
         <source>PIVX Core didn't yet exit safely...</source>
-        <translation>EUNO Core didn't yet exit safely...</translation>
+        <translation>EUNO Core non &#232; ancora uscito in modo sicuro...</translation>
     </message>
     <message>
         <source>Contact</source>
-        <translation>Contact</translation>
+        <translation>Contatta</translation>
     </message>
     <message>
         <source>Receiving</source>
-        <translation>Receiving</translation>
+        <translation>Ricevi</translation>
     </message>
     <message>
         <source>Delegator</source>
-        <translation>Delegator</translation>
+        <translation>Delegante</translation>
     </message>
     <message>
         <source>Delegable</source>
-        <translation>Delegable</translation>
+        <translation>Delegabile</translation>
     </message>
     <message>
         <source>Cold Staking</source>
@@ -2359,67 +2363,67 @@ Address: %4
     </message>
     <message>
         <source>Cold Staking Contact</source>
-        <translation>Cold Staking Contact</translation>
+        <translation>Contatta Cold Staking</translation>
     </message>
     <message>
         <source>Hidden</source>
-        <translation>Hidden</translation>
+        <translation>Nascosti</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Unknown</translation>
+        <translation>Sconosciuto</translation>
     </message>
     <message>
         <source>All</source>
-        <translation>All</translation>
+        <translation>Tutto</translation>
     </message>
     <message>
         <source>Contacts</source>
-        <translation>Contacts</translation>
+        <translation>Contatti</translation>
     </message>
     <message>
         <source>Staking Contacts</source>
-        <translation>Staking Contacts</translation>
+        <translation>Contatti Staking</translation>
     </message>
     <message>
         <source>Date desc</source>
-        <translation>Date desc</translation>
+        <translation>Data disc</translation>
     </message>
     <message>
         <source>Date asc</source>
-        <translation>Date asc</translation>
+        <translation>Data asc</translation>
     </message>
     <message>
         <source>Amount desc</source>
-        <translation>Amount desc</translation>
+        <translation>Importo disc</translation>
     </message>
     <message>
         <source>Amount asc</source>
-        <translation>Amount asc</translation>
+        <translation>Importo asc</translation>
     </message>
     <message>
         <source>Received</source>
-        <translation>Received</translation>
+        <translation>Ricevuto</translation>
     </message>
     <message>
         <source>Sent</source>
-        <translation>Sent</translation>
+        <translation>Inviato</translation>
     </message>
     <message>
         <source>Mined</source>
-        <translation>Mined</translation>
+        <translation>Minato</translation>
     </message>
     <message>
         <source>Minted</source>
-        <translation>Minted</translation>
+        <translation>Forgiato</translation>
     </message>
     <message>
         <source>MN reward</source>
-        <translation>MN reward</translation>
+        <translation>Premio del MN</translation>
     </message>
     <message>
         <source>To yourself</source>
-        <translation>To yourself</translation>
+        <translation>A te stesso</translation>
     </message>
     <message>
         <source>Cold stakes</source>
@@ -2431,27 +2435,27 @@ Address: %4
     </message>
     <message>
         <source>Delegated</source>
-        <translation>Delegated</translation>
+        <translation>Delegato</translation>
     </message>
     <message>
         <source>Delegations</source>
-        <translation>Delegations</translation>
+        <translation>Deleghe</translation>
     </message>
     <message>
         <source>by Label</source>
-        <translation>by Label</translation>
+        <translation>per Etichetta</translation>
     </message>
     <message>
         <source>by Address</source>
-        <translation>by Address</translation>
+        <translation>per Indirizzo</translation>
     </message>
     <message>
         <source>by Date</source>
-        <translation>by Date</translation>
+        <translation>per Data</translation>
     </message>
     <message>
         <source>Jan</source>
-        <translation>Jan</translation>
+        <translation>Gen</translation>
     </message>
     <message>
         <source>Feb</source>
@@ -2467,27 +2471,27 @@ Address: %4
     </message>
     <message>
         <source>May</source>
-        <translation>May</translation>
+        <translation>Mag</translation>
     </message>
     <message>
         <source>Jun</source>
-        <translation>Jun</translation>
+        <translation>Giu</translation>
     </message>
     <message>
         <source>Jul</source>
-        <translation>Jul</translation>
+        <translation>Lug</translation>
     </message>
     <message>
         <source>Aug</source>
-        <translation>Aug</translation>
+        <translation>Ago</translation>
     </message>
     <message>
         <source>Sep</source>
-        <translation>Sep</translation>
+        <translation>Set</translation>
     </message>
     <message>
         <source>Oct</source>
-        <translation>Oct</translation>
+        <translation>Ott</translation>
     </message>
     <message>
         <source>Nov</source>
@@ -2495,42 +2499,42 @@ Address: %4
     </message>
     <message>
         <source>Dec</source>
-        <translation>Dec</translation>
+        <translation>Dic</translation>
     </message>
     <message>
         <source>Address with no label</source>
-        <translation>Address with no label</translation>
+        <translation>Indirizzo senza etichetta</translation>
     </message>
 </context>
 <context>
     <name>RPCConsole</name>
     <message>
         <source>Tools window</source>
-        <translation>Tools window</translation>
+        <translation>Finestra degli strumenti</translation>
     </message>
     <message>
         <source>&amp;Information</source>
-        <translation>&amp;Information</translation>
+        <translation>&amp;Informazioni</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>General</translation>
+        <translation>Generale</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Name</translation>
+        <translation>Nome</translation>
     </message>
     <message>
         <source>Client name</source>
-        <translation>Client name</translation>
+        <translation>Nome del client</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation>N/A</translation>
+        <translation>N/D</translation>
     </message>
     <message>
         <source>Number of connections</source>
-        <translation>Number of connections</translation>
+        <translation>Numero delle connessioni</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -2538,7 +2542,7 @@ Address: %4
     </message>
     <message>
         <source>Startup time</source>
-        <translation>Startup time</translation>
+        <translation>Tempo di avvio</translation>
     </message>
     <message>
         <source>Network</source>
@@ -2546,47 +2550,47 @@ Address: %4
     </message>
     <message>
         <source>Last block time</source>
-        <translation>Last block time</translation>
+        <translation>Ultimo blocco</translation>
     </message>
     <message>
         <source>Debug log file</source>
-        <translation>Debug log file</translation>
+        <translation>Debug del file di registro</translation>
     </message>
     <message>
         <source>Build date</source>
-        <translation>Build date</translation>
+        <translation>Data di costruzione</translation>
     </message>
     <message>
         <source>Current number of blocks</source>
-        <translation>Current number of blocks</translation>
+        <translation>Numero attuale dei blocchi</translation>
     </message>
     <message>
         <source>Client version</source>
-        <translation>Client version</translation>
+        <translation>Versione del client</translation>
     </message>
     <message>
         <source>Using BerkeleyDB version</source>
-        <translation>Using BerkeleyDB version</translation>
+        <translation>Utilizza versione BerkeleyDB</translation>
     </message>
     <message>
         <source>Block chain</source>
-        <translation>Block chain</translation>
+        <translation>Blockchain</translation>
     </message>
     <message>
         <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the EUNO debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <translation>Aprire il file di registro di debug EUNO dalla directory dei dati corrente. Questa operazione pu&#242; richiedere alcuni secondi per file di registro di grandi dimensioni.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
-        <translation>Number of Masternodes</translation>
+        <translation>Numero dei Masternode</translation>
     </message>
     <message>
         <source>Data Directory</source>
-        <translation>Data Directory</translation>
+        <translation>Directory dei dati</translation>
     </message>
     <message>
         <source>Last block hash</source>
-        <translation>Last block hash</translation>
+        <translation>Hash dell'ultimo blocco</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -2594,27 +2598,27 @@ Address: %4
     </message>
     <message>
         <source>Clear console</source>
-        <translation>Clear console</translation>
+        <translation>Chiudi console</translation>
     </message>
     <message>
         <source>&amp;Network Traffic</source>
-        <translation>&amp;Network Traffic</translation>
+        <translation>Traffico del &amp;Network</translation>
     </message>
     <message>
         <source>&amp;Clear</source>
-        <translation>&amp;Clear</translation>
+        <translation>&amp;Cancella</translation>
     </message>
     <message>
         <source>Totals</source>
-        <translation>Totals</translation>
+        <translation>Totali</translation>
     </message>
     <message>
         <source>Received</source>
-        <translation>Received</translation>
+        <translation>Ricevuto</translation>
     </message>
     <message>
         <source>Sent</source>
-        <translation>Sent</translation>
+        <translation>Inviato</translation>
     </message>
     <message>
         <source>&amp;Peers</source>
@@ -2622,55 +2626,55 @@ Address: %4
     </message>
     <message>
         <source>Banned peers</source>
-        <translation>Banned peers</translation>
+        <translation>Peers bannati</translation>
     </message>
     <message>
         <source>Select a peer to view detailed information.</source>
-        <translation>Select a peer to view detailed information.</translation>
+        <translation>Seleziona un peer per visualizzare informazioni dettagliate.</translation>
     </message>
     <message>
         <source>Whitelisted</source>
-        <translation>Whitelisted</translation>
+        <translation>Messo in Whitelist</translation>
     </message>
     <message>
         <source>Direction</source>
-        <translation>Direction</translation>
+        <translation>Direzione</translation>
     </message>
     <message>
         <source>Protocol</source>
-        <translation>Protocol</translation>
+        <translation>Protocollo</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation>Versione</translation>
     </message>
     <message>
         <source>Services</source>
-        <translation>Services</translation>
+        <translation>Servizi</translation>
     </message>
     <message>
         <source>Ban Score</source>
-        <translation>Ban Score</translation>
+        <translation>Punteggio di ban</translation>
     </message>
     <message>
         <source>Connection Time</source>
-        <translation>Connection Time</translation>
+        <translation>Tempo di connessione</translation>
     </message>
     <message>
         <source>Last Send</source>
-        <translation>Last Send</translation>
+        <translation>Ultimo Invio</translation>
     </message>
     <message>
         <source>Last Receive</source>
-        <translation>Last Receive</translation>
+        <translation>Ultima ricezione</translation>
     </message>
     <message>
         <source>Bytes Sent</source>
-        <translation>Bytes Sent</translation>
+        <translation>Bytes inviati</translation>
     </message>
     <message>
         <source>Bytes Received</source>
-        <translation>Bytes Received</translation>
+        <translation>Bytes ricevuti</translation>
     </message>
     <message>
         <source>Ping Time</source>
@@ -2678,31 +2682,31 @@ Address: %4
     </message>
     <message>
         <source>&amp;Wallet Repair</source>
-        <translation>&amp;Wallet Repair</translation>
+        <translation>Ripara &amp;Wallet</translation>
     </message>
     <message>
         <source>Delete local Blockchain Folders</source>
-        <translation>Delete local Blockchain Folders</translation>
+        <translation>Elimina le cartelle Blockchain locali</translation>
     </message>
     <message>
         <source>Wallet In Use:</source>
-        <translation>Wallet In Use:</translation>
+        <translation>Portafoglio in uso:</translation>
     </message>
     <message>
         <source>Starting Block</source>
-        <translation>Starting Block</translation>
+        <translation>Blocco di partenza</translation>
     </message>
     <message>
         <source>Synced Headers</source>
-        <translation>Synced Headers</translation>
+        <translation>Intestazioni sincronizzate</translation>
     </message>
     <message>
         <source>Synced Blocks</source>
-        <translation>Synced Blocks</translation>
+        <translation>Blocchi sincronizzati</translation>
     </message>
     <message>
         <source>The duration of a currently outstanding ping.</source>
-        <translation>The duration of a currently outstanding ping.</translation>
+        <translation>La durata di un ping attualmente in sospeso.</translation>
     </message>
     <message>
         <source>Ping Wait</source>
@@ -2710,59 +2714,59 @@ Address: %4
     </message>
     <message>
         <source>Time Offset</source>
-        <translation>Time Offset</translation>
+        <translation>Differenza di fuso orario</translation>
     </message>
     <message>
         <source>Custom Backup Path:</source>
-        <translation>Custom Backup Path:</translation>
+        <translation>Percorso di backup personalizzato:</translation>
     </message>
     <message>
         <source>Custom zPIV Backup Path:</source>
-        <translation>Custom zEUNO Backup Path:</translation>
+        <translation>Percorso di backup zEUNO personalizzato:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
-        <translation>Custom Backups Threshold:</translation>
+        <translation>Soglia backup personalizzati:</translation>
     </message>
     <message>
         <source>Salvage wallet</source>
-        <translation>Salvage wallet</translation>
+        <translation>Portafoglio di salvataggio</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
-        <translation>Attempt to recover private keys from a corrupt wallet.dat.</translation>
+        <translation>Tentativo di recuperare chiavi private da un wallet.dat corrotto.</translation>
     </message>
     <message>
         <source>Rescan blockchain files</source>
-        <translation>Rescan blockchain files</translation>
+        <translation>Ripeti la scansione dei file blockchain</translation>
     </message>
     <message>
         <source>Rescan the block chain for missing wallet transactions.</source>
-        <translation>Rescan the block chain for missing wallet transactions.</translation>
+        <translation>Riesegui la scansione della blockchain per cercare le transazioni mancanti.</translation>
     </message>
     <message>
         <source>Recover transactions 1</source>
-        <translation>Recover transactions 1</translation>
+        <translation>Recupera transazioni 1</translation>
     </message>
     <message>
         <source>Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
-        <translation>Recover transactions from blockchain (keep meta-data, e.g. account owner).</translation>
+        <translation>Recupera le transazioni dalla blockchain (conserva i metadati, ad esempio il proprietario dell'account).</translation>
     </message>
     <message>
         <source>Recover transactions 2</source>
-        <translation>Recover transactions 2</translation>
+        <translation>Recupera transazioni 2</translation>
     </message>
     <message>
         <source>Recover transactions from blockchain (drop meta-data).</source>
-        <translation>Recover transactions from blockchain (drop meta-data).</translation>
+        <translation>Recupera le transazioni dalla blockchain (cancella i metadati).</translation>
     </message>
     <message>
         <source>Upgrade wallet format</source>
-        <translation>Upgrade wallet format</translation>
+        <translation>Aggiorna il formato del portafoglio</translation>
     </message>
     <message>
         <source>Rebuild block chain index from current blk000??.dat files.</source>
-        <translation>Rebuild block chain index from current blk000??.dat files.</translation>
+        <translation>Ricostruisce l'indice della blockchain dai file blk000??.dat corrente.</translation>
     </message>
     <message>
         <source>-resync:</source>
@@ -2770,23 +2774,23 @@ Address: %4
     </message>
     <message>
         <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
-        <translation>Deletes all local blockchain folders so the wallet synchronizes from scratch.</translation>
+        <translation>Elimina tutte le cartelle blockchain locali in modo che il portafoglio si sincronizzi da zero.</translation>
     </message>
     <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
-        <translation>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</translation>
+        <translation>I pulsanti seguenti riavvieranno il portafoglio con le opzioni della riga di comando per riparare il portafoglio, risolvere problemi con file blockhain corrotti o transazioni mancanti / obsolete.</translation>
     </message>
     <message>
         <source>Wallet repair options.</source>
-        <translation>Wallet repair options.</translation>
+        <translation>Opzioni di riparazione del portafoglio</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</source>
-        <translation>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</translation>
+        <translation>Aggiorna il portafoglio all'ultimo formato all'avvio. (Nota: questo NON &#232; un aggiornamento del portafoglio stesso!)</translation>
     </message>
     <message>
         <source>Rebuild index</source>
-        <translation>Rebuild index</translation>
+        <translation>Ricostruisci indice</translation>
     </message>
     <message>
         <source>In:</source>
@@ -2798,67 +2802,67 @@ Address: %4
     </message>
     <message>
         <source>Welcome to the PIVX RPC console.</source>
-        <translation>Welcome to the EUNO RPC console.</translation>
+        <translation>Benvenuti nella console RPC di EUNO.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
-        <translation>&amp;Disconnect Node</translation>
+        <translation>&amp;Disconnetti Nodo</translation>
     </message>
     <message>
         <source>Ban Node for</source>
-        <translation>Ban Node for</translation>
+        <translation>Ban Nodo per</translation>
     </message>
     <message>
         <source>1 &amp;hour</source>
-        <translation>1 &amp;hour</translation>
+        <translation>1 &amp;ora</translation>
     </message>
     <message>
         <source>1 &amp;day</source>
-        <translation>1 &amp;day</translation>
+        <translation>1 &amp;giorno</translation>
     </message>
     <message>
         <source>1 &amp;week</source>
-        <translation>1 &amp;week</translation>
+        <translation>1 &amp;settimana</translation>
     </message>
     <message>
         <source>1 &amp;year</source>
-        <translation>1 &amp;year</translation>
+        <translation>1 &amp;anno</translation>
     </message>
     <message>
         <source>&amp;Unban Node</source>
-        <translation>&amp;Unban Node</translation>
+        <translation>&amp;Unban Nodo</translation>
     </message>
     <message>
         <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>Questo eliminer&#224; tutte le cartelle blockchain locali in modo che il portafoglio si sincronizzi da zero.&lt;br /&gt;&lt;br /&gt;</translation>
     </message>
     <message>
         <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>Ci&#242; richiede un po' di tempo e scarica molti dati.&lt;br /&gt;&lt;br /&gt;</translation>
     </message>
     <message>
         <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>Le transazioni e i fondi saranno nuovamente visibili al termine del download.&lt;br /&gt;&lt;br /&gt;</translation>
     </message>
     <message>
         <source>Do you want to continue?.&lt;br /&gt;</source>
-        <translation>Do you want to continue?.&lt;br /&gt;</translation>
+        <translation>Vuoi continuare?.&lt;br /&gt;</translation>
     </message>
     <message>
         <source>Confirm resync Blockchain</source>
-        <translation>Confirm resync Blockchain</translation>
+        <translation>Conferma la risincronizzazione della Blockchain</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
-        <translation>Use up and down arrows to navigate history, and %1 to clear screen.</translation>
+        <translation>Usa le frecce su e gi&#249; per navigare nella cronologia e %1 per cancellare lo schermo.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</translation>
+        <translation>Scrivi &lt;b&gt;help&lt;/b&gt; per una panoramica dei comandi disponibili.</translation>
     </message>
     <message>
         <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
-        <translation>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</translation>
+        <translation>ATTENZIONE: i truffatori sono stati attivi, dicendo agli utenti di digitare i comandi qui, rubando il contenuto del loro portafoglio. Non utilizzare questa console senza comprendere appieno le conseguenze di un comando.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -2886,19 +2890,19 @@ Address: %4
     </message>
     <message>
         <source>never</source>
-        <translation>never</translation>
+        <translation>mai</translation>
     </message>
     <message>
         <source>Inbound</source>
-        <translation>Inbound</translation>
+        <translation>In entrata</translation>
     </message>
     <message>
         <source>Outbound</source>
-        <translation>Outbound</translation>
+        <translation>In uscita</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Yes</translation>
+        <translation>Si</translation>
     </message>
     <message>
         <source>No</source>
@@ -2906,167 +2910,167 @@ Address: %4
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Unknown</translation>
+        <translation>Sconosciuto</translation>
     </message>
 </context>
 <context>
     <name>ReceiveDialog</name>
     <message>
         <source>Dialog</source>
-        <translation>Dialog</translation>
+        <translation>Finestra di dialogo</translation>
     </message>
     <message>
         <source>My Address</source>
-        <translation>My Address</translation>
+        <translation>Il mio indirizzo</translation>
     </message>
     <message>
         <source>COPY</source>
-        <translation>COPY</translation>
+        <translation>COPIA</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation>CANCEL</translation>
+        <translation>CANCELLA</translation>
     </message>
 </context>
 <context>
     <name>ReceiveWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>No address</source>
-        <translation>No address</translation>
+        <translation>Nessun indirizzo</translation>
     </message>
     <message>
         <source>Scan the QR code or copy the address to receive PIV</source>
-        <translation>Scan the QR code or copy the address to receive EUNO</translation>
+        <translation>Scansiona il codice QR o copia l'indirizzo per ricevere EUNO</translation>
     </message>
     <message>
         <source>Add Label</source>
-        <translation>Add Label</translation>
+        <translation>Aggiungi etichetta</translation>
     </message>
     <message>
         <source>Generate Address</source>
-        <translation>Generate Address</translation>
+        <translation>Genera indirizzo</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copy</translation>
+        <translation>Copia</translation>
     </message>
     <message>
         <source>Receive</source>
-        <translation>Receive</translation>
+        <translation>Ricevi</translation>
     </message>
     <message>
         <source>My Addresses</source>
-        <translation>My Addresses</translation>
+        <translation>Mio indirizzo</translation>
     </message>
     <message>
         <source>List your own addresses</source>
-        <translation>List your own addresses</translation>
+        <translation>Elenca i tuoi indirizzi</translation>
     </message>
     <message>
         <source>Create Request</source>
-        <translation>Create Request</translation>
+        <translation>Crea Richiesta</translation>
     </message>
     <message>
         <source>Request payment with a fixed amount</source>
-        <translation>Request payment with a fixed amount</translation>
+        <translation>Richiedi pagamento con importo fissato</translation>
     </message>
     <message>
         <source>No available address, try unlocking the wallet</source>
-        <translation>No available address, try unlocking the wallet</translation>
+        <translation>Nessun indirizzo disponibile, prova a sbloccare il portafoglio</translation>
     </message>
     <message>
         <source>Error generating address</source>
-        <translation>Error generating address</translation>
+        <translation>Errore generando l'indirizzo</translation>
     </message>
     <message>
         <source>Edit Label</source>
-        <translation>Edit Label</translation>
+        <translation>Modifica etichetta</translation>
     </message>
     <message>
         <source>Edit Address Label</source>
-        <translation>Edit Address Label</translation>
+        <translation>Modifica etichetta indirizzo</translation>
     </message>
     <message>
         <source>Address label saved</source>
-        <translation>Address label saved</translation>
+        <translation>Etichetta salvata</translation>
     </message>
     <message>
         <source>Error storing address label</source>
-        <translation>Error storing address label</translation>
+        <translation>Errore salvando l'etichetta indirizzo</translation>
     </message>
     <message>
         <source>Cannot create new address, wallet locked</source>
-        <translation>Cannot create new address, wallet locked</translation>
+        <translation>Impossibile creare un nuovo indirizzo, wallet bloccato</translation>
     </message>
     <message>
         <source>New address created</source>
-        <translation>New address created</translation>
+        <translation>Nuovo indirizzo creato</translation>
     </message>
     <message>
         <source>Address copied</source>
-        <translation>Address copied</translation>
+        <translation>Indirizzo copiato</translation>
     </message>
     <message>
         <source>Cannot perform operation, wallet locked</source>
-        <translation>Cannot perform operation, wallet locked</translation>
+        <translation>Impossibile completare l'operazione, portafoglio bloccato</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
-        <translation>URI copied to clipboard</translation>
+        <translation>URI copiato negli appunti</translation>
     </message>
     <message>
         <source>Address copied to clipboard</source>
-        <translation>Address copied to clipboard</translation>
+        <translation>Indirizzo copiato negli appunti</translation>
     </message>
 </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation>Etichetta</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Message</translation>
+        <translation>Messaggio</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Indirizzo</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Amount</translation>
+        <translation>Ammontare</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(no label)</translation>
+        <translation>(nessuna etichetta)</translation>
     </message>
     <message>
         <source>(no message)</source>
-        <translation>(no message)</translation>
+        <translation>(nessun messaggio)</translation>
     </message>
     <message>
         <source>(no amount)</source>
-        <translation>(no amount)</translation>
+        <translation>(nessun importo)</translation>
     </message>
 </context>
 <context>
     <name>RequestDialog</name>
     <message>
         <source>Dialog</source>
-        <translation>Dialog</translation>
+        <translation>Finestra di dialogo</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Amount</translation>
+        <translation>Ammontare</translation>
     </message>
     <message>
         <source>PIV</source>
@@ -3074,7 +3078,7 @@ Address: %4
     </message>
     <message>
         <source>Instead of sharing only a PIVX address, you can create a payment request, bundling up more information</source>
-        <translation>Instead of sharing only a EUNO address, you can create a payment request, bundling up more information</translation>
+        <translation>Invece di condividere solo un indirizzo EUNO, &#232; possibile creare un messaggio di richiesta pagamento, raccogliendo pi&#249; informazioni</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -3082,94 +3086,94 @@ Address: %4
     </message>
     <message>
         <source>COPY ADDRESS</source>
-        <translation>COPY ADDRESS</translation>
+        <translation>COPIA INDIRIZZO</translation>
     </message>
     <message>
         <source>COPY URL</source>
-        <translation>COPY URL</translation>
+        <translation>COPIA URL</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation>CANCEL</translation>
+        <translation>CANCELLA</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation>Etichetta</translation>
     </message>
     <message>
         <source>Description (optional)</source>
-        <translation>Description (optional)</translation>
+        <translation>Descrizione (opzionale)</translation>
     </message>
     <message>
         <source>New Payment Request</source>
-        <translation>New Payment Request</translation>
+        <translation>Nuova Richiesta Pagamento</translation>
     </message>
     <message>
         <source>Enter a label for the address</source>
-        <translation>Enter a label for the address</translation>
+        <translation>Inserisci un ' etichetta per l'indirizzo</translation>
     </message>
     <message>
         <source>Enter description</source>
-        <translation>Enter description</translation>
+        <translation>Inserisci descrizione</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation>Errore</translation>
     </message>
     <message>
         <source>GENERATE</source>
-        <translation>GENERATE</translation>
+        <translation>GENERARE</translation>
     </message>
     <message>
         <source>Creates an address to receive coin delegations and be able to stake them.</source>
-        <translation>Creates an address to receive coin delegations and be able to stake them.</translation>
+        <translation>Crea un indirizzo per ricevere deleghe di valuta ed essere in grado di effettuare lo staking.</translation>
     </message>
     <message>
         <source>New Cold Staking Address</source>
-        <translation>New Cold Staking Address</translation>
+        <translation>Nuovo indirizzo di Cold Staking</translation>
     </message>
     <message>
         <source>Amount (optional)</source>
-        <translation>Amount (optional)</translation>
+        <translation>Importo (opzionale)</translation>
     </message>
     <message>
         <source>Address label cannot be empty</source>
-        <translation>Address label cannot be empty</translation>
+        <translation>L'etichetta dell'indirizzo non pu&#242; essere vuota</translation>
     </message>
     <message>
         <source>Invalid amount</source>
-        <translation>Invalid amount</translation>
+        <translation>Importo non valido</translation>
     </message>
     <message>
         <source>Request for </source>
-        <translation>Request for </translation>
+        <translation>Richiesta per</translation>
     </message>
     <message>
         <source>Cold Staking Address Generated</source>
-        <translation>Cold Staking Address Generated</translation>
+        <translation>Indirizzo Cold Staking Generato</translation>
     </message>
 </context>
 <context>
     <name>SendChangeAddressDialog</name>
     <message>
         <source>Dialog</source>
-        <translation>Dialog</translation>
+        <translation>Finestra di dialogo</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation>CANCEL</translation>
+        <translation>CANCELLA</translation>
     </message>
     <message>
         <source>Custom Change Address</source>
-        <translation>Custom Change Address</translation>
+        <translation>Modifica indirizzo personalizzata</translation>
     </message>
     <message>
         <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PIVX address</source>
-        <translation>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" EUNO address</translation>
+        <translation>Il resto del valore risultante dagli ingressi meno il valore delle uscite va all'indirizzo EUNO "cambio"</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation>SAVE</translation>
+        <translation>SALVA</translation>
     </message>
     <message>
         <source>RESET</source>
@@ -3177,22 +3181,22 @@ Address: %4
     </message>
     <message>
         <source>Invalid address</source>
-        <translation>Invalid address</translation>
+        <translation>Indirizzo non valido</translation>
     </message>
     <message>
         <source>Cannot use cold staking addresses for change</source>
-        <translation>Cannot use cold staking addresses for change</translation>
+        <translation>Impossibile usare indirizzi cold staking per cambi</translation>
     </message>
 </context>
 <context>
     <name>SendCustomFeeDialog</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Recommended</source>
-        <translation>Recommended</translation>
+        <translation>Raccomandato</translation>
     </message>
     <message>
         <source>PIV/kilobyte</source>
@@ -3204,248 +3208,248 @@ Address: %4
     </message>
     <message>
         <source>Customize the transaction fee, depending on the fee value your transaction might be included faster in the blockchain</source>
-        <translation>Customize the transaction fee, depending on the fee value your transaction might be included faster in the blockchain</translation>
+        <translation>Personalizza la fee di transazione; a seconda del valore della fee, la tua transazione potrebbe essere inclusa pi&#249; o meno velocemente nella blockchain</translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation>Custom</translation>
+        <translation>Personalizzato</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation>CANCEL</translation>
+        <translation>CANCELLA</translation>
     </message>
     <message>
         <source>Customize Fee</source>
-        <translation>Customize Fee</translation>
+        <translation>Tariffa personalizzata</translation>
     </message>
     <message>
         <source>Normal</source>
-        <translation>Normal</translation>
+        <translation>Normale</translation>
     </message>
     <message>
         <source>Slow</source>
-        <translation>Slow</translation>
+        <translation>Lento</translation>
     </message>
     <message>
         <source>Fast</source>
-        <translation>Fast</translation>
+        <translation>Veloce</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation>SAVE</translation>
+        <translation>SALVA</translation>
     </message>
     <message>
         <source>Fee too high. Must be below: %1</source>
-        <translation>Fee too high. Must be below: %1</translation>
+        <translation>Fee troppo alta. Deve essere inferiore a: %1</translation>
     </message>
     <message>
         <source>Fee too low. Must be at least: %1</source>
-        <translation>Fee too low. Must be at least: %1</translation>
+        <translation>Fee troppo bassa. Deve essere almeno: %1</translation>
     </message>
 </context>
 <context>
     <name>SendMultiRow</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Enter address</source>
-        <translation>Enter address</translation>
+        <translation>Inserire indirizzo</translation>
     </message>
     <message>
         <source>Address label (optional)</source>
-        <translation>Address label (optional)</translation>
+        <translation>Etichetta indirzzo (opzionale)</translation>
     </message>
     <message>
         <source>Enter label</source>
-        <translation>Enter label</translation>
+        <translation>Inserisci etichetta</translation>
     </message>
 </context>
 <context>
     <name>SendWidget</name>
     <message>
         <source>Total remaining from the selected UTXO</source>
-        <translation>Total remaining from the selected UTXO</translation>
+        <translation>Totale rimanente dall'UTXO selezionato</translation>
     </message>
     <message>
         <source>Warning!</source>
-        <translation>Warning!</translation>
+        <translation>Avvertimento!</translation>
     </message>
     <message>
         <source>The change address doesn't belong to this wallet.
 
 Do you want to continue?</source>
-        <translation>The change address doesn't belong to this wallet.
+        <translation>Il cambio indirizzo non appartiene a questo wallet.
 
-Do you want to continue?</translation>
+Vuoi continuare?</translation>
     </message>
     <message>
         <source>Customize Fee</source>
-        <translation>Customize Fee</translation>
+        <translation>Tariffa personalizzata</translation>
     </message>
     <message>
         <source>Maximum amount of outputs reached</source>
-        <translation>Maximum amount of outputs reached</translation>
+        <translation>Numero massimo di output raggiunti</translation>
     </message>
     <message>
         <source>Invalid entry, previous entries must be valid before add a new one</source>
-        <translation>Invalid entry, previous entries must be valid before add a new one</translation>
+        <translation>Voce non valida, le voci precedenti devono essere valide prima di aggiungerne una nuova</translation>
     </message>
     <message>
         <source>Possibly spend coins delegated for cold-staking (currently available: %1</source>
-        <translation>Possibly spend coins delegated for cold-staking (currently available: %1</translation>
+        <translation> Coin spendibili attualmente delegate per il cold-staking (disponibile: %1</translation>
     </message>
     <message>
         <source>Invalid entry</source>
-        <translation>Invalid entry</translation>
+        <translation>Valore non valido</translation>
     </message>
     <message>
         <source>No set recipients</source>
-        <translation>No set recipients</translation>
+        <translation>Nessun destinatario impostato</translation>
     </message>
     <message>
         <source>Cannot send, wallet locked</source>
-        <translation>Cannot send, wallet locked</translation>
+        <translation>Impossibile inviare, portafoglio bloccato</translation>
     </message>
     <message>
         <source>Cannot create transaction.</source>
-        <translation>Cannot create transaction.</translation>
+        <translation>Impossibile creare la transazione.</translation>
     </message>
     <message>
         <source>WARNING:
 Transaction spends a cold-stake delegation, voiding it.
 These coins will no longer be cold-staked.</source>
-        <translation>WARNING:
-Transaction spends a cold-stake delegation, voiding it.
-These coins will no longer be cold-staked.</translation>
+        <translation>AVVERTIMENTO:
+La transazione spende una delega cold-stake, annullandola.
+Questa valuta non sar&#224; pi&#249; in cold-stake.</translation>
     </message>
     <message>
         <source>Transaction sent</source>
-        <translation>Transaction sent</translation>
+        <translation>Transazione inviata</translation>
     </message>
     <message>
         <source>Address label update failed for address: %1</source>
-        <translation>Address label update failed for address: %1</translation>
+        <translation>Aggiornamento dell'etichetta dell'indirizzo non riuscito per l'indirizzo: %1</translation>
     </message>
     <message>
         <source>Invalid URI</source>
-        <translation>Invalid URI</translation>
+        <translation>URI non valido</translation>
     </message>
     <message>
         <source>Invalid address in URI</source>
-        <translation>Invalid address in URI</translation>
+        <translation>Indirizzo non valido nel URI</translation>
     </message>
     <message>
         <source>Custom Fee %1</source>
-        <translation>Custom Fee %1</translation>
+        <translation>Tariffa personalizzata %1</translation>
     </message>
     <message>
         <source>Coin Control</source>
-        <translation>Coin Control</translation>
+        <translation>Controllo Valuta</translation>
     </message>
     <message>
         <source>Select the source of the coins</source>
-        <translation>Select the source of the coins</translation>
+        <translation>Selezionare l'origine delle coin</translation>
     </message>
     <message>
         <source>Change Address</source>
-        <translation>Change Address</translation>
+        <translation>Cambia Indirizzo</translation>
     </message>
     <message>
         <source>Customize the change address</source>
-        <translation>Customize the change address</translation>
+        <translation>Personalizzare la modica indirizzo</translation>
     </message>
     <message>
         <source>Open URI</source>
-        <translation>Open URI</translation>
+        <translation>Apri URI</translation>
     </message>
     <message>
         <source>Parse a payment request</source>
-        <translation>Parse a payment request</translation>
+        <translation>Esamina una richiesta di pagamento</translation>
     </message>
     <message>
         <source>Unlocked remaining</source>
-        <translation>Unlocked remaining</translation>
+        <translation>Sbloccato rimanente</translation>
     </message>
     <message>
         <source>You don't have any %1 to select.</source>
-        <translation>You don't have any %1 to select.</translation>
+        <translation>Non hai alcun %1 da selezionare.</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
-        <translation>No contacts available, you can go to the contacts screen and add some there!</translation>
+        <translation>Nessun contatto disponibile, puoi andare alla schermata dei contatti e aggiungerne alcuni!</translation>
     </message>
     <message>
         <source>Save contact</source>
-        <translation>Save contact</translation>
+        <translation>Salva contatto</translation>
     </message>
     <message>
         <source>Address field is empty</source>
-        <translation>Address field is empty</translation>
+        <translation>Il campo indirizzo &#232; vuoto</translation>
     </message>
     <message>
         <source>Invalid address</source>
-        <translation>Invalid address</translation>
+        <translation>Indirizzo non valido</translation>
     </message>
     <message>
         <source>Cannot store your own address as contact</source>
-        <translation>Cannot store your own address as contact</translation>
+        <translation>Impossibile memorizzare il proprio indirizzo come contatto</translation>
     </message>
     <message>
         <source>Update Contact</source>
-        <translation>Update Contact</translation>
+        <translation>Aggiorna il contatto</translation>
     </message>
     <message>
         <source>Create New Contact</source>
-        <translation>Create New Contact</translation>
+        <translation>Crea nuovo contatto</translation>
     </message>
     <message>
         <source>New Contact Stored</source>
-        <translation>New Contact Stored</translation>
+        <translation>Nuovo contatto memorizzato</translation>
     </message>
     <message>
         <source>Error Storing Contact</source>
-        <translation>Error Storing Contact</translation>
+        <translation>Errore durante la memorizzazione del contatto</translation>
     </message>
 </context>
 <context>
     <name>SettingsBackupWallet</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Change Wallet Passphrase</source>
-        <translation>Change Wallet Passphrase</translation>
+        <translation>Cambia frase d'accesso al wallet</translation>
     </message>
     <message>
         <source>Where</source>
-        <translation>Where</translation>
+        <translation>Dove</translation>
     </message>
     <message>
         <source>Keep your wallet safe by doing regular backups and storing your backup file externally.
 This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) on another device</source>
-        <translation>Keep your wallet safe by doing regular backups and storing your backup file externally.
-This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) on another device</translation>
+        <translation>Mantieni il tuo portafoglio sicuro eseguendo backup regolari, archivia il tuo file di backup esternamente.
+Questa opzione crea un file wallet.dat che pu&#242; essere utilizzato per recuperare l'intero saldo (transazioni e indirizzi) su un altro dispositivo.</translation>
     </message>
     <message>
         <source>Select folder...</source>
-        <translation>Select folder...</translation>
+        <translation>Seleziona cartella...</translation>
     </message>
     <message>
         <source>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
 Remember to write it down and store it safely, otherwise you might lose access to your funds</source>
-        <translation>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
-Remember to write it down and store it safely, otherwise you might lose access to your funds</translation>
+        <translation>Questo decripter&#224; tutti i dati del wallet e li crittografer&#224; nuovamente con la nuova passphrase.
+Ricordati di scriverla e conservarla in modo sicuro, altrimenti potresti perdere l'accesso ai tuoi fondi.</translation>
     </message>
     <message>
         <source>Change Passphrase</source>
-        <translation>Change Passphrase</translation>
+        <translation>Cambia frase d'accesso</translation>
     </message>
     <message>
         <source>Backup Wallet</source>
-        <translation>Backup Wallet</translation>
+        <translation>Backup portafoglio</translation>
     </message>
     <message>
         <source>Wallet Data (*.dat)</source>
@@ -3453,175 +3457,175 @@ Remember to write it down and store it safely, otherwise you might lose access t
     </message>
     <message>
         <source>Backup created</source>
-        <translation>Backup created</translation>
+        <translation>Backup creato</translation>
     </message>
     <message>
         <source>Backup creation failed</source>
-        <translation>Backup creation failed</translation>
+        <translation>Creazione del backup non riuscita</translation>
     </message>
     <message>
         <source>Please select a folder to export the backup first.</source>
-        <translation>Please select a folder to export the backup first.</translation>
+        <translation>Seleziona prima una cartella per esportare il backup.</translation>
     </message>
 </context>
 <context>
     <name>SettingsBitToolWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Import Address</source>
-        <translation>Import Address</translation>
+        <translation>Importa indirizzo</translation>
     </message>
     <message>
         <source>BIP38 Tool</source>
-        <translation>BIP38 Tool</translation>
+        <translation>Strumenti BIP38</translation>
     </message>
     <message>
         <source>Encrypt your PIVX addresses (key pair actually) using BIP38 encryption.
 Using this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely</source>
-        <translation>Encrypt your EUNO addresses (key pair actually) using BIP38 encryption.
-Using this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely</translation>
+        <translation>Cifra gli indirizzi EUNO (la coppia di chiavi) con la crittografia BIP38.
+Usando questo meccanismo &#232; possibile condividere le chiavi senza rischi dell'intermediario, basta solo memorizzare la password in modo sicuro</translation>
     </message>
     <message>
         <source>Encrypt</source>
-        <translation>Encrypt</translation>
+        <translation>Crittografa</translation>
     </message>
     <message>
         <source>Decrypt</source>
-        <translation>Decrypt</translation>
+        <translation>Decrittografa</translation>
     </message>
     <message>
         <source>Encrypted key</source>
-        <translation>Encrypted key</translation>
+        <translation>Chiave crittografata</translation>
     </message>
     <message>
         <source>Enter a encrypted key</source>
-        <translation>Enter a encrypted key</translation>
+        <translation>Inserisci una chiave crittografata</translation>
     </message>
     <message>
         <source>Passphrase</source>
-        <translation>Passphrase</translation>
+        <translation>Frase d'accesso</translation>
     </message>
     <message>
         <source>Decrypted address result</source>
-        <translation>Decrypted address result</translation>
+        <translation>Risultato dell'indirizzo decrittografato</translation>
     </message>
     <message>
         <source>Decrypted Address</source>
-        <translation>Decrypted Address</translation>
+        <translation>Indirizzo decrittografato</translation>
     </message>
     <message>
         <source>DECRYPT KEY</source>
-        <translation>DECRYPT KEY</translation>
+        <translation>DECRITTOGRAFA LA CHIAVE</translation>
     </message>
     <message>
         <source>PIVX address</source>
-        <translation>EUNO address</translation>
+        <translation>Indirizzi EUNO</translation>
     </message>
     <message>
         <source>Enter address</source>
-        <translation>Enter address</translation>
+        <translation>Inserire indirizzo</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation>Enter passphrase</translation>
+        <translation>Inserire parola d'ordine</translation>
     </message>
     <message>
         <source>Encrypted Key</source>
-        <translation>Encrypted Key</translation>
+        <translation>Chiave crittografata</translation>
     </message>
     <message>
         <source>ENCRYPT</source>
-        <translation>ENCRYPT</translation>
+        <translation>CRITTOGRAFA</translation>
     </message>
     <message>
         <source>CLEAR ALL</source>
-        <translation>CLEAR ALL</translation>
+        <translation>CANCELLA TUTTO</translation>
     </message>
     <message>
         <source>Enter a passphrase</source>
-        <translation>Enter a passphrase</translation>
+        <translation>Inserire passphrase</translation>
     </message>
     <message>
         <source>CLEAR</source>
-        <translation>CLEAR</translation>
+        <translation>CANCELLA</translation>
     </message>
     <message>
         <source>The entered passphrase is invalid. </source>
-        <translation>The entered passphrase is invalid. </translation>
+        <translation>La frase d'accesso inserita non &#232; valida.</translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
-        <translation>Allowed: 0-9,a-z,A-Z,</translation>
+        <translation>Sono ammessi: 0-9, a-z, A-Z,</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
-        <translation>The entered address is invalid.</translation>
+        <translation>L'indirizzo inserito non &#232; valido.</translation>
     </message>
     <message>
         <source>Please check the address and try again.</source>
-        <translation>Please check the address and try again.</translation>
+        <translation>Per favore controlla l'indirizzo e riprova.</translation>
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>The entered address does not refer to a key.</translation>
+        <translation>L'indirizzo inserito non corrisponde a una chiave.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Wallet unlock was cancelled.</translation>
+        <translation>Lo sblocco portafoglio &#232; stato annullato.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
-        <translation>Private key for the entered address is not available.</translation>
+        <translation>La chiave privata per l'indirizzo inserito non &#232; disponibile.</translation>
     </message>
     <message>
         <source>Address encrypted.</source>
-        <translation>Address encrypted.</translation>
+        <translation>Indirizzo crittografato</translation>
     </message>
     <message>
         <source>No addresses available, you can go to the receive screen and add some there!</source>
-        <translation>No addresses available, you can go to the receive screen and add some there!</translation>
+        <translation>Nessun indirizzo disponibile, puoi andare alla schermata ricevi e aggiungerne alcuni!</translation>
     </message>
     <message>
         <source>Failed to decrypt.</source>
-        <translation>Failed to decrypt.</translation>
+        <translation>Impossibile decrittografare.</translation>
     </message>
     <message>
         <source>Please check the key and passphrase and try again.</source>
-        <translation>Please check the key and passphrase and try again.</translation>
+        <translation>Controllare la chiave e la frase d'accesso e riprovare.</translation>
     </message>
     <message>
         <source>Data Not Valid.</source>
-        <translation>Data Not Valid.</translation>
+        <translation>Dati non validi.</translation>
     </message>
     <message>
         <source>Please try again.</source>
-        <translation>Please try again.</translation>
+        <translation>Per favore prova ancora.</translation>
     </message>
     <message>
         <source>Please wait while key is imported</source>
-        <translation>Please wait while key is imported</translation>
+        <translation>Per favore attendere l'importazione della chiave</translation>
     </message>
     <message>
         <source>Cannot import address, key already held by the wallet</source>
-        <translation>Cannot import address, key already held by the wallet</translation>
+        <translation>Impossibile importare l'indirizzo, chiave gi&#224; detenuta dal portafoglio</translation>
     </message>
     <message>
         <source>Error adding key to the wallet</source>
-        <translation>Error adding key to the wallet</translation>
+        <translation>Errore nell'inserimento della chiave nel portafoglio</translation>
     </message>
     <message>
         <source>Successfully added private key to the wallet</source>
-        <translation>Successfully added private key to the wallet</translation>
+        <translation>Chiave privata correttamente aggiunta al wuallet</translation>
     </message>
 </context>
 <context>
     <name>SettingsConsoleWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Console</source>
@@ -3633,131 +3637,131 @@ Using this mechanism you can share your keys without middle-man risk, only need 
     </message>
     <message>
         <source>Open Debug File</source>
-        <translation>Open Debug File</translation>
+        <translation>Apri file di debug</translation>
     </message>
     <message>
         <source>Command Line Options</source>
-        <translation>Command Line Options</translation>
+        <translation>Opzioni linea di comando</translation>
     </message>
     <message>
         <source>Clear history</source>
-        <translation>Clear history</translation>
+        <translation>Cancella cronologia</translation>
     </message>
     <message>
         <source>Cannot open debug file.
 Verify that you have installed a predetermined text editor.</source>
-        <translation>Cannot open debug file.
-Verify that you have installed a predetermined text editor.</translation>
+        <translation>Impossibile aprire il file di debug.
+Verifica di aver installato un editor di testo predeterminato.</translation>
     </message>
     <message>
         <source>Welcome to the PIVX RPC console.</source>
-        <translation>Welcome to the EUNO RPC console.</translation>
+        <translation>Benvenuti nella console RPC di EUNO.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
-        <translation>Use up and down arrows to navigate history, and %1 to clear screen.</translation>
+        <translation>Usa le frecce su e gi&#249; per navigare nella cronologia e %1 per cancellare lo schermo.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</translation>
+        <translation>Scrivi &lt;b&gt;help&lt;/b&gt; per una panoramica dei comandi disponibili.</translation>
     </message>
     <message>
         <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
-        <translation>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</translation>
+        <translation>ATTENZIONE: i truffatori sono stati attivi, dicendo agli utenti di digitare i comandi qui, rubando il contenuto del loro portafoglio. Non utilizzare questa console senza comprendere appieno le conseguenze di un comando.</translation>
     </message>
 </context>
 <context>
     <name>SettingsDisplayOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Hide stake charts in the dashboard</source>
-        <translation>Hide stake charts in the dashboard</translation>
+        <translation>Nascondi i grafici dello staking nella dashboard</translation>
     </message>
     <message>
         <source>Reset to default</source>
-        <translation>Reset to default</translation>
+        <translation>Ripristina valori predefiniti.</translation>
     </message>
     <message>
         <source>Discard changes</source>
-        <translation>Discard changes</translation>
+        <translation>Non salvare le modifiche</translation>
     </message>
     <message>
         <source>Display</source>
-        <translation>Display</translation>
+        <translation>Mostra</translation>
     </message>
     <message>
         <source>Customize the display view options</source>
-        <translation>Customize the display view options</translation>
+        <translation>Personalizza le opzioni di visualizzazione del display</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>Language</translation>
+        <translation>Lingua</translation>
     </message>
     <message>
         <source>Unit to show amount</source>
-        <translation>Unit to show amount</translation>
+        <translation>Unit&#224; di misura in cui mostrare gli importi</translation>
     </message>
     <message>
         <source>Decimal digits</source>
-        <translation>Decimal digits</translation>
+        <translation>Cifre decimali</translation>
     </message>
     <message>
         <source>Third party transactions URLs</source>
-        <translation>Third party transactions URLs</translation>
+        <translation>URL di transazione di terze parti</translation>
     </message>
     <message>
         <source>Hide empty balances</source>
-        <translation>Hide empty balances</translation>
+        <translation>Nascondi bilanci vuoti</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation>SAVE</translation>
+        <translation>SALVA</translation>
     </message>
     <message>
         <source>default</source>
-        <translation>default</translation>
+        <translation>predefinito</translation>
     </message>
     <message>
         <source>Options reset succeed</source>
-        <translation>Options reset succeed</translation>
+        <translation>Ripristino delle opzioni riuscito</translation>
     </message>
 </context>
 <context>
     <name>SettingsExportCSV</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Export Accounting</source>
-        <translation>Export Accounting</translation>
+        <translation>Esportazione Contabilit&#224;</translation>
     </message>
     <message>
         <source>Export your wallet's accounting data to a csv file.</source>
-        <translation>Export your wallet's accounting data to a csv file.</translation>
+        <translation>Esporta la contabilit&#224; del tuo wallet in un file csv.</translation>
     </message>
     <message>
         <source>Where</source>
-        <translation>Where</translation>
+        <translation>Dove</translation>
     </message>
     <message>
         <source>Select folder...</source>
-        <translation>Select folder...</translation>
+        <translation>Seleziona cartella...</translation>
     </message>
     <message>
         <source>Export Address Book</source>
-        <translation>Export Address Book</translation>
+        <translation>Esporta Elenco Indirizzi</translation>
     </message>
     <message>
         <source>Export CSV</source>
-        <translation>Export CSV</translation>
+        <translation>Esporta CSV</translation>
     </message>
     <message>
         <source>Export Address List</source>
-        <translation>Export Address List</translation>
+        <translation>Esporta elenco indirizzi</translation>
     </message>
     <message>
         <source>PIVX_tx_csv_export(*.csv)</source>
@@ -3769,11 +3773,11 @@ Verify that you have installed a predetermined text editor.</translation>
     </message>
     <message>
         <source>Please select a folder to export the csv file first.</source>
-        <translation>Please select a folder to export the csv file first.</translation>
+        <translation>Selezionare prima una cartella per esportare il file csv.</translation>
     </message>
     <message>
         <source>Confirmed</source>
-        <translation>Confirmed</translation>
+        <translation>Confermata</translation>
     </message>
     <message>
         <source>Watch-only</source>
@@ -3781,19 +3785,19 @@ Verify that you have installed a predetermined text editor.</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Type</translation>
+        <translation>Tipo</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation>Etichetta</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Indirizzo</translation>
     </message>
     <message>
         <source>ID</source>
@@ -3802,49 +3806,49 @@ Verify that you have installed a predetermined text editor.</translation>
     <message>
         <source>Exporting Successful
 The transaction history was successfully saved to %1.</source>
-        <translation>Exporting Successful
-The transaction history was successfully saved to %1.</translation>
+        <translation>Esportazione riuscita
+La cronologia delle transazioni &#232; stata salvata con successo a %1.</translation>
     </message>
     <message>
         <source>Exporting Failed
 There was an error trying to save the transaction history to %1.</source>
-        <translation>Exporting Failed
-There was an error trying to save the transaction history to %1.</translation>
+        <translation>Esportazione fallita
+Si &#232; verificato un errore nel tentativo di salvare lo storico delle transazioni a %1.</translation>
     </message>
     <message>
         <source>No available addresses to export under the selected filter</source>
-        <translation>No available addresses to export under the selected filter</translation>
+        <translation>Nessun indirizzo disponibile per l'esportazione con il filtro selezionato</translation>
     </message>
     <message>
         <source>Exporting Successful
 The address book was successfully saved to %1.</source>
-        <translation>Exporting Successful
-The address book was successfully saved to %1.</translation>
+        <translation>Esportazione riuscita
+L'elenco indirizzi &#232; stato salvato con successo a %1.</translation>
     </message>
     <message>
         <source>Exporting Failed
 There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Exporting Failed
-There was an error trying to save the address list to %1. Please try again.</translation>
+        <translation>Esportazione fallita
+Si &#232; verificato un errore nel tentativo di salvare l'elenco degli indirizzi in %1. Riprovare.</translation>
     </message>
 </context>
 <context>
     <name>SettingsFaqWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>1) What is PIVX?</source>
-        <translation>1) What is EUNO?</translation>
+        <translation>1) Che cos'&#232; EUNO?</translation>
     </message>
     <message>
         <source>2) Why are my PIV unspendable?</source>
-        <translation>2) Why are my EUNO unspendable?</translation>
+        <translation>2) Perch&#233; i miei EUNO non sono spendibili?</translation>
     </message>
     <message>
-        <source>https://euno.co/</source>
-        <translation>https://EUNO.co/</translation>
+        <source>https://PIVX.org/</source>
+        <translation>https://EUNO.org/</translation>
     </message>
     <message>
         <source>1</source>
@@ -3852,7 +3856,7 @@ There was an error trying to save the address list to %1. Please try again.</tra
     </message>
     <message>
         <source>What is PIVX?</source>
-        <translation>What is EUNO?</translation>
+        <translation>Che cos'&#232; EUNO?</translation>
     </message>
     <message>
         <source>
@@ -3870,18 +3874,18 @@ There was an error trying to save the address list to %1. Please try again.</tra
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
-                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           EUNO is a form of digital online money using blockchain technology
-                           that can be easily transferred globally, instantly, and with near
-                           zero fees.  EUNO incorporates market leading security &amp;
-                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zEUNO) and Zerocoin staking.
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-                           EUNO utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of EUNO to participate in earning block rewards
-                           while securing the network with full node wallets, as well as to
-                           run Masternodes to create and vote on proposals.
-                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+EUNO &#232; una forma di denaro online digitale che utilizza la tecnologia blockchain
+che pu&#242; essere facilmente trasferito a livello globale, istantaneamente e con quasi
+zero costi. EUNO incorpora le tecniche di sicurezza e privacy pi&#249; avanzate del mercato
+ed &#232; anche la prima criptovaluta PoS (Proof of Stake)
+ad implementare lo staking di ZeroCoin (zEUNO) e Zerocoin.
+&lt;/p&gt;&lt;p align="justify"&gt;
+EUNO utilizza un algoritmo del sistema di consenso Proof of Stake (PoS),
+consentendo a tutti i proprietari di EUNO di partecipare alle ricompense dei blocchi
+proteggendo la rete con portafogli full node, oltre a
+eseguire Masternode per creare e votare proposte.
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
     <message>
@@ -3890,7 +3894,7 @@ There was an error trying to save the address list to %1. Please try again.</tra
     </message>
     <message>
         <source>Why are my PIV unspendable?</source>
-        <translation>Why are my EUNO unspendable?</translation>
+        <translation>Perch&#233; i miei EUNO non sono spendibili?</translation>
     </message>
     <message>
         <source>
@@ -3904,11 +3908,11 @@ There was an error trying to save the address list to %1. Please try again.</tra
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received EUNO requires 6 confirmations on the network
-                           to become eligible for spending which can take ~6 minutes.
+                           EUNO appeni ricevuti richiedono 6 conferme sulla rete
+ per poter essere spendibili, cio&#232; pu&#242; richiedere ~6 minuti.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your EUNO wallet also needs to be completely synchronized
-                           to see and spend balances on the network.
+                           Anche il tuo portafoglio EUNO deve essere completamente sincronizzato
+per vedere e spendere i saldi sulla rete.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -3918,11 +3922,11 @@ There was an error trying to save the address list to %1. Please try again.</tra
     </message>
     <message>
         <source>How do I stake PIV?</source>
-        <translation>How do I stake EUNO?</translation>
+        <translation>Come posso fare lo stake di EUNO?</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You must have a balance of PIVX with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (pivx-cli); the command &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You must have a balance of EUNO with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (euno-cli); the command &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Assicurati che il tuo wallet sia completamente sincronizzato e che tu stia usando l'ultima versione. 56Il bilancio dei tuoi EUNO deve avere almeno 600 conferme. Per lo stacking il tuo wallet deve rimanere online e deve essere sbloccato. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Una volta portati a termine questi step, siete pronti per avviare lo stacking. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Potete vedere lo stato dello staking nel wallet, passando il mouse sull'icona del pacchetto nella riga in alto a sinistra dell'interfaccia del portafoglio. Il pacchetto sar&#224; illuminato e indicher&#224; &amp;quot;Staking Enabled&amp;quot; per indicare che lo staking &#232; attivo. Usando nella riga di comando dell'interfaccia (euno-cli); il comando &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; avrai conferma che lo staking &#232; attivo. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>4</source>
@@ -3938,7 +3942,7 @@ There was an error trying to save the address list to %1. Please try again.</tra
     </message>
     <message>
         <source>Where should I go if I need support?</source>
-        <translation>Where should I go if I need support?</translation>
+        <translation>Dove dovrei andare se ho bisogno di supporto?</translation>
     </message>
     <message>
         <source>
@@ -3953,26 +3957,26 @@ There was an error trying to save the address list to %1. Please try again.</tra
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           We have support channels in most of our official chat groups, for example
+                           Abbiamo canali di supporto nella maggior parte dei nostri gruppi di chat ufficiali, ad esempio
                            &lt;a style='color: #7599f2' href='https://discord.EUNO.co'&gt;
-                           #support in our Discord&lt;/a&gt;.
-                           If you prefer to submit a ticket, You can do so at
+                           #support nel nostro Discord&lt;/a&gt;.
+                           Se preferisci aprire un ticket, puoi farlo su
                            &lt;a style='color: #7599f2' href='https://EUNO.freshdesk.com'&gt;
-                           our Freshdesk support site&lt;/a&gt;.
+                           il nostro sito di supporto Freshdesk&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
-        <translation>What is a Masternode?</translation>
+        <translation>Cos'&#232; un Masternode?</translation>
     </message>
     <message>
         <source>What is a Masternode Controller?</source>
-        <translation>What is a Masternode Controller?</translation>
+        <translation>Cos'&#232; un Masternode controller?</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 8,000,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 8,000,000 EUNO collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Un Masternode Controller wallet &#232; dove i 8,000,000 EUNO collaterali possono risiedere durante l'impostazione del Masternode Controller remoto. &#200; un portafoglio che pu&#242; attivare uno o pi&#249; portafogli masternode remoti e ti consente di mantenere offline le tue valute collaterali mentre il masternode remoto rimane online.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>
@@ -4019,101 +4023,101 @@ There was an error trying to save the address list to %1. Please try again.</tra
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node EUNO core wallet with a
-                           requirement of 8,000,000 EUNO secured collateral to provide extra services
-                           to the network and in return, receive a portion of the block reward
-                           regularly.  These services include:
+                           Un masternode &#232; un computer che esegue un portafoglio core EUNO a nodo completo
+con un requisito di 8,000,000 EUNO a garanzia per fornire servizi extra
+alla rete e, in cambio, riceve una parte del premio del blocco
+regolarmente. Questi servizi includono:
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;Instant transactions (SwiftX)&lt;/li&gt;
-                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
-                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
-                           &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
-                           &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
+                           &lt;li&gt;Transazioni istantanee (SwiftX)&lt;/li&gt;
+                           &lt;li&gt;Una governance decentrata (votazione della proposta)&lt;/li&gt;
+                           &lt;li&gt;Un sistema di bilancio decentralizzato (Tesoreria)&lt;/li&gt;
+                           &lt;li&gt;Convalida delle transazioni all'interno di ciascun blocco&lt;/li&gt;
+                           &lt;li&gt;Funziona come un nodo completo aggiuntivo nella rete&lt;/li&gt;
                            &lt;/ul&gt;
 
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           For providing such services, masternodes are also paid a certain portion
-                           of reward for each block. This can serve as a passive income to the
-                           masternode owners minus their running cost.
+                           Per fornire tali servizi, i masternode vengono pagati anche una determinata porzione
+ di ricompensa per ogni blocco. Questo pu&#242; servire come reddito passivo per il
+ proprietari di masternode detratti i loro costi di gestione.
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
-                           Masternode Perks:
+                           Vantaggi del Masternode:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in EUNO Governance&lt;/li&gt;
-                           &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
-                           &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the EUNO network&lt;/li&gt;
+                           &lt;li&gt;Partecipare alla Governance di EUNO &lt;/li&gt;
+                           &lt;li&gt;Guadagnare i premi del Masternode&lt;/li&gt;
+                           &lt;li&gt;Opzione di una commodity per vendita futura&lt;/li&gt;
+                           &lt;li&gt;Aiuta a proteggere la rete EUNO&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
-                           Requirements:
+                           Requisiti:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;8,000,000 EUNO per single Masternode instance&lt;/li&gt;
-                           &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
-                           &lt;li&gt;Need dedicated IP address&lt;/li&gt;
-                           &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
+                           &lt;li&gt;8,000,000 EUNO per singolo Masternode
+                           &lt;li&gt;Devono essere conservati in un portafoglio core&lt;/li&gt;
+                           &lt;li&gt;Necessita un indirizzo IP dedicato&lt;/li&gt;
+                           &lt;li&gt;Il portafoglio del Masternode deve rimanere online&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
     <message>
         <source>Frequently Asked Questions</source>
-        <translation>Frequently Asked Questions</translation>
+        <translation>Domande frequenti</translation>
     </message>
     <message>
         <source>3) How do I stake PIV?</source>
-        <translation>3) How do I stake EUNO?</translation>
+        <translation>3) Come faccio lo staking di EUNO?</translation>
     </message>
     <message>
         <source>4) Where I should go if I need support?</source>
-        <translation>4) Where I should go if I need support?</translation>
+        <translation>4) Dove dovrei andare se ho bisogno di supporto?</translation>
     </message>
     <message>
         <source>5) What is a Masternode?</source>
-        <translation>5) What is a Masternode?</translation>
+        <translation>5) Cos'&#232; un Masternode?</translation>
     </message>
     <message>
         <source>6) What is a Masternode Controller?</source>
-        <translation>6) What is a Masternode Controller?</translation>
+        <translation>Cos'&#232; un Masternode controller?</translation>
     </message>
     <message>
         <source>You can read more here</source>
-        <translation>You can read more here</translation>
+        <translation>Puoi leggere di pi&#249; qui</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>Exit</translation>
+        <translation>Esci</translation>
     </message>
 </context>
 <context>
     <name>SettingsInformationWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Network Monitor</source>
-        <translation>Network Monitor</translation>
+        <translation>Monitor rete</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Information</translation>
+        <translation>Informazioni</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>General</translation>
+        <translation>Generale</translation>
     </message>
     <message>
         <source>Client Version:</source>
-        <translation>Client Version:</translation>
+        <translation>Versione del client:</translation>
     </message>
     <message>
         <source>BerkeleyDB version:</source>
-        <translation>BerkeleyDB version:</translation>
+        <translation>Versione BerkeleyDB:</translation>
     </message>
     <message>
         <source>Datadir:</source>
@@ -4121,31 +4125,31 @@ There was an error trying to save the address list to %1. Please try again.</tra
     </message>
     <message>
         <source>Startup time:</source>
-        <translation>Startup time:</translation>
+        <translation>Tempo di avvio:</translation>
     </message>
     <message>
         <source>Connections:</source>
-        <translation>Connections:</translation>
+        <translation>Connessioni:</translation>
     </message>
     <message>
         <source>Number of Masternodes:</source>
-        <translation>Number of Masternodes:</translation>
+        <translation>Numero dei Masternode:</translation>
     </message>
     <message>
         <source>Current number of blocks:</source>
-        <translation>Current number of blocks:</translation>
+        <translation>Numero attuale dei blocchi:</translation>
     </message>
     <message>
         <source>Last block time:</source>
-        <translation>Last block time:</translation>
+        <translation>Tempo ultimo blocco:</translation>
     </message>
     <message>
         <source>Last block hash:</source>
-        <translation>Last block hash:</translation>
+        <translation>Hash dell'ultimo blocco:</translation>
     </message>
     <message>
         <source>Current number of transactions:</source>
-        <translation>Current number of transactions:</translation>
+        <translation>Numero attuale delle transazioni:</translation>
     </message>
     <message>
         <source>User Agent:</source>
@@ -4157,7 +4161,7 @@ There was an error trying to save the address list to %1. Please try again.</tra
     </message>
     <message>
         <source>Name:</source>
-        <translation>Name:</translation>
+        <translation>Nome:</translation>
     </message>
     <message>
         <source>Blockchain</source>
@@ -4165,11 +4169,11 @@ There was an error trying to save the address list to %1. Please try again.</tra
     </message>
     <message>
         <source>Memory Pool</source>
-        <translation>Memory Pool</translation>
+        <translation>Pool di memoria</translation>
     </message>
     <message>
         <source>Main</source>
-        <translation>Main</translation>
+        <translation>Principale</translation>
     </message>
     <message>
         <source>Wallet Conf</source>
@@ -4181,15 +4185,15 @@ There was an error trying to save the address list to %1. Please try again.</tra
     </message>
     <message>
         <source>No information</source>
-        <translation>No information</translation>
+        <translation>Nessuna informazione</translation>
     </message>
     <message>
         <source>Unable to open backups folder</source>
-        <translation>Unable to open backups folder</translation>
+        <translation>Impossibile aprire la cartella dei backup</translation>
     </message>
     <message>
         <source>Unable to open pivx.conf with default application</source>
-        <translation>Unable to open euno.conf with default application</translation>
+        <translation>Impossibile aprire euno.conf con l'applicazione predefinita</translation>
     </message>
     <message>
         <source>In:</source>
@@ -4204,127 +4208,127 @@ There was an error trying to save the address list to %1. Please try again.</tra
     <name>SettingsMainOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Window</source>
-        <translation>Window</translation>
+        <translation>Finestra</translation>
     </message>
     <message>
         <source>Customize the application window options</source>
-        <translation>Customize the application window options</translation>
+        <translation>Personalizza le opzioni di visualizzazione dell'applicazione</translation>
     </message>
     <message>
         <source>Reset to default</source>
-        <translation>Reset to default</translation>
+        <translation>Ripristina valori predefiniti.</translation>
     </message>
     <message>
         <source>Discard changes</source>
-        <translation>Discard changes</translation>
+        <translation>Non salvare le modifiche</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation>SAVE</translation>
+        <translation>SALVA</translation>
     </message>
     <message>
         <source>Main</source>
-        <translation>Main</translation>
+        <translation>Principale</translation>
     </message>
     <message>
         <source>Customize the main application options</source>
-        <translation>Customize the main application options</translation>
+        <translation>Personalizza le principali opzioni dell'applicazione</translation>
     </message>
     <message>
         <source>Size of database cache</source>
-        <translation>Size of database cache</translation>
+        <translation>Dimensione della cache del database</translation>
     </message>
     <message>
         <source>Number of script verification threads</source>
-        <translation>Number of script verification threads</translation>
+        <translation>Numero di script e processi di verifica</translation>
     </message>
     <message>
         <source>Start PIVX on system login</source>
-        <translation>Start EUNO on system login</translation>
+        <translation>Avvia EUNO all'accesso al sistema</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
-        <translation>Minimize to the tray instead of the taskbar</translation>
+        <translation>Minimizza a icona nel vassoio anzich&#233; nella barra delle applicazioni</translation>
     </message>
     <message>
         <source>Minimize on close</source>
-        <translation>Minimize on close</translation>
+        <translation>Minimizza in chiusura</translation>
     </message>
     <message>
         <source>Reset Options</source>
-        <translation>Reset Options</translation>
+        <translation>Reset Opzioni</translation>
     </message>
     <message>
         <source>You are just about to reset the app's options to the default values.
 
 Are you sure?
 </source>
-        <translation>You are just about to reset the app's options to the default values.
+        <translation>Stai per ripristinare i valori predefiniti delle opzioni dell'app.
 
-Are you sure?
+Sei sicuro?
 </translation>
     </message>
     <message>
         <source>Options reset succeed</source>
-        <translation>Options reset succeed</translation>
+        <translation>Ripristino delle opzioni riuscito</translation>
     </message>
 </context>
 <context>
     <name>SettingsMultisendDialog</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Transaction Details</source>
-        <translation>Transaction Details</translation>
+        <translation>Dettagli della transazione</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TextLabel</translation>
+        <translation>Etichetta</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation>CANCEL</translation>
+        <translation>CANCELLA</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation>SAVE</translation>
+        <translation>SALVA</translation>
     </message>
     <message>
         <source>New recipient for multisend</source>
-        <translation>New recipient for multisend</translation>
+        <translation>Nuovo destinatario per multisend</translation>
     </message>
     <message>
         <source>Address Label (optional)</source>
-        <translation>Address Label (optional)</translation>
+        <translation>Etichetta Indirizzo (opzionale)</translation>
     </message>
     <message>
         <source>Enter label to be saved with this address</source>
-        <translation>Enter label to be saved with this address</translation>
+        <translation>Inserisci un'etichetta da salvare con l'indirizzo</translation>
     </message>
     <message>
         <source>Percentage</source>
-        <translation>Percentage</translation>
+        <translation>Percentuale</translation>
     </message>
 </context>
 <context>
     <name>SettingsMultisendWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TextLabel</translation>
+        <translation>Etichetta</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation>N/A</translation>
+        <translation>N/D</translation>
     </message>
     <message>
         <source>CheckBox</source>
@@ -4332,245 +4336,245 @@ Are you sure?
     </message>
     <message>
         <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.</source>
-        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other EUNO addresses after it matures.</translation>
+        <translation>MultiSend ti consente di inviare automaticamente fino al 100% dei tuoi stake o ricompense masternode a un elenco di altri indirizzi EUNO dopo la loro maturazione.</translation>
     </message>
     <message>
         <source>Active</source>
-        <translation>Active</translation>
+        <translation>Attivo </translation>
     </message>
     <message>
         <source>Disable</source>
-        <translation>Disable</translation>
+        <translation>Disabilita</translation>
     </message>
     <message>
         <source>No active recipient yet</source>
-        <translation>No active recipient yet</translation>
+        <translation>Ancora nessun destinatario attivo</translation>
     </message>
     <message>
         <source>Send stakes</source>
-        <translation>Send stakes</translation>
+        <translation>Invia stake</translation>
     </message>
     <message>
         <source>Send masternode rewards</source>
-        <translation>Send masternode rewards</translation>
+        <translation>Invia le ricompense del Masternode</translation>
     </message>
     <message>
         <source>ADD RECIPIENT</source>
-        <translation>ADD RECIPIENT</translation>
+        <translation>AGGIUNGERE DESTINATARIO</translation>
     </message>
     <message>
         <source>CLEAR ALL</source>
-        <translation>CLEAR ALL</translation>
+        <translation>CANCELLA TUTTO</translation>
     </message>
     <message>
         <source>Cannot perform operation, wallet locked</source>
-        <translation>Cannot perform operation, wallet locked</translation>
+        <translation>Impossibile completare l'operazione, portafoglio bloccato</translation>
     </message>
     <message>
         <source>Clear succeed</source>
-        <translation>Clear succeed</translation>
+        <translation>Cancellazione riuscita</translation>
     </message>
     <message>
         <source>Clear all failed, could not locate address in wallet file</source>
-        <translation>Clear all failed, could not locate address in wallet file</translation>
+        <translation>Cancella tutto non riuscito, impossibile trovare l'indirizzo nel file wallet</translation>
     </message>
     <message>
         <source>Cannot add multisend recipient, wallet locked</source>
-        <translation>Cannot add multisend recipient, wallet locked</translation>
+        <translation>Impossibile aggiungere destinatario multisend, portafoglio bloccato</translation>
     </message>
     <message>
         <source>The entered address: %1 is invalid.
 Please check the address and try again.</source>
-        <translation>The entered address: %1 is invalid.
-Please check the address and try again.</translation>
+        <translation>L'indirizzo inserito %1 non &#232; valido.
+Per favore controlla l'indirizzo e riprova nuovamente.</translation>
     </message>
     <message>
         <source>Invalid percentage, please enter values from 1 to 100.</source>
-        <translation>Invalid percentage, please enter values from 1 to 100.</translation>
+        <translation>Percentuale non valida, inserire valori da 1 a 100.</translation>
     </message>
     <message>
         <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
-        <translation>The total amount of your MultiSend vector is over 100% of your stake reward</translation>
+        <translation>L'importo totale del tuo vettore MultiSend &#232; superiore al 100% della ricompensa di stake</translation>
     </message>
     <message>
         <source>Error saving  MultiSend, failed saving properties to the database.</source>
-        <translation>Error saving  MultiSend, failed saving properties to the database.</translation>
+        <translation>Errore durante il salvataggio di MultiSend, errore nel salvataggio delle propriet&#224; nel database.</translation>
     </message>
     <message>
         <source>Unable to activate MultiSend, no available recipients</source>
-        <translation>Unable to activate MultiSend, no available recipients</translation>
+        <translation>Impossibile attivare MultiSend, nessun destinatario disponibile</translation>
     </message>
     <message>
         <source>Unable to activate MultiSend
 Check one or both of the check boxes to send on stake and/or masternode rewards</source>
-        <translation>Unable to activate MultiSend
-Check one or both of the check boxes to send on stake and/or masternode rewards</translation>
+        <translation>Impossibile attivare MultiSend
+Seleziona una o entrambe le caselle di controllo per inviare gli stake e/o i premi del masternode</translation>
     </message>
     <message>
         <source>MultiSend activated but writing settings to DB failed</source>
-        <translation>MultiSend activated but writing settings to DB failed</translation>
+        <translation>MultiSend attivato ma la scrittura delle impostazioni nel DB non &#232; riuscita</translation>
     </message>
     <message>
         <source>MultiSend activated</source>
-        <translation>MultiSend activated</translation>
+        <translation>MultiSend attivato</translation>
     </message>
     <message>
         <source>First multiSend address invalid</source>
-        <translation>First multiSend address invalid</translation>
+        <translation>Primo indirizzo MultiSend non valido</translation>
     </message>
     <message>
         <source>MultiSend deactivated but writing settings to DB failed</source>
-        <translation>MultiSend deactivated but writing settings to DB failed</translation>
+        <translation>MultiSend disattivato ma la scrittura delle impostazioni nel DB non &#232; riuscita</translation>
     </message>
     <message>
         <source>MultiSend deactivated</source>
-        <translation>MultiSend deactivated</translation>
+        <translation>MultiSend disattivato</translation>
     </message>
 </context>
 <context>
     <name>SettingsSignMessageWidgets</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Sign/Verify Message</source>
-        <translation>Sign/Verify Message</translation>
+        <translation>Firma/Verifica messaggio</translation>
     </message>
     <message>
         <source>Sign</source>
-        <translation>Sign</translation>
+        <translation>Firma</translation>
     </message>
     <message>
         <source>Verify</source>
-        <translation>Verify</translation>
+        <translation>Verifica</translation>
     </message>
     <message>
         <source>Write message here...</source>
-        <translation>Write message here...</translation>
+        <translation>Scrivi un messaggio qui...</translation>
     </message>
     <message>
         <source>Select mode</source>
-        <translation>Select mode</translation>
+        <translation>Seleziona modalit&#224;</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Message</translation>
+        <translation>Messaggio</translation>
     </message>
     <message>
         <source>PIVX address or contact label</source>
-        <translation>EUNO address or contact label</translation>
+        <translation>Indirizzo EUNO o etichetta</translation>
     </message>
     <message>
         <source>Enter address</source>
-        <translation>Enter address</translation>
+        <translation>Inserire indirizzo</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Signature</translation>
+        <translation>Firma</translation>
     </message>
     <message>
         <source>SIGN</source>
-        <translation>SIGN</translation>
+        <translation>FIRMA</translation>
     </message>
     <message>
         <source>CLEAR ALL</source>
-        <translation>CLEAR ALL</translation>
+        <translation>CANCELLA TUTTO</translation>
     </message>
     <message>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
+        <translation>Puoi firmare i messaggi con i tuoi indirizzi per provare di possederli. Fai attenzione a non firmare nulla di vago, poich&#233; gli attacchi di phishing potrebbero tentare di indurti a firmare la tua identit&#224;. Firma solo dichiarazioni completamente dettagliate che accetti.</translation>
     </message>
     <message>
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</translation>
+        <translation>Immettere l'indirizzo di firma, il messaggio (assicurarsi di copiare esattamente le interruzioni di riga, gli spazi, le schede, ecc.) e la firma di seguito per verificare il messaggio. Fai attenzione a non leggere pi&#249; nella firma di quanto non sia nel messaggio firmato stesso, per evitare di essere ingannato da un attacco man-in-the-middle.</translation>
     </message>
     <message>
         <source>VERIFY</source>
-        <translation>VERIFY</translation>
+        <translation>VERIFICA</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
-        <translation>The entered address is invalid.</translation>
+        <translation>L'indirizzo inserito non &#232; valido.</translation>
     </message>
     <message>
         <source>Please check the address and try again.</source>
-        <translation>Please check the address and try again.</translation>
+        <translation>Per favore controlla l'indirizzo e riprova.</translation>
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>The entered address does not refer to a key.</translation>
+        <translation>L'indirizzo inserito non corrisponde a una chiave.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Wallet unlock was cancelled.</translation>
+        <translation>Lo sblocco portafoglio &#232; stato annullato.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
-        <translation>Private key for the entered address is not available.</translation>
+        <translation>La chiave privata per l'indirizzo inserito non &#232; disponibile.</translation>
     </message>
     <message>
         <source>Message signing failed.</source>
-        <translation>Message signing failed.</translation>
+        <translation>Firma del messaggio non riuscita.</translation>
     </message>
     <message>
         <source>Message signed.</source>
-        <translation>Message signed.</translation>
+        <translation>Messaggio firmato.</translation>
     </message>
     <message>
         <source>The signature could not be decoded.</source>
-        <translation>The signature could not be decoded.</translation>
+        <translation>Non &#232; stato possibile decodificare la firma.</translation>
     </message>
     <message>
         <source>Please check the signature and try again.</source>
-        <translation>Please check the signature and try again.</translation>
+        <translation>Per favore controlla la firma e riprova.</translation>
     </message>
     <message>
         <source>The signature did not match the message digest.</source>
-        <translation>The signature did not match the message digest.</translation>
+        <translation>La firma non corrisponde al digest del messaggio.</translation>
     </message>
     <message>
         <source>Message verification failed.</source>
-        <translation>Message verification failed.</translation>
+        <translation>Verifica del messaggio non riuscita.</translation>
     </message>
     <message>
         <source>Message verified.</source>
-        <translation>Message verified.</translation>
+        <translation>Messaggio verificato.</translation>
     </message>
     <message>
         <source>No addresses available, you can go to the receive screen and add some there!</source>
-        <translation>No addresses available, you can go to the receive screen and add some there!</translation>
+        <translation>Nessun indirizzo disponibile, puoi andare alla schermata ricevi e aggiungerne alcuni!</translation>
     </message>
 </context>
 <context>
     <name>SettingsWalletOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Reset to default</source>
-        <translation>Reset to default</translation>
+        <translation>Ripristina valori predefiniti.</translation>
     </message>
     <message>
         <source>Discard changes</source>
-        <translation>Discard changes</translation>
+        <translation>Non salvare le modifiche</translation>
     </message>
     <message>
         <source>Wallet</source>
-        <translation>Wallet</translation>
+        <translation>Portafoglio</translation>
     </message>
     <message>
         <source>Customize the internal wallet options</source>
-        <translation>Customize the internal wallet options</translation>
+        <translation>Personalizza le opzioni interne del portafoglio</translation>
     </message>
     <message>
         <source>Stake split threshold</source>
-        <translation>Stake split threshold</translation>
+        <translation>Soglia di divisione dello stake</translation>
     </message>
     <message>
         <source>Spend unconfirmed change</source>
-        <translation>Spend unconfirmed change</translation>
+        <translation>Spendi modifica non confermata</translation>
     </message>
     <message>
         <source>Network</source>
@@ -4578,141 +4582,141 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <source>Customize the node network options</source>
-        <translation>Customize the node network options</translation>
+        <translation>Personalizza le opzioni di rete del nodo</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy (default proxy)</source>
-        <translation>Connect through SOCKS5 proxy (default proxy)</translation>
+        <translation>Connetti tramite proxy SOCKS5 (proxy predefinito)</translation>
     </message>
     <message>
         <source>Proxy IP</source>
-        <translation>Proxy IP</translation>
+        <translation>IP Proxy</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation>Port</translation>
+        <translation>Porta</translation>
     </message>
     <message>
         <source>Enter port</source>
-        <translation>Enter port</translation>
+        <translation>Inserisci porta</translation>
     </message>
     <message>
         <source>Enter proxy IP</source>
-        <translation>Enter proxy IP</translation>
+        <translation>Inserire proxy IP</translation>
     </message>
     <message>
         <source>Map port using UPnP</source>
-        <translation>Map port using UPnP</translation>
+        <translation>Mappa la porta utilizzando UPnP</translation>
     </message>
     <message>
         <source>Allow incoming connections</source>
-        <translation>Allow incoming connections</translation>
+        <translation>Consenti connessioni in entrata</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation>SAVE</translation>
+        <translation>SALVA</translation>
     </message>
     <message>
         <source>Options reset succeed</source>
-        <translation>Options reset succeed</translation>
+        <translation>Ripristino delle opzioni riuscito</translation>
     </message>
 </context>
 <context>
     <name>SettingsWalletRepairWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Wallet Repair</source>
-        <translation>Wallet Repair</translation>
+        <translation>Ripara Wallet</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself)</source>
-        <translation>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself)</translation>
+        <translation>Aggiorna il portafoglio all'ultimo formato all'avvio. (Nota: questo NON &#232; un aggiornamento del portafoglio stesso!)</translation>
     </message>
     <message>
         <source>The buttons below will restart the wallet with command-line options to repair this wallet, fix issues with corrupt blockchain files or missing/obsolete transactions</source>
-        <translation>The buttons below will restart the wallet with command-line options to repair this wallet, fix issues with corrupt blockchain files or missing/obsolete transactions</translation>
+        <translation>I pulsanti seguenti riavvieranno il portafoglio con le opzioni della riga di comando per riparare il portafoglio, risolvere problemi con file blockhain corrotti o transazioni mancanti / obsolete.</translation>
     </message>
     <message>
         <source>Salvage wallet</source>
-        <translation>Salvage wallet</translation>
+        <translation>Portafoglio di salvataggio</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Attempt to recover private keys from a corrupt wallet.dat</translation>
+        <translation>Tentativo di recuperare chiavi private da un wallet.dat corrotto.</translation>
     </message>
     <message>
         <source>Rescan blockchain file</source>
-        <translation>Rescan blockchain file</translation>
+        <translation>Ripeti la scansione dei file blockchain</translation>
     </message>
     <message>
         <source>Rescan the blockchain for missing wallet transactions</source>
-        <translation>Rescan the blockchain for missing wallet transactions</translation>
+        <translation>Riesegui la scansione della blockchain per cercare le transazioni mancanti del wallet.</translation>
     </message>
     <message>
         <source>Recover transactions 1</source>
-        <translation>Recover transactions 1</translation>
+        <translation>Recupera transazioni 1</translation>
     </message>
     <message>
         <source>Recover transactions from blockchain (keep-meta-data, e.g. account owner)</source>
-        <translation>Recover transactions from blockchain (keep-meta-data, e.g. account owner)</translation>
+        <translation>Recupera le transazioni dalla blockchain (conserva i metadati, ad esempio il proprietario dell'account).</translation>
     </message>
     <message>
         <source>Recover transactions 2</source>
-        <translation>Recover transactions 2</translation>
+        <translation>Recupera transazioni 2</translation>
     </message>
     <message>
         <source>Recover transactions from blockchain (drop meta-data)</source>
-        <translation>Recover transactions from blockchain (drop meta-data)</translation>
+        <translation>Recupera le transazioni dalla blockchain (tralascia i metadati).</translation>
     </message>
     <message>
         <source>Upgrade wallet format</source>
-        <translation>Upgrade wallet format</translation>
+        <translation>Aggiorna il formato del portafoglio</translation>
     </message>
     <message>
         <source>Rebuild index</source>
-        <translation>Rebuild index</translation>
+        <translation>Ricostruisci indice</translation>
     </message>
     <message>
         <source>Rebuild blockchain index from current blk000???.dat files</source>
-        <translation>Rebuild blockchain index from current blk000???.dat files</translation>
+        <translation>Ricostruisce l'indice della blockchain dai file blk000??.dat.</translation>
     </message>
     <message>
         <source>Delete local blockchain</source>
-        <translation>Delete local blockchain</translation>
+        <translation>Elimina blockchain locale</translation>
     </message>
     <message>
         <source>Deletes all local blockchain folders so the wallet synchronizes from scratch</source>
-        <translation>Deletes all local blockchain folders so the wallet synchronizes from scratch</translation>
+        <translation>Elimina tutte le cartelle blockchain locali in modo che il portafoglio si sincronizzi da zero.</translation>
     </message>
     <message>
         <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>Questo eliminer&#224; tutte le cartelle blockchain locali in modo che il portafoglio si sincronizzi da zero.&lt;br /&gt;&lt;br /&gt;</translation>
     </message>
     <message>
         <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>Ci&#242; richiede un po' di tempo e scarica molti dati.&lt;br /&gt;&lt;br /&gt;</translation>
     </message>
     <message>
         <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>Le transazioni e i fondi saranno nuovamente visibili al termine del download.&lt;br /&gt;&lt;br /&gt;</translation>
     </message>
     <message>
         <source>Do you want to continue?.&lt;br /&gt;</source>
-        <translation>Do you want to continue?.&lt;br /&gt;</translation>
+        <translation>Vuoi continuare?.&lt;br /&gt;</translation>
     </message>
     <message>
         <source>Confirm resync Blockchain</source>
-        <translation>Confirm resync Blockchain</translation>
+        <translation>Conferma la risincronizzazione della Blockchain</translation>
     </message>
 </context>
 <context>
     <name>SettingsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Wallet Data</source>
@@ -4720,39 +4724,39 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <source>Wallet</source>
-        <translation>Wallet</translation>
+        <translation>Portafoglio</translation>
     </message>
     <message>
         <source>Multisend</source>
-        <translation>Multisend</translation>
+        <translation>MultiSend</translation>
     </message>
     <message>
         <source>Export Accounting</source>
-        <translation>Export Accounting</translation>
+        <translation>Esportazione Contabilit&#224;</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation>Tools</translation>
+        <translation>Strumenti</translation>
     </message>
     <message>
         <source>Sign/Verify Message</source>
-        <translation>Sign/Verify Message</translation>
+        <translation>Firma/Verifica messaggio</translation>
     </message>
     <message>
         <source>BIP38 Tool</source>
-        <translation>BIP38 Tool</translation>
+        <translation>Strumenti BIP38</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Options</translation>
+        <translation>Opzioni</translation>
     </message>
     <message>
         <source>Main</source>
-        <translation>Main</translation>
+        <translation>Principale</translation>
     </message>
     <message>
         <source>Display</source>
-        <translation>Display</translation>
+        <translation>Mostra</translation>
     </message>
     <message>
         <source>Debug</source>
@@ -4760,7 +4764,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <source>Information</source>
-        <translation>Information</translation>
+        <translation>Informazioni</translation>
     </message>
     <message>
         <source>Console</source>
@@ -4768,11 +4772,11 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <source>Wallet Repair</source>
-        <translation>Wallet Repair</translation>
+        <translation>Ripara Wallet</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>Help</translation>
+        <translation>Aiuto</translation>
     </message>
     <message>
         <source>FAQ</source>
@@ -4780,70 +4784,70 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <source>About PIVX</source>
-        <translation>About EUNO</translation>
+        <translation>Informazioni su EUNO</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Settings</translation>
+        <translation>Impostazioni</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
-        <translation>Confirm options reset</translation>
+        <translation>Conferma il ripristino delle opzioni</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
-        <translation>Client restart required to activate changes.</translation>
+        <translation>Riavvio del client richiesto per attivare le modifiche.</translation>
     </message>
     <message>
         <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>Client will be shutdown, do you want to proceed?</translation>
+        <translation>Il client verr&#224; arrestato, vuoi procedere?</translation>
     </message>
     <message>
         <source>Stake Split too low, it shall be either &gt;= %1 or equal to 0 (to disable stake splitting)</source>
-        <translation>Stake Split too low, it shall be either &gt;= %1 or equal to 0 (to disable stake splitting)</translation>
+        <translation>Stake Split troppo basso, deve essere &gt;= %1 o uguale a 0 (per disabilitare lo stake splitting)</translation>
     </message>
     <message>
         <source>Restart required</source>
-        <translation>Restart required</translation>
+        <translation>Riavvio necessario</translation>
     </message>
     <message>
         <source>Your wallet needs to be restarted to apply the changes
 </source>
-        <translation>Your wallet needs to be restarted to apply the changes
+        <translation>&#200; necessario riavviare il portafoglio per applicare le modifiche
 </translation>
     </message>
     <message>
         <source>Restart Now</source>
-        <translation>Restart Now</translation>
+        <translation>Riavvia adesso</translation>
     </message>
     <message>
         <source>Restart Later</source>
-        <translation>Restart Later</translation>
+        <translation>Riavvia pi&#249; tardi</translation>
     </message>
     <message>
         <source>Options will be applied on next wallet restart</source>
-        <translation>Options will be applied on next wallet restart</translation>
+        <translation>Le opzioni verranno applicate al prossimo riavvio del portafoglio</translation>
     </message>
     <message>
         <source>Options stored</source>
-        <translation>Options stored</translation>
+        <translation>Opzioni memorizzate</translation>
     </message>
     <message>
         <source>Options store failed</source>
-        <translation>Options store failed</translation>
+        <translation>Opzioni non memorizzate, errore</translation>
     </message>
     <message>
         <source>Discard Unsaved Changes</source>
-        <translation>Discard Unsaved Changes</translation>
+        <translation>Non salvare le modifiche</translation>
     </message>
     <message>
         <source>You are just about to discard all of your unsaved options.
 
 Are you sure?
 </source>
-        <translation>You are just about to discard all of your unsaved options.
+        <translation>Stai per eliminare tutte le opzioni non salvate.
 
-Are you sure?
+Sei sicuro?
 </translation>
     </message>
 </context>
@@ -4851,33 +4855,33 @@ Are you sure?
     <name>ShutdownWindow</name>
     <message>
         <source>PIVX Core is shutting down...</source>
-        <translation>EUNO Core is shutting down...</translation>
+        <translation>EUNO Core si sta spegnendo...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Do not shut down the computer until this window disappears.</translation>
+        <translation>Non spegnere il computer fino a quando questa finestra non scompare.</translation>
     </message>
 </context>
 <context>
     <name>SnackBar</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Contact Stored</source>
-        <translation>Contact Stored</translation>
+        <translation>Contatto memorizzato</translation>
     </message>
 </context>
 <context>
     <name>Splash</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Loading&#8230;</source>
-        <translation>Loading&#8230;</translation>
+        <translation>Caricamento...</translation>
     </message>
     <message>
         <source>PIVX Core</source>
@@ -4895,94 +4899,94 @@ Are you sure?
     <name>TooltipMenu</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copy</translation>
+        <translation>Copia</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation>Modifica</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Delete</translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <source>Last</source>
-        <translation>Last</translation>
+        <translation>Ultimo</translation>
     </message>
 </context>
 <context>
     <name>TopBar</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Available</source>
-        <translation>Available</translation>
+        <translation>Disponibile</translation>
     </message>
     <message>
         <source>Pending</source>
-        <translation>Pending</translation>
+        <translation>In attesa</translation>
     </message>
     <message>
         <source>Immature</source>
-        <translation>Immature</translation>
+        <translation>Immaturo</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
-        <translation>Wallet Unlocked for staking</translation>
+        <translation>Portafoglio sbloccato per lo staking</translation>
     </message>
     <message>
         <source>Error generating address</source>
-        <translation>Error generating address</translation>
+        <translation>Errore generando l'indirizzo</translation>
     </message>
     <message>
         <source>Address Copied</source>
-        <translation>Address Copied</translation>
+        <translation>Indirizzo copiato</translation>
     </message>
     <message>
         <source>Staking active</source>
-        <translation>Staking active</translation>
+        <translation>Stacking attivo</translation>
     </message>
     <message>
         <source>Staking not active</source>
-        <translation>Staking not active</translation>
+        <translation>Stacking non attivo</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s)</source>
-        <translation><numerusform>%n active connection(s)</numerusform><numerusform>%n active connection(s)</numerusform></translation>
+        <translation><numerusform>%n connessioni attive</numerusform><numerusform>%n connessioni attive</numerusform></translation>
     </message>
     <message>
         <source>Synchronized - Block: %1</source>
-        <translation>Synchronized - Block: %1</translation>
+        <translation>Sincronizzato - Blocco: %1</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
-        <translation><numerusform>%n hour</numerusform><numerusform>%n hours</numerusform></translation>
+        <translation><numerusform>%n ore</numerusform><numerusform>%n ore</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n day(s)</source>
-        <translation><numerusform>%n day</numerusform><numerusform>%n days</numerusform></translation>
+        <translation><numerusform>%n giorni</numerusform><numerusform>%n giorni</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
-        <translation><numerusform>%n week</numerusform><numerusform>%n weeks</numerusform></translation>
+        <translation><numerusform>%n settimane</numerusform><numerusform>%n settimane</numerusform></translation>
     </message>
     <message>
         <source>%1 and %2</source>
-        <translation>%1 and %2</translation>
+        <translation>%1 e %2</translation>
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
-        <translation><numerusform>%n year</numerusform><numerusform>%n years</numerusform></translation>
+        <translation><numerusform>%n anni</numerusform><numerusform>%n anni</numerusform></translation>
     </message>
     <message>
         <source>Wallet Upgrade</source>
-        <translation>Wallet Upgrade</translation>
+        <translation>Upgrade Wallet </translation>
     </message>
     <message>
         <source>Upgrading to HD wallet will improve
@@ -4992,12 +4996,12 @@ the wallet's reliability and security.
 NOTE: after the upgrade, a new
 backup will be created.
 </source>
-        <translation>Upgrading to HD wallet will improve
-the wallet's reliability and security.
+        <translation>L'Upgrade al wallet HD migliorer&#224;
+l'affidabilit&#224; e la sicurezza del portafoglio.
 
 
-NOTE: after the upgrade, a new
-backup will be created.
+NOTA: dopo l'aggiornamento,
+sar&#224; creato un nuovo un backup.
 </translation>
     </message>
     <message>
@@ -5006,15 +5010,15 @@ backup will be created.
     </message>
     <message>
         <source>Wallet unlock cancelled</source>
-        <translation>Wallet unlock cancelled</translation>
+        <translation>Sblocco portafoglio &#232; stato annullato.</translation>
     </message>
     <message>
         <source>Tor Active: %1</source>
-        <translation>Tor Active: %1</translation>
+        <translation>Tor Attivo: %1</translation>
     </message>
     <message>
         <source>Tor Disabled</source>
-        <translation>Tor Disabled</translation>
+        <translation>Tor Disabilitato</translation>
     </message>
     <message>
         <source>FAQ</source>
@@ -5022,67 +5026,67 @@ backup will be created.
     </message>
     <message>
         <source>Upgrade to HD Wallet</source>
-        <translation>Upgrade to HD Wallet</translation>
+        <translation>Upgrade a HD Wallet</translation>
     </message>
     <message>
         <source>No Connection</source>
-        <translation>No Connection</translation>
+        <translation>Connessione Assente</translation>
     </message>
     <message>
         <source>Staking Disabled</source>
-        <translation>Staking Disabled</translation>
+        <translation>Staking Disabilitato</translation>
     </message>
     <message>
         <source>Cold Staking Disabled</source>
-        <translation>Cold Staking Disabled</translation>
+        <translation>Cold Staking Disabilito</translation>
     </message>
     <message>
         <source> %54 Synchronizing..</source>
-        <translation> %54 Synchronizing..</translation>
+        <translation>Sincronizzazione.. %54 </translation>
     </message>
     <message>
         <source>Light Theme</source>
-        <translation>Light Theme</translation>
+        <translation>Tema Luminoso</translation>
     </message>
     <message>
         <source>Dark Theme</source>
-        <translation>Dark Theme</translation>
+        <translation>Tema Scuro</translation>
     </message>
     <message>
         <source>Wallet Locked </source>
-        <translation>Wallet Locked </translation>
+        <translation>Portafoglio Bloccato</translation>
     </message>
     <message>
         <source>Wallet Locked</source>
-        <translation>Wallet Locked</translation>
+        <translation>Portafoglio bloccato</translation>
     </message>
     <message>
         <source>Wallet Unlocked</source>
-        <translation>Wallet Unlocked</translation>
+        <translation>Portafoglio Sbloccato</translation>
     </message>
     <message>
         <source>Wallet Unencrypted</source>
-        <translation>Wallet Unencrypted</translation>
+        <translation>Portafoglio non crittografato</translation>
     </message>
     <message>
         <source>Available (Locked included)</source>
-        <translation>Available (Locked included)</translation>
+        <translation>Disponibile (Incluso blocco)</translation>
     </message>
     <message>
         <source>The wallet has been successfully upgraded to HD.</source>
-        <translation>The wallet has been successfully upgraded to HD.</translation>
+        <translation>Il portafoglio &#232; stato aggiornato con successo alla versione HD.</translation>
     </message>
     <message>
         <source>It is advised to make a backup.</source>
-        <translation>It is advised to make a backup.</translation>
+        <translation>Si consiglia di fare un backup.</translation>
     </message>
     <message>
         <source>Do you wish to backup now?</source>
-        <translation>Do you wish to backup now?</translation>
+        <translation>Vuoi fare il backup ora?</translation>
     </message>
     <message>
         <source>Backup Wallet</source>
-        <translation>Backup Wallet</translation>
+        <translation>Backup portafoglio</translation>
     </message>
     <message>
         <source>Wallet Data (*.dat)</source>
@@ -5090,27 +5094,27 @@ backup will be created.
     </message>
     <message>
         <source>Backup created</source>
-        <translation>Backup created</translation>
+        <translation>Backup creato</translation>
     </message>
     <message>
         <source>Backup creation failed</source>
-        <translation>Backup creation failed</translation>
+        <translation>Creazione del backup non riuscita</translation>
     </message>
     <message>
         <source>no file selected</source>
-        <translation>no file selected</translation>
+        <translation>nessun file selezionato</translation>
     </message>
     <message>
         <source>Wallet upgraded successfully, but no backup created.</source>
-        <translation>Wallet upgraded successfully, but no backup created.</translation>
+        <translation>Wallet aggiornato con successo, ma backup non creato.</translation>
     </message>
     <message>
         <source>WARNING: remember to make a copy of your wallet.dat file!</source>
-        <translation>WARNING: remember to make a copy of your wallet.dat file!</translation>
+        <translation>ATTENZIONE: ricordati di fare una copia del tuo file wallet.dat!</translation>
     </message>
     <message>
         <source>Upgrade Wallet Error</source>
-        <translation>Upgrade Wallet Error</translation>
+        <translation>Errore Upgrade Wallet</translation>
     </message>
 </context>
 <context>
@@ -5124,15 +5128,15 @@ backup will be created.
     <name>TransactionDesc</name>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Open for %n more block</numerusform><numerusform>Open for %n more blocks</numerusform></translation>
+        <translation><numerusform>Aperto per altri %n blocchi</numerusform><numerusform>Aperto per %n ulteriori blocchi.</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
-        <translation>Open until %1</translation>
+        <translation>Apri fino a %1</translation>
     </message>
     <message>
         <source>conflicted</source>
-        <translation>conflicted</translation>
+        <translation>conflitto</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -5140,83 +5144,83 @@ backup will be created.
     </message>
     <message>
         <source>%1/unconfirmed</source>
-        <translation>%1/unconfirmed</translation>
+        <translation>%1/Non confermati</translation>
     </message>
     <message>
         <source>%1 confirmations</source>
-        <translation>%1 confirmations</translation>
+        <translation>%1 conferme</translation>
     </message>
     <message>
         <source>%1/offline (verified via SwiftX)</source>
-        <translation>%1/offline (verified via SwiftX)</translation>
+        <translation>%1/offline (verificato via SwiftX)</translation>
     </message>
     <message>
         <source>%1/confirmed (verified via SwiftX)</source>
-        <translation>%1/confirmed (verified via SwiftX)</translation>
+        <translation>%1/confermato (verificato via SwiftX)</translation>
     </message>
     <message>
         <source>%1 confirmations (verified via SwiftX)</source>
-        <translation>%1 confirmations (verified via SwiftX)</translation>
+        <translation>%1 conferme (verificato via SwiftX)</translation>
     </message>
     <message>
         <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</translation>
+        <translation>%1/offline (verifica SwiftX in corso - %2 di %3 firme)</translation>
     </message>
     <message>
         <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</translation>
+        <translation>%1/confirmed (verifica SwiftX in corso - %2 di %3 firme)</translation>
     </message>
     <message>
         <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</translation>
+        <translation>%1 conferme (verifica SwiftX in corso - %2 di %3 firme)</translation>
     </message>
     <message>
         <source>%1/offline (SwiftX verification failed)</source>
-        <translation>%1/offline (SwiftX verification failed)</translation>
+        <translation>%1/offline (verifica SwiftX non riuscita)</translation>
     </message>
     <message>
         <source>%1/confirmed (SwiftX verification failed)</source>
-        <translation>%1/confirmed (SwiftX verification failed)</translation>
+        <translation>%1/confirmed (verifica SwiftX non riuscita)</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>Status</translation>
+        <translation>Stato</translation>
     </message>
     <message>
         <source>, has not been successfully broadcast yet</source>
-        <translation>, has not been successfully broadcast yet</translation>
+        <translation>, non &#232; stato ancora trasmesso con successo</translation>
     </message>
     <message numerus="yes">
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, broadcast through %n node</numerusform><numerusform>, broadcast through %n nodes</numerusform></translation>
+        <translation><numerusform>, trasmesso attraverso %n nodi</numerusform><numerusform>, trasmesso attraverso %n nodi</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Source</source>
-        <translation>Source</translation>
+        <translation>Fonte</translation>
     </message>
     <message>
         <source>Generated</source>
-        <translation>Generated</translation>
+        <translation>Generato</translation>
     </message>
     <message>
         <source>From</source>
-        <translation>From</translation>
+        <translation>Da</translation>
     </message>
     <message>
         <source>unknown</source>
-        <translation>unknown</translation>
+        <translation>sconosciuto</translation>
     </message>
     <message>
         <source>To</source>
-        <translation>To</translation>
+        <translation>A</translation>
     </message>
     <message>
         <source>own address</source>
-        <translation>own address</translation>
+        <translation>proprio indirizzo</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -5224,55 +5228,55 @@ backup will be created.
     </message>
     <message>
         <source>label</source>
-        <translation>label</translation>
+        <translation>etichetta</translation>
     </message>
     <message>
         <source>Credit</source>
-        <translation>Credit</translation>
+        <translation>Credito</translation>
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>matures in %n more block</numerusform><numerusform>matures in %n more blocks</numerusform></translation>
+        <translation><numerusform>matura in altri %n blocchi</numerusform><numerusform>matura in altri %n blocchi</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
-        <translation>not accepted</translation>
+        <translation>non accettato</translation>
     </message>
     <message>
         <source>Debit</source>
-        <translation>Debit</translation>
+        <translation>Debito</translation>
     </message>
     <message>
         <source>Total debit</source>
-        <translation>Total debit</translation>
+        <translation>Debito totale</translation>
     </message>
     <message>
         <source>Total credit</source>
-        <translation>Total credit</translation>
+        <translation>Credito totale</translation>
     </message>
     <message>
         <source>Transaction fee</source>
-        <translation>Transaction fee</translation>
+        <translation>Commissione di transazione</translation>
     </message>
     <message>
         <source>Net amount</source>
-        <translation>Net amount</translation>
+        <translation>Ammontare netto</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Message</translation>
+        <translation>Messaggio</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>Comment</translation>
+        <translation>Commento</translation>
     </message>
     <message>
         <source>Transaction ID</source>
-        <translation>Transaction ID</translation>
+        <translation>ID transazione</translation>
     </message>
     <message>
         <source>Output index</source>
-        <translation>Output index</translation>
+        <translation>Indice di uscita</translation>
     </message>
     <message>
         <source>Merchant</source>
@@ -5280,11 +5284,11 @@ backup will be created.
     </message>
     <message>
         <source>Debug information</source>
-        <translation>Debug information</translation>
+        <translation>Informazioni di debug</translation>
     </message>
     <message>
         <source>Transaction</source>
-        <translation>Transaction</translation>
+        <translation>Transazione</translation>
     </message>
     <message>
         <source>Inputs</source>
@@ -5292,38 +5296,38 @@ backup will be created.
     </message>
     <message>
         <source>Amount</source>
-        <translation>Amount</translation>
+        <translation>Ammontare</translation>
     </message>
     <message>
         <source>true</source>
-        <translation>true</translation>
+        <translation>vero</translation>
     </message>
     <message>
         <source>false</source>
-        <translation>false</translation>
+        <translation>falso</translation>
     </message>
 </context>
 <context>
     <name>TransactionTableModel</name>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Type</translation>
+        <translation>Tipo</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Indirizzo</translation>
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Open for %n more block</numerusform><numerusform>Open for %n more blocks</numerusform></translation>
+        <translation><numerusform>Aperto per altri %n blocchi</numerusform><numerusform>Aperto per altri %n blocchi</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
-        <translation>Open until %1</translation>
+        <translation>Apri fino a %1</translation>
     </message>
     <message>
         <source>Offline</source>
@@ -5331,39 +5335,39 @@ backup will be created.
     </message>
     <message>
         <source>Unconfirmed</source>
-        <translation>Unconfirmed</translation>
+        <translation>Non confermato</translation>
     </message>
     <message>
         <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation>Confirming (%1 of %2 recommended confirmations)</translation>
+        <translation>In fase di conferma (%1 di %2 conferme raccomandate)</translation>
     </message>
     <message>
         <source>Confirmed (%1 confirmations)</source>
-        <translation>Confirmed (%1 confirmations)</translation>
+        <translation>Confermato (%1 conferme)</translation>
     </message>
     <message>
         <source>Conflicted</source>
-        <translation>Conflicted</translation>
+        <translation>Conflitto</translation>
     </message>
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation>Immature (%1 confirmations, will be available after %2)</translation>
+        <translation>Immaturo (%1 conferme, saranno disponibili dopo %2)</translation>
     </message>
     <message>
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>This block was not received by any other nodes and will probably not be accepted!</translation>
+        <translation>Questo blocco non &#232; stato ricevuto da nessun altro nodo e probabilmente non sar&#224; accettato!</translation>
     </message>
     <message>
         <source>Received with</source>
-        <translation>Received with</translation>
+        <translation>Ricevuto con</translation>
     </message>
     <message>
         <source>Masternode Reward</source>
-        <translation>Masternode Reward</translation>
+        <translation>Ricompense Masternode</translation>
     </message>
     <message>
         <source>Received from</source>
-        <translation>Received from</translation>
+        <translation>Ricevuto da</translation>
     </message>
     <message>
         <source>%1 Stake</source>
@@ -5379,51 +5383,51 @@ backup will be created.
     </message>
     <message>
         <source>%1 Stake on behalf of</source>
-        <translation>%1 Stake on behalf of</translation>
+        <translation>%1 Stake per conto di</translation>
     </message>
     <message>
         <source>Stake delegation</source>
-        <translation>Stake delegation</translation>
+        <translation>Delega allo stake</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Sent to</translation>
+        <translation>Inviato a</translation>
     </message>
     <message>
         <source>Orphan Block - Generated but not accepted. This does not impact your holdings.</source>
-        <translation>Orphan Block - Generated but not accepted. This does not impact your holdings.</translation>
+        <translation>Blocco orfano - Generato ma non accettato. Ci&#242; non influisce sulle tue propriet&#224;.</translation>
     </message>
     <message>
         <source>Payment to yourself</source>
-        <translation>Payment to yourself</translation>
+        <translation>Pagamento a te stesso</translation>
     </message>
     <message>
         <source>Stake delegation spent by</source>
-        <translation>Stake delegation spent by</translation>
+        <translation>Delega Stake spesa da</translation>
     </message>
     <message>
         <source>Mined</source>
-        <translation>Mined</translation>
+        <translation>Minato</translation>
     </message>
     <message>
         <source>Converted %1 to z%1</source>
-        <translation>Converted %1 to z%1</translation>
+        <translation>Convertito %1 a z%1</translation>
     </message>
     <message>
         <source>Spent z%1</source>
-        <translation>Spent z%1</translation>
+        <translation>Speso z%1</translation>
     </message>
     <message>
         <source>Received %1 from z%1</source>
-        <translation>Received %1 from z%1</translation>
+        <translation>Ricevuto %1 da z%1</translation>
     </message>
     <message>
         <source>Minted Change as z%1 from z%1 Spend</source>
-        <translation>Minted Change as z%1 from z%1 Spend</translation>
+        <translation>Forgiatura cambiata in z%1 da z%1 Spesi</translation>
     </message>
     <message>
         <source>Converted z%1 to %1</source>
-        <translation>Converted z%1 to %1</translation>
+        <translation>Convertito %1 a z%1</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -5431,62 +5435,62 @@ backup will be created.
     </message>
     <message>
         <source>Anonymous</source>
-        <translation>Anonymous</translation>
+        <translation>Anonimo</translation>
     </message>
     <message>
         <source>No information</source>
-        <translation>No information</translation>
+        <translation>Nessuna informazione</translation>
     </message>
     <message>
         <source>(n/a)</source>
-        <translation>(n/a)</translation>
+        <translation>(n/d)</translation>
     </message>
     <message>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>Transaction status. Hover over this field to show number of confirmations.</translation>
+        <translation>Stato della transazione. Passa il mouse sopra questo campo per mostrare il numero di conferme.</translation>
     </message>
     <message>
         <source>Date and time that the transaction was received.</source>
-        <translation>Date and time that the transaction was received.</translation>
+        <translation>Data e ora in cui la transazione &#232; stata ricevuta.</translation>
     </message>
     <message>
         <source>Type of transaction.</source>
-        <translation>Type of transaction.</translation>
+        <translation>Tipo di transazione.</translation>
     </message>
     <message>
         <source>Whether or not a watch-only address is involved in this transaction.</source>
-        <translation>Whether or not a watch-only address is involved in this transaction.</translation>
+        <translation>Se un indirizzo watch-only &#232; coinvolto o meno in questa transazione.</translation>
     </message>
     <message>
         <source>Destination address of transaction.</source>
-        <translation>Destination address of transaction.</translation>
+        <translation>Indirizzo di destinazione della transazione.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
-        <translation>Amount removed from or added to balance.</translation>
+        <translation>Importo rimosso o aggiunto al saldo.</translation>
     </message>
 </context>
 <context>
     <name>TxDetailDialog</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Transaction Details</source>
-        <translation>Transaction Details</translation>
+        <translation>Dettagli della transazione</translation>
     </message>
     <message>
         <source>Total amount</source>
-        <translation>Total amount</translation>
+        <translation>Importo totale</translation>
     </message>
     <message>
         <source>Previous Transaction</source>
-        <translation>Previous Transaction</translation>
+        <translation>Transazioni precedenti</translation>
     </message>
     <message>
         <source>Output Index</source>
-        <translation>Output Index</translation>
+        <translation>Indice di uscita</translation>
     </message>
     <message>
         <source>D7VFR83SQbie&#8230;BhjcWJtcfip5krte2Z </source>
@@ -5494,7 +5498,7 @@ backup will be created.
     </message>
     <message>
         <source>May 25, 2017</source>
-        <translation>May 25, 2017</translation>
+        <translation>25 Maggio, 2017</translation>
     </message>
     <message>
         <source>ID</source>
@@ -5502,11 +5506,11 @@ backup will be created.
     </message>
     <message>
         <source>Sending to</source>
-        <translation>Sending to</translation>
+        <translation>Inviando a:</translation>
     </message>
     <message>
         <source>Coin inputs</source>
-        <translation>Coin inputs</translation>
+        <translation>Input Coin</translation>
     </message>
     <message>
         <source>Fee</source>
@@ -5514,35 +5518,35 @@ backup will be created.
     </message>
     <message>
         <source>Size</source>
-        <translation>Size</translation>
+        <translation>Dimensione</translation>
     </message>
     <message>
         <source>Change address</source>
-        <translation>Change address</translation>
+        <translation>Cambia Indirizzo</translation>
     </message>
     <message>
         <source>Spendable</source>
-        <translation>Spendable</translation>
+        <translation>Spendibile</translation>
     </message>
     <message>
         <source>Confirmations</source>
-        <translation>Confirmations</translation>
+        <translation>Conferme</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>Status</translation>
+        <translation>Stato</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Data</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TextLabel</translation>
+        <translation>Etichetta</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation>CANCEL</translation>
+        <translation>CANCELLA</translation>
     </message>
     <message>
         <source>OK</source>
@@ -5550,53 +5554,53 @@ backup will be created.
     </message>
     <message>
         <source>Confirm Your Transaction</source>
-        <translation>Confirm Your Transaction</translation>
+        <translation>Conferma la tua transazione</translation>
     </message>
     <message>
         <source>SEND</source>
-        <translation>SEND</translation>
+        <translation>INVIA</translation>
     </message>
     <message>
         <source>ID copied</source>
-        <translation>ID copied</translation>
+        <translation>ID copiato</translation>
     </message>
     <message>
         <source>Delegating to</source>
-        <translation>Delegating to</translation>
+        <translation>Delegando a</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Unknown</translation>
+        <translation>Sconosciuto</translation>
     </message>
 </context>
 <context>
     <name>TxRow</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
 </context>
 <context>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send Coins</translation>
+        <translation>Invia Valuta</translation>
     </message>
     <message>
         <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 %2.</source>
-        <translation>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 %2.</translation>
+        <translation>SwiftX non supporta ancora l'invio di valori cos&#236; elevati. Le transazioni sono attualmente limitate a %1 %2.</translation>
     </message>
     <message>
         <source>Transaction creation failed!
 %1</source>
-        <translation>Transaction creation failed!
+        <translation>Creazione della transazione non riuscita!
 %1</translation>
     </message>
     <message>
         <source>The size of the transaction is too big.
 Select fewer inputs with coin control.</source>
-        <translation>The size of the transaction is too big.
-Select fewer inputs with coin control.</translation>
+        <translation>Le dimensioni della transazione &#232; troppo grande.
+Selezionare meno ingressi con controllo coin.</translation>
     </message>
 </context>
 <context>
@@ -5619,11 +5623,11 @@ Select fewer inputs with coin control.</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>Language</translation>
+        <translation>Lingua</translation>
     </message>
     <message>
         <source>Welcome</source>
-        <translation>Welcome</translation>
+        <translation>Benvenuto</translation>
     </message>
     <message>
         <source>Privacy</source>
@@ -5635,272 +5639,272 @@ Select fewer inputs with coin control.</translation>
     </message>
     <message>
         <source>Select your language</source>
-        <translation>Select your language</translation>
+        <translation>Seleziona la tua lingua</translation>
     </message>
     <message>
         <source>Welcome to
 PIVX Core Wallet</source>
-        <translation>Welcome to
-EUNO Core Wallet</translation>
+        <translation>Benvenuto in
+Portafoglio EUNO Core.</translation>
     </message>
     <message>
         <source>PIVX is the world&#8217;s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>EUNO is the world&#8217;s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</translation>
+        <translation>EUNO &#232; la tecnologia basata su blockchain Proof of Stake pi&#249; innovativa al mondo. Sviluppato da un team di sviluppatori e crittografi di grande esperienza.</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PIVX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - EUNO believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Come dice il nostro manifesto: la privacy &#232; un diritto umano di base non negoziabile; garantisce agli utenti la libert&#224; di condividere i propri dati quando e con chi vuole - EUNO crede nell'auto sovranit&#224;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>The masternode network is PIVX's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>The masternode network is EUNO's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</translation>
+        <translation>La rete masternode &#232; la rete di secondo livello di EUNO sopra alla blockchain che consente al nostro DAO di fornire governance decentralizzata e tesoreria.</translation>
     </message>
     <message>
         <source>How PIVX respects your privacy?</source>
-        <translation>How EUNO respects your privacy?</translation>
+        <translation>In che modo EUNO rispetta la tua privacy?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
-        <translation>What is a Masternode?</translation>
+        <translation>Cos'&#232; un Masternode?</translation>
     </message>
     <message>
         <source>default</source>
-        <translation>default</translation>
+        <translation>predefinito</translation>
     </message>
 </context>
 <context>
     <name>pivx-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
+        <translation>(1 = conserva i metadati tx, ad esempio il proprietario dell'account e le informazioni sulla richiesta di pagamento, 2 = elimina i metadati tx)</translation>
     </message>
     <message>
         <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</translation>
+        <translation>Consenti connessioni JSON-RPC dall'origine specificata. Valido per &lt;ip&gt; sono un singolo IP (ad es. 1.2.3.4), una rete / maschera di rete (ad es. 1.2.3.4/255.255.255.0) o una rete / CIDR (ad es. 1.2.3.4/24). Questa opzione pu&#242; essere specificata pi&#249; volte</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Bind to given address and always listen on it. Use [host]:port notation for IPv6</translation>
+        <translation>Associa l'indirizzo specificato e ascoltalo sempre. Usa la notazione [host]:porta per IPv6</translation>
     </message>
     <message>
         <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</translation>
+        <translation>Associa a un indirizzo specificato e ai peer della whitelist che si connettono ad esso. Usa la notazione [host]:porta per IPv6</translation>
     </message>
     <message>
         <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</translation>
+        <translation>Associa l'indirizzo indicato per ascoltare le connessioni JSON-RPC. Usa la notazione [host]:porta per IPv6. Questa opzione pu&#242; essere specificata pi&#249; volte (impostazione predefinita: associa a tutte le interfacce)</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. EUNO Core is probably already running.</translation>
+        <translation>Impossibile allocare la directory di dati %s. Probabilmente EUNO Core &#232; gi&#224; in esecuzione.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</translation>
+        <translation>Modifica il comportamento di votazione automatica del budget finalizzato. mode=auto: vota solo per la corrispondenza esatta del budget finalizzato al mio budget generato. (stringa, impostazione predefinita: auto)</translation>
     </message>
     <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
-        <translation>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</translation>
+        <translation>Limita continuamente le transazioni gratuite a &lt;n&gt;* 1000 byte al minuto (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</translation>
+        <translation>Crea nuovi file con le autorizzazioni predefinite del sistema, invece di umask 077 (valido solo con funzionalit&#224; wallet disabilitata)</translation>
     </message>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</translation>
+        <translation>Elimina tutte le transazioni del portafoglio e recupera solo quelle parti della blockchain tramite -rescan all'avvio</translation>
     </message>
     <message>
         <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
-        <translation>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</translation>
+        <translation>Elimina tutte le spese e forgiature zerocoin che sono state registrate nella blockchain e le reindicizza (0-1, impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
-        <translation>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
+        <translation>Distribuito sotto la licenza del software MIT, consultare il file di accompagnamento COPYING o &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
-        <translation>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</translation>
+        <translation>Abilita la funzionalit&#224; di cold staking (0-1, default: %u). Disabilitato se staking=0</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
-        <translation>Enable spork administration functionality with the appropriate private key.</translation>
+        <translation>Abilitare la funzionalit&#224; di amministrazione di spork con la chiave privata appropriata.</translation>
     </message>
     <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</translation>
+        <translation>Entra nella modalit&#224; test di regressione, che utilizza una catena speciale in cui i blocchi possono essere risolti istantaneamente.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>Error: Listening for incoming connections failed (listen returned error %s)</translation>
+        <translation>Errore: ascolto delle connessioni in entrata non riuscito (ascolto ha restituito errore %s)</translation>
     </message>
     <message>
         <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
-        <translation>Error: The transaction is larger than the maximum allowed transaction size!</translation>
+        <translation>Errore: la transazione &#232; superiore alla dimensione massima consentita della transazione!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</translation>
+        <translation>Errore: trovati argomenti non supportati. L'impostazione della versione di SOCKS non &#232; pi&#249; possibile, sono supportati solo i proxy SOCKS5.</translation>
     </message>
     <message>
         <source>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</source>
-        <translation>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</translation>
+        <translation>Escludere le informazioni di debug per una categoria. Pu&#242; essere usato insieme con -debug=1 per produrre i log di debug per tutte le categorie tranne una o pi&#249; categorie specificate.</translation>
     </message>
     <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</translation>
+        <translation>Esegui comando quando viene ricevuto un avviso rilevante o viene visualizzato un fork molto lungo (%s in cmd viene sostituito dal messaggio)</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</translation>
+        <translation>Esegui comando quando cambia una transazione del portafoglio (%s in cmd &#232; sostituito da TxID)</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
+        <translation>Esegui comando quando cambia il blocco migliore (%s in cmd &#232; sostituito dall'hash del blocco)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
-        <translation>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</translation>
+        <translation>Svuota ogni volta l'attivit&#224; del database dal pool di memoria al registro del disco &lt;n&gt; megabytes (default: %u)</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</translation>
+        <translation>Se paytxfee non &#232; impostato, includere una commissione sufficiente in modo che le transazioni inizino la conferma in media entro n blocchi (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation>In this mode -genproclimit controls how many blocks are generated immediately.</translation>
+        <translation>In questa modalit&#224; -genproclimit controlla quanti blocchi vengono generati immediatamente.</translation>
     </message>
     <message>
         <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
-        <translation>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</translation>
+        <translation>Fondi confermati insufficienti o insufficienti, potrebbe essere necessario attendere qualche minuto e riprovare.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</translation>
+        <translation>Importo non valido per -maxtxfee=&lt;amount&gt;: '%s' (deve essere almeno la commissione minima di %s per evitare transazioni bloccate)</translation>
     </message>
     <message>
         <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
-        <translation>Log transaction priority and fee per kB when mining blocks (default: %u)</translation>
+        <translation>Registra priorit&#224; transazione e tariffa per kB durante i blocchi di mining (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
-        <translation>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</translation>
+        <translation>Mantenere un indice di transazione completo, utilizzato dalla chiamata rpc getrawtransaction (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Maximum average size of an index occurrence in the block spam filter (default: %u)</source>
-        <translation>Maximum average size of an index occurrence in the block spam filter (default: %u)</translation>
+        <translation>Dimensione media massima di un'occorrenza di indice nel filtro antispam di blocco (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation>Maximum size of data in data carrier transactions we relay and mine (default: %u)</translation>
+        <translation>Dimensione massima dei dati nelle transazioni del supporto dati che trasmettiamo e estraiamo (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Maximum size of the list of indexes in the block spam filter (default: %u)</source>
-        <translation>Maximum size of the list of indexes in the block spam filter (default: %u)</translation>
+        <translation>Dimensione massima dell'elenco di indici nel filtro antispam di blocco (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
-        <translation>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</translation>
+        <translation>Le commissioni totali massime da utilizzare in una singola transazione, impostando un valore troppo basso, possono interrompere le transazioni di grandi dimensioni (valore predefinito: %s)</translation>
     </message>
     <message>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
-        <translation>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</translation>
+        <translation>Numero di secondi per impedire la riconnessione dei peer che si comportano male (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
-        <translation>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</translation>
+        <translation>Informazioni sul debug dell'output (impostazione predefinita: %u, fornitura &lt;category&gt; &#232; opzionale)</translation>
     </message>
     <message>
         <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</translation>
+        <translation>Randomizza le credenziali per ogni connessione proxy. Ci&#242; consente l'isolamento del flusso Tor (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
-        <translation>Require high priority for relaying free or low-fee transactions (default:%u)</translation>
+        <translation>Richiedi alta priorit&#224; per l'inoltro di transazioni gratuite o a basso costo (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
-        <translation>Send trace/debug info to console instead of debug.log file (default: %u)</translation>
+        <translation>Invia informazioni di traccia / debug alla console anzich&#233; al file debug.log (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</translation>
+        <translation>Imposta la dimensione massima delle transazioni ad alta priorit&#224; / a basso costo in byte (impostazione predefinita: %d)</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</translation>
+        <translation>Imposta il numero di thread di verifica dello script (da %u a %d, 0 = auto, &lt;0 = lascia liberi molti core, impostazione predefinita: %d)</translation>
     </message>
     <message>
         <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
-        <translation>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</translation>
+        <translation>Imposta il numero di processi per la generazione di coin se abilitato (-1 = tutti i core, impostazione predefinita: %d)</translation>
     </message>
     <message>
         <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
-        <translation>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</translation>
+        <translation>Mostra N conferme per una transazione bloccata correttamente (0-9999, impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
-        <translation>Support filtering of blocks and transaction with bloom filters (default: %u)</translation>
+        <translation>Supporta il filtraggio di blocchi e transazioni con filtri bloom (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
-        <translation>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</translation>
+        <translation>Il database dei blocchi contiene un blocco che sembra appartenere al futuro. Ci&#242; potrebbe essere dovuto alla data e all'ora del computer impostate in modo errato. Ricostruire il database dei blocchi solo se si &#232; certi che la data e l'ora del computer siano corrette</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</translation>
+        <translation>Questo prodotto include software sviluppato da OpenSSL Project per l'uso in OpenSSL Toolkit &lt;https://www.openssl.org/&gt; e software crittografico scritto da Eric Young e software UPnP scritto da Thomas Bernard.</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
-        <translation>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</translation>
+        <translation>La lunghezza totale della stringa della versione di rete (%i) supera la lunghezza massima (%i). Ridurre il numero o la dimensione degli uacomments.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. EUNO Core is probably already running.</translation>
+        <translation>Impossibile associare %s su questo computer. Probabilmente EUNO Core &#232; gi&#224; in esecuzione.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</translation>
+        <translation>Utilizza un proxy SOCKS5 separato per raggiungere i peer tramite i servizi nascosti Tor (impostazione predefinita: %s)</translation>
     </message>
     <message>
         <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</translation>
+        <translation>Attenzione: -maxtxfee &#232; impostato molto alto! Commissioni cos&#236; grandi potrebbero essere pagate su un'unica transazione.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
+        <translation>Attenzione: -paytxfee &#232; impostato molto alto! Questa &#232; la commissione di transazione che dovrai pagare se invii una transazione.</translation>
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong EUNO Core will not work properly.</translation>
+        <translation>Avvertenza: verificare che la data e l'ora del computer siano corrette! Se l'orologio &#232; sbagliato, EUNO Core non funzioner&#224; correttamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</translation>
+        <translation>Avviso: la rete non sembra essere pienamente d'accordo! Alcuni minatori sembrano avere problemi.</translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</translation>
+        <translation>Avvertenza: non sembra essere pienamente d'accordo con i nostri peers! Potrebbe essere necessario eseguire l'aggiornamento o potrebbe essere necessario aggiornare altri nodi.</translation>
     </message>
     <message>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</translation>
+        <translation>Attenzione: errore nella lettura di wallet.dat! Tutte le chiavi vengono lette correttamente, ma i dati delle transazioni o le voci della rubrica potrebbero essere mancanti o errati.</translation>
     </message>
     <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</translation>
+        <translation>Attenzione: wallet.dat corrotto, dati recuperati! Wallet.dat originale salvato come portafoglio.{Timestamp}.bak in %s; se il saldo o le transazioni sono errati, &#232; necessario ripristinare da un backup.</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
-        <translation>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</translation>
+        <translation>Lista bianca dei peer che si connettono dalla maschera di rete o dall'indirizzo IP indicati. Pu&#242; essere specificato pi&#249; volte.</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</translation>
+        <translation>I peer autorizzati non possono essere esenti da DoS e le loro transazioni vengono sempre inoltrate, anche se sono gi&#224; nel mempool, utile ad es. per un gateway</translation>
     </message>
     <message>
         <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
-        <translation>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</translation>
+        <translation>&#200; necessario specificare una chiave masternodepriv nella configurazione. Consultare la documentazione per assistenza.</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5912,459 +5916,455 @@ EUNO Core Wallet</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
-        <translation>Accept command line and JSON-RPC commands</translation>
+        <translation>Accetta i comandi della riga di comando e JSON-RPC</translation>
     </message>
     <message>
         <source>Accept public REST requests (default: %u)</source>
-        <translation>Accept public REST requests (default: %u)</translation>
+        <translation>Accetta richieste REST pubbliche (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Add a node to connect to and attempt to keep the connection open</translation>
+        <translation>Aggiungere un nodo a cui connettersi e tentare di mantenere aperta la connessione</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Allow DNS lookups for -addnode, -seednode and -connect</translation>
+        <translation>Consenti ricerche DNS per -addnode, -seednode e -connect</translation>
     </message>
     <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation>Always query for peer addresses via DNS lookup (default: %u)</translation>
+        <translation>Cerca sempre gli indirizzi peer tramite la ricerca DNS (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Append comment to the user agent string</source>
-        <translation>Append comment to the user agent string</translation>
+        <translation>Aggiungi commento alla stringa del user agent</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Attempt to recover private keys from a corrupt wallet.dat</translation>
+        <translation>Tentativo di recuperare chiavi private da un wallet.dat corrotto.</translation>
     </message>
     <message>
         <source>Automatically create Tor hidden service (default: %d)</source>
-        <translation>Automatically create Tor hidden service (default: %d)</translation>
+        <translation>Crea automaticamente servizio nascosto Tor (impostazione predefinita: %d)</translation>
     </message>
     <message>
         <source>Block creation options:</source>
-        <translation>Block creation options:</translation>
+        <translation>Opzioni di creazione del blocco:</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
-        <translation>Cannot downgrade wallet</translation>
+        <translation>Impossibile eseguire il downgrade del portafoglio</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
-        <translation>Connect through SOCKS5 proxy</translation>
+        <translation>Connetti tramite proxy SOCKS5</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Connect to a node to retrieve peer addresses, and disconnect</translation>
+        <translation>Connettersi a un nodo per recuperare gli indirizzi peer e disconnettersi</translation>
     </message>
     <message>
         <source>Connection options:</source>
-        <translation>Connection options:</translation>
+        <translation>Opzioni di connessione:</translation>
     </message>
     <message>
         <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
-        <translation>Copyright (C) 2009-%i The Bitcoin Core Developers</translation>
+        <translation>Copyright (C) 2009-%i Gli sviluppatori di Bitcoin Core</translation>
     </message>
     <message>
         <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
+        <translation>Copyright (C) 2014-%i Gli sviluppatori di Dash Core</translation>
     </message>
     <message>
         <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2015-%i The EUNO Core Developers</source>
-        <translation>Copyright (C) 2015-%i The EUNO Core Developers</translation>
+        <translation>Copyright (C) 2015-%i Gli sviluppatori di EUNO Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
-        <translation>Corrupted block database detected</translation>
+        <translation>Rilevato database dei blocchi danneggiato</translation>
     </message>
     <message>
         <source>Could not parse masternode.conf</source>
-        <translation>Could not parse masternode.conf</translation>
+        <translation>Impossibile effettuare l'analisi del file masternode.conf</translation>
     </message>
     <message>
         <source>Debugging/Testing options:</source>
-        <translation>Debugging/Testing options:</translation>
+        <translation>Opzioni di debug / test:</translation>
     </message>
     <message>
         <source>Delete blockchain folders and resync from scratch</source>
-        <translation>Delete blockchain folders and resync from scratch</translation>
+        <translation>Elimina tutte le cartelle blockchain locali in modo che il portafoglio si sincronizzi da zero.</translation>
     </message>
     <message>
         <source>Disable OS notifications for incoming transactions (default: %u)</source>
-        <translation>Disable OS notifications for incoming transactions (default: %u)</translation>
+        <translation>Disabilita le notifiche del sistema operativo per le transazioni in entrata (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Disable safemode, override a real safe mode event (default: %u)</source>
-        <translation>Disable safemode, override a real safe mode event (default: %u)</translation>
+        <translation>Disabilita safemode, sovrascrivi un evento in modalit&#224; sicura reale (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Discover own IP address (default: 1 when listening and no -externalip)</translation>
+        <translation>Scopri il tuo indirizzo IP (impostazione predefinita: 1 durante l'ascolto e no -externalip)</translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>Do not load the wallet and disable wallet RPC calls</translation>
+        <translation>Non caricare il portafoglio e disabilitare le chiamate RPC del portafoglio</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
-        <translation>Do you want to rebuild the block database now?</translation>
+        <translation>Vuoi ricostruire il database dei blocchi ora?</translation>
     </message>
     <message>
         <source>Done loading</source>
-        <translation>Done loading</translation>
+        <translation>Caricamento completato</translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</translation>
+        <translation>Abilita la pubblicazione dell'hash transazione (bloccata tramite SwiftX) in &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</translation>
+        <translation>Abilita la pubblicazione transazione grezza (bloccata tramite SwiftX) in &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
-        <translation>Enable the client to act as a masternode (0-1, default: %u)</translation>
+        <translation>Abilita il client a fungere da Masternode (0-1, impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
-        <translation>Error initializing block database</translation>
+        <translation>Errore durante l'inizializzazione del database dei blocchi</translation>
     </message>
     <message>
         <source>Error initializing wallet database environment %s!</source>
-        <translation>Error initializing wallet database environment %s!</translation>
+        <translation>Errore durante l'inizializzazione dell'ambiente del database del portafoglio %s!</translation>
     </message>
     <message>
         <source>Error loading block database</source>
-        <translation>Error loading block database</translation>
+        <translation>Errore durante il caricamento del database dei blocchi</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
-        <translation>Error loading wallet.dat</translation>
+        <translation>Errore durante il caricamento di wallet.dat</translation>
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Error loading wallet.dat: Wallet corrupted</translation>
+        <translation>Errore durante il caricamento di wallet.dat: portafoglio corrotto </translation>
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of EUNO Core</translation>
+        <translation>Errore durante il caricamento di wallet.dat: il portafoglio richiede una versione pi&#249; recente di EUNO Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
-        <translation>Error opening block database</translation>
+        <translation>Errore durante l'apertura del database dei blocchi</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
-        <translation>Error reading from database, shutting down.</translation>
+        <translation>Errore durante la lettura dal database, arresto.</translation>
     </message>
     <message>
         <source>Error writing zerocoinDB to disk</source>
-        <translation>Error writing zerocoinDB to disk</translation>
+        <translation>Errore durante la scrittura di zerocoinDB sul disco</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation>Errore</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation>Error: </translation>
+        <translation>Errore:</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
-        <translation>Error: A fatal internal error occured, see debug.log for details</translation>
+        <translation>Errore: si &#232; verificato un errore interno irreversibile, vedere debug.log per i dettagli</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
-        <translation>Error: Disk space is low!</translation>
+        <translation>Errore: lo spazio su disco &#232; insufficiente!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -tor found, use -onion.</source>
-        <translation>Error: Unsupported argument -tor found, use -onion.</translation>
+        <translation>Errore: argomento non supportato -tor trovato, utilizzare -onion.</translation>
     </message>
     <message>
         <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Error: Wallet locked, unable to create transaction!</translation>
+        <translation>Errore: portafoglio bloccato, impossibile creare la transazione!</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Failed to listen on any port. Use -listen=0 if you want this.</translation>
+        <translation>Impossibile ascoltare su qualsiasi porta. Usa -listen=0 se vuoi questo.</translation>
     </message>
     <message>
         <source>Failed to parse host:port string</source>
-        <translation>Failed to parse host:port string</translation>
+        <translation>Analisi dell'host non riuscita: stringa della porta</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
-        <translation>Force safe mode (default: %u)</translation>
+        <translation>Forza modalit&#224; provvisoria (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
-        <translation>Generate coins (default: %u)</translation>
+        <translation>Genera coin (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>
-        <translation>How many blocks to check at startup (default: %u, 0 = all)</translation>
+        <translation>Quanti blocchi verificare all'avvio (impostazione predefinita: %u, 0 = all)</translation>
     </message>
     <message>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation>If &lt;category&gt; is not supplied, output all debugging information.</translation>
+        <translation>Se &lt;category&gt; non viene fornito, restituisce tutte le informazioni di debug.</translation>
     </message>
     <message>
         <source>Importing...</source>
-        <translation>Importing...</translation>
+        <translation>Importazione...</translation>
     </message>
     <message>
         <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Imports blocks from external blk000??.dat file</translation>
+        <translation>Importa i blocchi dal file esterno blk000???.dat</translation>
     </message>
     <message>
         <source>Include IP addresses in debug output (default: %u)</source>
-        <translation>Include IP addresses in debug output (default: %u)</translation>
+        <translation>Includi indirizzi IP nell'output di debug (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>Incorrect or no genesis block found. Wrong datadir for network?</translation>
+        <translation>Trovato blocco genesi errato o assente. Datadir errato per la rete?</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Information</translation>
+        <translation>Informazioni</translation>
     </message>
     <message>
         <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
-        <translation>Initialization sanity check failed. EUNO Core is shutting down.</translation>
+        <translation>Verifica dell'integrit&#224; dell'inizializzazione non riuscita. EUNO Core si sta spegnendo.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Insufficient funds</translation>
+        <translation>Fondi insufficienti</translation>
     </message>
     <message>
         <source>Insufficient funds.</source>
-        <translation>Insufficient funds.</translation>
+        <translation>Fondi insufficienti.</translation>
     </message>
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>Invalid -onion address or hostname: '%s'</translation>
+        <translation>Invalid -proxy address or hostname: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</translation>
+        <translation>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (deve essere almeno %s)</translation>
     </message>
     <message>
         <source>Invalid amount</source>
-        <translation>Invalid amount</translation>
+        <translation>Importo non valido</translation>
     </message>
     <message>
         <source>Invalid masternodeprivkey. Please see documenation.</source>
-        <translation>Invalid masternodeprivkey. Please see documenation.</translation>
+        <translation>Invalid masternodeprivkey. Si prega di consultare la documentazione.</translation>
     </message>
     <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>Invalid netmask specified in -whitelist: '%s'</translation>
+        <translation>Invalid netmask specificata in -whitelist: '%s'</translation>
     </message>
     <message>
         <source>Recalculating PIV supply...</source>
-        <translation>Recalculating EUNO supply...</translation>
+        <translation>Ricalcolo della supply EUNO...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
-        <translation>Reindexing zerocoin database...</translation>
+        <translation>Reindicizzazione del database zerocoin...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin failed</source>
-        <translation>Reindexing zerocoin failed</translation>
+        <translation>Errore nella reindicizzazione del database zerocoin</translation>
     </message>
     <message>
         <source>Selected coins value is less than payment target</source>
-        <translation>Selected coins value is less than payment target</translation>
+        <translation>Il valore delle coin selezionate &#232; inferiore all'obiettivo di pagamento</translation>
     </message>
     <message>
         <source>SwiftX options:</source>
-        <translation>SwiftX options:</translation>
+        <translation>Opzioni SwiftX:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
-        <translation>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</translation>
+        <translation>Questa &#232; una build di test pre-release - utilizzare a proprio rischio - non utilizzare per staking o applicazioni commerciali!</translation>
     </message>
     <message>
         <source> mints deleted
 </source>
-        <translation> mints deleted
+        <translation> forgiature cancellate
 </translation>
     </message>
     <message>
         <source> mints updated, </source>
-        <translation> mints updated, </translation>
+        <translation>forgiature aggiornate,</translation>
     </message>
     <message>
         <source> unconfirmed transactions removed
 </source>
-        <translation> unconfirmed transactions removed
+        <translation> transazioni non confermate rimosse
 </translation>
     </message>
     <message>
         <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Disable all EUNO specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</translation>
+        <translation>Disabilita tutte le funzionalit&#224; specifiche di EUNO (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</translation>
+        <translation>Abilita SwiftX, mostra le conferme per le transazioni bloccate (valore bool, predefinito: %s)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
-        <translation>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</translation>
+        <translation>Errore: argomento non supportato -checklevel trovato. Il livello di controllo deve essere di livello 4.</translation>
     </message>
     <message>
         <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
-        <translation>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</translation>
+        <translation>Esegui comando quando il blocco migliore cambia e la sua dimensione &#232; finita (%s in cmd &#232; sostituito dall'hash del blocco, %d con la dimensione del blocco)</translation>
     </message>
     <message>
         <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
-        <translation>Failed to find coin set amongst held coins with less than maxNumber of Spends</translation>
+        <translation>Impossibile trovare il set di coin tra le coin detenute con meno di maxNumber of Spends</translation>
     </message>
     <message>
         <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
-        <translation>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</translation>
+        <translation>In rari casi, una spesa con 7 coin supera la dimensione massima consentita della transazione, riprovare a utilizzare 6 o meno coin</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</translation>
+        <translation>Specifica il percorso di backup personalizzato per aggiungere una copia di qualsiasi backup del portafoglio. Se impostato come dir, ogni backup genera un file con data e ora. Se impostato come file, riscriver&#224; su quel file ogni backup.</translation>
     </message>
     <message>
         <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</translation>
+        <translation>SwiftX richiede input con almeno 6 conferme, potrebbe essere necessario attendere qualche minuto e riprovare.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; can be:</translation>
+        <translation>&lt;category&gt; pu&#242; essere:</translation>
     </message>
     <message>
         <source>Attempt to force blockchain corruption recovery</source>
-        <translation>Attempt to force blockchain corruption recovery</translation>
+        <translation>Tentativo di forzare il ripristino della blockchain corrotta</translation>
     </message>
     <message>
         <source>Cannot create public spend input</source>
-        <translation>Cannot create public spend input</translation>
+        <translation>Impossibile creare input di spesa pubblica</translation>
     </message>
     <message>
         <source>Display the stake modifier calculations in the debug.log file.</source>
-        <translation>Display the stake modifier calculations in the debug.log file.</translation>
+        <translation>Visualizza i calcoli del modificatore di stake nel file debug.log.</translation>
     </message>
     <message>
         <source>Display verbose coin stake messages in the debug.log file.</source>
-        <translation>Display verbose coin stake messages in the debug.log file.</translation>
+        <translation>Visualizza dettagliatamente i messaggi di staking della coin nel file debug.log.</translation>
     </message>
     <message>
         <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>Enable publish hash block in &lt;address&gt;</translation>
+        <translation>Abilita pubblicazione hash block in &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Enable publish hash transaction in &lt;address&gt;</translation>
+        <translation>Abilita pubblicazione hash transazione in &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>Enable publish raw block in &lt;address&gt;</translation>
+        <translation>Abilita pubblicazione raw block in &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>Enable publish raw transaction in &lt;address&gt;</translation>
+        <translation>Abilita pubblicazione transazione raw in &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable staking functionality (0-1, default: %u)</source>
-        <translation>Enable staking functionality (0-1, default: %u)</translation>
+        <translation>Abilita la funzionalit&#224; di staking (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Error: A fatal internal error occurred, see debug.log for details</translation>
+        <translation>Errore: si &#232; verificato un errore interno irreversibile, vedere debug.log per i dettagli</translation>
     </message>
     <message>
         <source>Error: No valid utxo!</source>
-        <translation>Error: No valid utxo!</translation>
+        <translation>Errore: Nessun utxo valido!</translation>
     </message>
     <message>
         <source>Failed to find Zerocoins in wallet.dat</source>
-        <translation>Failed to find Zerocoins in wallet.dat</translation>
+        <translation>Impossibile trovare Zerocoins in wallet.dat</translation>
     </message>
     <message>
         <source>Failed to parse public spend</source>
-        <translation>Failed to parse public spend</translation>
+        <translation>Analisi della spesa pubblica non riuscita</translation>
     </message>
     <message>
         <source>Failed to select a zerocoin</source>
-        <translation>Failed to select a zerocoin</translation>
+        <translation>Impossibile selezionare uno zerocoin</translation>
     </message>
     <message>
         <source>Failed to wipe zerocoinDB</source>
-        <translation>Failed to wipe zerocoinDB</translation>
+        <translation>Impossibile cancellare zerocoinDB</translation>
     </message>
     <message>
         <source>Failed to write coin serial number into wallet</source>
-        <translation>Failed to write coin serial number into wallet</translation>
+        <translation>Impossibile scrivere il numero seriale della coin nel portafoglio</translation>
     </message>
     <message>
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
-        <translation>Invalid amount for -%s=&lt;amount&gt;: '%s'</translation>
+        <translation>Importo non valido per -%s=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</translation>
+        <translation>Conserva al massimo &lt;n&gt; transazioni non collegabili in memoria (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Line: %d</source>
-        <translation>Line: %d</translation>
+        <translation>Linea: %d</translation>
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</translation>
+        <translation>Ascolta le connessioni JSON-RPC su &lt;port&gt; (default: %u o testnet: %u)</translation>
     </message>
     <message>
         <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</translation>
+        <translation>Ascolta le connessioni su &lt;port&gt; (default: %u or testnet: %u)</translation>
     </message>
     <message>
         <source>Loading addresses...</source>
-        <translation>Loading addresses...</translation>
+        <translation>Caricamento indirizzi...</translation>
     </message>
     <message>
         <source>Loading banlist...</source>
-        <translation>Loading banlist...</translation>
+        <translation>Caricamento banlist...</translation>
     </message>
     <message>
         <source>Loading block index...</source>
-        <translation>Loading block index...</translation>
+        <translation>Caricamento indice dei blocchi...</translation>
     </message>
     <message>
         <source>Loading budget cache...</source>
-        <translation>Loading budget cache...</translation>
+        <translation>Caricamento cache budget...</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
-        <translation>Loading masternode cache...</translation>
+        <translation>Caricamento cache masternode...</translation>
     </message>
     <message>
         <source>Loading masternode payment cache...</source>
-        <translation>Loading masternode payment cache...</translation>
+        <translation>Caricamento cache pagamento masternode...</translation>
     </message>
     <message>
         <source>Loading sporks...</source>
-        <translation>Loading sporks...</translation>
+        <translation>Caricamento sporks...</translation>
     </message>
     <message>
         <source>Loading wallet...</source>
-        <translation>Loading wallet...</translation>
+        <translation>Caricamento portafoglio...</translation>
     </message>
     <message>
         <source>Location of the auth cookie (default: data dir)</source>
-        <translation>Location of the auth cookie (default: data dir)</translation>
+        <translation>Posizione del cookie di autenticazione (impostazione predefinita: directory dati)</translation>
     </message>
     <message>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
-        <translation>Lock masternodes from masternode configuration file (default: %u)</translation>
+        <translation>Blocca i masternodes dal file di configurazione del masternode (default: %u)</translation>
     </message>
     <message>
         <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
@@ -6372,83 +6372,83 @@ EUNO Core Wallet</translation>
     </message>
     <message>
         <source>MNs synchronization pending...</source>
-        <translation>MNs synchronization pending...</translation>
+        <translation>Sincronizzazione MN in attesa...</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
-        <translation>Maintain at most &lt;n&gt; connections to peers (default: %u)</translation>
+        <translation>Conserva al massimo &lt;n&gt; connessioni ai peers (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Masternode options:</source>
-        <translation>Masternode options:</translation>
+        <translation>Opzioni del Masternode:</translation>
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</translation>
+        <translation>Buffer di ricezione massimo per connessione, &lt;n&gt;*1000 bytes (default: %u)</translation>
     </message>
     <message>
         <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</translation>
+        <translation>Buffer di spedizione massimo per connessione, &lt;n&gt;*1000 bytes (default: %u)</translation>
     </message>
     <message>
         <source>Mint did not make it into blockchain</source>
-        <translation>Mint did not make it into blockchain</translation>
+        <translation>La forgiatura non &#232; riuscita nella blockchain</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>Need to specify a port with -whitebind: '%s'</translation>
+        <translation>&#200; necessario specificare una porta con -whitebind: '%s'</translation>
     </message>
     <message>
         <source>Node relay options:</source>
-        <translation>Node relay options:</translation>
+        <translation>Opzioni di inoltro del nodo:</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
-        <translation>Not enough file descriptors available.</translation>
+        <translation>Descrittori di file disponibili insufficienti.</translation>
     </message>
     <message>
         <source>Number of automatic wallet backups (default: 10)</source>
-        <translation>Number of automatic wallet backups (default: 10)</translation>
+        <translation>Numero di backup automatici del portafoglio (impostazione predefinita: 10)</translation>
     </message>
     <message>
         <source>Number of custom location backups to retain (default: %d)</source>
-        <translation>Number of custom location backups to retain (default: %d)</translation>
+        <translation>Numero di backup di posizione personalizzati da conservare (impostazione predefinita: %d)</translation>
     </message>
     <message>
         <source>On first run, create a legacy wallet instead of a HD wallet</source>
-        <translation>On first run, create a legacy wallet instead of a HD wallet</translation>
+        <translation>Alla prima esecuzione, creare un portafoglio legacy invece di un portafoglio HD</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
-        <translation>Only accept block chain matching built-in checkpoints (default: %u)</translation>
+        <translation>Accetta solo checkpoint integrati corrispondenti alla catena di blocchi (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</translation>
+        <translation>Connetti solo a nodi in rete &lt;net&gt; (ipv4, ipv6 o onion)</translation>
     </message>
     <message>
         <source>Options:</source>
-        <translation>Options:</translation>
+        <translation>Opzioni:</translation>
     </message>
     <message>
         <source>Password for JSON-RPC connections</source>
-        <translation>Password for JSON-RPC connections</translation>
+        <translation>Password per connessioni JSON-RPC</translation>
     </message>
     <message>
         <source>Peers are being disconnected due time differences.</source>
-        <translation>Peers are being disconnected due time differences.</translation>
+        <translation>I peers vengono scollegati a causa delle differenze di orario.</translation>
     </message>
     <message>
         <source>Unable to find transaction containing mint %s</source>
-        <translation>Unable to find transaction containing mint %s</translation>
+        <translation>Impossibile trovare la transazione contenente forgiatura %s</translation>
     </message>
     <message>
         <source>Unable to find transaction containing mint, txHash: %s</source>
-        <translation>Unable to find transaction containing mint, txHash: %s</translation>
+        <translation>Impossibile trovare la transazione contenente forgiatura, txHash %s</translation>
     </message>
     <message>
         <source>Use block spam filter (default: %u)</source>
-        <translation>Use block spam filter (default: %u)</translation>
+        <translation>Usa il filtro antispam di blocco (default: %u)</translation>
     </message>
     <message>
         <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
@@ -6456,592 +6456,592 @@ EUNO Core Wallet</translation>
     </message>
     <message>
         <source>Preparing for resync...</source>
-        <translation>Preparing for resync...</translation>
+        <translation>Preparazione per la risincronizzazione...</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>
-        <translation>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</translation>
+        <translation>Accetta connessioni dall'esterno (default: 1 se no -proxy o -connect/-noconnect)</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s); -noconnect or -connect=0 alone to disable automatic connections</source>
-        <translation>Connect only to the specified node(s); -noconnect or -connect=0 alone to disable automatic connections</translation>
+        <translation>Connetti solo al nodo/i specificato/i; -noconnect o -connect=0 da solo per disabilitare le connessioni automatiche</translation>
     </message>
     <message>
         <source>Do not accept transactions if any ancestor would have &lt;n&gt; or more in-mempool descendants (default: %u)</source>
-        <translation>Do not accept transactions if any ancestor would have &lt;n&gt; or more in-mempool descendants (default: %u)</translation>
+        <translation>Non accettare transazioni se un antenato avrebbe &lt;n&gt; o pi&#249; discendenti in-mempool (default: %u)</translation>
     </message>
     <message>
         <source>Do not accept transactions if any ancestor would have more than &lt;n&gt; kilobytes of in-mempool descendants (default: %u).</source>
-        <translation>Do not accept transactions if any ancestor would have more than &lt;n&gt; kilobytes of in-mempool descendants (default: %u).</translation>
+        <translation>Non accettare transazioni se un antenato avrebbe pi&#249; di &lt;n&gt; kilobyte di discendenti in-mempool (default: %u).</translation>
     </message>
     <message>
         <source>Do not accept transactions if number of in-mempool ancestors is &lt;n&gt; or more (default: %u)</source>
-        <translation>Do not accept transactions if number of in-mempool ancestors is &lt;n&gt; or more (default: %u)</translation>
+        <translation>Non accettare transazioni se il numero di antenati in-mempool &#232; &lt;n&gt; o superiore (default: %u)</translation>
     </message>
     <message>
         <source>Do not accept transactions whose size with all in-mempool ancestors exceeds &lt;n&gt; kilobytes (default: %u)</source>
-        <translation>Do not accept transactions whose size with all in-mempool ancestors exceeds &lt;n&gt; kilobytes (default: %u)</translation>
+        <translation>Non accettare transazioni la cui dimensione con tutti gli antenati in-mempool superi &lt;n&gt; kilobyte (default: %u)</translation>
     </message>
     <message>
         <source>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</source>
-        <translation>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</translation>
+        <translation>Non tenere le transazioni nel mempool per pi&#249; di &lt;n&gt; ore (default: %u)</translation>
     </message>
     <message>
         <source>Fees (in %s/Kb) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
-        <translation>Fees (in %s/Kb) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</translation>
+        <translation>Fee (in %s/Kb) inferiori a questa sono considerate pari a zero per la ritrasmissione, il mining e la creazione di transazioni  (default: %s)</translation>
     </message>
     <message>
         <source>Fees (in %s/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in %s/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+        <translation>Le commissioni (in %s/Kb) inferiori a questa sono considerate zero per la creazione della transazione (default: %s)</translation>
     </message>
     <message>
         <source>Minimum positive amount (in PIV) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
-        <translation>Minimum positive amount (in EUNO) allowed by GUI and RPC for the stake split threshold (default: %s)</translation>
+        <translation>Importo positivo minimo (in EUNO) consentito da GUI e RPC per la soglia di ripartizione della partecipazione (default: %s)</translation>
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>Please check that your computer's date and time are correct! If your clock is wrong EUNO Core will not work properly.</translation>
+        <translation>Verificare che la data e l'ora del computer siano corrette! Se l'orologio sincronizzato, EUNO Core non funzioner&#224; correttamente.</translation>
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
-        <translation>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</translation>
+        <translation>Richiesta di indirizzi peer tramite la ricerca DNS, se gli indirizzi sono pochi (default: 1 unless -connect/-noconnect)</translation>
     </message>
     <message>
         <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
-        <translation>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</translation>
+        <translation>Specificare la posizione del log file di debug: pu&#242; essere un percorso assoluto o un percorso relativo alla directory dei dati (default: %s)</translation>
     </message>
     <message>
         <source>WARNING: The transaction has been signed and recorded, so the wallet will try to re-send it. Use 'abandontransaction' to cancel it. (txid: %s)</source>
-        <translation>WARNING: The transaction has been signed and recorded, so the wallet will try to re-send it. Use 'abandontransaction' to cancel it. (txid: %s)</translation>
+        <translation>ATTENZIONE: La transazione &#232; stata firmata e registrata, quindi il portafoglio cercher&#224; di reinviarla. Utilizzare "abandontransaction" per annullarla. (txid: %s)</translation>
     </message>
     <message>
         <source>(must be %d for %s-net)</source>
-        <translation>(must be %d for %s-net)</translation>
+        <translation>(deve essere %d per %s-net)</translation>
     </message>
     <message>
         <source>Active Masternode not initialized.</source>
-        <translation>Active Masternode not initialized.</translation>
+        <translation>Masternode Attivo non inizializzato.</translation>
     </message>
     <message>
         <source>Allows deprecated RPC method(s) to be used</source>
-        <translation>Allows deprecated RPC method(s) to be used</translation>
+        <translation>Consenti l'utilizzo di metodi RPC deprecati</translation>
     </message>
     <message>
         <source>Can't generate a change-address key. Please call keypoolrefill first.</source>
-        <translation>Can't generate a change-address key. Please call keypoolrefill first.</translation>
+        <translation>Non &#232; possibile generare una chiave di cambio indirizzo. Si prega di chiamare prima keypoolrefill.</translation>
     </message>
     <message>
         <source>Cannot resolve -%s address: '%s'</source>
-        <translation>Cannot resolve -%s address: '%s'</translation>
+        <translation>Impossibile risolvere  -%s indirizzo: '%s'</translation>
     </message>
     <message>
         <source>Cannot upgrade to HD wallet (already running HD support). Version: %d</source>
-        <translation>Cannot upgrade to HD wallet (already running HD support). Version: %d</translation>
+        <translation>Impossibile effettuare l'aggiornamento al wallet HD (supporto HD gi&#224; in funzione). Versione: %d</translation>
     </message>
     <message>
         <source>Change index out of range</source>
-        <translation>Change index out of range</translation>
+        <translation>Indice di variazione fuori range</translation>
     </message>
     <message>
         <source>Error: -listen must be true if -masternode is set.</source>
-        <translation>Error: -listen must be true if -masternode is set.</translation>
+        <translation>Errore: -listen deve essere vero se -masternode &#232; impostato.</translation>
     </message>
     <message>
         <source>Error: -maxmempool must be at least %d MB</source>
-        <translation>Error: -maxmempool must be at least %d MB</translation>
+        <translation>Errore: -maxmempool deve essere almeno %d MB</translation>
     </message>
     <message>
         <source>Error: Invalid port %d for running a masternode.</source>
-        <translation>Error: Invalid port %d for running a masternode.</translation>
+        <translation>Errore: Porta non valida %d per l'esecuzione di un masternode.</translation>
     </message>
     <message>
         <source>Failed to accept tx in the memory pool (reason: %s)
 </source>
-        <translation>Failed to accept tx in the memory pool (reason: %s)
+        <translation>Impossibile accettare tx nel memory pool (reason: %s)
 </translation>
     </message>
     <message>
         <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in %s/kB) to add to transactions you send (default: %s)</translation>
+        <translation>Fee (in %s/kB) per aggiungere alle transazioni che invii (default: %s)</translation>
     </message>
     <message>
         <source>Invalid -masternodeaddr address: %s</source>
-        <translation>Invalid -masternodeaddr address: %s</translation>
+        <translation>Indirizzo -masternodeaddr non valido: %s</translation>
     </message>
     <message>
         <source>Invalid -masternodeaddr port %d, only %d is supported on %s-net.</source>
-        <translation>Invalid -masternodeaddr port %d, only %d is supported on %s-net.</translation>
+        <translation>Porta -masternodeaddr non valida %d, solo %d &#232; supportata su %s-net.</translation>
     </message>
     <message>
         <source>Invalid port %d detected in masternode.conf</source>
-        <translation>Invalid port %d detected in masternode.conf</translation>
+        <translation>Porta non valida %d rilevato in masternode.conf</translation>
     </message>
     <message>
         <source>Invalid status error.</source>
-        <translation>Invalid status error.</translation>
+        <translation>Errore di stato non valido.</translation>
     </message>
     <message>
         <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
-        <translation>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</translation>
+        <translation>Mantenere il memory pool delle transazioni al di sotto &lt;n&gt; megabyte (default: %u)</translation>
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first, or unlock the wallet.</source>
-        <translation>Keypool ran out, please call keypoolrefill first, or unlock the wallet.</translation>
+        <translation>Keypool si &#232; esaurito, si prega di chiamare keypoolrefill prima, o sbloccare il portafoglio.</translation>
     </message>
     <message>
         <source>Limit size of signature cache to &lt;n&gt; MiB (default: %u)</source>
-        <translation>Limit size of signature cache to &lt;n&gt; MiB (default: %u)</translation>
+        <translation>Limita la dimensione della cache delle firma a &lt;n&gt; MiB (default: %u)</translation>
     </message>
     <message>
         <source>Masternodes are required to run on port %d for %s-net</source>
-        <translation>Masternodes are required to run on port %d for %s-net</translation>
+        <translation>I masternode devono funzionare sulla porta %d per %s-net</translation>
     </message>
     <message>
         <source>Need destination or change address because change is not exact</source>
-        <translation>Need destination or change address because change is not exact</translation>
+        <translation>Hai bisogno di una destinazione o cambia indirizzo perch&#233; il cambio non &#232; esatto</translation>
     </message>
     <message>
         <source>No error</source>
-        <translation>No error</translation>
+        <translation>Nessun errore</translation>
     </message>
     <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
-        <translation>Prepend debug output with timestamp (default: %u)</translation>
+        <translation>Prepara l'output di debug con data / ora (default: %u)</translation>
     </message>
     <message>
         <source>Print version and exit</source>
-        <translation>Print version and exit</translation>
+        <translation>Stampa versione e esci</translation>
     </message>
     <message>
         <source>Pubcoin not found in mint tx</source>
-        <translation>Pubcoin not found in mint tx</translation>
+        <translation>Pubcoin not trovato nella tx di forgiatura</translation>
     </message>
     <message>
         <source>RPC server options:</source>
-        <translation>RPC server options:</translation>
+        <translation>Opzioni del server RPC:</translation>
     </message>
     <message>
         <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>Randomly drop 1 of every &lt;n&gt; network messages</translation>
+        <translation>Rilascia a caso 1 di ogni &lt;n&gt; messaggi di rete</translation>
     </message>
     <message>
         <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation>Randomly fuzz 1 of every &lt;n&gt; network messages</translation>
+        <translation>Rilascia a caso 1 di ogni &lt;n&gt; messaggi di rete</translation>
     </message>
     <message>
         <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Rebuild block chain index from current blk000??.dat files</translation>
+        <translation>Ricostruisce l'indice della blockchain dai file blk000??.dat corrente.</translation>
     </message>
     <message>
         <source>Reindex the %s and z%s money supply statistics</source>
-        <translation>Reindex the %s and z%s money supply statistics</translation>
+        <translation>Reinindicizzare le statistiche sulla massa monetaria %s e z%s</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation>Relay and mine data carrier transactions (default: %u)</translation>
+        <translation>Transazioni e operazioni di estrazione dati da mining (default: %u)</translation>
     </message>
     <message>
         <source>Relay non-P2SH multisig (default: %u)</source>
-        <translation>Relay non-P2SH multisig (default: %u)</translation>
+        <translation>Inoltra non-P2SH multisig (default: %u)</translation>
     </message>
     <message>
         <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Rescan the block chain for missing wallet transactions</translation>
+        <translation>Riesegui la scansione della blockchain per cercare le transazioni mancanti.</translation>
     </message>
     <message>
         <source>Rescanning...</source>
-        <translation>Rescanning...</translation>
+        <translation>Scansiona nuovamente...</translation>
     </message>
     <message>
         <source>ResetMintZerocoin finished: </source>
-        <translation>ResetMintZerocoin finished: </translation>
+        <translation>ResetMintZerocoin terminato: </translation>
     </message>
     <message>
         <source>ResetSpentZerocoin finished: </source>
-        <translation>ResetSpentZerocoin finished: </translation>
+        <translation>ResetSpentZerocoin terminato: </translation>
     </message>
     <message>
         <source>Run a thread to flush wallet periodically (default: %u)</source>
-        <translation>Run a thread to flush wallet periodically (default: %u)</translation>
+        <translation>Esegui un thread per scaricare periodicamente il portafoglio (default: %u)</translation>
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
-        <translation>Run in the background as a daemon and accept commands</translation>
+        <translation>Esegui in background come demone e accetta comandi</translation>
     </message>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Send transactions as zero-fee transactions if possible (default: %u)</translation>
+        <translation>Invia transazioni come transazioni a costo zero, se possibile (default: %u)</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Set database cache size in megabytes (%d to %d, default: %d)</translation>
+        <translation>Imposta la dimensione della cache del database in megabyte (%d a %d, default: %d)</translation>
     </message>
     <message>
         <source>Set external address:port to get to this masternode (example: %s)</source>
-        <translation>Set external address:port to get to this masternode (example: %s)</translation>
+        <translation>Imposta indirizzo esterno:porta per arrivare a questo nodo principale (esempio: %s)</translation>
     </message>
     <message>
         <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation>Set key pool size to &lt;n&gt; (default: %u)</translation>
+        <translation>Impostare la dimensione del pool di chiavi su&lt;n&gt; (default: %u)</translation>
     </message>
     <message>
         <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Set maximum block size in bytes (default: %d)</translation>
+        <translation>Imposta la dimensione massima del blocco in byte (default: %d)</translation>
     </message>
     <message>
         <source>Set minimum block size in bytes (default: %u)</source>
-        <translation>Set minimum block size in bytes (default: %u)</translation>
+        <translation>Imposta la dimensione minima del blocco in byte (default: %u)</translation>
     </message>
     <message>
         <source>Set the Maximum reorg depth (default: %u)</source>
-        <translation>Set the Maximum reorg depth (default: %u)</translation>
+        <translation>Imposta la profondit&#224; massima del reorg (default: %u)</translation>
     </message>
     <message>
         <source>Set the masternode private key</source>
-        <translation>Set the masternode private key</translation>
+        <translation>Impostare la chiave privata del Masternode</translation>
     </message>
     <message>
         <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation>Set the number of threads to service RPC calls (default: %d)</translation>
+        <translation>Imposta il numero di thread per servire le chiamate RPC (default: %d)</translation>
     </message>
     <message>
         <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
-        <translation>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</translation>
+        <translation>Imposta il flag DB_PRIVATE nell'ambiente db del portafoglio (default: %u)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Show all debugging options (usage: --help -help-debug)</translation>
+        <translation>Mostra tutte le opzioni di debug (uso: --help -help-debug)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Shrink debug.log file on client startup (default: 1 when no -debug)</translation>
+        <translation>Riduci il file debug.log all'avvio del client (impostazione predefinita: 1 se non -debug)</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
-        <translation>Signing transaction failed</translation>
+        <translation>Firma della transazione non riuscita</translation>
     </message>
     <message>
         <source>Specify configuration file (default: %s)</source>
-        <translation>Specify configuration file (default: %s)</translation>
+        <translation>Specificare il file di configurazione (default: %s)</translation>
     </message>
     <message>
         <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Specify connection timeout in milliseconds (minimum: 1, default: %d)</translation>
+        <translation>Specifica il timeout della connessione in millisecondi (minimo: 1, impostazione predefinita: %d)</translation>
     </message>
     <message>
         <source>Specify data directory</source>
-        <translation>Specify data directory</translation>
+        <translation>Specifica la directory dei dati</translation>
     </message>
     <message>
         <source>Specify masternode configuration file (default: %s)</source>
-        <translation>Specify masternode configuration file (default: %s)</translation>
+        <translation>Specificare il file di configurazione del Masternode (default: %s)</translation>
     </message>
     <message>
         <source>Specify pid file (default: %s)</source>
-        <translation>Specify pid file (default: %s)</translation>
+        <translation>Specifica il file pid (default: %s)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
-        <translation>Specify wallet file (within data directory)</translation>
+        <translation>Specifica il file del portafoglio (all'interno della directory dei dati)</translation>
     </message>
     <message>
         <source>Specify your own public address</source>
-        <translation>Specify your own public address</translation>
+        <translation>Specifica il tuo indirizzo pubblico</translation>
     </message>
     <message>
         <source>Spend Valid</source>
-        <translation>Spend Valid</translation>
+        <translation>Spesa Valida</translation>
     </message>
     <message>
         <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation>Spend unconfirmed change when sending transactions (default: %u)</translation>
+        <translation>Spendi modifiche non confermate quando invii transazioni (default: %u)</translation>
     </message>
     <message>
         <source>Staking options:</source>
-        <translation>Staking options:</translation>
+        <translation>Opzioni di staking:</translation>
     </message>
     <message>
         <source>Stop running after importing blocks from disk (default: %u)</source>
-        <translation>Stop running after importing blocks from disk (default: %u)</translation>
+        <translation>Interrompere l'esecuzione dopo l'importazione di blocchi dal disco (default: %u)</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
-        <translation>Synchronization failed</translation>
+        <translation>Sincronizzazione non riuscita</translation>
     </message>
     <message>
         <source>Synchronization finished</source>
-        <translation>Synchronization finished</translation>
+        <translation>Sincronizzazione finita</translation>
     </message>
     <message>
         <source>Synchronizing budgets...</source>
-        <translation>Synchronizing budgets...</translation>
+        <translation>Sincronizzazione budgets...</translation>
     </message>
     <message>
         <source>Synchronizing masternode winners...</source>
-        <translation>Synchronizing masternode winners...</translation>
+        <translation>Sincronizzazione dei Masternode vincitori...</translation>
     </message>
     <message>
         <source>Synchronizing masternodes...</source>
-        <translation>Synchronizing masternodes...</translation>
+        <translation>Sincronizzazione dei Masternode...</translation>
     </message>
     <message>
         <source>Synchronizing sporks...</source>
-        <translation>Synchronizing sporks...</translation>
+        <translation>Sincronizzazione sporks...</translation>
     </message>
     <message>
         <source>Syncing zPIV wallet...</source>
-        <translation>Syncing zEUNO wallet...</translation>
+        <translation>Sincronizzazione del portafoglio zEUNO...</translation>
     </message>
     <message>
         <source>The threshold value cannot be less than %s</source>
-        <translation>The threshold value cannot be less than %s</translation>
+        <translation>Il valore di soglia non pu&#242; essere inferiore a %s</translation>
     </message>
     <message>
         <source>This help message</source>
-        <translation>This help message</translation>
+        <translation>Questo messaggio di aiuto</translation>
     </message>
     <message>
         <source>This is experimental software.</source>
-        <translation>This is experimental software.</translation>
+        <translation>Questo &#232; un software sperimentale.</translation>
     </message>
     <message>
         <source>This is intended for regression testing tools and app development.</source>
-        <translation>This is intended for regression testing tools and app development.</translation>
+        <translation>Questo &#232; destinato agli strumenti di test di regressione e allo sviluppo di app.</translation>
     </message>
     <message>
         <source>This is not a masternode. 'local' option disabled.</source>
-        <translation>This is not a masternode. 'local' option disabled.</translation>
+        <translation>Questo non &#232; un masternode. opzione "locale" disattivata.</translation>
     </message>
     <message>
         <source>This is not a masternode.</source>
-        <translation>This is not a masternode.</translation>
+        <translation>Questo non &#232; un masternode.</translation>
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>Threshold for disconnecting misbehaving peers (default: %u)</translation>
+        <translation>Soglia per disconnettere peer che si comportano in modo inappropriato (default: %u)</translation>
     </message>
     <message>
         <source>Too many spends needed</source>
-        <translation>Too many spends needed</translation>
+        <translation>Troppe spese necessarie</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
-        <translation>Tor control port password (default: empty)</translation>
+        <translation>Password della porta di controllo Tor (impostazione predefinita: vuota)</translation>
     </message>
     <message>
         <source>Tor control port to use if onion listening enabled (default: %s)</source>
-        <translation>Tor control port to use if onion listening enabled (default: %s)</translation>
+        <translation>Porta di controllo Tor da utilizzare se l'ascolto onion &#232; abilitato (default: %s)</translation>
     </message>
     <message>
         <source>Transaction Created</source>
-        <translation>Transaction Created</translation>
+        <translation>Transazione creata</translation>
     </message>
     <message>
         <source>Transaction Mint Started</source>
-        <translation>Transaction Mint Started</translation>
+        <translation>Transazione di forgiatura iniziata</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
-        <translation>Transaction amount too small</translation>
+        <translation>Transazione troppo piccola</translation>
     </message>
     <message>
         <source>Transaction amounts must be positive</source>
-        <translation>Transaction amounts must be positive</translation>
+        <translation>Gli importi delle transazioni devono essere positivi</translation>
     </message>
     <message>
         <source>Transaction canceled.</source>
-        <translation>Transaction canceled.</translation>
+        <translation>Transazione cancellata.</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
-        <translation>Transaction too large for fee policy</translation>
+        <translation>Transazione troppo grande per le regole dei costi</translation>
     </message>
     <message>
         <source>Transaction too large</source>
-        <translation>Transaction too large</translation>
+        <translation>Transazione troppo grande</translation>
     </message>
     <message>
         <source>Trying to spend an already spent serial #, try again.</source>
-        <translation>Trying to spend an already spent serial #, try again.</translation>
+        <translation>Tentativo di spendere un numero seriale gi&#224; esaurito, riprovare.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
-        <translation>Unable to bind to %s on this computer (bind returned error %s)</translation>
+        <translation>Impossibile associare %s su questo computer (errore associato restituito %s)</translation>
     </message>
     <message>
         <source>Unable to generate initial key</source>
-        <translation>Unable to generate initial key</translation>
+        <translation>Impossibile generare la chiave iniziale</translation>
     </message>
     <message>
         <source>Unable to generate keys</source>
-        <translation>Unable to generate keys</translation>
+        <translation>Impossibile generare le chiavi</translation>
     </message>
     <message>
         <source>Unable to sign spork message, wrong key?</source>
-        <translation>Unable to sign spork message, wrong key?</translation>
+        <translation>Impossibile firmare il messaggio spork, chiave errata?</translation>
     </message>
     <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
-        <translation>Unable to start HTTP server. See debug log for details.</translation>
+        <translation>Impossibile avviare il server HTTP. Vedi il registro di debug per i dettagli.</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Unknown network specified in -onlynet: '%s'</translation>
+        <translation>Rete sconosciuta specificata in -onlynet: '%s'</translation>
     </message>
     <message>
         <source>Unsupported logging category %s=%s.</source>
-        <translation>Unsupported logging category %s=%s.</translation>
+        <translation>Categoria di accesso non supportata %s=%s.</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
-        <translation>Upgrade wallet to latest format</translation>
+        <translation>Aggiorna all'ultimo formato del portafoglio </translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>Use UPnP to map the listening port (default: %u)</translation>
+        <translation>Utilizzare UPnP per mappare la porta di ascolto (default: %u)</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Use UPnP to map the listening port (default: 1 when listening)</translation>
+        <translation>Utilizzare UPnP per mappare la porta di ascolto (default: 1 in ascolto)</translation>
     </message>
     <message>
         <source>Use a custom max chain reorganization depth (default: %u)</source>
-        <translation>Use a custom max chain reorganization depth (default: %u)</translation>
+        <translation>Utilizzare una profondit&#224; di riorganizzazione della catena massima personalizzata (default: %u)</translation>
     </message>
     <message>
         <source>Use the test network</source>
-        <translation>Use the test network</translation>
+        <translation>Usa la rete di test</translation>
     </message>
     <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
-        <translation>User Agent comment (%s) contains unsafe characters.</translation>
+        <translation>Il commento del User Agent (%s) contiene caratteri non sicuri.</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
-        <translation>Username for JSON-RPC connections</translation>
+        <translation>Nome utente per connessioni JSON-RPC</translation>
     </message>
     <message>
         <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Value is below the smallest available denomination (= 1) of zEUNO</translation>
+        <translation>Il valore &#232; inferiore alla denominazione pi&#249; piccola disponibile (=1) di zEUNO</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
-        <translation>Verifying blocks...</translation>
+        <translation>Verifica dei blocchi...</translation>
     </message>
     <message>
         <source>Verifying wallet...</source>
-        <translation>Verifying wallet...</translation>
+        <translation>Verifica del portafoglio...</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>
-        <translation>Wallet %s resides outside data directory %s</translation>
+        <translation>Il portafoglio %s risiede al di fuori della directory di dati %s</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
-        <translation>Wallet needed to be rewritten: restart EUNO Core to complete</translation>
+        <translation>Il portafoglio doveva essere riscritto: riavviare EUNO Core per completare</translation>
     </message>
     <message>
         <source>Wallet options:</source>
-        <translation>Wallet options:</translation>
+        <translation>Opzioni del portafoglio:</translation>
     </message>
     <message>
         <source>Wallet window title</source>
-        <translation>Wallet window title</translation>
+        <translation>Titolo della finestra del portafoglio</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>Warning</translation>
+        <translation>Avvertimento</translation>
     </message>
     <message>
         <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Warning: This version is obsolete, upgrade required!</translation>
+        <translation>Attenzione: questa versione &#232; obsoleta, &#232; necessario l'aggiornamento!</translation>
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</translation>
+        <translation>Avvertenza: argomento non supportato -benchmark ignorato, utilizzare -debug=bench.</translation>
     </message>
     <message>
         <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>Warning: Unsupported argument -debugnet ignored, use -debug=net.</translation>
+        <translation>Avvertenza: argomento non supportato -debugnet ignorato, utilizzare -debug=net.</translation>
     </message>
     <message>
         <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>You don't have enough Zerocoins in your wallet</translation>
+        <translation>Non hai abbastanza Zerocoin nel tuo portafoglio</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
-        <translation>You need to rebuild the database using -reindex to change -txindex</translation>
+        <translation>&#200; necessario ricostruire il database utilizzando -reindex per modificare -txindex</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
-        <translation>Zapping all transactions from wallet...</translation>
+        <translation>Zapping di tutte le transazioni dal portafoglio...</translation>
     </message>
     <message>
         <source>ZeroMQ notification options:</source>
-        <translation>ZeroMQ notification options:</translation>
+        <translation>Opzioni di notifica ZeroMQ:</translation>
     </message>
     <message>
         <source>Zerocoin minting available only on regtest</source>
-        <translation>Zerocoin minting available only on regtest</translation>
+        <translation>Coniatura di Zerocoin disponibile solo su regtest</translation>
     </message>
     <message>
         <source>Zerocoin options:</source>
-        <translation>Zerocoin options:</translation>
+        <translation>Opzioni Zerocoin:</translation>
     </message>
     <message>
         <source>on startup</source>
-        <translation>on startup</translation>
+        <translation>all'avvio</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
-        <translation>wallet.dat corrupt, salvage failed</translation>
+        <translation>wallet.dat corrotto, recupero fallito</translation>
     </message>
 </context>
 <context>
     <name>send</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <source>Send</source>
-        <translation>Send</translation>
+        <translation>Invia</translation>
     </message>
     <message>
         <source>Send public coins (PIV)</source>
-        <translation>Send public coins (EUNO)</translation>
+        <translation>Inviare monete pubbliche (EUNO)</translation>
     </message>
     <message>
         <source>PIVX address or contact label</source>
-        <translation>EUNO address or contact label</translation>
+        <translation>Indirizzo EUNO o etichetta contatto</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Amount</translation>
+        <translation>Ammontare</translation>
     </message>
     <message>
         <source>Customize fee</source>
-        <translation>Customize fee</translation>
+        <translation>Tariffa personalizzata</translation>
     </message>
     <message>
         <source>Clear all</source>
-        <translation>Clear all</translation>
+        <translation>Cancella tutto</translation>
     </message>
     <message>
         <source>Add recipient</source>
-        <translation>Add recipient</translation>
+        <translation>Aggiungi destinatario</translation>
     </message>
     <message>
         <source>Total to send</source>
-        <translation>Total to send</translation>
+        <translation>Totale da mandare</translation>
     </message>
     <message>
         <source>Reset to default</source>
-        <translation>Reset to default</translation>
+        <translation>Ripristina valori predefiniti.</translation>
     </message>
     <message>
         <source>Include delegated</source>
-        <translation>Include delegated</translation>
+        <translation>Includi delgato</translation>
     </message>
 </context>
 </TS>

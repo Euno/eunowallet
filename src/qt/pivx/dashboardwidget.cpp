@@ -242,17 +242,12 @@ void DashboardWidget::onTxArrived(const QString& hash, const bool& isCoinStake, 
 
 void DashboardWidget::showList()
 {
-    if (filter->rowCount() == 0) {
-        ui->emptyContainer->setVisible(true);
-        ui->listTransactions->setVisible(false);
-        ui->comboBoxSortType->setVisible(false);
-        ui->comboBoxSort->setVisible(false);
-    } else {
-        ui->emptyContainer->setVisible(false);
-        ui->listTransactions->setVisible(true);
-        ui->comboBoxSortType->setVisible(true);
-        ui->comboBoxSort->setVisible(true);
-    }
+    const auto filterRows = filter->rowCount();
+    const auto modelSize = txModel->size();
+    ui->emptyContainer->setVisible(filterRows == 0);
+    ui->listTransactions->setVisible(filterRows != 0);
+    ui->comboBoxSortType->setVisible(modelSize > 0);
+    ui->comboBoxSort->setVisible(modelSize > 0);
 }
 
 void DashboardWidget::updateDisplayUnit()
@@ -323,12 +318,7 @@ void DashboardWidget::onSortTypeChanged(const QString& value)
     filter->setTypeFilter(filterByType);
     ui->listTransactions->update();
 
-    if (filter->rowCount() == 0) {
-        ui->emptyContainer->setVisible(true);
-        ui->listTransactions->setVisible(false);
-    } else {
-        showList();
-    }
+    showList();
 
     // Store settings
     QSettings settings;

@@ -124,6 +124,10 @@ script: |
   done
 
   cd euno
+
+  mkdir -p ./temp/euno-1.0.0/
+  cp -rf ./depends/ ./temp/euno-1.0.0/
+
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do
