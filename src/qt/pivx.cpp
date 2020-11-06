@@ -91,10 +91,13 @@ static QString GetLangTerritory(bool forceLangFromSetting = false)
 {
     QSettings settings;
     // Get desired locale (e.g. "de_DE")
-    // 1) Language from QSettings
+    // 1) System default language
+    QString lang_territory = QLocale::system().name();
+    // 2) Language from QSettings
     QString lang_territory_qsettings = settings.value("language", "").toString();
-    // 2) -lang command line argument
-    QString lang_territory = QLocale(QLocale::English, QLocale::UnitedStates).name();
+    if (!lang_territory_qsettings.isEmpty())
+        lang_territory = lang_territory_qsettings;
+    // 3) -lang command line argument
     lang_territory = QString::fromStdString(GetArg("-lang", lang_territory.toStdString()));
     return (forceLangFromSetting) ? lang_territory_qsettings : lang_territory;
 }
