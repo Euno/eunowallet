@@ -738,8 +738,7 @@ for staking</source>
         <translation>&#50948;&#51076; &#45936;&#51060;&#53552; &#47196;&#46377; &#50640;&#47084;: %1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
-stake on your behalf, while you keep the keys securely offline.</source>
+        <source>You can delegate your PIVs, letting a hot node (24/7 online node) stake on your behalf, while you keep the keys securely offline.</source>
         <translation>&#50504;&#51204;&#55176; &#44060;&#51064; &#54532;&#46972;&#51060;&#48727; &#53412;&#47484; &#50724;&#54532;&#46972;&#51064;&#51004;&#47196; &#48372;&#44288;&#54620; &#49345;&#53468;&#47196;, &#44032;&#51648;&#44256; &#44228;&#49888; EUNO &#47484; &#47588;&#51068; 24&#49884;&#44036; &#50728;&#46972;&#51064;&#51004;&#47196; &#46028;&#50500;&#44032;&#45716; &#54635; &#45432;&#46300;&#47196; &#50948;&#51076;&#54616;&#50668;, &#45824;&#49888; &#49828;&#53580;&#51060;&#53433;&#51012; &#54616;&#44172; &#54624;&#49688; &#51080;&#49845;&#45768;&#45796;. </translation>
     </message>
     <message>

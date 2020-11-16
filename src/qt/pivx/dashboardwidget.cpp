@@ -376,9 +376,9 @@ void DashboardWidget::setChartShow(ChartShowType type)
     if (isChartInitialized) refreshChart();
 }
 
-const QStringList monthsNames = {QObject::tr("Jan"), QObject::tr("Feb"), QObject::tr("Mar"), QObject::tr("Apr"),
-                                 QObject::tr("May"), QObject::tr("Jun"), QObject::tr("Jul"), QObject::tr("Aug"),
-                                 QObject::tr("Sep"), QObject::tr("Oct"), QObject::tr("Nov"), QObject::tr("Dec")};
+const QStringList monthsNames = {QString("Jan"), QString("Feb"), QString("Mar"), QString("Apr"),
+                                 QString("May"), QString("Jun"), QString("Jul"), QString("Aug"),
+                                 QString("Sep"), QString("Oct"), QString("Nov"), QString("Dec")};
 
 void DashboardWidget::loadChart()
 {
@@ -389,7 +389,7 @@ void DashboardWidget::loadChart()
             QDate currentDate = QDate::currentDate();
             monthFilter = currentDate.month();
             yearFilter = currentDate.year();
-            for (int i = 1; i < 13; ++i) ui->comboBoxMonths->addItem(QString(monthsNames[i-1]), QVariant(i));
+            for (int i = 1; i < 13; ++i) ui->comboBoxMonths->addItem(QObject::tr(monthsNames[i-1].toStdString().c_str()), QVariant(i));
             ui->comboBoxMonths->setCurrentIndex(monthFilter - 1);
             connect(ui->comboBoxMonths, static_cast<void (QComboBox::*)(const QString&)>(&QComboBox::currentIndexChanged),
                 this, &DashboardWidget::onChartMonthChanged);
@@ -590,7 +590,7 @@ bool DashboardWidget::loadChartData(bool withMonthNames)
             chartData->totalZpiv += pair.second;
         }
 
-        chartData->xLabels << ((withMonthNames) ? monthsNames[num - 1] : QString::number(num));
+        chartData->xLabels << ((withMonthNames) ? QObject::tr(monthsNames[num - 1].toStdString().c_str()) : QString::number(num));
 
         chartData->valuesPiv.append(piv);
         chartData->valueszPiv.append(zpiv);

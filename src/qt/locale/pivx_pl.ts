@@ -742,8 +742,7 @@ do stakingu</translation>
         <translation>B&#322;&#261;d &#322;adowania delegacji: %1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
-stake on your behalf, while you keep the keys securely offline.</source>
+        <source>You can delegate your PIVs, letting a hot node (24/7 online node) stake on your behalf, while you keep the keys securely offline.</source>
         <translation>Mo&#380;esz delegowa&#263; swoje EUNO, u&#380;ywaj&#261;c gor&#261;cego w&#281;z&#322;a (w&#281;ze&#322; online 24/7)
 stake w Twoim imieniu, podczas gdy klucze s&#261; bezpiecznie offline.</translation>
     </message>
@@ -5479,8 +5478,8 @@ Portfel EUNO Core</translation>
         <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The EUNO Core Developers</source>
-        <translation>Copyright (C) 2015-%i The EUNO Core Developers</translation>
+        <source>Copyright (C) 2020-%i The EUNO Core Developers</source>
+        <translation>Copyright (C) 2020-%i The EUNO Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

@@ -97,14 +97,14 @@ void TxDetailDialog::setData(WalletModel *model, const QModelIndex &index)
         if (tx->vout.size() == 1) {
             ui->textSendLabel->setText(address);
         } else {
-            ui->textSendLabel->setText(QString::number(tx->vout.size()) + " recipients");
+            ui->textSendLabel->setText(tr("%n recipients", "", tx->vout.size()));
         }
         ui->textSend->setVisible(false);
 
         ui->textInputs->setText(QString::number(tx->vin.size()));
         ui->textConfirmations->setText(QString::number(rec->status.depth));
         ui->textDate->setText(GUIUtil::dateTimeStrWithSeconds(date));
-        ui->textStatus->setText(QString::fromStdString(rec->statusToString()));
+        ui->textStatus->setText(tr(rec->statusToString().c_str()));
         ui->textSize->setText(QString::number(rec->size) + " bytes");
 
         connect(ui->pushCopy, &QPushButton::clicked, [this](){
@@ -141,7 +141,7 @@ void TxDetailDialog::setData(WalletModel *model, WalletModelTransaction &tx)
         }
         ui->pushOutputs->setVisible(false);
     } else {
-        ui->textSendLabel->setText(QString::number(nRecipients) + " recipients");
+        ui->textSendLabel->setText(tr("%n recipients", "", nRecipients));
         ui->textSend->setVisible(false);
     }
     ui->textInputs->setText(QString::number(tx.getTransaction()->vin.size()));

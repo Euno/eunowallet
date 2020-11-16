@@ -35,7 +35,7 @@ AskPassphraseDialog::AskPassphraseDialog(Mode mode, QWidget* parent, WalletModel
 
     ui->left->setProperty("cssClass", "container-dialog");
 
-    ui->labelTitle->setText("Change passphrase");
+    ui->labelTitle->setText(tr("Change passphrase"));
     ui->labelTitle->setProperty("cssClass", "text-title-screen");
 
     ui->warningLabel->setProperty("cssClass", "text-subtitle");
@@ -50,13 +50,13 @@ AskPassphraseDialog::AskPassphraseDialog(Mode mode, QWidget* parent, WalletModel
     initCssEditLine(ui->passEdit2);
     initCssEditLine(ui->passEdit3);
 
-    ui->passLabel1->setText("Current passphrase");
+    ui->passLabel1->setText(tr("Current passphrase"));
     ui->passLabel1->setProperty("cssClass", "text-title");
 
-    ui->passLabel2->setText("New passphrase");
+    ui->passLabel2->setText(tr("New passphrase"));
     ui->passLabel2->setProperty("cssClass", "text-title");
 
-    ui->passLabel3->setText("Repeat passphrase");
+    ui->passLabel3->setText(tr("Repeat passphrase"));
     ui->passLabel3->setProperty("cssClass", "text-title");
 
     setCssProperty(ui->passWarningLabel, "text-warning-small");
@@ -347,9 +347,9 @@ void AskPassphraseDialog::warningMessage()
     openStandardDialog(
             tr("Wallet encrypted"),
             "<qt>" +
-            tr("EUNO will close now to finish the encryption process. "
+            tr("PIVX will close now to finish the encryption process. "
                "Remember that encrypting your wallet cannot fully protect "
-               "your EUNOs from being stolen by malware infecting your computer.")+
+               "your PIVs from being stolen by malware infecting your computer.")+
             "<br><br><b>" +
             tr("IMPORTANT: Any previous backups you have made of your wallet file "
                "should be replaced with the newly generated, encrypted wallet file. "

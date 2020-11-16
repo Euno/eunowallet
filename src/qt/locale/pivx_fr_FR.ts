@@ -777,8 +777,7 @@ pour le staking</translation>
         <translation>Erreur lors du chargement des d&#233;l&#233;gations: %1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
-stake on your behalf, while you keep the keys securely offline.</source>
+        <source>You can delegate your PIVs, letting a hot node (24/7 online node) stake on your behalf, while you keep the keys securely offline.</source>
         <translation>Vous pouvez d&#233;l&#233;guer vos EUNOs et laissez un noeud &#224; chaud (en ligne 24/7) faire du staking en votre nom, tout en conservant les cl&#233;s priv&#233;es hors ligne.</translation>
     </message>
     <message>

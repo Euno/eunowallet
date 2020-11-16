@@ -120,13 +120,13 @@ Using this mechanism you can share your keys without middle-man risk, only need 
               <widget class="QPushButton" name="pushLeft">
                <property name="minimumSize">
                 <size>
-                 <width>120</width>
+                 <width>0</width>
                  <height>30</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>120</width>
+                 <width>300</width>
                  <height>30</height>
                 </size>
                </property>
@@ -148,13 +148,13 @@ Using this mechanism you can share your keys without middle-man risk, only need 
               <widget class="QPushButton" name="pushRight">
                <property name="minimumSize">
                 <size>
-                 <width>120</width>
+                 <width>0</width>
                  <height>30</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>120</width>
+                 <width>300</width>
                  <height>30</height>
                 </size>
                </property>

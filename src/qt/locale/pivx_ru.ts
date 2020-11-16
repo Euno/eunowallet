@@ -308,6 +308,22 @@ Are you sure?</source>
         <translation>&#1053;&#1072;&#1078;&#1072;&#1090;&#1100; &#1082;&#1085;&#1086;&#1087;&#1082;&#1091;</translation>
     </message>
     <message>
+        <source>New passphrase</source>
+        <translation>Новый пароль</translation>
+    </message>
+    <message>
+        <source>Repeat passphrase</source>
+        <translation>Повторите пароль</translation>
+    </message>
+    <message>
+        <source>Current passphrase</source>
+        <translation>Текущий пароль</translation>
+    </message>
+    <message>
+        <source>Change passphrase</source>
+        <translation>Текущий пароль</translation>
+    </message>
+    <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1085;&#1086;&#1074;&#1099;&#1081; &#1087;&#1072;&#1088;&#1086;&#1083;&#1100; &#1082; &#1082;&#1086;&#1096;&#1077;&#1083;&#1100;&#1082;&#1091;. &lt;br/&gt;&#1048;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1081;&#1090;&#1077; &#1087;&#1088;&#1080; &#1101;&#1090;&#1086;&#1084; &#1076;&#1077;&#1089;&#1103;&#1090;&#1100; &lt;/b&gt;&#1080;&#1083;&#1080; &#1073;&#1086;&#1083;&#1077;&#1077; &#1089;&#1083;&#1091;&#1095;&#1072;&#1081;&#1085;&#1099;&#1093; &#1089;&#1080;&#1084;&#1074;&#1086;&#1083;&#1086;&#1074; &lt;/b&gt;&#1080;&#1083;&#1080; &#1074;&#1086;&#1089;&#1077;&#1084; &#1080; &#1073;&#1086;&#1083;&#1077;&#1077; &#1089;&#1083;&#1086;&#1074;.</translation>
     </message>
@@ -776,8 +792,7 @@ for staking</source>
         <translation>&#1054;&#1096;&#1080;&#1073;&#1082;&#1072; &#1087;&#1088;&#1080; &#1079;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1077; &#1076;&#1077;&#1083;&#1077;&#1075;&#1072;&#1094;&#1080;&#1081;: %1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
-stake on your behalf, while you keep the keys securely offline.</source>
+        <source>You can delegate your PIVs, letting a hot node (24/7 online node) stake on your behalf, while you keep the keys securely offline.</source>
         <translation>&#1042;&#1099; &#1084;&#1086;&#1078;&#1077;&#1090;&#1077; &#1076;&#1077;&#1083;&#1077;&#1075;&#1080;&#1088;&#1086;&#1074;&#1072;&#1090;&#1100; &#1089;&#1074;&#1086;&#1080; EUNO, &#1087;&#1086;&#1079;&#1074;&#1086;&#1083;&#1103;&#1103; &#1075;&#1086;&#1088;&#1103;&#1095;&#1077;&#1084;&#1091; &#1091;&#1079;&#1083;&#1091; (&#1086;&#1085;&#1083;&#1072;&#1081;&#1085;-&#1091;&#1079;&#1083;&#1091;, &#1088;&#1072;&#1073;&#1086;&#1090;&#1072;&#1077;&#1097;&#1077;&#1084;&#1091; 24/7) &#1076;&#1077;&#1083;&#1072;&#1090;&#1100; &#1089;&#1090;&#1077;&#1082;&#1080;&#1085;&#1075; &#1086;&#1090; &#1074;&#1072;&#1096;&#1077;&#1075;&#1086; &#1080;&#1084;&#1077;&#1085;&#1080;, &#1074; &#1090;&#1086; &#1074;&#1088;&#1077;&#1084;&#1103; &#1082;&#1072;&#1082; &#1082;&#1083;&#1102;&#1095;&#1080; &#1085;&#1072;&#1076;&#1077;&#1078;&#1085;&#1086; &#1093;&#1088;&#1072;&#1085;&#1103;&#1090;&#1089;&#1103; &#1074; &#1072;&#1074;&#1090;&#1086;&#1085;&#1086;&#1084;&#1085;&#1086;&#1084; &#1088;&#1077;&#1078;&#1080;&#1084;&#1077;.</translation>
     </message>
     <message>
@@ -999,15 +1014,63 @@ address</source>
     </message>
     <message>
         <source>Days</source>
-        <translation>&#1044;&#1085;&#1077;&#1081;</translation>
+        <translation>Дням</translation>
     </message>
     <message>
         <source>Months</source>
-        <translation>&#1052;&#1077;&#1089;&#1103;&#1094;&#1077;&#1074;</translation>
+        <translation>Месяцам</translation>
     </message>
     <message>
         <source>Years</source>
-        <translation>&#1051;&#1077;&#1090;</translation>
+        <translation>Годам</translation>
+    </message>
+    <message>
+        <source>Jan</source>
+        <translation>&#1071;&#1085;&#1074;&#1072;&#1088;&#1100;</translation>
+    </message>
+    <message>
+        <source>Feb</source>
+        <translation>&#1060;&#1077;&#1074;&#1088;&#1072;&#1083;&#1100;</translation>
+    </message>
+    <message>
+        <source>Mar</source>
+        <translation>&#1052;&#1072;&#1088;&#1090;</translation>
+    </message>
+    <message>
+        <source>Apr</source>
+        <translation>&#1040;&#1087;&#1088;&#1077;&#1083;&#1100;</translation>
+    </message>
+    <message>
+        <source>May</source>
+        <translation>&#1052;&#1072;&#1081;</translation>
+    </message>
+    <message>
+        <source>Jun</source>
+        <translation>&#1048;&#1102;&#1085;&#1100;</translation>
+    </message>
+    <message>
+        <source>Jul</source>
+        <translation>&#1048;&#1102;&#1083;&#1100;</translation>
+    </message>
+    <message>
+        <source>Aug</source>
+        <translation>&#1040;&#1074;&#1075;&#1091;&#1089;&#1090;</translation>
+    </message>
+    <message>
+        <source>Sep</source>
+        <translation>&#1057;&#1077;&#1085;&#1090;&#1103;&#1073;&#1088;&#1100;</translation>
+    </message>
+    <message>
+        <source>Oct</source>
+        <translation>&#1054;&#1082;&#1090;&#1103;&#1073;&#1088;&#1100;</translation>
+    </message>
+    <message>
+        <source>Nov</source>
+        <translation>&#1053;&#1086;&#1103;&#1073;&#1088;&#1100;</translation>
+    </message>
+    <message>
+        <source>Dec</source>
+        <translation>&#1044;&#1077;&#1082;&#1072;&#1073;&#1088;&#1100;</translation>
     </message>
     <message>
         <source>Filter by</source>
@@ -2450,6 +2513,14 @@ Address: %4
         <translation>&#1087;&#1086; &#1076;&#1072;&#1090;&#1077;</translation>
     </message>
     <message>
+        <source>asc</source>
+        <translation>возр</translation>
+    </message>
+    <message>
+        <source>desc</source>
+        <translation>убыв</translation>
+    </message>
+    <message>
         <source>Jan</source>
         <translation>&#1071;&#1085;&#1074;&#1072;&#1088;&#1100;</translation>
     </message>
@@ -3679,7 +3750,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <source>Reset to default</source>
-        <translation>&#1057;&#1073;&#1088;&#1086;&#1089;&#1080;&#1090;&#1100; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080; &#1087;&#1086; &#1091;&#1084;&#1086;&#1083;&#1095;&#1072;&#1085;&#1080;&#1102;</translation>
+        <translation>&#1057;&#1073;&#1088;&#1086;&#1089;&#1080;&#1090;&#1100; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080;</translation>
     </message>
     <message>
         <source>Discard changes</source>
@@ -3919,7 +3990,7 @@ EUNO &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1077;&#1090; &#10
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You must have a balance of PIVX with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (pivx-cli); the command &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You must have a balance of EUNO with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (euno-cli); the command &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Убедитесь, что вы используете кошелек последней версии, и он синхронизирован. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;На вашем балансе должны быть монеты EUNO как минимум с 600 подтверждениями. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Ваш кошелек должен находиться в сети и быть разблокированым для стейкинга. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Как только все условия выполнены, стейкинг включится. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Вы можете посмотреть состояние стейкинга в кошельке наведя мышь на иконку посылки в в верхней части интерфейса кошелька. Эта иконка будет подсвечена и будет показывать &amp;quot;Стекинг активен&amp;quot; обозначая включенный стейкинг. Используя интерфейс командной строки (euno-cli), вы можете выполнить команду &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; для подтверждения, что стейкинг включен. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>4</source>
@@ -3950,12 +4021,12 @@ EUNO &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1077;&#1090; &#10
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           We have support channels in most of our official chat groups, for example
+                           У нас есть каналы поддержки в большинстве наших официальных групп, например
                            &lt;a style='color: #7599f2' href='https://discord.EUNO.co'&gt;
-                           #support in our Discord&lt;/a&gt;.
-                           If you prefer to submit a ticket, You can do so at
+                           #support в нашем Discord&lt;/a&gt;.
+                           Если вы хотите создать тикет, вы можете сделать это на
                            &lt;a style='color: #7599f2' href='https://EUNO.freshdesk.com'&gt;
-                           our Freshdesk support site&lt;/a&gt;.
+                           нашем сайте поддержки Freshdesk&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -3971,7 +4042,7 @@ EUNO &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1077;&#1090; &#10
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 8,000,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 8,000,000 EUNO collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Контроллер Мастерноды - это кошелек, где находятся 8,000,000 EUNO залога во время создания Мастерноды с помощью удаленного Котроллера. Это кошелек, который может активировать удаленный кошелек Мастерноды и позволяет хранить замороженные монеты офлайн пока Мастернода остается в сети. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>
@@ -4098,7 +4169,7 @@ EUNO &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1077;&#1090; &#10
     </message>
     <message>
         <source>Datadir:</source>
-        <translation>Datadir:</translation>
+        <translation>Путь к файлу кошелька:</translation>
     </message>
     <message>
         <source>Startup time:</source>
@@ -4110,7 +4181,7 @@ EUNO &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1077;&#1090; &#10
     </message>
     <message>
         <source>Number of Masternodes:</source>
-        <translation>&#1063;&#1080;&#1089;&#1083;&#1086; &#1052;&#1072;&#1089;&#1090;&#1077;&#1088;&#1085;&#1086;&#1076;:</translation>
+        <translation>&#1050;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1090;&#1074;&#1086; &#1084;&#1072;&#1089;&#1090;&#1077;&#1088;&#1085;&#1086;&#1076;:</translation>
     </message>
     <message>
         <source>Current number of blocks:</source>
@@ -4197,7 +4268,7 @@ EUNO &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1077;&#1090; &#10
     </message>
     <message>
         <source>Reset to default</source>
-        <translation>&#1057;&#1073;&#1088;&#1086;&#1089;&#1080;&#1090;&#1100; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080; &#1087;&#1086; &#1091;&#1084;&#1086;&#1083;&#1095;&#1072;&#1085;&#1080;&#1102;</translation>
+        <translation>&#1057;&#1073;&#1088;&#1086;&#1089;&#1080;&#1090;&#1100; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080;</translation>
     </message>
     <message>
         <source>Discard changes</source>
@@ -4531,7 +4602,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <source>Reset to default</source>
-        <translation>&#1057;&#1073;&#1088;&#1086;&#1089;&#1080;&#1090;&#1100; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080; &#1087;&#1086; &#1091;&#1084;&#1086;&#1083;&#1095;&#1072;&#1085;&#1080;&#1102;</translation>
+        <translation>&#1057;&#1073;&#1088;&#1086;&#1089;&#1080;&#1090;&#1100; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080;</translation>
     </message>
     <message>
         <source>Discard changes</source>
@@ -4933,9 +5004,69 @@ Are you sure?
         <source>Staking not active</source>
         <translation>&#1057;&#1090;&#1077;&#1082;&#1080;&#1085;&#1075; &#1085;&#1077; &#1072;&#1082;&#1090;&#1080;&#1074;&#1077;&#1085;</translation>
     </message>
+    <message numerus="yes">
+        <source>%n active connection(s)</source>
+        <translation>
+            <numerusform>%n активное подключение</numerusform>
+            <numerusform>%n активных подключения</numerusform>
+            <numerusform>%n активных подключений</numerusform>
+        </translation>
+    </message>
     <message>
         <source>Synchronized - Block: %1</source>
         <translation>&#1057;&#1080;&#1085;&#1093;&#1088;&#1086;&#1085;&#1080;&#1079;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1086; - &#1041;&#1083;&#1086;&#1082;: %1</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation>
+            <numerusform>%n час</numerusform>
+            <numerusform>%n часа</numerusform>
+            <numerusform>%n часов</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation>
+            <numerusform>%n день</numerusform>
+            <numerusform>%n дня</numerusform>
+            <numerusform>%n дней</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation>
+            <numerusform>%n неделю</numerusform>
+            <numerusform>%n недели</numerusform>
+            <numerusform>%n недель</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation>
+            <numerusform>%n год</numerusform>
+            <numerusform>%n года</numerusform>
+            <numerusform>%n лет</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Synchronizing budgets... - Block: %1</source>
+        <translation>&#1057;&#1080;&#1085;&#1093;&#1088;&#1086;&#1085;&#1080;&#1079;&#1072;&#1094;&#1080;&#1103; &#1073;&#1102;&#1076;&#1078;&#1077;&#1090;&#1086;&#1074; - &#1041;&#1083;&#1086;&#1082;: %1</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode winners... - Block: %1</source>
+        <translation>&#1057;&#1080;&#1085;&#1093;&#1088;&#1086;&#1085;&#1080;&#1079;&#1072;&#1094;&#1080;&#1103; &#1084;&#1072;&#1089;&#1090;&#1077;&#1088;&#1085;&#1086;&#1076; &#1087;&#1086;&#1073;&#1077;&#1076;&#1080;&#1090;&#1077;&#1083;&#1077;&#1081; - &#1041;&#1083;&#1086;&#1082;: %1</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes... - Block: %1</source>
+        <translation>&#1057;&#1080;&#1085;&#1093;&#1088;&#1086;&#1085;&#1080;&#1079;&#1072;&#1094;&#1080;&#1103; &#1084;&#1072;&#1089;&#1090;&#1077;&#1088;&#1085;&#1086;&#1076; - &#1041;&#1083;&#1086;&#1082;: %1</translation>
+    </message>
+    <message>
+        <source>Synchronizing sporks... - Block: %1</source>
+        <translation>&#1057;&#1080;&#1085;&#1093;&#1088;&#1086;&#1085;&#1080;&#1079;&#1072;&#1094;&#1080;&#1103; &#1089;&#1087;&#1086;&#1088;&#1082;&#1086;&#1074; - &#1041;&#1083;&#1086;&#1082;: %1</translation>
+    </message>
+    <message>
+        <source> behind. Scanning block </source>
+        <translation> позади. Сканирую блок </translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -4996,6 +5127,10 @@ backup will be created.
     <message>
         <source>Cold Staking Disabled</source>
         <translation>&#1061;&#1086;&#1083;&#1086;&#1076;&#1085;&#1099;&#1081; &#1089;&#1090;&#1077;&#1082;&#1080;&#1085;&#1075; &#1086;&#1090;&#1082;&#1083;&#1102;&#1095;&#1077;&#1085;</translation>
+    </message>
+    <message>
+        <source>Cold Staking Enabled</source>
+        <translation>&#1061;&#1086;&#1083;&#1086;&#1076;&#1085;&#1099;&#1081; &#1089;&#1090;&#1077;&#1082;&#1080;&#1085;&#1075; &#1074;&#1082;&#1083;&#1102;&#1095;&#1077;&#1085;</translation>
     </message>
     <message>
         <source> %54 Synchronizing..</source>
@@ -5416,6 +5551,54 @@ backup will be created.
     <message>
         <source>Form</source>
         <translation>&#1042;&#1080;&#1076;</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n recipients</source>
+        <translation>
+            <numerusform>%n получатель</numerusform>
+            <numerusform>%n получателя</numerusform>
+            <numerusform>%n получателей</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Confirmed</source>
+        <translation>&#1055;&#1086;&#1076;&#1090;&#1074;&#1077;&#1088;&#1078;&#1076;&#1077;&#1085;&#1086;</translation>
+    </message>
+    <message>
+        <source>Abandoned (not mature because no nodes have confirmed)</source>
+        <translation>Покинуто (не подтверждено нодами)</translation>
+    </message>
+    <message>
+        <source>OpenUntilDate</source>
+        <translation>Открыто до времени</translation>
+    </message>
+    <message>
+        <source>OpenUntilBlock</source>
+        <translation>Открыто до блока</translation>
+    </message>
+    <message>
+        <source>Unconfirmed</source>
+        <translation>Не подтверждено</translation>
+    </message>
+    <message>
+        <source>Confirming</source>
+        <translation>Подтверждается</translation>
+    </message>
+    <message>
+        <source>Conflicted</source>
+        <translation>Конфликт</translation>
+    </message>
+    <message>
+        <source>Immature</source>
+        <translation>Не созрело</translation>
+    </message>
+    <message>
+        <source>Not Accepted</source>
+        <translation>Не принято</translation>
+    </message>
+    <message>
+        <source>No status</source>
+        <translation>Нет статуса</translation>
     </message>
     <message>
         <source>Transaction Details</source>
@@ -6973,7 +7156,7 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <source>Reset to default</source>
-        <translation>&#1057;&#1073;&#1088;&#1086;&#1089;&#1080;&#1090;&#1100; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080; &#1087;&#1086; &#1091;&#1084;&#1086;&#1083;&#1095;&#1072;&#1085;&#1080;&#1102;</translation>
+        <translation>&#1057;&#1073;&#1088;&#1086;&#1089;&#1080;&#1090;&#1100; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080;</translation>
     </message>
     <message>
         <source>Include delegated</source>

@@ -210,13 +210,13 @@ Remember to write it down and store it safely, otherwise you might lose access t
          <widget class="QPushButton" name="pushButtonSave_2">
           <property name="minimumSize">
            <size>
-            <width>200</width>
+            <width>0</width>
             <height>50</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>200</width>
+            <width>400</width>
             <height>50</height>
            </size>
           </property>

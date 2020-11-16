@@ -272,7 +272,7 @@ void ReceiveWidget::showAddressGenerationDialog(bool isPaymentRequest)
         RequestDialog *dialog = new RequestDialog(window);
         dialog->setWalletModel(walletModel);
         dialog->setPaymentRequest(isPaymentRequest);
-        openDialogWithOpaqueBackgroundY(dialog, window, 3.5, 12);
+        openDialogWithOpaqueBackgroundY(dialog, window, 4, 20);
         if (dialog->res == 1) {
             inform(tr("URI copied to clipboard"));
         } else if (dialog->res == 2) {

@@ -112,7 +112,15 @@ void SettingsInformationWidget::loadClientModel()
         // Provide initial values
         ui->labelInfoClient->setText(clientModel->formatFullVersion());
         ui->labelInfoAgent->setText(clientModel->clientName());
-        ui->labelInfoTime->setText(clientModel->formatClientStartupTime());
+        auto timeStr = clientModel->formatClientStartupTime();
+        int count = 0;
+        int i = timeStr.size() - 1;
+        while (i > 0 && !timeStr[i].isDigit()) {
+            count++;
+            i--;
+        }
+        timeStr.chop(count);
+        ui->labelInfoTime->setText(timeStr);
         ui->labelInfoName->setText(QString::fromStdString(Params().NetworkIDString()));
 
         setNumConnections(clientModel->getNumConnections());
@@ -141,7 +149,16 @@ void SettingsInformationWidget::setNumBlocks(int count)
 {
     ui->labelInfoBlockNumber->setText(QString::number(count));
     if (clientModel) {
-        ui->labelInfoBlockTime->setText(clientModel->getLastBlockDate().toString());
+
+        auto timeStr = clientModel->formatDate(clientModel->getLastBlockDate());
+        int count = 0;
+        int i = timeStr.size() - 1;
+        while (i > 0 && !timeStr[i].isDigit()) {
+            count++;
+            i--;
+        }
+        timeStr.chop(count);
+        ui->labelInfoBlockTime->setText(timeStr);
         ui->labelInfoBlockHash->setText(clientModel->getLastBlockHash());
     }
 }

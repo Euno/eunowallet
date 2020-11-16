@@ -765,8 +765,7 @@ za staking</translation>
         <translation>Gre&#353;ka pri u&#269;itavanju delegacija: %1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
-stake on your behalf, while you keep the keys securely offline.</source>
+        <source>You can delegate your PIVs, letting a hot node (24/7 online node) stake on your behalf, while you keep the keys securely offline.</source>
         <translation>Mo&#382;ete delegirati svoje EUNO-ove, dopu&#353;taju&#263;i hot node-u (24/7 online node) da stake-a za Vas, dok su Va&#353;i klju&#269;evi offline na sigurnom.</translation>
     </message>
     <message>

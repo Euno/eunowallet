@@ -776,8 +776,7 @@ for staking</source>
         <translation>Fehler beim Laden der Zuweisungen: %1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
-stake on your behalf, while you keep the keys securely offline.</source>
+        <source>You can delegate your PIVs, letting a hot node (24/7 online node) stake on your behalf, while you keep the keys securely offline.</source>
         <translation>Sie k&#246;nnen Ihre EUNOs zuweisen und einen Node (24/7) f&#252;r Sie staken lassen, w&#228;hrend Sie Ihre Schl&#252;ssel sicher offline verwahren. </translation>
     </message>
     <message>
@@ -5926,8 +5925,8 @@ PIVX Core Wallet</source>
         <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The EUNO Core Developers</source>
-        <translation>Copyright (C) 2015-%i The EUNO Core Developers</translation>
+        <source>Copyright (C) 2020-%i The EUNO Core Developers</source>
+        <translation>Copyright (C) 2020-%i The EUNO Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

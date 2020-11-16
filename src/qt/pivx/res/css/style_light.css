@@ -499,6 +499,7 @@ QPushButton[cssClass="btn-check-stack"] {
 QPushButton[cssClass="btn-check-stack-inactive"] {
     qproperty-icon: url("://ic-check-staking-off");
     qproperty-iconSize: 35px 35px;
+    color:#FFFFFF;
 }
 
 

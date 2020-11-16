@@ -737,8 +737,7 @@ Stake i&#231;in kald&#305;r&#305;n</translation>
         <translation>Delegasyonlar&#305;n y&#252;klenmesinde hata:%1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
-stake on your behalf, while you keep the keys securely offline.</source>
+        <source>You can delegate your PIVs, letting a hot node (24/7 online node) stake on your behalf, while you keep the keys securely offline.</source>
         <translation>S&#305;cak bir d&#252;&#287;&#252;me izin vererek EUNO'lerinizi devredebilirsiniz (7/24 &#231;evrimi&#231;i d&#252;&#287;&#252;m)
 anahtarlar&#305; &#231;evrimd&#305;&#351;&#305; bir &#351;ekilde g&#252;venli tutarken, kendi ad&#305;n&#305;za stake yap&#305;n.</translation>
     </message>
@@ -4994,8 +4993,8 @@ Ho&#351;geldiniz</translation>
         <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The EUNO Core Developers</source>
-        <translation>Copyright (C) 2015-%i The EUNO Core Developers</translation>
+        <source>Copyright (C) 2020-%i The EUNO Core Developers</source>
+        <translation>Copyright (C) 2020-%i The EUNO Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

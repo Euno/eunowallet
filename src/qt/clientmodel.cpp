@@ -10,6 +10,7 @@
 #include "guiconstants.h"
 #include "guiutil.h"
 #include "peertablemodel.h"
+#include "optionsmodel.h"
 
 #include "chainparams.h"
 #include "checkpoints.h"
@@ -207,6 +208,11 @@ QString ClientModel::formatBuildDate() const
     return QString::fromStdString(CLIENT_DATE);
 }
 
+QString ClientModel::formatDate(const QDateTime& date) const
+{
+    return QLocale(optionsModel->getLang()).toString(date);
+}
+
 bool ClientModel::isReleaseVersion() const
 {
     return CLIENT_VERSION_IS_RELEASE;
@@ -219,7 +225,7 @@ QString ClientModel::clientName() const
 
 QString ClientModel::formatClientStartupTime() const
 {
-    return QDateTime::fromTime_t(nClientStartupTime).toString();
+    return QLocale(optionsModel->getLang()).toString(QDateTime::fromTime_t(nClientStartupTime));
 }
 
 QString ClientModel::dataDir() const

@@ -7457,8 +7457,8 @@ EUNO Core Wallet</translation>
     </message>
     <message>
         <location line="+1" />
-        <source>Copyright (C) 2015-%i The EUNO Core Developers</source>
-        <translation>Copyright (C) 2015-%i The EUNO Core Developers</translation>
+        <source>Copyright (C) 2020-%i The EUNO Core Developers</source>
+        <translation>Copyright (C) 2020-%i The EUNO Core Developers</translation>
     </message>
     <message>
         <location line="+1" />
