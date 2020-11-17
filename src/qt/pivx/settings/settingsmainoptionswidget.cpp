@@ -4,6 +4,7 @@
 
 #include "qt/pivx/settings/settingsmainoptionswidget.h"
 #include "qt/pivx/settings/forms/ui_settingsmainoptionswidget.h"
+#include "qt/pivx/defaultdialog.h"
 #include "QListView"
 
 #if defined(HAVE_CONFIG_H)
@@ -54,7 +55,7 @@ SettingsMainOptionsWidget::SettingsMainOptionsWidget(PIVXGUI* _window, QWidget *
     setCssProperty({ui->labelTitleSizeDb, ui->labelTitleThreads}, "text-main-settings");
 
     // Switch
-    ui->pushSwitchStart->setText(tr("Start EUNO on system login"));
+    ui->pushSwitchStart->setText(tr("Start PIVX on system login"));
     ui->pushSwitchStart->setProperty("cssClass", "btn-switch");
 
     // Combobox
@@ -84,7 +85,8 @@ SettingsMainOptionsWidget::SettingsMainOptionsWidget(PIVXGUI* _window, QWidget *
 void SettingsMainOptionsWidget::onResetClicked()
 {
     if (clientModel) {
-        if (!ask(tr("Reset Options"), tr("You are just about to reset the app\'s options to the default values.\n\nAre you sure?\n")))
+        if (!openStandardDialog(tr("Reset Options"), tr("You are just about to reset the app\'s options to the default values.\n\nAre you sure?\n"),
+                                tr("OK"), tr("CANCEL")))
             return;
         OptionsModel *optionsModel = clientModel->getOptionsModel();
         QSettings settings;
@@ -112,4 +114,15 @@ void SettingsMainOptionsWidget::setMapper(QDataWidgetMapper *mapper)
 SettingsMainOptionsWidget::~SettingsMainOptionsWidget()
 {
     delete ui;
+}
+
+bool SettingsMainOptionsWidget::openStandardDialog(const QString& title, const QString& body, const QString& okBtn, const QString& cancelBtn)
+{
+    showHideOp(true);
+    DefaultDialog *confirmDialog = new DefaultDialog(window);
+    confirmDialog->setText(title, body, okBtn, cancelBtn);
+    confirmDialog->adjustSize();
+    openDialogWithOpaqueBackground(confirmDialog, window);
+    confirmDialog->deleteLater();
+    return confirmDialog->isOk;
 }

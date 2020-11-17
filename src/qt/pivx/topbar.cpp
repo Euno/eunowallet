@@ -341,10 +341,10 @@ void TopBar::onColdStakingClicked()
         className = (show) ? "btn-check-cold-staking-checked" : "btn-check-cold-staking-unchecked";
     } else if (show) {
         className = "btn-check-cold-staking";
-        text = "Cold Staking Enabled";
+        text = tr("Cold Staking Enabled");
     } else {
         className = "btn-check-cold-staking-inactive";
-        text = "Cold Staking Disabled";
+        text = tr("Cold Staking Disabled");
     }
 
     ui->pushButtonColdStaking->setButtonClassStyle("cssClass", className, true);
@@ -420,20 +420,20 @@ void TopBar::setNumBlocks(int count)
 
     // Acquire current block source
     enum BlockSource blockSource = clientModel->getBlockSource();
-    std::string text = "";
+    QString text = "";
     switch (blockSource) {
         case BLOCK_SOURCE_NETWORK:
-            text = "Synchronizing..";
+            text = tr("Synchronizing..");
             break;
         case BLOCK_SOURCE_DISK:
-            text = "Importing blocks from disk..";
+            text = tr("Importing blocks from disk..");
             break;
         case BLOCK_SOURCE_REINDEX:
-            text = "Reindexing blocks on disk..";
+            text = tr("Reindexing blocks on disk..");
             break;
         case BLOCK_SOURCE_NONE:
             // Case: not Importing, not Reindexing and no network connection
-            text = "No block source available..";
+            text = tr("No block source available..");
             ui->pushButtonSync->setChecked(false);
             break;
     }
@@ -457,7 +457,7 @@ void TopBar::setNumBlocks(int count)
             int progress = nAttempt + (masternodeSync.RequestedMasternodeAssets - 1) * MASTERNODE_SYNC_THRESHOLD;
             if (progress >= 0) {
                 // todo: MN progress..
-                text = strprintf("%s - Block: %d", masternodeSync.GetSyncStatus(), count);
+                text = tr((masternodeSync.GetSyncStatus() + " - Block: %1").c_str()).arg(QString::number(count));
                 //progressBar->setMaximum(4 * MASTERNODE_SYNC_THRESHOLD);
                 //progressBar->setValue(progress);
                 needState = false;
@@ -490,19 +490,19 @@ void TopBar::setNumBlocks(int count)
             timeBehindText = tr("%1 and %2").arg(tr("%n year(s)", "", years)).arg(
                     tr("%n week(s)", "", remainder / WEEK_IN_SECONDS));
         }
-        QString timeBehind(" behind. Scanning block ");
+        QString timeBehind = tr(" behind. Scanning block ");
         QString str = timeBehindText + timeBehind + QString::number(count);
-        text = str.toStdString();
+        text = str;
 
         progressBar->setMaximum(1000000000);
         progressBar->setValue(clientModel->getVerificationProgress() * 1000000000.0 + 0.5);
     }
 
-    if (text.empty()) {
-        text = "No block source available..";
+    if (text.isEmpty()) {
+        text = tr("No block source available..");
     }
 
-    ui->pushButtonSync->setButtonText(tr(text.data()));
+    ui->pushButtonSync->setButtonText(text);
 }
 
 void TopBar::showUpgradeDialog()

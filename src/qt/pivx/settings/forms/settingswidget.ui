@@ -7,8 +7,20 @@
     <x>0</x>
     <y>0</y>
     <width>629</width>
-    <height>430</height>
+    <height>600</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>600</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -147,9 +159,9 @@
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>-68</y>
-               <width>230</width>
-               <height>452</height>
+               <y>0</y>
+               <width>244</width>
+               <height>554</height>
               </rect>
              </property>
              <property name="sizePolicy">

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>629</width>
+    <width>734</width>
     <height>549</height>
    </rect>
   </property>
@@ -71,7 +71,7 @@
             <property name="maximumSize">
              <size>
               <width>16777215</width>
-              <height>100</height>
+              <height>200</height>
              </size>
             </property>
             <layout class="QHBoxLayout" name="containerTitleLayout">
@@ -176,13 +176,13 @@
                     <widget class="QPushButton" name="pushLeft">
                      <property name="minimumSize">
                       <size>
-                       <width>120</width>
+                       <width>0</width>
                        <height>30</height>
                       </size>
                      </property>
                      <property name="maximumSize">
                       <size>
-                       <width>120</width>
+                       <width>300</width>
                        <height>30</height>
                       </size>
                      </property>
@@ -204,13 +204,13 @@
                     <widget class="QPushButton" name="pushRight">
                      <property name="minimumSize">
                       <size>
-                       <width>120</width>
+                       <width>0</width>
                        <height>30</height>
                       </size>
                      </property>
                      <property name="maximumSize">
                       <size>
-                       <width>120</width>
+                       <width>300</width>
                        <height>30</height>
                       </size>
                      </property>

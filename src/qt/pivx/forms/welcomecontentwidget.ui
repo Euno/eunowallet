@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string></string>
+   <string/>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="spacing">
@@ -30,7 +30,7 @@
     <number>0</number>
    </property>
    <item>
-    <widget class="PFBorderImage" name="frame_2" native="true">
+    <widget class="PFBorderImage" name="frame_2">
      <layout class="QVBoxLayout" name="verticalLayout_1">
       <property name="spacing">
        <number>0</number>
@@ -51,13 +51,13 @@
        <widget class="QWidget" name="container" native="true">
         <property name="minimumSize">
          <size>
-          <width>880</width>
+          <width>1000</width>
           <height>520</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>880</width>
+          <width>1000</width>
           <height>520</height>
          </size>
         </property>
@@ -599,13 +599,13 @@
                    <widget class="QPushButton" name="pushName1">
                     <property name="minimumSize">
                      <size>
-                      <width>110</width>
+                      <width>0</width>
                       <height>0</height>
                      </size>
                     </property>
                     <property name="maximumSize">
                      <size>
-                      <width>100</width>
+                      <width>200</width>
                       <height>16777215</height>
                      </size>
                     </property>
@@ -643,13 +643,13 @@
                    <widget class="QPushButton" name="pushName2">
                     <property name="minimumSize">
                      <size>
-                      <width>110</width>
+                      <width>0</width>
                       <height>0</height>
                      </size>
                     </property>
                     <property name="maximumSize">
                      <size>
-                      <width>100</width>
+                      <width>200</width>
                       <height>16777215</height>
                      </size>
                     </property>
@@ -684,13 +684,13 @@
                    <widget class="QPushButton" name="pushName3">
                     <property name="minimumSize">
                      <size>
-                      <width>110</width>
+                      <width>0</width>
                       <height>0</height>
                      </size>
                     </property>
                     <property name="maximumSize">
                      <size>
-                      <width>100</width>
+                      <width>200</width>
                       <height>16777215</height>
                      </size>
                     </property>
@@ -725,13 +725,13 @@
                    <widget class="QPushButton" name="pushName4">
                     <property name="minimumSize">
                      <size>
-                      <width>150</width>
+                      <width>0</width>
                       <height>0</height>
                      </size>
                     </property>
                     <property name="maximumSize">
                      <size>
-                      <width>100</width>
+                      <width>200</width>
                       <height>16777215</height>
                      </size>
                     </property>

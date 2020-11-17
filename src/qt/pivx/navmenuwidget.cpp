@@ -82,31 +82,37 @@ void NavMenuWidget::connectActions() {
 }
 
 void NavMenuWidget::onSendClicked(){
+    ui->btnSend->setChecked(true);
     window->goToSend();
     onNavSelected(ui->btnSend);
 }
 
 void NavMenuWidget::onDashboardClicked(){
+    ui->btnDashboard->setChecked(true);
     window->goToDashboard();
     onNavSelected(ui->btnDashboard);
 }
 
 void NavMenuWidget::onAddressClicked(){
+    ui->btnAddress->setChecked(true);
     window->goToAddresses();
     onNavSelected(ui->btnAddress);
 }
 
 void NavMenuWidget::onMasterNodesClicked(){
+    ui->btnMaster->setChecked(true);
     window->goToMasterNodes();
     onNavSelected(ui->btnMaster);
 }
 
 void NavMenuWidget::onColdStakingClicked() {
+    ui->btnColdStaking->setChecked(true);
     window->goToColdStaking();
     onNavSelected(ui->btnColdStaking);
 }
 
 void NavMenuWidget::onSettingsClicked(){
+    ui->btnSettings->setChecked(true);
     window->goToSettings();
     onNavSelected(ui->btnSettings);
 }
