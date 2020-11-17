@@ -35,6 +35,8 @@ public Q_SLOTS:
     void onResetClicked();
 
 private:
+    bool openStandardDialog(const QString& title, const QString& body, const QString& okBtn, const QString& cancelBtn);
+
     Ui::SettingsMainOptionsWidget *ui;
 };
 

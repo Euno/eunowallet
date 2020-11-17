@@ -10,6 +10,8 @@
 
 #include "qt/pivx/pivxgui.h"
 
+#include <bitcoinapplication.h>
+#include <bitcoincore.h>
 #include "clientmodel.h"
 #include "guiconstants.h"
 #include "guiutil.h"
@@ -89,10 +91,13 @@ static QString GetLangTerritory(bool forceLangFromSetting = false)
 {
     QSettings settings;
     // Get desired locale (e.g. "de_DE")
-    // 1) Language from QSettings
+    // 1) System default language
+    QString lang_territory = QLocale::system().name();
+    // 2) Language from QSettings
     QString lang_territory_qsettings = settings.value("language", "").toString();
-    // 2) -lang command line argument
-    QString lang_territory = QLocale(QLocale::English, QLocale::UnitedStates).name();
+    if (!lang_territory_qsettings.isEmpty())
+        lang_territory = lang_territory_qsettings;
+    // 3) -lang command line argument
     lang_territory = QString::fromStdString(GetArg("-lang", lang_territory.toStdString()));
     return (forceLangFromSetting) ? lang_territory_qsettings : lang_territory;
 }
@@ -146,99 +151,6 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
     }
 }
 
-/** Class encapsulating PIVX Core startup and shutdown.
- * Allows running startup and shutdown in a different thread from the UI thread.
- */
-class BitcoinCore : public QObject
-{
-    Q_OBJECT
-public:
-    explicit BitcoinCore();
-
-public Q_SLOTS:
-    void initialize();
-    void shutdown();
-    void restart(QStringList args);
-
-Q_SIGNALS:
-    void initializeResult(int retval);
-    void shutdownResult(int retval);
-    void runawayException(const QString& message);
-
-private:
-    /// Flag indicating a restart
-    bool execute_restart;
-
-    /// Pass fatal exception message to UI thread
-    void handleRunawayException(const std::exception* e);
-};
-
-/** Main PIVX application object */
-class BitcoinApplication : public QApplication
-{
-    Q_OBJECT
-public:
-    explicit BitcoinApplication(int& argc, char** argv);
-    ~BitcoinApplication();
-
-#ifdef ENABLE_WALLET
-    /// Create payment server
-    void createPaymentServer();
-#endif
-    /// parameter interaction/setup based on rules
-    void parameterSetup();
-    /// Create options model
-    void createOptionsModel();
-    /// Create main window
-    void createWindow(const NetworkStyle* networkStyle);
-    /// Create splash screen
-    void createSplashScreen(const NetworkStyle* networkStyle);
-
-    /// Create tutorial screen
-    bool createTutorialScreen();
-
-    /// Request core initialization
-    void requestInitialize();
-    /// Request core shutdown
-    void requestShutdown();
-
-    /// Get process return value
-    int getReturnValue() { return returnValue; }
-
-    /// Get window identifier of QMainWindow (PIVXGUI)
-    WId getMainWinId() const;
-
-public Q_SLOTS:
-    void initializeResult(int retval);
-    void shutdownResult(int retval);
-    /// Handle runaway exceptions. Shows a message box with the problem and quits the program.
-    void handleRunawayException(const QString& message);
-    void updateTranslation(bool forceLangFromSettings = false);
-
-Q_SIGNALS:
-    void requestedInitialize();
-    void requestedRestart(QStringList args);
-    void requestedShutdown();
-    void stopThread();
-    void splashFinished(QWidget* window);
-
-private:
-    QThread* coreThread;
-    OptionsModel* optionsModel;
-    ClientModel* clientModel;
-    PIVXGUI* window;
-    QTimer* pollShutdownTimer;
-#ifdef ENABLE_WALLET
-    PaymentServer* paymentServer;
-    WalletModel* walletModel;
-#endif
-    int returnValue;
-    QTranslator qtTranslatorBase, qtTranslator, translatorBase, translator;
-
-    void startThread();
-};
-
-#include "pivx.moc"
 
 BitcoinCore::BitcoinCore() : QObject()
 {

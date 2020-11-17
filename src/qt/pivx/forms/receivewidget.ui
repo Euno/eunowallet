@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>629</width>
-    <height>629</height>
+    <width>855</width>
+    <height>517</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -117,9 +117,21 @@
         </item>
         <item alignment="Qt::AlignHCenter">
          <widget class="QWidget" name="layoutQR" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>610</width>
+            <height>0</height>
+           </size>
+          </property>
           <property name="maximumSize">
            <size>
-            <width>510</width>
+            <width>610</width>
             <height>16777215</height>
            </size>
           </property>

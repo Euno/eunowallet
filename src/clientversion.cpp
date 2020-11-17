@@ -45,8 +45,8 @@ const std::string CLIENT_NAME("EUNO Core");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "b1e92c71a9794053af498ed70208a063f07b2bfe"
-#define GIT_COMMIT_DATE "Fri, 9 Oct 2020 16:42:29 +0000"
+#define GIT_COMMIT_ID "4d53996eb041a12d1481f54981873019955cd34b"
+#define GIT_COMMIT_DATE "Mon, 16 Nov 2020 16:34:46 +0200"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \

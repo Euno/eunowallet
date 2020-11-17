@@ -254,8 +254,8 @@ void fillAddressSortControls(SortEdit* seType, SortEdit* seOrder, QComboBox* box
     boxType->setCurrentIndex(0);
     // Sort Order
     initComboBox(boxOrder, seOrder, "btn-combo-small");
-    boxOrder->addItem("asc", Qt::AscendingOrder);
-    boxOrder->addItem("desc", Qt::DescendingOrder);
+    boxOrder->addItem(QObject::tr("asc"), Qt::AscendingOrder);
+    boxOrder->addItem(QObject::tr("desc"), Qt::DescendingOrder);
     boxOrder->setCurrentIndex(0);
 }
 

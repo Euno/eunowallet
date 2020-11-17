@@ -32,7 +32,7 @@
 
 #define BASE_WINDOW_WIDTH 1200
 #define BASE_WINDOW_HEIGHT 740
-#define BASE_WINDOW_MIN_HEIGHT 620
+#define BASE_WINDOW_MIN_HEIGHT 720
 #define BASE_WINDOW_MIN_WIDTH 1100
 
 
@@ -505,7 +505,6 @@ void PIVXGUI::goToSettingsInfo()
 {
     navMenu->selectSettings();
     settingsWidget->showInformation();
-    goToSettings();
 }
 
 void PIVXGUI::goToReceive()
