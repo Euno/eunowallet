@@ -195,7 +195,7 @@ public:
         nDefaultPort = 46462;
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("139.59.134.74", "139.59.134.74", true));     // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("seed.euno.network", "seed.euno.network", true));     // Primary DNS Seeder
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 0x21);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 17);
@@ -327,7 +327,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("139.59.134.74", "139.59.134.74", true));     // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("seed.euno.network", "seed.euno.network", true));     // Primary DNS Seeder
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet pivx addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet pivx script addresses start with '8' or '9'

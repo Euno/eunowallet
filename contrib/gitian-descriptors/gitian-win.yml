@@ -107,9 +107,7 @@ script: |
   export PATH=${WRAP_DIR}:${PATH}
 
   cd euno
-
-  mkdir -p ./temp/euno-1.0.0/
-  cp -rf ./depends/ ./temp/euno-1.0.0/
+  cp -rf ./depends/ ./${DISTNAME}/depends_back/
 
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
@@ -130,6 +128,12 @@ script: |
   make dist
   SOURCEDIST=`echo euno-*.tar.gz`
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
+
+  tar -xf ./euno-*.tar.gz
+  cp -rf ./depends_back/ ./${DISTNAME}/depends/
+  cd ${DISTNAME}
+  tar -zcvf ../${DISTNAME}.tar.gz ../${DISTNAME}
+  cd ..
 
   # Correct tar file order
   mkdir -p temp
