@@ -14,6 +14,8 @@ telegram - https://t.me/EUNOofficial<br>
 discord - https://discord.euno.co/<br>
 twitter: https://twitter.com/EunoCoin<br>
 coinmarketcap: https://coinmarketcap.com/currencies/euno/<br>
+seednode: seed.euno.network<br>
+
 <br>
 #EUNO• Core Wallet
 
